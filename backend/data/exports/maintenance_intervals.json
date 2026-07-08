@@ -1,0 +1,1351 @@
+{
+  "_meta": {
+    "generated_at": "2026-07-08T18:09:02.667406",
+    "source": "vehiclegrade_reference_v1",
+    "record_count": 149,
+    "is_sample_data": false
+  },
+  "records": [
+    {
+      "make": "BMW",
+      "model": "3-Series",
+      "generation_label": "F30",
+      "name": "Engine oil & filter",
+      "interval_km": 12000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "BMW",
+      "model": "3-Series",
+      "generation_label": "F30",
+      "name": "Spark plugs",
+      "interval_km": 60000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "BMW",
+      "model": "3-Series",
+      "generation_label": "F30",
+      "name": "Brake fluid flush",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "BMW",
+      "model": "3-Series",
+      "generation_label": "F30",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "BMW",
+      "model": "3-Series",
+      "generation_label": "F30",
+      "name": "Transmission fluid (8-speed automatic)",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "BMW",
+      "model": "3-Series",
+      "generation_label": "F30",
+      "name": "Coolant flush",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "BMW",
+      "model": "3-Series",
+      "generation_label": "F30",
+      "name": "Timing chain inspection",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Engine oil & filter",
+      "interval_km": 12000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Transfer case fluid",
+      "interval_km": 80000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Front & rear differential fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "generation_label": "K2XX",
+      "name": "Coolant flush",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "generation_label": "13th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 12000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "generation_label": "13th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "generation_label": "13th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "generation_label": "13th Gen",
+      "name": "Transmission fluid (10-speed)",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "generation_label": "13th Gen",
+      "name": "Transfer case fluid (4WD)",
+      "interval_km": 80000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "generation_label": "13th Gen",
+      "name": "Spark plugs",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "generation_label": "13th Gen",
+      "name": "Coolant flush",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "generation_label": "4th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 12000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "generation_label": "4th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "generation_label": "4th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "generation_label": "4th Gen",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "generation_label": "4th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "generation_label": "4th Gen",
+      "name": "Coolant flush",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "generation_label": "4th Gen",
+      "name": "AWD power transfer unit fluid",
+      "interval_km": 90000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "10th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "10th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "10th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "10th Gen",
+      "name": "Transmission fluid (CVT)",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "10th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "10th Gen",
+      "name": "Coolant flush",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "10th Gen",
+      "name": "Timing chain inspection",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "9th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "9th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "9th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "9th Gen",
+      "name": "Automatic transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "9th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "generation_label": "9th Gen",
+      "name": "Timing belt / water pump",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "generation_label": "10th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "generation_label": "10th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "generation_label": "10th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "generation_label": "10th Gen",
+      "name": "Transmission fluid (CVT)",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "generation_label": "10th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "generation_label": "10th Gen",
+      "name": "Coolant flush",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "generation_label": "5th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "generation_label": "5th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "generation_label": "5th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "generation_label": "5th Gen",
+      "name": "Transmission fluid (CVT)",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "generation_label": "5th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "generation_label": "5th Gen",
+      "name": "Coolant flush",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "generation_label": "5th Gen",
+      "name": "AWD rear differential fluid",
+      "interval_km": 90000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "generation_label": "6th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 10000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "generation_label": "6th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "generation_label": "6th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "generation_label": "6th Gen",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "generation_label": "6th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "generation_label": "6th Gen",
+      "name": "Timing chain inspection",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "generation_label": "6th Gen",
+      "name": "Coolant flush",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation_label": "3rd Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 10000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation_label": "3rd Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation_label": "3rd Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation_label": "3rd Gen",
+      "name": "Transmission fluid",
+      "interval_km": 90000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation_label": "3rd Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation_label": "3rd Gen",
+      "name": "Coolant flush",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation_label": "3rd Gen",
+      "name": "AWD rear differential fluid",
+      "interval_km": 90000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Engine oil & filter",
+      "interval_km": 10000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Coolant flush",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Air suspension inspection (if equipped)",
+      "interval_km": 80000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "generation_label": "WK2",
+      "name": "Transfer case fluid",
+      "interval_km": 80000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "generation_label": "4th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "generation_label": "4th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "generation_label": "4th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "generation_label": "4th Gen",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "generation_label": "4th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "generation_label": "4th Gen",
+      "name": "Coolant flush",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "generation_label": "2nd Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "generation_label": "2nd Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "generation_label": "2nd Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "generation_label": "2nd Gen",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "generation_label": "2nd Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "generation_label": "2nd Gen",
+      "name": "Coolant flush",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "generation_label": "2nd Gen",
+      "name": "AWD rear differential fluid",
+      "interval_km": 90000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "generation_label": "5th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "generation_label": "5th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "generation_label": "5th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "generation_label": "5th Gen",
+      "name": "CVT fluid",
+      "interval_km": 60000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "generation_label": "5th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "generation_label": "5th Gen",
+      "name": "Coolant flush",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "generation_label": "2nd Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "generation_label": "2nd Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "generation_label": "2nd Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "generation_label": "2nd Gen",
+      "name": "CVT fluid",
+      "interval_km": 60000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "generation_label": "2nd Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "generation_label": "2nd Gen",
+      "name": "Coolant flush",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "generation_label": "2nd Gen",
+      "name": "AWD coupling fluid",
+      "interval_km": 90000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "generation_label": "5th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 10000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "generation_label": "5th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "generation_label": "5th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "generation_label": "5th Gen",
+      "name": "CVT fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "generation_label": "5th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "generation_label": "5th Gen",
+      "name": "Coolant flush",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "generation_label": "5th Gen",
+      "name": "AWD rear differential fluid",
+      "interval_km": 60000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "12th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "12th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "12th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "12th Gen",
+      "name": "Transmission fluid (CVT)",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "12th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "12th Gen",
+      "name": "Coolant flush",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "11th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "11th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "11th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "11th Gen",
+      "name": "Transmission fluid (CVT)",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "11th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation_label": "11th Gen",
+      "name": "Water pump inspection",
+      "interval_km": 150000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "generation_label": "8th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "generation_label": "8th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "generation_label": "8th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "generation_label": "8th Gen",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "generation_label": "8th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "generation_label": "8th Gen",
+      "name": "Coolant flush",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "generation_label": "5th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 8000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "generation_label": "5th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "generation_label": "5th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "generation_label": "5th Gen",
+      "name": "Transmission fluid",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "generation_label": "5th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "generation_label": "5th Gen",
+      "name": "Coolant flush",
+      "interval_km": 160000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "generation_label": "5th Gen",
+      "name": "AWD transfer case fluid",
+      "interval_km": 90000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "generation_label": "6th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 10000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "generation_label": "6th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "generation_label": "6th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "generation_label": "6th Gen",
+      "name": "Transmission fluid (DSG/Automatic)",
+      "interval_km": 80000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "generation_label": "6th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "generation_label": "6th Gen",
+      "name": "Timing chain inspection",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "generation_label": "6th Gen",
+      "name": "Coolant flush",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation_label": "7th Gen",
+      "name": "Engine oil & filter",
+      "interval_km": 10000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation_label": "7th Gen",
+      "name": "Cabin & engine air filter",
+      "interval_km": 24000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation_label": "7th Gen",
+      "name": "Brake fluid flush",
+      "interval_km": 48000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation_label": "7th Gen",
+      "name": "DSG transmission fluid",
+      "interval_km": 60000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation_label": "7th Gen",
+      "name": "Spark plugs",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation_label": "7th Gen",
+      "name": "Coolant flush",
+      "interval_km": 120000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation_label": "7th Gen",
+      "name": "Intake carbon cleaning",
+      "interval_km": 100000,
+      "estimated_cost_min": null,
+      "estimated_cost_max": null
+    }
+  ]
+}

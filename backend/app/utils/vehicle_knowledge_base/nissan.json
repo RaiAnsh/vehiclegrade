@@ -1,0 +1,88 @@
+{
+  "make": "Nissan",
+  "models": [
+    {
+      "name": "Altima",
+      "generations": [
+        {
+          "label": "5th Gen",
+          "start_year": 2013,
+          "end_year": 2018,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 182,
+          "fuel_economy_l_per_100km": 7.5,
+          "reliability_stars": 3.5,
+          "typical_lifespan_km": 230000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Honda Accord, Toyota Camry, Hyundai Sonata",
+          "base_value": 11000,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {"name": "S", "msrp_adjustment_pct": -0.05, "engine_options": "2.5L I4", "transmission_options": "CVT"},
+            {"name": "SV", "msrp_adjustment_pct": 0.03, "engine_options": "2.5L I4", "transmission_options": "CVT"},
+            {"name": "SR", "msrp_adjustment_pct": 0.14, "engine_options": "2.5L I4, 3.5L V6", "transmission_options": "CVT"}
+          ],
+          "known_issues": [
+            {"title": "CVT transmission failure", "description": "The Jatco CVT used across this generation has a well-documented history of premature failure, presenting as a shudder, whine, or loss of power under load, and is the single most common reason these cars end up scrapped early.", "symptoms": "A shudder or vibration under acceleration, a whining or humming noise from the transmission, or a sudden loss of power under load and at highway cruise.", "severity": "severe", "typical_mileage_km": 120000, "estimated_repair_cost_min": 3500, "estimated_repair_cost_max": 5500, "recommendation": "Check for CVT-related extended warranty or class action settlement paperwork, and feel closely for shudder or whine during acceleration and at highway cruise."},
+            {"title": "Engine mount failure", "description": "Rubber engine mounts break down and cause noticeable vibration through the cabin, especially at idle and under acceleration.", "symptoms": "Excess vibration felt through the seats and steering wheel at idle and when accelerating, sometimes with a clunk when shifting into gear.", "severity": "moderate", "typical_mileage_km": 130000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 700, "recommendation": "Feel for excess vibration at a stoplight with the car in drive and brake applied."},
+            {"title": "Oil consumption and timing chain rattle", "description": "The 2.5L QR25DE engine can burn oil faster than normal and develop a timing chain rattle on cold start as components wear.", "symptoms": "A rattling noise from the engine for the first few seconds after a cold start, and a lower than expected oil level between changes.", "severity": "moderate", "typical_mileage_km": 140000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1500, "recommendation": "Ask for oil consumption history and listen for a rattle for the first few seconds after a cold start."},
+            {"title": "Secondary air injection pump failure", "description": "The emissions air injection pump can fail and trigger a check engine light, though it does not affect drivability.", "symptoms": "An illuminated check engine light with no noticeable change in how the car drives.", "severity": "minor", "typical_mileage_km": 100000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 600, "recommendation": "Scan for stored codes before buying to rule out a pending air injection pump fault."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 65, "estimated_cost_max": 120},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 85},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 140},
+            {"name": "CVT fluid", "interval_km": 60000, "estimated_cost_min": 170, "estimated_cost_max": 320},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 300},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 110, "estimated_cost_max": 190}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rogue",
+      "generations": [
+        {
+          "label": "2nd Gen",
+          "start_year": 2014,
+          "end_year": 2020,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 170,
+          "fuel_economy_l_per_100km": 8.2,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 230000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Honda CR-V, Toyota RAV4, Ford Escape",
+          "base_value": 15500,
+          "reference_mileage_km": 95000,
+          "trims": [
+            {"name": "S", "msrp_adjustment_pct": -0.06, "engine_options": "2.5L I4", "transmission_options": "CVT"},
+            {"name": "SV", "msrp_adjustment_pct": 0.02, "engine_options": "2.5L I4", "transmission_options": "CVT"},
+            {"name": "SL", "msrp_adjustment_pct": 0.15, "engine_options": "2.5L I4", "transmission_options": "CVT"}
+          ],
+          "known_issues": [
+            {"title": "CVT transmission failure", "description": "The Jatco CVT in this generation is subject to a class action settlement over premature failure, typically presenting as shuddering, hesitation, or a burning smell before it fails outright.", "symptoms": "A shudder or hesitation under acceleration, a burning smell from the transmission area, and eventually a complete loss of forward drive.", "severity": "severe", "typical_mileage_km": 110000, "estimated_repair_cost_min": 3500, "estimated_repair_cost_max": 6000, "recommendation": "Ask if the CVT warranty extension was applied for this VIN, and test drive at both low speed and sustained highway cruise feeling for shudder."},
+            {"title": "Oil consumption on the 2.5L engine", "description": "Some engines consume oil faster than normal between changes, which can go unnoticed until the low oil light comes on.", "symptoms": "The low oil warning light illuminating between scheduled services, with no visible leak underneath the vehicle.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1500, "recommendation": "Check the oil level and condition on the dipstick and ask for oil change records."},
+            {"title": "AWD propshaft coupling failure", "description": "The rear coupling that engages AWD can wear out, causing clunking noises or a loss of all-wheel drive engagement.", "symptoms": "A clunking noise from underneath the vehicle when accelerating or turning, and reduced traction in slippery conditions.", "severity": "moderate", "typical_mileage_km": 130000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1400, "recommendation": "Test the vehicle on a gravel or wet surface if possible to confirm AWD engagement."},
+            {"title": "Push-button start and key fob detection issues", "description": "The intelligent key system can intermittently fail to detect the fob, preventing the push-button start from working.", "symptoms": "The push-button start failing to recognize the key fob, requiring the fob to be moved around or pressed directly against the button to start the vehicle.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Test starting the vehicle with the fob in a pocket and also with a spare key if available."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 70, "estimated_cost_max": 130},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "CVT fluid", "interval_km": 60000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 170, "estimated_cost_max": 310},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD coupling fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    }
+  ]
+}

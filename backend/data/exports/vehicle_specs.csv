@@ -1,0 +1,65 @@
+make,model,generation_label,start_year,end_year,trim,engine,transmission_options,drivetrain,body_style,horsepower,fuel_economy_l_per_100km,msrp_adjustment_pct
+BMW,3-Series,F30,2012,2018,320i,2.0L Turbo I4,8-speed Automatic,AWD,sedan,240,8.0,-0.1
+BMW,3-Series,F30,2012,2018,328i,2.0L Turbo I4,8-speed Automatic,AWD,sedan,240,8.0,0.0
+BMW,3-Series,F30,2012,2018,340i,3.0L Turbo I6,"8-speed Automatic, 6MT",AWD,sedan,240,8.0,0.22
+Chevrolet,Silverado,K2XX,2014,2018,WT,4.3L V6,6-speed Automatic,4WD,truck,285,12.5,-0.1
+Chevrolet,Silverado,K2XX,2014,2018,LT,5.3L V8,6-speed Automatic,4WD,truck,285,12.5,0.03
+Chevrolet,Silverado,K2XX,2014,2018,High Country,6.2L V8,8-speed Automatic,4WD,truck,285,12.5,0.2
+Ford,F-150,13th Gen,2015,2020,XL,"3.3L V6, 3.5L V6","6-speed Automatic, 10-speed Automatic",4WD,truck,282,12.8,-0.08
+Ford,F-150,13th Gen,2015,2020,XLT,"2.7L EcoBoost V6, 5.0L V8","6-speed Automatic, 10-speed Automatic",4WD,truck,282,12.8,0.02
+Ford,F-150,13th Gen,2015,2020,Lariat,"3.5L EcoBoost V6, 5.0L V8",10-speed Automatic,4WD,truck,282,12.8,0.18
+Ford,Escape,4th Gen,2020,2024,S,1.5L EcoBoost I3,8-speed Automatic,AWD,suv,181,8.5,-0.08
+Ford,Escape,4th Gen,2020,2024,SE,"1.5L EcoBoost I3, 2.0L EcoBoost I4",8-speed Automatic,AWD,suv,181,8.5,0.0
+Ford,Escape,4th Gen,2020,2024,Titanium,2.0L EcoBoost I4,8-speed Automatic,AWD,suv,181,8.5,0.15
+Honda,Civic,10th Gen,2016,2021,LX,2.0L I4,CVT,FWD,sedan,158,7.4,-0.06
+Honda,Civic,10th Gen,2016,2021,EX,1.5L Turbo,CVT,FWD,sedan,158,7.4,0.0
+Honda,Civic,10th Gen,2016,2021,Si,1.5L Turbo,6MT,FWD,sedan,158,7.4,0.15
+Honda,Civic,9th Gen,2012,2015,LX,1.8L I4,5-speed Automatic,FWD,sedan,143,7.8,-0.05
+Honda,Civic,9th Gen,2012,2015,EX-L,1.8L I4,5-speed Automatic,FWD,sedan,143,7.8,0.08
+Honda,Accord,10th Gen,2018,2022,LX,1.5L Turbo,CVT,FWD,sedan,192,7.6,-0.08
+Honda,Accord,10th Gen,2018,2022,Sport,1.5L Turbo,"CVT, 6MT",FWD,sedan,192,7.6,0.05
+Honda,Accord,10th Gen,2018,2022,Touring,2.0L Turbo,10-speed Automatic,FWD,sedan,192,7.6,0.2
+Honda,CR-V,5th Gen,2017,2022,LX,2.4L I4,CVT,AWD,suv,190,8.1,-0.07
+Honda,CR-V,5th Gen,2017,2022,EX,1.5L Turbo,CVT,AWD,suv,190,8.1,0.05
+Honda,CR-V,5th Gen,2017,2022,Touring,1.5L Turbo,CVT,AWD,suv,190,8.1,0.18
+Hyundai,Elantra,6th Gen,2017,2020,L,2.0L I4,6-speed Automatic,FWD,sedan,147,7.2,-0.06
+Hyundai,Elantra,6th Gen,2017,2020,SE,2.0L I4,6-speed Automatic,FWD,sedan,147,7.2,0.0
+Hyundai,Elantra,6th Gen,2017,2020,Sport,1.6L Turbo,"7-speed DCT, 6MT",FWD,sedan,147,7.2,0.16
+Hyundai,Tucson,3rd Gen,2016,2021,Essential,2.0L I4,6-speed Automatic,AWD,suv,164,9.0,-0.07
+Hyundai,Tucson,3rd Gen,2016,2021,Preferred,2.4L I4,6-speed Automatic,AWD,suv,164,9.0,0.03
+Hyundai,Tucson,3rd Gen,2016,2021,Ultimate,1.6L Turbo,7-speed DCT,AWD,suv,164,9.0,0.18
+Jeep,Grand Cherokee,WK2,2011,2021,Laredo,3.6L Pentastar V6,"5-speed Automatic, 8-speed Automatic",4WD,suv,290,11.5,-0.08
+Jeep,Grand Cherokee,WK2,2011,2021,Limited,3.6L Pentastar V6,8-speed Automatic,4WD,suv,290,11.5,0.05
+Jeep,Grand Cherokee,WK2,2011,2021,Overland,5.7L HEMI V8,8-speed Automatic,4WD,suv,290,11.5,0.2
+Mazda,Mazda3,4th Gen,2019,2024,GX,2.0L SkyActiv-G,6-speed Automatic,FWD,sedan,186,7.8,-0.07
+Mazda,Mazda3,4th Gen,2019,2024,GS,2.5L SkyActiv-G,"6-speed Automatic, 6MT",FWD,sedan,186,7.8,0.03
+Mazda,Mazda3,4th Gen,2019,2024,GT Turbo,2.5L SkyActiv-G Turbo,6-speed Automatic,FWD,sedan,186,7.8,0.16
+Mazda,CX-5,2nd Gen,2017,2021,GX,2.5L SkyActiv-G,6-speed Automatic,AWD,suv,187,8.7,-0.08
+Mazda,CX-5,2nd Gen,2017,2021,GS,2.5L SkyActiv-G,6-speed Automatic,AWD,suv,187,8.7,0.02
+Mazda,CX-5,2nd Gen,2017,2021,Signature Turbo,2.5L SkyActiv-G Turbo,6-speed Automatic,AWD,suv,187,8.7,0.2
+Nissan,Altima,5th Gen,2013,2018,S,2.5L I4,CVT,FWD,sedan,182,7.5,-0.05
+Nissan,Altima,5th Gen,2013,2018,SV,2.5L I4,CVT,FWD,sedan,182,7.5,0.03
+Nissan,Altima,5th Gen,2013,2018,SR,"2.5L I4, 3.5L V6",CVT,FWD,sedan,182,7.5,0.14
+Nissan,Rogue,2nd Gen,2014,2020,S,2.5L I4,CVT,AWD,suv,170,8.2,-0.06
+Nissan,Rogue,2nd Gen,2014,2020,SV,2.5L I4,CVT,AWD,suv,170,8.2,0.02
+Nissan,Rogue,2nd Gen,2014,2020,SL,2.5L I4,CVT,AWD,suv,170,8.2,0.15
+Subaru,Outback,5th Gen,2015,2019,2.5i Convenience,2.5L H4,CVT,AWD,suv,175,8.5,-0.06
+Subaru,Outback,5th Gen,2015,2019,2.5i Limited,2.5L H4,CVT,AWD,suv,175,8.5,0.08
+Subaru,Outback,5th Gen,2015,2019,3.6R Premium,3.6L H6,CVT,AWD,suv,175,8.5,0.18
+Toyota,Corolla,12th Gen,2020,2024,L,2.0L I4,CVT,FWD,sedan,139,7.0,-0.07
+Toyota,Corolla,12th Gen,2020,2024,SE,2.0L I4,"CVT, 6MT",FWD,sedan,139,7.0,0.03
+Toyota,Corolla,12th Gen,2020,2024,XSE,2.0L I4,CVT,FWD,sedan,139,7.0,0.14
+Toyota,Corolla,11th Gen,2014,2019,LE,1.8L I4,CVT,FWD,sedan,132,7.3,-0.05
+Toyota,Corolla,11th Gen,2014,2019,S,1.8L I4,"CVT, 6MT",FWD,sedan,132,7.3,0.06
+Toyota,Camry,8th Gen,2018,2024,LE,2.5L I4,8-speed Automatic,FWD,sedan,203,7.7,-0.08
+Toyota,Camry,8th Gen,2018,2024,SE,2.5L I4,8-speed Automatic,FWD,sedan,203,7.7,0.02
+Toyota,Camry,8th Gen,2018,2024,XSE V6,3.5L V6,8-speed Automatic,FWD,sedan,203,7.7,0.22
+Toyota,RAV4,5th Gen,2019,2024,LE,2.5L I4,8-speed Automatic,AWD,suv,203,8.0,-0.08
+Toyota,RAV4,5th Gen,2019,2024,XLE,2.5L I4,8-speed Automatic,AWD,suv,203,8.0,0.04
+Toyota,RAV4,5th Gen,2019,2024,TRD Off-Road,2.5L I4,8-speed Automatic,AWD,suv,203,8.0,0.2
+Volkswagen,Jetta,6th Gen,2011,2018,Trendline,2.0L I4,"5MT, 6-speed Automatic",FWD,sedan,115,7.6,-0.06
+Volkswagen,Jetta,6th Gen,2011,2018,Comfortline,"1.4L TSI, 1.8L TSI",6-speed Automatic,FWD,sedan,115,7.6,0.02
+Volkswagen,Jetta,6th Gen,2011,2018,GLI,2.0L TSI,"6MT, 6-speed DSG",FWD,sedan,115,7.6,0.18
+Volkswagen,Golf,7th Gen,2015,2020,Trendline,1.8L TSI,"5MT, 6-speed Automatic",FWD,hatchback,170,7.2,-0.07
+Volkswagen,Golf,7th Gen,2015,2020,Comfortline,1.8L TSI,6-speed Automatic,FWD,hatchback,170,7.2,0.02
+Volkswagen,Golf,7th Gen,2015,2020,GTI,2.0L TSI,"6MT, 6-speed DSG",FWD,hatchback,170,7.2,0.22

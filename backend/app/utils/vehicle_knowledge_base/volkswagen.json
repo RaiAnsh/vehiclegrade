@@ -1,0 +1,91 @@
+{
+  "make": "Volkswagen",
+  "models": [
+    {
+      "name": "Jetta",
+      "generations": [
+        {
+          "label": "6th Gen",
+          "start_year": 2011,
+          "end_year": 2018,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 115,
+          "fuel_economy_l_per_100km": 7.6,
+          "reliability_stars": 3.7,
+          "typical_lifespan_km": 250000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 850,
+          "common_competitors": "Honda Civic, Toyota Corolla, Mazda3",
+          "base_value": 9500,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {"name": "Trendline", "msrp_adjustment_pct": -0.06, "engine_options": "2.0L I4", "transmission_options": "5MT, 6-speed Automatic"},
+            {"name": "Comfortline", "msrp_adjustment_pct": 0.02, "engine_options": "1.4L TSI, 1.8L TSI", "transmission_options": "6-speed Automatic"},
+            {"name": "GLI", "msrp_adjustment_pct": 0.18, "engine_options": "2.0L TSI", "transmission_options": "6MT, 6-speed DSG"}
+          ],
+          "known_issues": [
+            {"title": "Ignition coil pack failure", "description": "Ignition coils are a chronic weak point on VW's four-cylinder engines, failing one at a time and causing a rough idle, misfire codes, and reduced power.", "symptoms": "A rough or shaky idle, an intermittent check engine light with a flashing pattern under load, and a noticeable stumble or loss of power on acceleration.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 600, "recommendation": "Ask for records of prior coil pack replacements and scan for stored misfire codes before buying."},
+            {"title": "Water pump failure (TSI engines)", "description": "The 1.8T and 2.0T EA888 engines use a water pump with a plastic impeller that can crack or fail, leading to coolant loss and overheating.", "symptoms": "The temperature gauge climbing higher than normal, a low coolant warning light, or a sweet coolant smell near the front of the engine.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1200, "recommendation": "Check coolant level and look under the car for stains near the water pump housing at the front of the engine."},
+            {"title": "Window regulator failure", "description": "Window regulators can fail, causing the glass to drop into the door or move unevenly.", "symptoms": "A window that moves slowly, unevenly, or drops suddenly into the door, sometimes accompanied by a grinding noise from inside the door panel.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 250, "estimated_repair_cost_max": 450, "recommendation": "Cycle all four windows fully up and down and listen for grinding."},
+            {"title": "Timing chain tensioner wear on TSI engines", "description": "Early production 2.0T TSI engines are prone to timing chain tensioner wear, which can allow the chain to skip and cause a rattling noise on startup.", "symptoms": "A rattling or ticking noise from the front of the engine for a few seconds after a cold start, sometimes fading once oil pressure builds.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 2000, "estimated_repair_cost_max": 4000, "recommendation": "Listen carefully for a rattle in the first few seconds after a cold start and ask if the updated tensioner was installed."},
+            {"title": "Carbon buildup on intake valves", "description": "Direct injection on the TSI engines leads to carbon accumulation on the intake valves, causing a rough idle and reduced power over time.", "symptoms": "A rough or uneven idle and a gradual loss of power and responsiveness under acceleration.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 900, "recommendation": "Ask whether a walnut-shell intake cleaning has ever been done and note any idle roughness."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Transmission fluid (DSG/Automatic)", "interval_km": 80000, "estimated_cost_min": 250, "estimated_cost_max": 400},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 350},
+            {"name": "Timing chain inspection", "interval_km": 120000, "estimated_cost_min": 130, "estimated_cost_max": 240},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 130, "estimated_cost_max": 220}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Golf",
+      "generations": [
+        {
+          "label": "7th Gen",
+          "start_year": 2015,
+          "end_year": 2020,
+          "body_type": "hatchback",
+          "drivetrain": "FWD",
+          "base_horsepower": 170,
+          "fuel_economy_l_per_100km": 7.2,
+          "reliability_stars": 3.9,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 800,
+          "common_competitors": "Honda Civic Hatchback, Mazda3 Hatchback, Subaru Impreza",
+          "base_value": 15500,
+          "reference_mileage_km": 80000,
+          "trims": [
+            {"name": "Trendline", "msrp_adjustment_pct": -0.07, "engine_options": "1.8L TSI", "transmission_options": "5MT, 6-speed Automatic"},
+            {"name": "Comfortline", "msrp_adjustment_pct": 0.02, "engine_options": "1.8L TSI", "transmission_options": "6-speed Automatic"},
+            {"name": "GTI", "msrp_adjustment_pct": 0.22, "engine_options": "2.0L TSI", "transmission_options": "6MT, 6-speed DSG"}
+          ],
+          "known_issues": [
+            {"title": "DSG dual-clutch transmission mechatronic failure", "description": "The DSG's mechatronic control unit can fail or develop jerky, hesitant shifts, particularly from a stop, as the internal clutch packs and fluid degrade.", "symptoms": "A jerky or delayed engagement from a stop, occasional clunks between gears, and sometimes a transmission warning light on the dash.", "severity": "severe", "typical_mileage_km": 90000, "estimated_repair_cost_min": 1500, "estimated_repair_cost_max": 3000, "recommendation": "Test drive extensively in stop-and-go traffic and feel for jerky or delayed engagement from a stop."},
+            {"title": "Ignition coil pack failure", "description": "Coils fail individually over time, producing a rough idle and misfire codes.", "symptoms": "A rough or shaky idle and an intermittent check engine light, sometimes with a noticeable stumble on acceleration.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 600, "recommendation": "Scan for stored misfire codes and ask about coil replacement history."},
+            {"title": "Electronic thermostat / water pump housing failure", "description": "The integrated electronic thermostat and water pump module can fail internally, causing erratic temperature readings or coolant loss.", "symptoms": "A temperature gauge that fluctuates or reads unusually high or low, and coolant residue near the front of the engine.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1100, "recommendation": "Watch the temperature gauge during the test drive for slow warm-up or fluctuation, and check for coolant residue near the front of the engine."},
+            {"title": "Carbon buildup on intake valves", "description": "Direct injection leads to carbon deposits on the intake valves over time, reducing throttle response and smoothness.", "symptoms": "A rough idle and a noticeable hesitation or flat spot when accelerating from low RPM.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 900, "recommendation": "Ask about intake cleaning history and note any rough idle or hesitation."},
+            {"title": "Electrical gremlins in window switches and interior modules", "description": "Minor electrical faults are common, including window switches that stop responding or interior lighting modules that flicker.", "symptoms": "A window switch that doesn't respond on the first press, or interior lights that flicker or stay on intermittently.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 100, "estimated_repair_cost_max": 400, "recommendation": "Test every window switch, interior light, and accessory during the test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "DSG transmission fluid", "interval_km": 60000, "estimated_cost_min": 260, "estimated_cost_max": 400},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 350},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 130, "estimated_cost_max": 220},
+            {"name": "Intake carbon cleaning", "interval_km": 100000, "estimated_cost_min": 450, "estimated_cost_max": 800}
+          ]
+        }
+      ]
+    }
+  ]
+}

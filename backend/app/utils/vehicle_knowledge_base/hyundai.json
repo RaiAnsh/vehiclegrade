@@ -1,0 +1,89 @@
+{
+  "make": "Hyundai",
+  "models": [
+    {
+      "name": "Elantra",
+      "generations": [
+        {
+          "label": "6th Gen",
+          "start_year": 2017,
+          "end_year": 2020,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 147,
+          "fuel_economy_l_per_100km": 7.2,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 550,
+          "common_competitors": "Honda Civic, Toyota Corolla, Mazda3",
+          "base_value": 14000,
+          "reference_mileage_km": 80000,
+          "trims": [
+            {"name": "L", "msrp_adjustment_pct": -0.06, "engine_options": "2.0L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "SE", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "Sport", "msrp_adjustment_pct": 0.16, "engine_options": "1.6L Turbo", "transmission_options": "7-speed DCT, 6MT"}
+          ],
+          "known_issues": [
+            {"title": "Engine knocking / connecting rod bearing wear", "description": "Some GDI engines from this era develop rod bearing wear that produces a knocking noise and can lead to stalling, part of a broader Hyundai engine recall and extended warranty program.", "symptoms": "A deep knocking noise from the engine at idle that gets louder under load, sometimes accompanied by the check engine light or a sudden stall while driving.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 4000, "estimated_repair_cost_max": 6500, "recommendation": "Ask whether the vehicle was inspected under Hyundai's Knock Sensor Detection System recall and listen closely for engine knock at idle."},
+            {"title": "AC compressor failure", "description": "The AC compressor clutch can seize or wear out prematurely, causing intermittent cooling loss and a rattling noise.", "symptoms": "AC that blows warm intermittently, a rattling or grinding noise from the compressor when the AC engages, and the compressor clutch not always kicking in.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1100, "recommendation": "Run the AC on max cold for several minutes to confirm consistent cooling."},
+            {"title": "Sunroof rattle", "description": "The sunroof track and wind deflector can develop a rattle over bumps as mounting clips loosen with age.", "symptoms": "A rattling or buzzing noise from the roof area when driving over uneven pavement, most noticeable with the sunroof closed.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 250, "recommendation": "Open and close the sunroof and drive over uneven pavement to listen for rattling."},
+            {"title": "Blind spot detection sensor malfunction", "description": "The rear corner radar sensors can throw intermittent faults, disabling blind spot warning until the vehicle is restarted.", "symptoms": "A blind spot monitoring warning light or dash message indicating the system is temporarily unavailable, with the feature not reactivating until restart.", "severity": "minor", "typical_mileage_km": 100000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Check the dash for a blind spot warning fault light during the test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 65, "estimated_cost_max": 120},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 85},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 140},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 170, "estimated_cost_max": 310},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 170, "estimated_cost_max": 320},
+            {"name": "Timing chain inspection", "interval_km": 160000, "estimated_cost_min": 120, "estimated_cost_max": 220},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 110, "estimated_cost_max": 190}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tucson",
+      "generations": [
+        {
+          "label": "3rd Gen",
+          "start_year": 2016,
+          "end_year": 2021,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 164,
+          "fuel_economy_l_per_100km": 9.0,
+          "reliability_stars": 3.9,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Honda CR-V, Toyota RAV4, Mazda CX-5",
+          "base_value": 17500,
+          "reference_mileage_km": 85000,
+          "trims": [
+            {"name": "Essential", "msrp_adjustment_pct": -0.07, "engine_options": "2.0L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "Preferred", "msrp_adjustment_pct": 0.03, "engine_options": "2.4L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "Ultimate", "msrp_adjustment_pct": 0.18, "engine_options": "1.6L Turbo", "transmission_options": "7-speed DCT"}
+          ],
+          "known_issues": [
+            {"title": "Engine failure from connecting rod bearing wear", "description": "2.0L and 2.4L Theta II GDI engines in this generation are covered under Hyundai's engine recall program for premature rod bearing wear that can cause knocking, stalling, or a seized engine.", "symptoms": "A deep knocking noise from the engine that intensifies under load or at idle, sometimes followed by a sudden stall or the engine seizing entirely.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 4000, "estimated_repair_cost_max": 7000, "recommendation": "Ask for recall and warranty records confirming engine inspection or replacement, and listen for knocking at idle and under load."},
+            {"title": "Panoramic sunroof spontaneous shattering", "description": "The large panoramic sunroof glass on higher trims has a documented history of cracking or shattering without impact, especially in temperature swings.", "symptoms": "Visible spiderweb cracking or shattered glass in the sunroof panel with no obvious impact damage, sometimes preceded by a loud popping noise.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1200, "recommendation": "Inspect the sunroof glass closely for stress cracks around the edges."},
+            {"title": "7-speed dual-clutch transmission hesitation", "description": "1.6T models with the 7-speed DCT can exhibit hesitation or a jerky feel from a stop as the clutch packs wear.", "symptoms": "A noticeable delay or jerky lurch when pulling away from a stop, especially pronounced on inclines or in stop-and-go traffic.", "severity": "moderate", "typical_mileage_km": 80000, "estimated_repair_cost_min": 1000, "estimated_repair_cost_max": 3000, "recommendation": "Test drive from a full stop repeatedly, including uphill, to feel for hesitation or shudder."},
+            {"title": "AC condenser corrosion", "description": "Road salt exposure corrodes the front-mounted AC condenser, leading to slow refrigerant leaks.", "symptoms": "AC that gradually cools less effectively over time, eventually blowing warm air, sometimes with visible corrosion on the condenser fins.", "severity": "minor", "typical_mileage_km": 100000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 900, "recommendation": "Confirm AC blows consistently cold on a warm day before purchase."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 70, "estimated_cost_max": 130},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid", "interval_km": 90000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD rear differential fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    }
+  ]
+}

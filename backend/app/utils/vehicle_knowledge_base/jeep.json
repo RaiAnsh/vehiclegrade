@@ -1,0 +1,49 @@
+{
+  "make": "Jeep",
+  "models": [
+    {
+      "name": "Grand Cherokee",
+      "generations": [
+        {
+          "label": "WK2",
+          "start_year": 2011,
+          "end_year": 2021,
+          "body_type": "suv",
+          "drivetrain": "4WD",
+          "base_horsepower": 290,
+          "fuel_economy_l_per_100km": 11.5,
+          "reliability_stars": 3.5,
+          "typical_lifespan_km": 240000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 950,
+          "common_competitors": "Ford Explorer, Toyota 4Runner, Nissan Pathfinder",
+          "base_value": 18500,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {"name": "Laredo", "msrp_adjustment_pct": -0.08, "engine_options": "3.6L Pentastar V6", "transmission_options": "5-speed Automatic, 8-speed Automatic"},
+            {"name": "Limited", "msrp_adjustment_pct": 0.05, "engine_options": "3.6L Pentastar V6", "transmission_options": "8-speed Automatic"},
+            {"name": "Overland", "msrp_adjustment_pct": 0.2, "engine_options": "5.7L HEMI V8", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "TIPM electrical failures", "description": "The Totally Integrated Power Module controls many electrical functions and is prone to failure, causing symptoms ranging from random accessory faults to the fuel pump running continuously with the key removed or a hard no-start.", "symptoms": "Random dashboard warning lights, wipers or accessories activating on their own, the fuel pump running after the key is removed, or the vehicle failing to start intermittently.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 1600, "recommendation": "Ask if the TIPM has ever been replaced and watch for random warning lights, wipers activating on their own, or starting issues during the test."},
+            {"title": "Air suspension leaks and compressor failure", "description": "Quadra-Lift air suspension equipped trims can develop leaks in the air springs or lines, causing the vehicle to sag overnight and the compressor to run excessively trying to compensate.", "symptoms": "The vehicle sitting noticeably lower in the morning than when parked, and the air suspension compressor running loudly and frequently to maintain ride height.", "severity": "severe", "typical_mileage_km": 110000, "estimated_repair_cost_min": 1500, "estimated_repair_cost_max": 3000, "recommendation": "Check ride height first thing in the morning after the vehicle has sat overnight, and listen for the compressor running excessively."},
+            {"title": "Pentastar engine ticking and oil consumption", "description": "The 3.6L Pentastar V6 can develop a ticking noise from rocker arm or lifter wear, along with above-average oil consumption in some units.", "symptoms": "A ticking noise from the top of the engine at idle when warm, along with an oil level that drops noticeably faster than expected between changes.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 2000, "recommendation": "Listen for ticking at idle when the engine is warm and ask for oil consumption history."},
+            {"title": "Water pump housing crack (Pentastar V6)", "description": "The Pentastar's water pump housing can crack or the pump itself can fail internally, leading to coolant loss and overheating.", "symptoms": "A rising temperature gauge, a low coolant warning light, and coolant residue near the lower front section of the engine.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 900, "recommendation": "Check coolant level and look for residue near the front-lower section of the engine."},
+            {"title": "Uconnect infotainment freezing", "description": "The Uconnect touchscreen can freeze, reboot, or lose backup camera feed intermittently.", "symptoms": "The touchscreen freezing or going black, occasionally rebooting on its own, and the backup camera feed dropping out intermittently.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Cycle through navigation, backup camera, and phone pairing during the test drive to confirm responsiveness."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 210, "estimated_cost_max": 380},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 130, "estimated_cost_max": 220},
+            {"name": "Air suspension inspection (if equipped)", "interval_km": 80000, "estimated_cost_min": 120, "estimated_cost_max": 220},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 150, "estimated_cost_max": 250}
+          ]
+        }
+      ]
+    }
+  ]
+}

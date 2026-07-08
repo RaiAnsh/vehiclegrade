@@ -1,0 +1,309 @@
+id,make,model,generation_label,trim,year,mileage_km,price,condition,title_status,transmission,fuel_type,location,days_listed,source,first_seen_at,last_seen_at,is_archived
+1,BMW,3-Series,F30,340i,2017,104000,16350.0,excellent,clean,6MT,Gasoline,Hamilton,4,mock,2026-07-04T18:08:10.361462,2026-07-08T18:08:10.361462,False
+2,BMW,3-Series,F30,340i,2012,236000,11100.0,fair,clean,6MT,Gasoline,Calgary,6,mock,2026-07-02T18:08:10.361530,2026-07-08T18:08:10.361530,False
+3,BMW,3-Series,F30,328i,2015,124000,14550.0,good,clean,8-speed Automatic,Gasoline,Calgary,22,mock,2026-06-16T18:08:10.361574,2026-07-08T18:08:10.361574,False
+4,BMW,3-Series,F30,340i,2017,96000,8550.0,fair,salvage,8-speed Automatic,Gasoline,Calgary,21,mock,2026-06-17T18:08:10.361615,2026-07-08T18:08:10.361615,False
+5,BMW,3-Series,F30,340i,2014,224000,11700.0,fair,clean,8-speed Automatic,Gasoline,Toronto,3,mock,2026-07-05T18:08:10.361654,2026-07-08T18:08:10.361654,False
+6,BMW,3-Series,F30,328i,2012,283500,10400.0,good,unknown,8-speed Automatic,Gasoline,Ottawa,37,mock,2026-06-01T18:08:10.361692,2026-07-08T18:08:10.361692,False
+7,BMW,3-Series,F30,340i,2013,250500,15400.0,good,clean,6MT,Gasoline,Ottawa,21,mock,2026-06-17T18:08:10.361730,2026-07-08T18:08:10.361730,False
+8,BMW,3-Series,F30,340i,2018,147000,15350.0,good,clean,8-speed Automatic,Gasoline,Winnipeg,14,mock,2026-06-24T18:08:10.361767,2026-07-08T18:08:10.361767,False
+9,BMW,3-Series,F30,328i,2014,138500,11000.0,fair,rebuilt,8-speed Automatic,Gasoline,Winnipeg,41,mock,2026-05-28T18:08:10.361804,2026-07-08T18:08:10.361804,False
+10,BMW,3-Series,F30,320i,2016,174500,10850.0,fair,clean,8-speed Automatic,Gasoline,Winnipeg,0,mock,2026-07-08T18:08:10.361840,2026-07-08T18:08:10.361840,False
+11,BMW,3-Series,F30,320i,2013,281500,6950.0,poor,clean,8-speed Automatic,Gasoline,Buffalo,40,mock,2026-05-29T18:08:10.361877,2026-07-08T18:08:10.361877,False
+12,BMW,3-Series,F30,340i,2015,265000,11750.0,fair,clean,8-speed Automatic,Gasoline,Miami,4,mock,2026-07-04T18:08:10.361913,2026-07-08T18:08:10.361913,False
+13,BMW,3-Series,F30,320i,2016,132000,8550.0,fair,unknown,8-speed Automatic,Gasoline,Miami,1,mock,2026-07-07T18:08:10.361950,2026-07-08T18:08:10.361950,False
+14,BMW,3-Series,F30,328i,2013,258500,9200.0,good,clean,8-speed Automatic,Gasoline,Vancouver,45,mock,2026-05-24T18:08:10.361989,2026-07-08T18:08:10.361989,False
+15,Chevrolet,Silverado,K2XX,WT,2014,162500,20900.0,good,clean,6-speed Automatic,Gasoline,Toronto,0,mock,2026-07-08T18:08:10.362236,2026-07-08T18:08:10.362236,False
+16,Chevrolet,Silverado,K2XX,LT,2015,137000,26800.0,excellent,clean,6-speed Automatic,Gasoline,Buffalo,9,mock,2026-06-29T18:08:10.362281,2026-07-08T18:08:10.362281,False
+17,Chevrolet,Silverado,K2XX,LT,2017,110500,26950.0,good,clean,6-speed Automatic,Diesel,Ottawa,7,mock,2026-07-01T18:08:10.362319,2026-06-05T18:08:10.362319,True
+18,Chevrolet,Silverado,K2XX,WT,2014,253000,14350.0,excellent,clean,6-speed Automatic,Gasoline,Miami,11,mock,2026-06-27T18:08:10.362358,2026-07-08T18:08:10.362358,False
+19,Chevrolet,Silverado,K2XX,WT,2016,231000,16600.0,fair,clean,6-speed Automatic,Gasoline,Mississauga,13,mock,2026-06-25T18:08:10.362395,2026-06-24T18:08:10.362395,True
+20,Chevrolet,Silverado,K2XX,LT,2018,110000,25050.0,good,clean,6-speed Automatic,Hybrid,Buffalo,9,mock,2026-06-29T18:08:10.362433,2026-07-08T18:08:10.362433,False
+21,Chevrolet,Silverado,K2XX,WT,2014,278500,15950.0,good,clean,6-speed Automatic,Gasoline,Buffalo,19,mock,2026-06-19T18:08:10.362476,2026-07-08T18:08:10.362476,False
+22,Chevrolet,Silverado,K2XX,LT,2014,134000,22850.0,excellent,clean,6-speed Automatic,Gasoline,Mississauga,21,mock,2026-06-17T18:08:10.362513,2026-05-12T18:08:10.362513,True
+23,Chevrolet,Silverado,K2XX,LT,2015,183500,17350.0,good,clean,6-speed Automatic,Gasoline,Calgary,19,mock,2026-06-19T18:08:10.362552,2026-07-08T18:08:10.362552,False
+24,Chevrolet,Silverado,K2XX,High Country,2017,220500,17700.0,good,clean,8-speed Automatic,Hybrid,Vancouver,14,mock,2026-06-24T18:08:10.362589,2026-07-08T18:08:10.362589,False
+25,Chevrolet,Silverado,K2XX,High Country,2015,151000,24150.0,good,clean,8-speed Automatic,Gasoline,Vancouver,3,mock,2026-07-05T18:08:10.362628,2026-07-08T18:08:10.362628,False
+26,Chevrolet,Silverado,K2XX,LT,2014,290500,16000.0,poor,clean,6-speed Automatic,Gasoline,Toronto,7,mock,2026-07-01T18:08:10.362665,2026-07-08T18:08:10.362665,False
+27,Chevrolet,Silverado,K2XX,LT,2017,131500,24050.0,good,clean,6-speed Automatic,Gasoline,Chicago,7,mock,2026-07-01T18:08:10.362702,2026-07-08T18:08:10.362702,False
+28,Chevrolet,Silverado,K2XX,WT,2015,163000,18100.0,excellent,clean,6-speed Automatic,Gasoline,Buffalo,4,mock,2026-07-04T18:08:10.362738,2026-07-08T18:08:10.362738,False
+29,Ford,F-150,13th Gen,XLT,2018,145000,20200.0,good,clean,6-speed Automatic,Gasoline,Phoenix,8,mock,2026-06-30T18:08:10.362953,2026-07-08T18:08:10.362953,False
+30,Ford,F-150,13th Gen,Lariat,2016,163000,18450.0,fair,clean,10-speed Automatic,Gasoline,Toronto,0,mock,2026-07-08T18:08:10.362999,2026-06-07T18:08:10.362999,True
+31,Ford,F-150,13th Gen,XL,2019,147500,14000.0,good,clean,10-speed Automatic,Gasoline,Mississauga,17,mock,2026-06-21T18:08:10.363039,2026-07-08T18:08:10.363039,False
+32,Ford,F-150,13th Gen,Lariat,2016,125500,25900.0,fair,clean,10-speed Automatic,Gasoline,Phoenix,41,mock,2026-05-28T18:08:10.363077,2026-07-08T18:08:10.363077,False
+33,Ford,F-150,13th Gen,XLT,2020,132000,23050.0,good,clean,10-speed Automatic,Hybrid,Chicago,24,mock,2026-06-14T18:08:10.363115,2026-07-08T18:08:10.363115,False
+34,Ford,F-150,13th Gen,XLT,2018,87000,27050.0,good,clean,6-speed Automatic,Gasoline,Buffalo,1,mock,2026-07-07T18:08:10.363152,2026-07-08T18:08:10.363152,False
+35,Ford,F-150,13th Gen,XLT,2015,143000,19000.0,fair,clean,10-speed Automatic,Hybrid,Vancouver,6,mock,2026-07-02T18:08:10.363189,2026-07-08T18:08:10.363189,False
+36,Ford,F-150,13th Gen,Lariat,2018,133000,31100.0,good,clean,10-speed Automatic,Gasoline,Miami,20,mock,2026-06-18T18:08:10.363226,2026-07-08T18:08:10.363226,False
+37,Ford,F-150,13th Gen,Lariat,2018,138000,22400.0,fair,clean,10-speed Automatic,Gasoline,Vancouver,10,mock,2026-06-28T18:08:10.363263,2026-07-08T18:08:10.363263,False
+38,Ford,F-150,13th Gen,XL,2018,108500,22150.0,poor,clean,10-speed Automatic,Gasoline,Hamilton,24,mock,2026-06-14T18:08:10.363300,2026-07-08T18:08:10.363300,False
+39,Ford,F-150,13th Gen,XL,2019,85500,27500.0,good,clean,10-speed Automatic,Gasoline,Mississauga,9,mock,2026-06-29T18:08:10.363339,2026-07-08T18:08:10.363339,False
+40,Ford,F-150,13th Gen,XL,2016,241500,13450.0,poor,clean,6-speed Automatic,Hybrid,Mississauga,15,mock,2026-06-23T18:08:10.363376,2026-07-08T18:08:10.363376,False
+41,Ford,F-150,13th Gen,Lariat,2017,189500,16250.0,excellent,clean,10-speed Automatic,Gasoline,Vancouver,9,mock,2026-06-29T18:08:10.363412,2026-07-08T18:08:10.363412,False
+42,Ford,F-150,13th Gen,XLT,2015,170500,19300.0,fair,clean,10-speed Automatic,Gasoline,Miami,11,mock,2026-06-27T18:08:10.363451,2026-07-08T18:08:10.363451,False
+43,Ford,Escape,4th Gen,S,2021,103500,15300.0,good,clean,8-speed Automatic,Hybrid,Hamilton,40,mock,2026-05-29T18:08:10.363663,2026-07-08T18:08:10.363663,False
+44,Ford,Escape,4th Gen,Titanium,2022,58000,28000.0,good,clean,8-speed Automatic,Gasoline,Phoenix,22,mock,2026-06-16T18:08:10.363708,2026-07-08T18:08:10.363708,False
+45,Ford,Escape,4th Gen,S,2020,67000,22000.0,good,clean,8-speed Automatic,Gasoline,Winnipeg,4,mock,2026-07-04T18:08:10.363747,2026-07-08T18:08:10.363747,False
+46,Ford,Escape,4th Gen,S,2021,58500,24250.0,fair,clean,8-speed Automatic,Gasoline,Buffalo,21,mock,2026-06-17T18:08:10.363784,2026-07-08T18:08:10.363784,False
+47,Ford,Escape,4th Gen,SE,2020,124500,13200.0,fair,clean,8-speed Automatic,Gasoline,Phoenix,22,mock,2026-06-16T18:08:10.363821,2026-07-08T18:08:10.363821,False
+48,Ford,Escape,4th Gen,SE,2020,102000,20450.0,excellent,clean,8-speed Automatic,Gasoline,Chicago,7,mock,2026-07-01T18:08:10.363858,2026-06-28T18:08:10.363858,True
+49,Ford,Escape,4th Gen,S,2024,47000,21950.0,good,clean,8-speed Automatic,Gasoline,Miami,13,mock,2026-06-25T18:08:10.363895,2026-07-08T18:08:10.363895,False
+50,Ford,Escape,4th Gen,S,2022,68000,14800.0,good,clean,8-speed Automatic,Hybrid,Phoenix,1,mock,2026-07-07T18:08:10.363932,2026-07-08T18:08:10.363932,False
+51,Ford,Escape,4th Gen,S,2023,42000,27150.0,good,clean,8-speed Automatic,Gasoline,Vancouver,24,mock,2026-06-14T18:08:10.363969,2026-07-08T18:08:10.363969,False
+52,Ford,Escape,4th Gen,SE,2021,89500,18850.0,good,clean,8-speed Automatic,Gasoline,Vancouver,9,mock,2026-06-29T18:08:10.364007,2026-07-08T18:08:10.364007,False
+53,Ford,Escape,4th Gen,SE,2024,33000,16150.0,fair,unknown,8-speed Automatic,Gasoline,Chicago,7,mock,2026-07-01T18:08:10.364042,2026-07-08T18:08:10.364042,False
+54,Ford,Escape,4th Gen,S,2024,20000,24000.0,good,clean,8-speed Automatic,Gasoline,Calgary,12,mock,2026-06-26T18:08:10.364077,2026-07-08T18:08:10.364077,False
+55,Ford,Escape,4th Gen,Titanium,2021,72000,22750.0,fair,rebuilt,8-speed Automatic,Gasoline,Vancouver,3,mock,2026-07-05T18:08:10.364118,2026-07-08T18:08:10.364118,False
+56,Ford,Escape,4th Gen,Titanium,2020,108500,18050.0,good,clean,8-speed Automatic,Gasoline,Winnipeg,5,mock,2026-07-03T18:08:10.364155,2026-07-08T18:08:10.364155,False
+57,Honda,Civic,10th Gen,LX,2021,80000,15700.0,excellent,clean,CVT,Gasoline,Ottawa,39,mock,2026-05-30T18:08:10.364400,2026-07-08T18:08:10.364400,False
+58,Honda,Civic,10th Gen,Si,2021,70000,21000.0,good,clean,6MT,Gasoline,Mississauga,10,mock,2026-06-28T18:08:10.364446,2026-07-08T18:08:10.364446,False
+59,Honda,Civic,10th Gen,Si,2019,102000,15000.0,good,clean,6MT,Gasoline,Buffalo,10,mock,2026-06-28T18:08:10.364485,2026-07-08T18:08:10.364485,False
+60,Honda,Civic,10th Gen,EX,2019,110000,14750.0,good,clean,CVT,Diesel,Vancouver,19,mock,2026-06-19T18:08:10.364522,2026-07-08T18:08:10.364522,False
+61,Honda,Civic,10th Gen,EX,2021,124500,7350.0,good,rebuilt,CVT,Gasoline,Ottawa,41,mock,2026-05-28T18:08:10.364559,2026-07-08T18:08:10.364559,False
+62,Honda,Civic,10th Gen,LX,2021,121500,11000.0,good,clean,CVT,Gasoline,Denver,13,mock,2026-06-25T18:08:10.364596,2026-07-08T18:08:10.364596,False
+63,Honda,Civic,10th Gen,LX,2019,150500,8400.0,good,clean,CVT,Gasoline,Ottawa,15,mock,2026-06-23T18:08:10.364634,2026-07-08T18:08:10.364634,False
+64,Honda,Civic,10th Gen,LX,2016,101000,13400.0,good,clean,CVT,Gasoline,Vancouver,5,mock,2026-07-03T18:08:10.364670,2026-07-08T18:08:10.364670,False
+65,Honda,Civic,10th Gen,Si,2017,145500,12250.0,good,clean,6MT,Gasoline,Calgary,6,mock,2026-07-02T18:08:10.364706,2026-07-08T18:08:10.364706,False
+66,Honda,Civic,10th Gen,EX,2018,142500,8250.0,poor,clean,CVT,Gasoline,Denver,8,mock,2026-06-30T18:08:10.364745,2026-07-08T18:08:10.364745,False
+67,Honda,Civic,10th Gen,LX,2021,75500,12050.0,fair,clean,CVT,Hybrid,Hamilton,17,mock,2026-06-21T18:08:10.364783,2026-07-08T18:08:10.364783,False
+68,Honda,Civic,10th Gen,Si,2021,97000,12050.0,good,unknown,6MT,Gasoline,Winnipeg,23,mock,2026-06-15T18:08:10.364832,2026-07-08T18:08:10.364832,False
+69,Honda,Civic,10th Gen,LX,2019,88000,11300.0,fair,unknown,CVT,Gasoline,Mississauga,18,mock,2026-06-20T18:08:10.364870,2026-07-08T18:08:10.364870,False
+70,Honda,Civic,10th Gen,Si,2017,191500,13050.0,good,clean,6MT,Diesel,Chicago,9,mock,2026-06-29T18:08:10.364906,2026-07-08T18:08:10.364906,False
+71,Honda,Civic,9th Gen,EX-L,2015,226000,8650.0,good,clean,5-speed Automatic,Gasoline,Denver,2,mock,2026-07-06T18:08:10.365106,2026-07-08T18:08:10.365106,False
+72,Honda,Civic,9th Gen,LX,2015,128000,10100.0,excellent,clean,5-speed Automatic,Gasoline,Buffalo,21,mock,2026-06-17T18:08:10.365151,2026-07-08T18:08:10.365151,False
+73,Honda,Civic,9th Gen,LX,2013,283500,5100.0,good,unknown,5-speed Automatic,Gasoline,Chicago,32,mock,2026-06-06T18:08:10.365190,2026-07-08T18:08:10.365190,False
+74,Honda,Civic,9th Gen,EX-L,2014,125500,5950.0,fair,rebuilt,5-speed Automatic,Diesel,Calgary,44,mock,2026-05-25T18:08:10.365227,2026-07-08T18:08:10.365227,False
+75,Honda,Civic,9th Gen,LX,2013,259000,7750.0,good,clean,5-speed Automatic,Gasoline,Ottawa,1,mock,2026-07-07T18:08:10.365265,2026-07-08T18:08:10.365265,False
+76,Honda,Civic,9th Gen,LX,2014,241500,6100.0,fair,clean,5-speed Automatic,Gasoline,Mississauga,0,mock,2026-07-08T18:08:10.365302,2026-07-08T18:08:10.365302,False
+77,Honda,Civic,9th Gen,EX-L,2015,172000,9750.0,good,clean,5-speed Automatic,Gasoline,Toronto,12,mock,2026-06-26T18:08:10.365339,2026-07-08T18:08:10.365339,False
+78,Honda,Civic,9th Gen,LX,2015,169500,6750.0,fair,clean,5-speed Automatic,Gasoline,Denver,7,mock,2026-07-01T18:08:10.365376,2026-07-08T18:08:10.365376,False
+79,Honda,Civic,9th Gen,EX-L,2014,188500,6400.0,fair,clean,5-speed Automatic,Gasoline,Calgary,12,mock,2026-06-26T18:08:10.365414,2026-07-08T18:08:10.365414,False
+80,Honda,Civic,9th Gen,LX,2015,168500,5950.0,good,clean,5-speed Automatic,Gasoline,Denver,3,mock,2026-07-05T18:08:10.365450,2026-07-08T18:08:10.365450,False
+81,Honda,Civic,9th Gen,EX-L,2013,218500,5150.0,poor,clean,5-speed Automatic,Gasoline,Buffalo,5,mock,2026-07-03T18:08:10.365487,2026-07-08T18:08:10.365487,False
+82,Honda,Civic,9th Gen,LX,2015,145500,7850.0,fair,clean,5-speed Automatic,Gasoline,Toronto,10,mock,2026-06-28T18:08:10.365523,2026-07-08T18:08:10.365523,False
+83,Honda,Civic,9th Gen,EX-L,2014,114500,13150.0,good,clean,5-speed Automatic,Hybrid,Mississauga,15,mock,2026-06-23T18:08:10.365560,2026-07-08T18:08:10.365560,False
+84,Honda,Civic,9th Gen,EX-L,2013,194000,8000.0,good,clean,5-speed Automatic,Gasoline,Chicago,4,mock,2026-07-04T18:08:10.365597,2026-07-08T18:08:10.365597,False
+85,Honda,Accord,10th Gen,Sport,2021,90500,20900.0,good,clean,6MT,Gasoline,Toronto,9,mock,2026-06-29T18:08:10.365938,2026-07-08T18:08:10.365938,False
+86,Honda,Accord,10th Gen,LX,2022,41500,18800.0,fair,clean,CVT,Hybrid,Denver,0,mock,2026-07-08T18:08:10.365993,2026-07-08T18:08:10.365993,False
+87,Honda,Accord,10th Gen,Sport,2022,83000,19900.0,good,clean,CVT,Gasoline,Chicago,13,mock,2026-06-25T18:08:10.366035,2026-07-08T18:08:10.366035,False
+88,Honda,Accord,10th Gen,Sport,2018,121500,15150.0,fair,clean,CVT,Gasoline,Mississauga,10,mock,2026-06-28T18:08:10.366075,2026-07-08T18:08:10.366075,False
+89,Honda,Accord,10th Gen,LX,2020,115500,17250.0,good,clean,CVT,Gasoline,Ottawa,19,mock,2026-06-19T18:08:10.366114,2026-07-08T18:08:10.366114,False
+90,Honda,Accord,10th Gen,LX,2019,95500,20100.0,good,clean,CVT,Gasoline,Miami,10,mock,2026-06-28T18:08:10.366152,2026-07-08T18:08:10.366152,False
+91,Honda,Accord,10th Gen,Touring,2022,57500,24400.0,good,clean,10-speed Automatic,Gasoline,Phoenix,11,mock,2026-06-27T18:08:10.366194,2026-06-14T18:08:10.366194,True
+92,Honda,Accord,10th Gen,LX,2020,65000,18450.0,fair,clean,CVT,Gasoline,Buffalo,3,mock,2026-07-05T18:08:10.366266,2026-07-08T18:08:10.366266,False
+93,Honda,Accord,10th Gen,Sport,2018,125500,16000.0,good,clean,CVT,Gasoline,Winnipeg,3,mock,2026-07-05T18:08:10.366309,2026-07-08T18:08:10.366309,False
+94,Honda,Accord,10th Gen,LX,2020,110000,13750.0,fair,clean,CVT,Gasoline,Miami,44,mock,2026-05-25T18:08:10.366353,2026-07-08T18:08:10.366353,False
+95,Honda,Accord,10th Gen,Touring,2020,85500,27350.0,excellent,clean,10-speed Automatic,Gasoline,Denver,19,mock,2026-06-19T18:08:10.366391,2026-07-08T18:08:10.366391,False
+96,Honda,Accord,10th Gen,Touring,2022,45000,23450.0,good,clean,10-speed Automatic,Gasoline,Mississauga,2,mock,2026-07-06T18:08:10.366428,2026-07-08T18:08:10.366428,False
+97,Honda,Accord,10th Gen,Touring,2018,130000,16200.0,good,clean,10-speed Automatic,Gasoline,Phoenix,16,mock,2026-06-22T18:08:10.366465,2026-06-14T18:08:10.366465,True
+98,Honda,Accord,10th Gen,Touring,2019,170500,20150.0,good,clean,10-speed Automatic,Gasoline,Phoenix,13,mock,2026-06-25T18:08:10.366504,2026-07-08T18:08:10.366504,False
+99,Honda,CR-V,5th Gen,Touring,2019,138500,17550.0,fair,clean,CVT,Diesel,Mississauga,40,mock,2026-05-29T18:08:10.366726,2026-07-08T18:08:10.366726,False
+100,Honda,CR-V,5th Gen,EX,2021,105500,18800.0,poor,clean,CVT,Gasoline,Vancouver,39,mock,2026-05-30T18:08:10.366772,2026-06-05T18:08:10.366772,True
+101,Honda,CR-V,5th Gen,LX,2019,93500,22950.0,excellent,clean,CVT,Gasoline,Phoenix,2,mock,2026-07-06T18:08:10.366812,2026-07-08T18:08:10.366812,False
+102,Honda,CR-V,5th Gen,EX,2018,156000,15950.0,excellent,unknown,CVT,Gasoline,Hamilton,11,mock,2026-06-27T18:08:10.366850,2026-07-08T18:08:10.366850,False
+103,Honda,CR-V,5th Gen,Touring,2017,120500,19200.0,good,clean,CVT,Gasoline,Toronto,23,mock,2026-06-15T18:08:10.366887,2026-07-08T18:08:10.366887,False
+104,Honda,CR-V,5th Gen,LX,2018,136000,11900.0,poor,clean,CVT,Gasoline,Chicago,11,mock,2026-06-27T18:08:10.366924,2026-07-08T18:08:10.366924,False
+105,Honda,CR-V,5th Gen,LX,2019,95000,17200.0,fair,clean,CVT,Gasoline,Chicago,6,mock,2026-07-02T18:08:10.366961,2026-07-08T18:08:10.366961,False
+106,Honda,CR-V,5th Gen,Touring,2022,63000,25000.0,excellent,clean,CVT,Gasoline,Toronto,3,mock,2026-07-05T18:08:10.366997,2026-07-08T18:08:10.366997,False
+107,Honda,CR-V,5th Gen,Touring,2019,114500,23650.0,good,clean,CVT,Gasoline,Vancouver,6,mock,2026-07-02T18:08:10.367034,2026-07-08T18:08:10.367034,False
+108,Honda,CR-V,5th Gen,EX,2022,62000,24700.0,good,clean,CVT,Diesel,Ottawa,4,mock,2026-07-04T18:08:10.367071,2026-07-08T18:08:10.367071,False
+109,Honda,CR-V,5th Gen,EX,2019,79500,21800.0,good,clean,CVT,Gasoline,Chicago,10,mock,2026-06-28T18:08:10.367107,2026-07-08T18:08:10.367107,False
+110,Honda,CR-V,5th Gen,Touring,2017,97500,17200.0,fair,clean,CVT,Gasoline,Chicago,1,mock,2026-07-07T18:08:10.367144,2026-07-08T18:08:10.367144,False
+111,Honda,CR-V,5th Gen,LX,2020,141500,12200.0,good,rebuilt,CVT,Gasoline,Hamilton,8,mock,2026-06-30T18:08:10.367180,2026-07-08T18:08:10.367180,False
+112,Honda,CR-V,5th Gen,EX,2017,172000,12100.0,fair,clean,CVT,Hybrid,Mississauga,1,mock,2026-07-07T18:08:10.367217,2026-07-08T18:08:10.367217,False
+113,Hyundai,Elantra,6th Gen,Sport,2020,157000,10750.0,good,clean,6MT,Gasoline,Hamilton,2,mock,2026-07-06T18:08:10.367417,2026-07-08T18:08:10.367417,False
+114,Hyundai,Elantra,6th Gen,L,2018,160000,8650.0,good,clean,6-speed Automatic,Gasoline,Denver,4,mock,2026-07-04T18:08:10.367462,2026-07-08T18:08:10.367462,False
+115,Hyundai,Elantra,6th Gen,Sport,2020,118000,12750.0,excellent,clean,7-speed DCT,Gasoline,Ottawa,9,mock,2026-06-29T18:08:10.367500,2026-07-08T18:08:10.367500,False
+116,Hyundai,Elantra,6th Gen,Sport,2017,186500,10250.0,poor,clean,7-speed DCT,Gasoline,Winnipeg,4,mock,2026-07-04T18:08:10.367550,2026-07-08T18:08:10.367550,False
+117,Hyundai,Elantra,6th Gen,L,2019,122500,8450.0,good,clean,6-speed Automatic,Gasoline,Toronto,23,mock,2026-06-15T18:08:10.367587,2026-07-08T18:08:10.367587,False
+118,Hyundai,Elantra,6th Gen,Sport,2019,126000,12950.0,fair,clean,6MT,Gasoline,Winnipeg,21,mock,2026-06-17T18:08:10.367624,2026-07-08T18:08:10.367624,False
+119,Hyundai,Elantra,6th Gen,SE,2017,111000,12350.0,excellent,clean,6-speed Automatic,Gasoline,Buffalo,2,mock,2026-07-06T18:08:10.367661,2026-07-08T18:08:10.367661,False
+120,Hyundai,Elantra,6th Gen,SE,2018,126500,13550.0,good,clean,6-speed Automatic,Gasoline,Denver,17,mock,2026-06-21T18:08:10.367698,2026-07-08T18:08:10.367698,False
+121,Hyundai,Elantra,6th Gen,Sport,2018,129500,10850.0,excellent,clean,6MT,Gasoline,Winnipeg,10,mock,2026-06-28T18:08:10.367734,2026-07-08T18:08:10.367734,False
+122,Hyundai,Elantra,6th Gen,L,2020,84000,9500.0,fair,unknown,6-speed Automatic,Gasoline,Buffalo,7,mock,2026-07-01T18:08:10.367771,2026-07-08T18:08:10.367771,False
+123,Hyundai,Elantra,6th Gen,Sport,2020,97500,14450.0,good,clean,6MT,Gasoline,Ottawa,10,mock,2026-06-28T18:08:10.367808,2026-07-08T18:08:10.367808,False
+124,Hyundai,Elantra,6th Gen,L,2020,97000,11500.0,good,clean,6-speed Automatic,Gasoline,Vancouver,35,mock,2026-06-03T18:08:10.367878,2026-07-08T18:08:10.367878,False
+125,Hyundai,Elantra,6th Gen,Sport,2019,120500,14600.0,fair,clean,6MT,Gasoline,Denver,5,mock,2026-07-03T18:08:10.367914,2026-07-08T18:08:10.367914,False
+126,Hyundai,Elantra,6th Gen,Sport,2020,82500,14600.0,good,clean,7-speed DCT,Gasoline,Miami,20,mock,2026-06-18T18:08:10.367951,2026-07-08T18:08:10.367951,False
+127,Hyundai,Tucson,3rd Gen,Preferred,2016,128000,15200.0,good,clean,6-speed Automatic,Gasoline,Chicago,10,mock,2026-06-28T18:08:10.368154,2026-07-08T18:08:10.368154,False
+128,Hyundai,Tucson,3rd Gen,Essential,2019,100000,13550.0,good,clean,6-speed Automatic,Hybrid,Hamilton,12,mock,2026-06-26T18:08:10.368203,2026-07-08T18:08:10.368203,False
+129,Hyundai,Tucson,3rd Gen,Preferred,2018,106000,17500.0,good,clean,6-speed Automatic,Gasoline,Vancouver,4,mock,2026-07-04T18:08:10.368245,2026-07-08T18:08:10.368245,False
+130,Hyundai,Tucson,3rd Gen,Essential,2019,143500,10600.0,excellent,rebuilt,6-speed Automatic,Gasoline,Buffalo,5,mock,2026-07-03T18:08:10.368281,2026-07-08T18:08:10.368281,False
+131,Hyundai,Tucson,3rd Gen,Ultimate,2017,103500,15950.0,good,clean,7-speed DCT,Gasoline,Ottawa,20,mock,2026-06-18T18:08:10.368317,2026-06-02T18:08:10.368317,True
+132,Hyundai,Tucson,3rd Gen,Preferred,2017,137000,14450.0,good,clean,6-speed Automatic,Gasoline,Denver,13,mock,2026-06-25T18:08:10.368354,2026-07-08T18:08:10.368354,False
+133,Hyundai,Tucson,3rd Gen,Essential,2016,225000,10300.0,poor,clean,6-speed Automatic,Hybrid,Winnipeg,30,mock,2026-06-08T18:08:10.368389,2026-07-08T18:08:10.368389,False
+134,Hyundai,Tucson,3rd Gen,Ultimate,2016,141000,14200.0,good,clean,7-speed DCT,Hybrid,Mississauga,10,mock,2026-06-28T18:08:10.368424,2026-07-08T18:08:10.368424,False
+135,Hyundai,Tucson,3rd Gen,Preferred,2021,78500,20800.0,good,clean,6-speed Automatic,Gasoline,Buffalo,45,mock,2026-05-24T18:08:10.368459,2026-07-08T18:08:10.368459,False
+136,Hyundai,Tucson,3rd Gen,Essential,2019,127500,13750.0,excellent,unknown,6-speed Automatic,Gasoline,Toronto,3,mock,2026-07-05T18:08:10.368496,2026-07-08T18:08:10.368496,False
+137,Hyundai,Tucson,3rd Gen,Essential,2018,148000,13400.0,fair,clean,6-speed Automatic,Gasoline,Calgary,13,mock,2026-06-25T18:08:10.368543,2026-07-08T18:08:10.368543,False
+138,Hyundai,Tucson,3rd Gen,Preferred,2017,214500,6850.0,good,salvage,6-speed Automatic,Gasoline,Miami,22,mock,2026-06-16T18:08:10.368579,2026-07-08T18:08:10.368579,False
+139,Hyundai,Tucson,3rd Gen,Ultimate,2016,164500,13950.0,excellent,clean,7-speed DCT,Gasoline,Buffalo,4,mock,2026-07-04T18:08:10.368615,2026-07-08T18:08:10.368615,False
+140,Hyundai,Tucson,3rd Gen,Ultimate,2021,65000,20300.0,fair,clean,7-speed DCT,Gasoline,Winnipeg,4,mock,2026-07-04T18:08:10.368650,2026-07-08T18:08:10.368650,False
+141,Jeep,Grand Cherokee,WK2,Laredo,2017,122500,13650.0,good,clean,5-speed Automatic,Gasoline,Ottawa,0,mock,2026-07-08T18:08:10.368851,2026-07-08T18:08:10.368851,False
+142,Jeep,Grand Cherokee,WK2,Limited,2021,120500,15250.0,good,unknown,8-speed Automatic,Gasoline,Ottawa,22,mock,2026-06-16T18:08:10.368897,2026-07-08T18:08:10.368897,False
+143,Jeep,Grand Cherokee,WK2,Overland,2017,148500,12950.0,poor,clean,8-speed Automatic,Gasoline,Phoenix,11,mock,2026-06-27T18:08:10.368936,2026-07-08T18:08:10.368936,False
+144,Jeep,Grand Cherokee,WK2,Overland,2015,140500,14450.0,good,clean,8-speed Automatic,Gasoline,Miami,0,mock,2026-07-08T18:08:10.368972,2026-07-08T18:08:10.368972,False
+145,Jeep,Grand Cherokee,WK2,Laredo,2011,202000,11000.0,fair,clean,8-speed Automatic,Gasoline,Calgary,18,mock,2026-06-20T18:08:10.369028,2026-07-08T18:08:10.369028,False
+146,Jeep,Grand Cherokee,WK2,Laredo,2021,102500,10900.0,good,salvage,8-speed Automatic,Hybrid,Chicago,43,mock,2026-05-26T18:08:10.369071,2026-07-08T18:08:10.369071,False
+147,Jeep,Grand Cherokee,WK2,Limited,2019,113000,16600.0,good,clean,8-speed Automatic,Gasoline,Denver,3,mock,2026-07-05T18:08:10.369106,2026-07-08T18:08:10.369106,False
+148,Jeep,Grand Cherokee,WK2,Overland,2018,180500,17900.0,excellent,clean,8-speed Automatic,Diesel,Mississauga,27,mock,2026-06-11T18:08:10.369140,2026-07-08T18:08:10.369140,False
+149,Jeep,Grand Cherokee,WK2,Limited,2014,123000,15350.0,fair,clean,8-speed Automatic,Hybrid,Toronto,31,mock,2026-06-07T18:08:10.369174,2026-07-08T18:08:10.369174,False
+150,Jeep,Grand Cherokee,WK2,Laredo,2014,288500,10300.0,fair,clean,8-speed Automatic,Hybrid,Calgary,11,mock,2026-06-27T18:08:10.369209,2026-07-08T18:08:10.369209,False
+151,Jeep,Grand Cherokee,WK2,Limited,2016,163000,9150.0,good,salvage,8-speed Automatic,Gasoline,Denver,1,mock,2026-07-07T18:08:10.369244,2026-07-08T18:08:10.369244,False
+152,Jeep,Grand Cherokee,WK2,Overland,2015,184500,13900.0,good,clean,8-speed Automatic,Gasoline,Phoenix,45,mock,2026-05-24T18:08:10.369278,2026-07-08T18:08:10.369278,False
+153,Jeep,Grand Cherokee,WK2,Limited,2021,96000,23400.0,excellent,clean,8-speed Automatic,Gasoline,Mississauga,11,mock,2026-06-27T18:08:10.369312,2026-07-08T18:08:10.369312,False
+154,Jeep,Grand Cherokee,WK2,Laredo,2021,51000,21450.0,excellent,clean,8-speed Automatic,Gasoline,Miami,1,mock,2026-07-07T18:08:10.369348,2026-07-08T18:08:10.369348,False
+155,Mazda,Mazda3,4th Gen,GX,2024,32000,22800.0,good,clean,6-speed Automatic,Gasoline,Mississauga,24,mock,2026-06-14T18:08:10.369529,2026-07-08T18:08:10.369529,False
+156,Mazda,Mazda3,4th Gen,GX,2023,36500,17250.0,good,clean,6-speed Automatic,Gasoline,Chicago,32,mock,2026-06-06T18:08:10.369571,2026-07-08T18:08:10.369571,False
+157,Mazda,Mazda3,4th Gen,GT Turbo,2019,126000,15400.0,good,clean,6-speed Automatic,Gasoline,Calgary,12,mock,2026-06-26T18:08:10.369606,2026-07-08T18:08:10.369606,False
+158,Mazda,Mazda3,4th Gen,GX,2019,154500,11050.0,fair,clean,6-speed Automatic,Gasoline,Toronto,33,mock,2026-06-05T18:08:10.369641,2026-07-08T18:08:10.369641,False
+159,Mazda,Mazda3,4th Gen,GX,2021,45000,17850.0,good,clean,6-speed Automatic,Gasoline,Buffalo,17,mock,2026-06-21T18:08:10.369676,2026-07-08T18:08:10.369676,False
+160,Mazda,Mazda3,4th Gen,GT Turbo,2024,24000,17450.0,excellent,salvage,6-speed Automatic,Gasoline,Vancouver,19,mock,2026-06-19T18:08:10.369711,2026-07-08T18:08:10.369711,False
+161,Mazda,Mazda3,4th Gen,GS,2021,48000,16800.0,poor,clean,6MT,Gasoline,Hamilton,5,mock,2026-07-03T18:08:10.369746,2026-07-08T18:08:10.369746,False
+162,Mazda,Mazda3,4th Gen,GS,2019,96500,14150.0,excellent,clean,6-speed Automatic,Gasoline,Vancouver,2,mock,2026-07-06T18:08:10.369781,2026-07-08T18:08:10.369781,False
+163,Mazda,Mazda3,4th Gen,GX,2023,49000,20050.0,good,clean,6-speed Automatic,Gasoline,Denver,10,mock,2026-06-28T18:08:10.369815,2026-07-08T18:08:10.369815,False
+164,Mazda,Mazda3,4th Gen,GX,2020,102000,15850.0,good,clean,6-speed Automatic,Gasoline,Calgary,1,mock,2026-07-07T18:08:10.369849,2026-07-08T18:08:10.369849,False
+165,Mazda,Mazda3,4th Gen,GS,2020,113500,15400.0,excellent,clean,6-speed Automatic,Gasoline,Chicago,11,mock,2026-06-27T18:08:10.369889,2026-07-08T18:08:10.369889,False
+166,Mazda,Mazda3,4th Gen,GT Turbo,2020,85000,21450.0,good,clean,6-speed Automatic,Gasoline,Calgary,40,mock,2026-05-29T18:08:10.369931,2026-07-08T18:08:10.369931,False
+167,Mazda,Mazda3,4th Gen,GT Turbo,2022,59000,22600.0,fair,clean,6-speed Automatic,Gasoline,Mississauga,17,mock,2026-06-21T18:08:10.369972,2026-07-08T18:08:10.369972,False
+168,Mazda,Mazda3,4th Gen,GX,2022,73000,15300.0,fair,clean,6-speed Automatic,Gasoline,Denver,10,mock,2026-06-28T18:08:10.370016,2026-07-08T18:08:10.370016,False
+169,Mazda,CX-5,2nd Gen,GS,2017,180000,12400.0,fair,clean,6-speed Automatic,Gasoline,Calgary,23,mock,2026-06-15T18:08:10.370379,2026-07-08T18:08:10.370379,False
+170,Mazda,CX-5,2nd Gen,GX,2020,68500,20600.0,good,clean,6-speed Automatic,Gasoline,Denver,10,mock,2026-06-28T18:08:10.370425,2026-07-08T18:08:10.370425,False
+171,Mazda,CX-5,2nd Gen,GS,2019,184000,14500.0,excellent,unknown,6-speed Automatic,Gasoline,Buffalo,5,mock,2026-07-03T18:08:10.370464,2026-07-08T18:08:10.370464,False
+172,Mazda,CX-5,2nd Gen,Signature Turbo,2020,67500,20400.0,fair,clean,6-speed Automatic,Gasoline,Denver,24,mock,2026-06-14T18:08:10.370501,2026-07-08T18:08:10.370501,False
+173,Mazda,CX-5,2nd Gen,GS,2018,134000,16500.0,good,clean,6-speed Automatic,Diesel,Hamilton,5,mock,2026-07-03T18:08:10.370539,2026-07-08T18:08:10.370539,False
+174,Mazda,CX-5,2nd Gen,Signature Turbo,2020,90000,18950.0,fair,clean,6-speed Automatic,Gasoline,Mississauga,13,mock,2026-06-25T18:08:10.370576,2026-07-08T18:08:10.370576,False
+175,Mazda,CX-5,2nd Gen,Signature Turbo,2020,99000,23850.0,good,clean,6-speed Automatic,Gasoline,Winnipeg,23,mock,2026-06-15T18:08:10.370611,2026-07-08T18:08:10.370611,False
+176,Mazda,CX-5,2nd Gen,GX,2021,55000,19700.0,good,clean,6-speed Automatic,Gasoline,Ottawa,4,mock,2026-07-04T18:08:10.370647,2026-07-08T18:08:10.370647,False
+177,Mazda,CX-5,2nd Gen,Signature Turbo,2021,92500,23950.0,excellent,clean,6-speed Automatic,Gasoline,Hamilton,36,mock,2026-06-02T18:08:10.370694,2026-07-08T18:08:10.370694,False
+178,Mazda,CX-5,2nd Gen,GS,2021,81000,17400.0,fair,clean,6-speed Automatic,Gasoline,Buffalo,0,mock,2026-07-08T18:08:10.370729,2026-07-08T18:08:10.370729,False
+179,Mazda,CX-5,2nd Gen,GS,2020,101500,23550.0,good,clean,6-speed Automatic,Gasoline,Mississauga,13,mock,2026-06-25T18:08:10.370765,2026-07-08T18:08:10.370765,False
+180,Mazda,CX-5,2nd Gen,GX,2018,113000,17250.0,excellent,clean,6-speed Automatic,Gasoline,Calgary,17,mock,2026-06-21T18:08:10.370801,2026-07-08T18:08:10.370801,False
+181,Mazda,CX-5,2nd Gen,GX,2021,88500,20400.0,fair,clean,6-speed Automatic,Gasoline,Winnipeg,4,mock,2026-07-04T18:08:10.370843,2026-07-08T18:08:10.370843,False
+182,Mazda,CX-5,2nd Gen,Signature Turbo,2019,165500,14000.0,good,clean,6-speed Automatic,Gasoline,Ottawa,24,mock,2026-06-14T18:08:10.370889,2026-07-08T18:08:10.370889,False
+183,Nissan,Altima,5th Gen,SR,2014,234500,8850.0,good,clean,CVT,Gasoline,Denver,7,mock,2026-07-01T18:08:10.371139,2026-07-08T18:08:10.371139,False
+184,Nissan,Altima,5th Gen,SV,2015,172500,8200.0,fair,clean,CVT,Gasoline,Vancouver,36,mock,2026-06-02T18:08:10.371182,2026-07-08T18:08:10.371182,False
+185,Nissan,Altima,5th Gen,SV,2016,206000,7650.0,good,clean,CVT,Gasoline,Phoenix,6,mock,2026-07-02T18:08:10.371218,2026-05-09T18:08:10.371218,True
+186,Nissan,Altima,5th Gen,S,2014,187000,6550.0,excellent,clean,CVT,Gasoline,Calgary,18,mock,2026-06-20T18:08:10.371254,2026-07-08T18:08:10.371254,False
+187,Nissan,Altima,5th Gen,SV,2018,99500,11700.0,good,clean,CVT,Gasoline,Buffalo,0,mock,2026-07-08T18:08:10.371289,2026-07-08T18:08:10.371289,False
+188,Nissan,Altima,5th Gen,SV,2013,111500,13100.0,excellent,clean,CVT,Diesel,Ottawa,3,mock,2026-07-05T18:08:10.371324,2026-07-08T18:08:10.371324,False
+189,Nissan,Altima,5th Gen,SR,2014,214000,9600.0,good,clean,CVT,Gasoline,Miami,17,mock,2026-06-21T18:08:10.371359,2026-07-08T18:08:10.371359,False
+190,Nissan,Altima,5th Gen,S,2014,132500,7500.0,good,clean,CVT,Gasoline,Buffalo,2,mock,2026-07-06T18:08:10.371393,2026-07-08T18:08:10.371393,False
+191,Nissan,Altima,5th Gen,SR,2018,139500,11650.0,good,clean,CVT,Gasoline,Hamilton,8,mock,2026-06-30T18:08:10.371428,2026-07-08T18:08:10.371428,False
+192,Nissan,Altima,5th Gen,SR,2013,174500,4100.0,poor,salvage,CVT,Gasoline,Phoenix,10,mock,2026-06-28T18:08:10.371462,2026-07-08T18:08:10.371462,False
+193,Nissan,Altima,5th Gen,S,2013,118000,9950.0,excellent,clean,CVT,Gasoline,Vancouver,24,mock,2026-06-14T18:08:10.371500,2026-07-08T18:08:10.371500,False
+194,Nissan,Altima,5th Gen,S,2017,149500,7350.0,poor,clean,CVT,Gasoline,Chicago,11,mock,2026-06-27T18:08:10.371537,2026-07-08T18:08:10.371537,False
+195,Nissan,Altima,5th Gen,SV,2013,185000,8000.0,good,clean,CVT,Gasoline,Denver,4,mock,2026-07-04T18:08:10.371580,2026-06-06T18:08:10.371580,True
+196,Nissan,Altima,5th Gen,SR,2015,181000,7200.0,fair,clean,CVT,Gasoline,Mississauga,14,mock,2026-06-24T18:08:10.371617,2026-07-08T18:08:10.371617,False
+197,Nissan,Rogue,2nd Gen,SV,2018,141500,10000.0,fair,clean,CVT,Gasoline,Denver,15,mock,2026-06-23T18:08:10.371800,2026-07-08T18:08:10.371800,False
+198,Nissan,Rogue,2nd Gen,S,2014,255000,7150.0,poor,clean,CVT,Gasoline,Vancouver,7,mock,2026-07-01T18:08:10.371841,2026-07-08T18:08:10.371841,False
+199,Nissan,Rogue,2nd Gen,S,2016,138000,14500.0,excellent,clean,CVT,Gasoline,Winnipeg,27,mock,2026-06-11T18:08:10.371877,2026-07-08T18:08:10.371877,False
+200,Nissan,Rogue,2nd Gen,SV,2018,126000,12900.0,fair,clean,CVT,Gasoline,Hamilton,21,mock,2026-06-17T18:08:10.371927,2026-07-08T18:08:10.371927,False
+201,Nissan,Rogue,2nd Gen,SL,2017,84500,19700.0,excellent,clean,CVT,Gasoline,Hamilton,6,mock,2026-07-02T18:08:10.371967,2026-07-08T18:08:10.371967,False
+202,Nissan,Rogue,2nd Gen,S,2014,293500,7850.0,fair,unknown,CVT,Gasoline,Chicago,9,mock,2026-06-29T18:08:10.372002,2026-07-08T18:08:10.372002,False
+203,Nissan,Rogue,2nd Gen,S,2014,206500,8550.0,good,clean,CVT,Gasoline,Hamilton,10,mock,2026-06-28T18:08:10.372046,2026-07-08T18:08:10.372046,False
+204,Nissan,Rogue,2nd Gen,S,2020,103000,16050.0,good,clean,CVT,Gasoline,Mississauga,8,mock,2026-06-30T18:08:10.372080,2026-07-08T18:08:10.372080,False
+205,Nissan,Rogue,2nd Gen,SL,2019,99000,16900.0,excellent,clean,CVT,Gasoline,Ottawa,22,mock,2026-06-16T18:08:10.372116,2026-06-12T18:08:10.372116,True
+206,Nissan,Rogue,2nd Gen,SL,2020,94000,15950.0,fair,clean,CVT,Gasoline,Chicago,0,mock,2026-07-08T18:08:10.372151,2026-07-08T18:08:10.372151,False
+207,Nissan,Rogue,2nd Gen,SL,2019,77000,17200.0,poor,clean,CVT,Hybrid,Calgary,27,mock,2026-06-11T18:08:10.372195,2026-07-08T18:08:10.372195,False
+208,Nissan,Rogue,2nd Gen,SL,2017,92000,18650.0,excellent,clean,CVT,Gasoline,Ottawa,1,mock,2026-07-07T18:08:10.372230,2026-05-29T18:08:10.372230,True
+209,Nissan,Rogue,2nd Gen,SV,2018,108000,15850.0,excellent,clean,CVT,Gasoline,Chicago,45,mock,2026-05-24T18:08:10.372267,2026-07-08T18:08:10.372267,False
+210,Nissan,Rogue,2nd Gen,SV,2018,160500,12050.0,good,clean,CVT,Gasoline,Toronto,2,mock,2026-07-06T18:08:10.372301,2026-07-08T18:08:10.372301,False
+211,Subaru,Outback,5th Gen,2.5i Limited,2017,94000,10050.0,poor,salvage,CVT,Gasoline,Toronto,18,mock,2026-06-20T18:08:10.372480,2026-07-08T18:08:10.372480,False
+212,Subaru,Outback,5th Gen,2.5i Limited,2016,170500,7850.0,good,salvage,CVT,Hybrid,Miami,2,mock,2026-07-06T18:08:10.372522,2026-07-08T18:08:10.372522,False
+213,Subaru,Outback,5th Gen,2.5i Limited,2019,164500,14800.0,excellent,clean,CVT,Gasoline,Ottawa,0,mock,2026-07-08T18:08:10.372558,2026-07-08T18:08:10.372558,False
+214,Subaru,Outback,5th Gen,2.5i Limited,2016,226500,12800.0,poor,clean,CVT,Gasoline,Vancouver,11,mock,2026-06-27T18:08:10.372599,2026-07-08T18:08:10.372599,False
+215,Subaru,Outback,5th Gen,2.5i Convenience,2017,127500,13050.0,good,clean,CVT,Gasoline,Miami,22,mock,2026-06-16T18:08:10.372640,2026-07-08T18:08:10.372640,False
+216,Subaru,Outback,5th Gen,3.6R Premium,2018,113500,14600.0,poor,clean,CVT,Gasoline,Miami,3,mock,2026-07-05T18:08:10.372680,2026-07-08T18:08:10.372680,False
+217,Subaru,Outback,5th Gen,2.5i Limited,2019,80000,19400.0,good,clean,CVT,Gasoline,Toronto,24,mock,2026-06-14T18:08:10.372714,2026-07-08T18:08:10.372714,False
+218,Subaru,Outback,5th Gen,2.5i Limited,2016,185500,13300.0,excellent,clean,CVT,Gasoline,Vancouver,40,mock,2026-05-29T18:08:10.372748,2026-07-08T18:08:10.372748,False
+219,Subaru,Outback,5th Gen,3.6R Premium,2018,160000,16250.0,fair,clean,CVT,Gasoline,Ottawa,2,mock,2026-07-06T18:08:10.372782,2026-07-08T18:08:10.372782,False
+220,Subaru,Outback,5th Gen,2.5i Convenience,2019,163000,9950.0,good,clean,CVT,Gasoline,Hamilton,5,mock,2026-07-03T18:08:10.372823,2026-07-08T18:08:10.372823,False
+221,Subaru,Outback,5th Gen,3.6R Premium,2018,148500,12400.0,excellent,clean,CVT,Gasoline,Mississauga,4,mock,2026-07-04T18:08:10.372863,2026-07-08T18:08:10.372863,False
+222,Subaru,Outback,5th Gen,2.5i Convenience,2019,112000,13100.0,poor,clean,CVT,Gasoline,Mississauga,9,mock,2026-06-29T18:08:10.372909,2026-07-08T18:08:10.372909,False
+223,Subaru,Outback,5th Gen,2.5i Limited,2018,101500,20000.0,good,clean,CVT,Gasoline,Mississauga,6,mock,2026-07-02T18:08:10.372949,2026-07-08T18:08:10.372949,False
+224,Subaru,Outback,5th Gen,2.5i Limited,2017,182500,12200.0,fair,clean,CVT,Gasoline,Mississauga,43,mock,2026-05-26T18:08:10.372984,2026-07-08T18:08:10.372984,False
+225,Toyota,Corolla,12th Gen,XSE,2020,97000,14000.0,good,clean,CVT,Gasoline,Chicago,1,mock,2026-07-07T18:08:10.373189,2026-07-08T18:08:10.373189,False
+226,Toyota,Corolla,12th Gen,SE,2021,104000,16650.0,excellent,unknown,6MT,Hybrid,Toronto,11,mock,2026-06-27T18:08:10.373234,2026-07-08T18:08:10.373234,False
+227,Toyota,Corolla,12th Gen,SE,2024,34500,23200.0,good,clean,CVT,Gasoline,Calgary,23,mock,2026-06-15T18:08:10.373272,2026-07-08T18:08:10.373272,False
+228,Toyota,Corolla,12th Gen,SE,2022,60000,18150.0,excellent,clean,6MT,Gasoline,Hamilton,37,mock,2026-06-01T18:08:10.373313,2026-06-07T18:08:10.373313,True
+229,Toyota,Corolla,12th Gen,L,2022,88500,17950.0,good,clean,CVT,Gasoline,Phoenix,5,mock,2026-07-03T18:08:10.373357,2026-07-08T18:08:10.373357,False
+230,Toyota,Corolla,12th Gen,SE,2022,55000,14950.0,fair,clean,CVT,Gasoline,Winnipeg,11,mock,2026-06-27T18:08:10.373393,2026-07-08T18:08:10.373393,False
+231,Toyota,Corolla,12th Gen,XSE,2023,36000,20550.0,good,clean,CVT,Gasoline,Phoenix,14,mock,2026-06-24T18:08:10.373428,2026-07-08T18:08:10.373428,False
+232,Toyota,Corolla,12th Gen,L,2020,110000,9600.0,poor,clean,CVT,Gasoline,Denver,19,mock,2026-06-19T18:08:10.373463,2026-07-08T18:08:10.373463,False
+233,Toyota,Corolla,12th Gen,L,2020,90000,11350.0,fair,clean,CVT,Hybrid,Ottawa,11,mock,2026-06-27T18:08:10.373498,2026-07-08T18:08:10.373498,False
+234,Toyota,Corolla,12th Gen,XSE,2020,79500,17350.0,good,clean,CVT,Gasoline,Buffalo,6,mock,2026-07-02T18:08:10.373536,2026-07-08T18:08:10.373536,False
+235,Toyota,Corolla,12th Gen,L,2023,51500,19550.0,good,clean,CVT,Gasoline,Winnipeg,7,mock,2026-07-01T18:08:10.373584,2026-07-08T18:08:10.373584,False
+236,Toyota,Corolla,12th Gen,XSE,2022,51000,20300.0,fair,clean,CVT,Hybrid,Winnipeg,24,mock,2026-06-14T18:08:10.373620,2026-07-08T18:08:10.373620,False
+237,Toyota,Corolla,12th Gen,XSE,2023,45500,10800.0,fair,salvage,CVT,Gasoline,Chicago,8,mock,2026-06-30T18:08:10.373655,2026-07-08T18:08:10.373655,False
+238,Toyota,Corolla,12th Gen,XSE,2022,84000,15100.0,fair,clean,CVT,Gasoline,Hamilton,16,mock,2026-06-22T18:08:10.373689,2026-07-08T18:08:10.373689,False
+239,Toyota,Corolla,11th Gen,S,2016,153500,7400.0,fair,clean,6MT,Gasoline,Hamilton,43,mock,2026-05-26T18:08:10.373871,2026-07-08T18:08:10.373871,False
+240,Toyota,Corolla,11th Gen,S,2019,105000,14050.0,excellent,clean,6MT,Gasoline,Mississauga,3,mock,2026-07-05T18:08:10.373916,2026-07-08T18:08:10.373916,False
+241,Toyota,Corolla,11th Gen,S,2019,176500,7800.0,fair,clean,CVT,Gasoline,Vancouver,6,mock,2026-07-02T18:08:10.373951,2026-07-08T18:08:10.373951,False
+242,Toyota,Corolla,11th Gen,LE,2017,135000,6550.0,fair,rebuilt,CVT,Gasoline,Denver,8,mock,2026-06-30T18:08:10.373990,2026-07-08T18:08:10.373990,False
+243,Toyota,Corolla,11th Gen,S,2016,118500,13600.0,good,clean,6MT,Gasoline,Ottawa,5,mock,2026-07-03T18:08:10.374030,2026-07-08T18:08:10.374030,False
+244,Toyota,Corolla,11th Gen,LE,2017,132500,7750.0,good,unknown,CVT,Hybrid,Calgary,8,mock,2026-06-30T18:08:10.374065,2026-07-08T18:08:10.374065,False
+245,Toyota,Corolla,11th Gen,S,2014,179000,7700.0,excellent,clean,CVT,Gasoline,Winnipeg,12,mock,2026-06-26T18:08:10.374100,2026-07-08T18:08:10.374100,False
+246,Toyota,Corolla,11th Gen,LE,2015,143000,9700.0,good,clean,CVT,Gasoline,Winnipeg,8,mock,2026-06-30T18:08:10.374142,2026-07-08T18:08:10.374142,False
+247,Toyota,Corolla,11th Gen,LE,2014,194000,4500.0,good,salvage,CVT,Gasoline,Phoenix,40,mock,2026-05-29T18:08:10.374188,2026-07-08T18:08:10.374188,False
+248,Toyota,Corolla,11th Gen,LE,2014,106500,11500.0,excellent,clean,CVT,Gasoline,Winnipeg,7,mock,2026-07-01T18:08:10.374231,2026-07-08T18:08:10.374231,False
+249,Toyota,Corolla,11th Gen,LE,2014,136000,9400.0,fair,clean,CVT,Hybrid,Ottawa,25,mock,2026-06-13T18:08:10.374265,2026-07-08T18:08:10.374265,False
+250,Toyota,Corolla,11th Gen,S,2017,214000,9500.0,excellent,clean,CVT,Gasoline,Ottawa,20,mock,2026-06-18T18:08:10.374310,2026-07-08T18:08:10.374310,False
+251,Toyota,Corolla,11th Gen,LE,2019,133000,10350.0,fair,clean,CVT,Gasoline,Denver,11,mock,2026-06-27T18:08:10.374353,2026-07-08T18:08:10.374353,False
+252,Toyota,Corolla,11th Gen,S,2015,176000,9350.0,excellent,clean,CVT,Hybrid,Miami,24,mock,2026-06-14T18:08:10.374418,2026-07-08T18:08:10.374418,False
+253,Toyota,Camry,8th Gen,XSE V6,2023,64500,29150.0,good,clean,8-speed Automatic,Gasoline,Toronto,42,mock,2026-05-27T18:08:10.374608,2026-07-08T18:08:10.374608,False
+254,Toyota,Camry,8th Gen,SE,2019,113500,18100.0,good,clean,8-speed Automatic,Hybrid,Hamilton,7,mock,2026-07-01T18:08:10.374650,2026-06-09T18:08:10.374650,True
+255,Toyota,Camry,8th Gen,LE,2024,34000,16850.0,good,clean,8-speed Automatic,Gasoline,Mississauga,10,mock,2026-06-28T18:08:10.374688,2026-07-08T18:08:10.374688,False
+256,Toyota,Camry,8th Gen,XSE V6,2022,71000,28450.0,good,clean,8-speed Automatic,Gasoline,Phoenix,8,mock,2026-06-30T18:08:10.374724,2026-07-08T18:08:10.374724,False
+257,Toyota,Camry,8th Gen,LE,2020,113000,14300.0,good,clean,8-speed Automatic,Gasoline,Ottawa,9,mock,2026-06-29T18:08:10.374759,2026-07-08T18:08:10.374759,False
+258,Toyota,Camry,8th Gen,XSE V6,2024,37500,26250.0,good,clean,8-speed Automatic,Gasoline,Vancouver,21,mock,2026-06-17T18:08:10.374794,2026-05-28T18:08:10.374794,True
+259,Toyota,Camry,8th Gen,LE,2024,36500,26700.0,good,clean,8-speed Automatic,Gasoline,Phoenix,42,mock,2026-05-27T18:08:10.374829,2026-07-08T18:08:10.374829,False
+260,Toyota,Camry,8th Gen,LE,2024,45500,26900.0,good,clean,8-speed Automatic,Gasoline,Hamilton,38,mock,2026-05-31T18:08:10.374864,2026-07-08T18:08:10.374864,False
+261,Toyota,Camry,8th Gen,SE,2020,146000,17250.0,fair,clean,8-speed Automatic,Gasoline,Chicago,22,mock,2026-06-16T18:08:10.374898,2026-07-08T18:08:10.374898,False
+262,Toyota,Camry,8th Gen,SE,2019,123500,13900.0,fair,clean,8-speed Automatic,Hybrid,Calgary,1,mock,2026-07-07T18:08:10.374932,2026-07-08T18:08:10.374932,False
+263,Toyota,Camry,8th Gen,XSE V6,2022,68000,24000.0,good,unknown,8-speed Automatic,Gasoline,Toronto,3,mock,2026-07-05T18:08:10.374966,2026-07-08T18:08:10.374966,False
+264,Toyota,Camry,8th Gen,LE,2019,96000,19150.0,excellent,clean,8-speed Automatic,Gasoline,Miami,13,mock,2026-06-25T18:08:10.375002,2026-07-08T18:08:10.375002,False
+265,Toyota,Camry,8th Gen,LE,2023,50500,22800.0,fair,clean,8-speed Automatic,Gasoline,Chicago,7,mock,2026-07-01T18:08:10.375036,2026-07-08T18:08:10.375036,False
+266,Toyota,Camry,8th Gen,XSE V6,2022,41000,28800.0,fair,clean,8-speed Automatic,Gasoline,Miami,24,mock,2026-06-14T18:08:10.375070,2026-07-08T18:08:10.375070,False
+267,Toyota,RAV4,5th Gen,XLE,2024,48000,28850.0,good,clean,8-speed Automatic,Gasoline,Ottawa,7,mock,2026-07-01T18:08:10.375248,2026-07-08T18:08:10.375248,False
+268,Toyota,RAV4,5th Gen,XLE,2021,42000,26700.0,good,unknown,8-speed Automatic,Gasoline,Calgary,11,mock,2026-06-27T18:08:10.375290,2026-05-23T18:08:10.375290,True
+269,Toyota,RAV4,5th Gen,LE,2021,82500,20200.0,good,clean,8-speed Automatic,Gasoline,Miami,2,mock,2026-07-06T18:08:10.375327,2026-07-08T18:08:10.375327,False
+270,Toyota,RAV4,5th Gen,TRD Off-Road,2023,61500,34350.0,good,clean,8-speed Automatic,Gasoline,Mississauga,8,mock,2026-06-30T18:08:10.375362,2026-07-08T18:08:10.375362,False
+271,Toyota,RAV4,5th Gen,LE,2023,57000,20100.0,good,clean,8-speed Automatic,Gasoline,Buffalo,5,mock,2026-07-03T18:08:10.375396,2026-07-08T18:08:10.375396,False
+272,Toyota,RAV4,5th Gen,TRD Off-Road,2024,21000,30850.0,excellent,clean,8-speed Automatic,Hybrid,Chicago,20,mock,2026-06-18T18:08:10.375431,2026-07-08T18:08:10.375431,False
+273,Toyota,RAV4,5th Gen,LE,2022,75500,23300.0,good,clean,8-speed Automatic,Gasoline,Vancouver,8,mock,2026-06-30T18:08:10.375465,2026-07-08T18:08:10.375465,False
+274,Toyota,RAV4,5th Gen,TRD Off-Road,2022,73000,22750.0,fair,clean,8-speed Automatic,Gasoline,Chicago,36,mock,2026-06-02T18:08:10.375499,2026-07-08T18:08:10.375499,False
+275,Toyota,RAV4,5th Gen,XLE,2019,97500,23850.0,good,clean,8-speed Automatic,Gasoline,Winnipeg,1,mock,2026-07-07T18:08:10.375538,2026-07-08T18:08:10.375538,False
+276,Toyota,RAV4,5th Gen,LE,2024,36000,30700.0,good,clean,8-speed Automatic,Gasoline,Buffalo,0,mock,2026-07-08T18:08:10.375577,2026-07-08T18:08:10.375577,False
+277,Toyota,RAV4,5th Gen,XLE,2020,79000,23150.0,good,clean,8-speed Automatic,Gasoline,Mississauga,11,mock,2026-06-27T18:08:10.375612,2026-07-08T18:08:10.375612,False
+278,Toyota,RAV4,5th Gen,XLE,2020,114000,21850.0,good,clean,8-speed Automatic,Gasoline,Winnipeg,8,mock,2026-06-30T18:08:10.375647,2026-07-08T18:08:10.375647,False
+279,Toyota,RAV4,5th Gen,XLE,2020,101500,21400.0,good,clean,8-speed Automatic,Diesel,Chicago,5,mock,2026-07-03T18:08:10.375680,2026-07-08T18:08:10.375680,False
+280,Toyota,RAV4,5th Gen,XLE,2022,63000,28850.0,good,clean,8-speed Automatic,Gasoline,Chicago,2,mock,2026-07-06T18:08:10.375725,2026-07-03T18:08:10.375725,True
+281,Volkswagen,Jetta,6th Gen,GLI,2011,316000,6800.0,fair,clean,6MT,Gasoline,Chicago,42,mock,2026-05-27T18:08:10.375917,2026-07-08T18:08:10.375917,False
+282,Volkswagen,Jetta,6th Gen,GLI,2016,151000,10200.0,excellent,clean,6-speed DSG,Gasoline,Ottawa,17,mock,2026-06-21T18:08:10.375959,2026-07-08T18:08:10.375959,False
+283,Volkswagen,Jetta,6th Gen,GLI,2013,220000,5750.0,good,clean,6MT,Gasoline,Hamilton,8,mock,2026-06-30T18:08:10.375995,2026-07-08T18:08:10.375995,False
+284,Volkswagen,Jetta,6th Gen,Comfortline,2016,150500,8300.0,excellent,clean,6-speed Automatic,Gasoline,Vancouver,13,mock,2026-06-25T18:08:10.376030,2026-07-08T18:08:10.376030,False
+285,Volkswagen,Jetta,6th Gen,Trendline,2016,172000,4200.0,good,unknown,6-speed Automatic,Gasoline,Ottawa,40,mock,2026-05-29T18:08:10.376064,2026-07-08T18:08:10.376064,False
+286,Volkswagen,Jetta,6th Gen,GLI,2014,130500,10600.0,good,clean,6-speed DSG,Gasoline,Phoenix,17,mock,2026-06-21T18:08:10.376098,2026-07-08T18:08:10.376098,False
+287,Volkswagen,Jetta,6th Gen,Trendline,2018,104500,7650.0,good,clean,6-speed Automatic,Gasoline,Ottawa,5,mock,2026-07-03T18:08:10.376133,2026-07-08T18:08:10.376133,False
+288,Volkswagen,Jetta,6th Gen,GLI,2017,156000,7000.0,fair,clean,6MT,Hybrid,Vancouver,40,mock,2026-05-29T18:08:10.376167,2026-07-08T18:08:10.376167,False
+289,Volkswagen,Jetta,6th Gen,GLI,2013,229000,4400.0,poor,clean,6-speed DSG,Gasoline,Buffalo,0,mock,2026-07-08T18:08:10.376201,2026-07-08T18:08:10.376201,False
+290,Volkswagen,Jetta,6th Gen,GLI,2017,185500,5650.0,good,unknown,6MT,Gasoline,Miami,11,mock,2026-06-27T18:08:10.376235,2026-07-08T18:08:10.376235,False
+291,Volkswagen,Jetta,6th Gen,GLI,2011,331500,8500.0,excellent,clean,6-speed DSG,Gasoline,Denver,13,mock,2026-06-25T18:08:10.376271,2026-07-08T18:08:10.376271,False
+292,Volkswagen,Jetta,6th Gen,Comfortline,2017,107500,7950.0,good,clean,6-speed Automatic,Hybrid,Toronto,8,mock,2026-06-30T18:08:10.376305,2026-07-08T18:08:10.376305,False
+293,Volkswagen,Jetta,6th Gen,Comfortline,2014,221500,5350.0,fair,clean,6-speed Automatic,Gasoline,Chicago,11,mock,2026-06-27T18:08:10.376339,2026-07-08T18:08:10.376339,False
+294,Volkswagen,Jetta,6th Gen,GLI,2014,183500,7850.0,good,clean,6-speed DSG,Gasoline,Denver,29,mock,2026-06-09T18:08:10.376374,2026-07-08T18:08:10.376374,False
+295,Volkswagen,Golf,7th Gen,Trendline,2020,141500,10450.0,fair,clean,5MT,Gasoline,Mississauga,12,mock,2026-06-26T18:08:10.376549,2026-07-08T18:08:10.376549,False
+296,Volkswagen,Golf,7th Gen,Comfortline,2018,182500,11550.0,excellent,clean,6-speed Automatic,Gasoline,Miami,10,mock,2026-06-28T18:08:10.376590,2026-05-19T18:08:10.376590,True
+297,Volkswagen,Golf,7th Gen,Comfortline,2016,178500,8550.0,fair,clean,6-speed Automatic,Gasoline,Ottawa,13,mock,2026-06-25T18:08:10.376638,2026-07-08T18:08:10.376638,False
+298,Volkswagen,Golf,7th Gen,Trendline,2017,120500,12900.0,good,clean,5MT,Gasoline,Mississauga,3,mock,2026-07-05T18:08:10.376673,2026-07-08T18:08:10.376673,False
+299,Volkswagen,Golf,7th Gen,GTI,2020,124000,15150.0,good,clean,6-speed DSG,Gasoline,Mississauga,3,mock,2026-07-05T18:08:10.376708,2026-07-08T18:08:10.376708,False
+300,Volkswagen,Golf,7th Gen,Trendline,2019,98500,16250.0,good,clean,6-speed Automatic,Hybrid,Phoenix,21,mock,2026-06-17T18:08:10.376745,2026-07-08T18:08:10.376745,False
+301,Volkswagen,Golf,7th Gen,Comfortline,2019,149000,10600.0,fair,clean,6-speed Automatic,Gasoline,Toronto,38,mock,2026-05-31T18:08:10.376786,2026-07-08T18:08:10.376786,False
+302,Volkswagen,Golf,7th Gen,Trendline,2017,121500,11600.0,excellent,clean,6-speed Automatic,Gasoline,Denver,31,mock,2026-06-07T18:08:10.376830,2026-07-08T18:08:10.376830,False
+303,Volkswagen,Golf,7th Gen,Trendline,2016,161500,8150.0,good,clean,5MT,Gasoline,Mississauga,1,mock,2026-07-07T18:08:10.376864,2026-07-08T18:08:10.376864,False
+304,Volkswagen,Golf,7th Gen,Trendline,2020,96500,14750.0,good,clean,5MT,Gasoline,Buffalo,4,mock,2026-07-04T18:08:10.376898,2026-07-08T18:08:10.376898,False
+305,Volkswagen,Golf,7th Gen,Trendline,2016,193500,6350.0,poor,clean,5MT,Gasoline,Buffalo,10,mock,2026-06-28T18:08:10.376934,2026-07-08T18:08:10.376934,False
+306,Volkswagen,Golf,7th Gen,GTI,2020,51500,25550.0,good,clean,6MT,Gasoline,Calgary,1,mock,2026-07-07T18:08:10.376971,2026-07-08T18:08:10.376971,False
+307,Volkswagen,Golf,7th Gen,Comfortline,2018,123000,14550.0,good,clean,6-speed Automatic,Gasoline,Buffalo,17,mock,2026-06-21T18:08:10.377011,2026-07-08T18:08:10.377011,False
+308,Volkswagen,Golf,7th Gen,GTI,2018,103000,18950.0,good,clean,6MT,Gasoline,Winnipeg,22,mock,2026-06-16T18:08:10.377055,2026-07-08T18:08:10.377055,False

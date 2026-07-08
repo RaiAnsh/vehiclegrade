@@ -1,0 +1,49 @@
+{
+  "make": "Chevrolet",
+  "models": [
+    {
+      "name": "Silverado",
+      "generations": [
+        {
+          "label": "K2XX",
+          "start_year": 2014,
+          "end_year": 2018,
+          "body_type": "truck",
+          "drivetrain": "4WD",
+          "base_horsepower": 285,
+          "fuel_economy_l_per_100km": 12.5,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Ford F-150, Ram 1500, Toyota Tundra",
+          "base_value": 24000,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {"name": "WT", "msrp_adjustment_pct": -0.1, "engine_options": "4.3L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "LT", "msrp_adjustment_pct": 0.03, "engine_options": "5.3L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "High Country", "msrp_adjustment_pct": 0.2, "engine_options": "6.2L V8", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "AFM lifter failure / valve train tick", "description": "The Active Fuel Management system on the 5.3L and 6.2L EcoTec3 V8s deactivates cylinders to save fuel, and the lifters responsible for this can collapse, producing a persistent tick and eventually camshaft damage.", "symptoms": "A persistent ticking or tapping noise from the engine at idle that becomes more pronounced when the engine switches between 8-cylinder and 4-cylinder mode.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 5000, "recommendation": "Listen closely for a ticking noise at idle, especially during the transition between 8-cylinder and 4-cylinder mode, and ask about AFM disabler installation."},
+            {"title": "HVAC blend door actuator failure", "description": "The blend door actuator behind the dash commonly fails, causing a repetitive clicking noise and inconsistent cabin temperature.", "symptoms": "A repetitive clicking noise from behind the dashboard and cabin temperature that doesn't match the climate control setting.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 250, "estimated_repair_cost_max": 450, "recommendation": "Run the climate control through its full range and listen for clicking behind the dash."},
+            {"title": "6L80 transmission shudder and rough shifts", "description": "The 6-speed automatic can develop a shudder in torque converter lockup or harsh 1-2 shifts as fluid and clutch packs age.", "symptoms": "A shudder felt through the floor at steady highway cruise, or an abrupt clunk when shifting from 1st to 2nd gear.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 1500, "estimated_repair_cost_max": 3000, "recommendation": "Test drive at steady highway speed and light throttle to feel for shudder, and ask for transmission fluid service records."},
+            {"title": "Power steering pump and rack leaks", "description": "Power steering components can develop leaks over time, leading to fluid loss and increased steering effort.", "symptoms": "Increasingly heavy steering effort, a whining noise when turning, and visible fluid residue underneath the front of the truck.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 900, "recommendation": "Check under the front of the truck for fluid residue and feel for steering assist consistency."},
+            {"title": "Rear differential whine", "description": "The rear differential can develop a whine or howl as gears wear, particularly on trucks used for towing.", "symptoms": "A whining or howling noise from underneath the truck that changes pitch with vehicle speed, most noticeable while decelerating.", "severity": "minor", "typical_mileage_km": 140000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1200, "recommendation": "Listen for whining noise that changes with speed during the test drive, especially decelerating."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 360},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 150, "estimated_cost_max": 250},
+            {"name": "Front & rear differential fluid", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 140, "estimated_cost_max": 220}
+          ]
+        }
+      ]
+    }
+  ]
+}

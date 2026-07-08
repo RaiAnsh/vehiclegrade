@@ -1,0 +1,145 @@
+"""Turns a Listing (persisted or not) plus computed deal data into the plain
+dicts returned by the API. Kept separate from the routes so every endpoint
+that returns a listing - GET /listings, GET /listing/:id, POST /analyze,
+POST /search - produces an identical, consistent shape.
+"""
+
+from app.services.comparable_vehicles import find_comparable_vehicles
+from app.services.confidence import compute_confidence
+from app.services.deal_engine import classify_deal, score_listing, suggest_offer
+from app.services.inspection_checklist import build_inspection_checklist
+from app.services.known_issues import evaluate_known_issues
+from app.services.maintenance_timeline import build_timeline
+from app.services.market_comparables import find_comparables, summarize_comparables
+from app.services.mileage_analysis import classify_mileage
+from app.services.negotiation import build_negotiation
+from app.services.ownership_cost import estimate_ownership_cost
+from app.services.red_flags import evaluate_red_flags
+from app.services.seller_questions import build_seller_questions
+from app.services.verdict import build_verdict
+
+# Every report section is tagged with where its numbers actually come from,
+# so the frontend can render an explicit label instead of implying every
+# number carries the same certainty. See README's "Data Sources" section.
+DATA_SOURCES = {
+    "market_value": "reference_data",
+    "value_breakdown": "reference_data",
+    "vehicle_summary": "reference_data",
+    "reliability": "reference_data",
+    "known_issues": "reference_data",
+    "maintenance_timeline": "reference_data",
+    "ownership_cost": "reference_data",
+    "comparable_vehicles": "reference_data",
+    "comparable_listings": "market_sample",
+    "vehiclegrade_score": "estimate",
+    "suggested_offer": "estimate",
+    "verdict": "estimate",
+    "confidence": "estimate",
+}
+
+SOURCE_LABELS = {
+    "reference_data": "Based on VehicleGrade reference data",
+    "market_sample": "Based on current marketplace sample data",
+    "estimate": "Estimate only",
+}
+
+
+def _star_rating(score):
+    """0-100 score -> 0.0-5.0 star rating for display."""
+    return round(score / 20, 1)
+
+
+def _base_fields(listing, score, market_value, offer):
+    generation = listing.generation
+    model = generation.model
+    make = model.make
+
+    return {
+        "id": listing.id,
+        "year": listing.year,
+        "make": make.name,
+        "model": model.name,
+        "trim": listing.trim.name if listing.trim else None,
+        "generation_label": generation.label,
+        "body_type": generation.body_type,
+        "mileage_km": listing.mileage_km,
+        "price": listing.price,
+        "location": listing.location.city if listing.location else None,
+        "transmission": listing.transmission,
+        "fuel_type": listing.fuel_type,
+        "title_status": listing.title_status,
+        "condition": listing.condition,
+        "seller_rating": listing.seller_rating,
+        "days_listed": listing.days_listed,
+        "market_value": market_value,
+        "vehiclegrade_score": score,
+        "score_stars": _star_rating(score),
+        "deal_label": classify_deal(score),
+        "suggested_offer": offer,
+        "potential_savings": round(market_value - listing.price, 2),
+    }
+
+
+def listing_summary(listing):
+    """The fields shown on a listing card / list row."""
+    score, _reasons, market_value, _breakdown = score_listing(listing)
+    offer = suggest_offer(listing, market_value)
+    return _base_fields(listing, score, market_value, offer)
+
+
+def listing_detail(listing):
+    """The full vehicle intelligence report."""
+    score, reasons, market_value, breakdown = score_listing(listing)
+    offer = suggest_offer(listing, market_value)
+    generation = listing.generation
+    model = generation.model
+    make = model.make
+
+    detail = _base_fields(listing, score, market_value, offer)
+    detail["score_reasons"] = reasons
+    detail["value_breakdown"] = breakdown
+
+    detail["vehicle_summary"] = {
+        "engine": listing.trim.engine_options if listing.trim else None,
+        "fuel_type": listing.fuel_type,
+        "fuel_economy_l_per_100km": generation.fuel_economy_l_per_100km,
+        "drivetrain": generation.drivetrain,
+        "horsepower": generation.base_horsepower,
+        "common_competitors": generation.common_competitors,
+    }
+
+    detail["reliability"] = {
+        "stars": generation.reliability_stars,
+        "expected_annual_maintenance_cost": generation.expected_annual_maintenance_cost,
+        "typical_lifespan_km": generation.typical_lifespan_km,
+        "parts_availability": generation.parts_availability,
+        "insurance_category": generation.insurance_category,
+    }
+
+    known_issues = evaluate_known_issues(listing)
+    maintenance_timeline = build_timeline(listing)
+    red_flags = evaluate_red_flags(listing, market_value)
+
+    comparables, band_applied = find_comparables(listing)
+    comparables_summary = summarize_comparables(listing, comparables, band_applied)
+    confidence = compute_confidence(listing, comparables_summary)
+
+    detail["known_issues"] = known_issues
+    detail["maintenance_timeline"] = maintenance_timeline
+    detail["seller_questions"] = build_seller_questions(listing)
+    detail["negotiation"] = build_negotiation(listing, market_value)
+    detail["red_flags"] = red_flags
+    detail["ownership_cost"] = estimate_ownership_cost(listing)
+
+    detail["mileage_analysis"] = classify_mileage(listing)
+    detail["comparable_listings"] = comparables_summary
+    detail["comparable_vehicles"] = find_comparable_vehicles(generation)
+    detail["confidence"] = confidence
+    detail["verdict"] = build_verdict(listing, score, detail["deal_label"], confidence, known_issues, red_flags)
+    detail["inspection_checklist"] = build_inspection_checklist(listing, known_issues, maintenance_timeline)
+
+    detail["data_sources"] = {
+        section: {"source": source, "label": SOURCE_LABELS[source]} for section, source in DATA_SOURCES.items()
+    }
+
+    return detail

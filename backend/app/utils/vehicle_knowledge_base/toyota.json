@@ -1,0 +1,160 @@
+{
+  "make": "Toyota",
+  "models": [
+    {
+      "name": "Corolla",
+      "generations": [
+        {
+          "label": "12th Gen",
+          "start_year": 2020,
+          "end_year": 2024,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 139,
+          "fuel_economy_l_per_100km": 7.0,
+          "reliability_stars": 4.7,
+          "typical_lifespan_km": 320000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 550,
+          "common_competitors": "Honda Civic, Mazda3, Hyundai Elantra",
+          "base_value": 18500,
+          "reference_mileage_km": 50000,
+          "trims": [
+            {"name": "L", "msrp_adjustment_pct": -0.07, "engine_options": "2.0L I4", "transmission_options": "CVT"},
+            {"name": "SE", "msrp_adjustment_pct": 0.03, "engine_options": "2.0L I4", "transmission_options": "CVT, 6MT"},
+            {"name": "XSE", "msrp_adjustment_pct": 0.14, "engine_options": "2.0L I4", "transmission_options": "CVT"}
+          ],
+          "known_issues": [
+            {"title": "CVT judder at low speed", "description": "Some early production units exhibit a shudder from a stop, related to the CVT's torque converter.", "symptoms": "A shudder or vibration through the drivetrain when pulling away from a stop, most noticeable during gentle acceleration.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1200, "recommendation": "Test drive from a full stop several times, feeling for vibration."},
+            {"title": "Infotainment software freezes", "description": "The touchscreen occasionally freezes and requires a restart.", "symptoms": "The touchscreen becoming unresponsive to taps and staying frozen on one screen until the vehicle is restarted.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Cycle through all infotainment functions during the test drive."},
+            {"title": "Road noise / wind noise at highway speed", "description": "Thinner sound insulation on base trims leads to more cabin noise than competitors.", "symptoms": "Noticeably louder tire and wind noise in the cabin at highway speed compared to similarly priced competitors.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Take the car on a highway stretch to judge cabin noise for yourself."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 65, "estimated_cost_max": 115},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 40, "estimated_cost_max": 80},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 80, "estimated_cost_max": 135},
+            {"name": "Transmission fluid (CVT)", "interval_km": 100000, "estimated_cost_min": 170, "estimated_cost_max": 310},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 300},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 110, "estimated_cost_max": 190}
+          ]
+        },
+        {
+          "label": "11th Gen",
+          "start_year": 2014,
+          "end_year": 2019,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 132,
+          "fuel_economy_l_per_100km": 7.3,
+          "reliability_stars": 4.6,
+          "typical_lifespan_km": 320000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 580,
+          "common_competitors": "Honda Civic, Nissan Sentra, Hyundai Elantra",
+          "base_value": 12500,
+          "reference_mileage_km": 90000,
+          "trims": [
+            {"name": "LE", "msrp_adjustment_pct": -0.05, "engine_options": "1.8L I4", "transmission_options": "CVT"},
+            {"name": "S", "msrp_adjustment_pct": 0.06, "engine_options": "1.8L I4", "transmission_options": "CVT, 6MT"}
+          ],
+          "known_issues": [
+            {"title": "Excessive interior rattles", "description": "Interior trim panels can develop rattles over rough roads as the car ages.", "symptoms": "Rattling or buzzing noises from the dash, door panels, or trunk area over rough or uneven pavement.", "severity": "minor", "typical_mileage_km": 120000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 200, "recommendation": "Drive over a rough road section and listen for rattles from the dash and doors."},
+            {"title": "Water pump wear", "description": "The water pump can start to weep coolant as it approaches the end of its service life.", "symptoms": "A sweet coolant smell or visible coolant residue near the front of the engine, and occasionally a low coolant warning light.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 700, "recommendation": "Check under the car for coolant residue near the front of the engine."},
+            {"title": "Peeling paint clear coat", "description": "Clear coat peeling on the roof and trunk lid is common on cars kept outdoors.", "symptoms": "Visible flaking or peeling clear coat on the roof and trunk lid, especially noticeable in direct sunlight.", "severity": "minor", "typical_mileage_km": 130000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1500, "recommendation": "Inspect the roof and trunk lid in direct sunlight for clear coat peeling."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 40, "estimated_cost_max": 75},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 80, "estimated_cost_max": 130},
+            {"name": "Transmission fluid (CVT)", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 300},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 150, "estimated_cost_max": 290},
+            {"name": "Water pump inspection", "interval_km": 150000, "estimated_cost_min": 80, "estimated_cost_max": 160}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Camry",
+      "generations": [
+        {
+          "label": "8th Gen",
+          "start_year": 2018,
+          "end_year": 2024,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 203,
+          "fuel_economy_l_per_100km": 7.7,
+          "reliability_stars": 4.6,
+          "typical_lifespan_km": 320000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 650,
+          "common_competitors": "Honda Accord, Nissan Altima, Mazda6",
+          "base_value": 23500,
+          "reference_mileage_km": 60000,
+          "trims": [
+            {"name": "LE", "msrp_adjustment_pct": -0.08, "engine_options": "2.5L I4", "transmission_options": "8-speed Automatic"},
+            {"name": "SE", "msrp_adjustment_pct": 0.02, "engine_options": "2.5L I4", "transmission_options": "8-speed Automatic"},
+            {"name": "XSE V6", "msrp_adjustment_pct": 0.22, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Infotainment touchscreen unresponsive", "description": "The touchscreen can become intermittently unresponsive, especially in cold weather.", "symptoms": "The screen ignoring taps or responding with a noticeable delay, most apparent shortly after a cold start.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Test the touchscreen thoroughly, including in cold conditions if possible."},
+            {"title": "Brake rotor warping", "description": "Front brake rotors can warp prematurely, causing a pulsing sensation under braking.", "symptoms": "A pulsing or vibration felt through the brake pedal and steering wheel when braking hard from highway speed.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 250, "estimated_repair_cost_max": 500, "recommendation": "Brake hard from highway speed on the test drive and feel for pulsation."},
+            {"title": "Sunroof rattle", "description": "The sunroof assembly can develop a rattle over bumps as seals wear.", "symptoms": "A rattling noise from overhead when driving over bumps, most noticeable with the sunroof closed.", "severity": "minor", "typical_mileage_km": 100000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Open and close the sunroof and listen for rattling over bumps."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 75, "estimated_cost_max": 135},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 120, "estimated_cost_max": 200}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RAV4",
+      "generations": [
+        {
+          "label": "5th Gen",
+          "start_year": 2019,
+          "end_year": 2024,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 203,
+          "fuel_economy_l_per_100km": 8.0,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Honda CR-V, Mazda CX-5, Nissan Rogue",
+          "base_value": 26500,
+          "reference_mileage_km": 55000,
+          "trims": [
+            {"name": "LE", "msrp_adjustment_pct": -0.08, "engine_options": "2.5L I4", "transmission_options": "8-speed Automatic"},
+            {"name": "XLE", "msrp_adjustment_pct": 0.04, "engine_options": "2.5L I4", "transmission_options": "8-speed Automatic"},
+            {"name": "TRD Off-Road", "msrp_adjustment_pct": 0.2, "engine_options": "2.5L I4", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Excessive road noise", "description": "Factory tires and sound insulation let in more highway noise than rivals.", "symptoms": "Noticeably louder tire and wind noise in the cabin at highway speed compared to similarly priced competitors.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Take the SUV on a highway stretch to judge cabin noise firsthand."},
+            {"title": "Infotainment lag with Apple CarPlay", "description": "Wireless CarPlay can lag or disconnect intermittently on early builds.", "symptoms": "CarPlay dropping the connection mid-drive or lagging noticeably when switching between apps.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Connect a phone and test CarPlay stability during the test drive."},
+            {"title": "Brake pedal soft feel", "description": "Some owners report a spongy brake pedal feel that firms up after a fluid flush.", "symptoms": "The brake pedal feeling soft or sinking slightly further than expected before engaging.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 150, "estimated_repair_cost_max": 300, "recommendation": "Ask when the brake fluid was last flushed."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 80, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD transfer case fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 235}
+          ]
+        }
+      ]
+    }
+  ]
+}

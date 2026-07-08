@@ -1,0 +1,48 @@
+{
+  "make": "BMW",
+  "models": [
+    {
+      "name": "3-Series",
+      "generations": [
+        {
+          "label": "F30",
+          "start_year": 2012,
+          "end_year": 2018,
+          "body_type": "sedan",
+          "drivetrain": "AWD",
+          "base_horsepower": 240,
+          "fuel_economy_l_per_100km": 8.0,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 240000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1400,
+          "common_competitors": "Mercedes-Benz C-Class, Audi A4, Lexus IS",
+          "base_value": 17000,
+          "reference_mileage_km": 80000,
+          "trims": [
+            {"name": "320i", "msrp_adjustment_pct": -0.1, "engine_options": "2.0L Turbo I4", "transmission_options": "8-speed Automatic"},
+            {"name": "328i", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4", "transmission_options": "8-speed Automatic"},
+            {"name": "340i", "msrp_adjustment_pct": 0.22, "engine_options": "3.0L Turbo I6", "transmission_options": "8-speed Automatic, 6MT"}
+          ],
+          "known_issues": [
+            {"title": "Timing chain guide and tensioner failure (N20 engine)", "description": "The N20 2.0L turbo four-cylinder is known for premature wear of plastic timing chain guides and the tensioner, which can allow the chain to skip and, in severe cases, cause catastrophic engine damage.", "symptoms": "A rattling or clattering noise from the front of the engine on cold start-up, sometimes with the check engine light illuminating and a drop in engine power.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 3000, "estimated_repair_cost_max": 6000, "recommendation": "Ask for records showing the updated timing chain components were installed, and listen for a rattle on cold start-up."},
+            {"title": "Oil filter housing gasket and valve cover leaks", "description": "Plastic oil filter housing gaskets and valve cover gaskets degrade with heat cycling and begin seeping oil, often first noticed as a burning smell.", "symptoms": "A faint burning oil smell after driving, along with visible oil residue on the top or front of the engine.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 900, "recommendation": "Check the top and front of the engine for oil residue and ask about recent gasket replacement."},
+            {"title": "Electric water pump failure", "description": "The electric water pump used on N20 and N55 engines has a known failure history, which can leave you stranded with a sudden overheat warning.", "symptoms": "A sudden temperature warning light or overheat message on the instrument cluster, sometimes with no prior symptoms.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 1200, "recommendation": "Ask for water pump replacement history and monitor the temperature gauge closely on the test drive."},
+            {"title": "High-pressure fuel pump failure", "description": "The direct-injection high-pressure fuel pump can fail, causing hard starts, misfires, or a no-start condition.", "symptoms": "Difficulty starting the engine, especially when cold, along with occasional misfires or a complete no-start.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 1500, "recommendation": "Have the car cold-started during your inspection to check for hesitation or difficulty starting."},
+            {"title": "Aging plastic cooling system components", "description": "Coolant expansion tanks, hoses, and connectors are made of plastic that becomes brittle with age and can crack, leading to slow coolant leaks.", "symptoms": "A gradually dropping coolant level with white or crusty residue around hose connections and the expansion tank.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 800, "recommendation": "Check the coolant reservoir level and look for white residue around hose connections."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 140, "estimated_cost_max": 220},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 260, "estimated_cost_max": 420},
+            {"name": "Brake fluid flush", "interval_km": 24000, "estimated_cost_min": 130, "estimated_cost_max": 210},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 75, "estimated_cost_max": 135},
+            {"name": "Transmission fluid (8-speed automatic)", "interval_km": 100000, "estimated_cost_min": 260, "estimated_cost_max": 450},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 280},
+            {"name": "Timing chain inspection", "interval_km": 100000, "estimated_cost_min": 150, "estimated_cost_max": 280}
+          ]
+        }
+      ]
+    }
+  ]
+}

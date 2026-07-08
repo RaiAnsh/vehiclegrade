@@ -1,0 +1,89 @@
+{
+  "make": "Ford",
+  "models": [
+    {
+      "name": "F-150",
+      "generations": [
+        {
+          "label": "13th Gen",
+          "start_year": 2015,
+          "end_year": 2020,
+          "body_type": "truck",
+          "drivetrain": "4WD",
+          "base_horsepower": 282,
+          "fuel_economy_l_per_100km": 12.8,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 320000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Chevrolet Silverado, Ram 1500, Toyota Tundra",
+          "base_value": 27000,
+          "reference_mileage_km": 90000,
+          "trims": [
+            {"name": "XL", "msrp_adjustment_pct": -0.08, "engine_options": "3.3L V6, 3.5L V6", "transmission_options": "6-speed Automatic, 10-speed Automatic"},
+            {"name": "XLT", "msrp_adjustment_pct": 0.02, "engine_options": "2.7L EcoBoost V6, 5.0L V8", "transmission_options": "6-speed Automatic, 10-speed Automatic"},
+            {"name": "Lariat", "msrp_adjustment_pct": 0.18, "engine_options": "3.5L EcoBoost V6, 5.0L V8", "transmission_options": "10-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "EcoBoost intake timing chain / internal water pump failure", "description": "On 2.7L and 3.5L EcoBoost engines, the water pump is driven off the timing chain inside the engine, and a failing pump or stretched chain can dump coolant into the oil, requiring a full timing cover teardown.", "symptoms": "A milky or foamy tint on the oil dipstick, low coolant level with no visible external leak, and sometimes a rattling timing chain noise on cold start.", "severity": "severe", "typical_mileage_km": 120000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 4500, "recommendation": "Pull the oil dipstick and check for a milky or foamy tint before buying, and ask for recent oil analysis on EcoBoost-equipped trucks."},
+            {"title": "Aluminum body panel repair cost", "description": "The aluminum body and bed are lighter and more corrosion resistant, but even minor collision damage often requires specialized aluminum repair equipment, driving up body shop costs.", "symptoms": "Visible dents, creases, or mismatched paint on body panels, and unusually high repair estimates for what looks like minor damage.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 3000, "recommendation": "Get a body shop quote before buying if there is any visible panel damage or prior repair work."},
+            {"title": "10-speed transmission shudder and harsh shifts", "description": "Trucks built from 2017 onward with the 10-speed automatic can develop a shudder in 3rd-4th gear or harsh 1-2 shifts as the fluid and clutch packs age.", "symptoms": "A shudder or vibration felt during 3rd-4th gear cruising, or an abrupt clunk when shifting from 1st to 2nd gear from a stop.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 2000, "recommendation": "Test drive through a full range of city speeds and feel for shudder or hard shifts, especially from a stop."},
+            {"title": "Power door lock actuator and door handle failures", "description": "Door lock actuators and exterior handle mechanisms can wear out or freeze, especially on trucks that see winter road salt.", "symptoms": "A door that won't lock or unlock with the key fob, a handle that feels loose or sticks, or a clicking noise from inside the door when locking.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 200, "estimated_repair_cost_max": 500, "recommendation": "Cycle every door lock and handle, including the tailgate, before buying."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Transmission fluid (10-speed)", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 380},
+            {"name": "Transfer case fluid (4WD)", "interval_km": 80000, "estimated_cost_min": 150, "estimated_cost_max": 250},
+            {"name": "Spark plugs", "interval_km": 160000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 140, "estimated_cost_max": 220}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Escape",
+      "generations": [
+        {
+          "label": "4th Gen",
+          "start_year": 2020,
+          "end_year": 2024,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 181,
+          "fuel_economy_l_per_100km": 8.5,
+          "reliability_stars": 3.8,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Honda CR-V, Toyota RAV4, Nissan Rogue",
+          "base_value": 24000,
+          "reference_mileage_km": 50000,
+          "trims": [
+            {"name": "S", "msrp_adjustment_pct": -0.08, "engine_options": "1.5L EcoBoost I3", "transmission_options": "8-speed Automatic"},
+            {"name": "SE", "msrp_adjustment_pct": 0.0, "engine_options": "1.5L EcoBoost I3, 2.0L EcoBoost I4", "transmission_options": "8-speed Automatic"},
+            {"name": "Titanium", "msrp_adjustment_pct": 0.15, "engine_options": "2.0L EcoBoost I4", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "1.5L EcoBoost engine fire recall", "description": "Certain 2020 model-year Escapes with the 1.5L EcoBoost engine were subject to a Ford recall for cracked engine blocks that could leak oil onto hot components and ignite.", "symptoms": "A burning oil smell, visible smoke from under the hood, or an illuminated check engine light alongside unusual oil consumption.", "severity": "severe", "typical_mileage_km": 20000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Confirm the recall was completed by checking the VIN on Ford's recall lookup before buying a 2020 model."},
+            {"title": "8-speed automatic transmission shudder", "description": "Some early-production units exhibit a shudder or flare during light-throttle upshifts, most noticeable around town.", "symptoms": "A shudder or momentary flare in engine RPM during gentle upshifts at low speed, most noticeable pulling away from a stop.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1500, "recommendation": "Test drive in stop-and-go traffic and feel for hesitation or shudder during gentle acceleration."},
+            {"title": "Power liftgate malfunction", "description": "The power liftgate motor or latch can fail to open or close fully, sometimes triggering a fault warning.", "symptoms": "The liftgate stalling partway open or closed, failing to respond to the fob button, or a liftgate fault message on the dash.", "severity": "minor", "typical_mileage_km": 50000, "estimated_repair_cost_min": 200, "estimated_repair_cost_max": 600, "recommendation": "Operate the power liftgate several times with the key fob and interior button to confirm smooth operation."},
+            {"title": "SYNC infotainment glitches", "description": "The SYNC 3 touchscreen can freeze, lose Bluetooth pairing, or reboot unexpectedly, usually resolved with a software update.", "symptoms": "The touchscreen freezing mid-use, Bluetooth audio cutting out, or the whole infotainment system rebooting on its own.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Pair a phone and cycle through navigation and audio screens to confirm responsiveness."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 80, "estimated_cost_max": 145},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 160},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 350},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 130, "estimated_cost_max": 210},
+            {"name": "AWD power transfer unit fluid", "interval_km": 90000, "estimated_cost_min": 150, "estimated_cost_max": 240}
+          ]
+        }
+      ]
+    }
+  ]
+}

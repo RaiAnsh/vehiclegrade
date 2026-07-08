@@ -1,0 +1,48 @@
+{
+  "make": "Subaru",
+  "models": [
+    {
+      "name": "Outback",
+      "generations": [
+        {
+          "label": "5th Gen",
+          "start_year": 2015,
+          "end_year": 2019,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 175,
+          "fuel_economy_l_per_100km": 8.5,
+          "reliability_stars": 4.1,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Toyota RAV4, Honda CR-V, Jeep Cherokee",
+          "base_value": 19000,
+          "reference_mileage_km": 80000,
+          "trims": [
+            {"name": "2.5i Convenience", "msrp_adjustment_pct": -0.06, "engine_options": "2.5L H4", "transmission_options": "CVT"},
+            {"name": "2.5i Limited", "msrp_adjustment_pct": 0.08, "engine_options": "2.5L H4", "transmission_options": "CVT"},
+            {"name": "3.6R Premium", "msrp_adjustment_pct": 0.18, "engine_options": "3.6L H6", "transmission_options": "CVT"}
+          ],
+          "known_issues": [
+            {"title": "CVT (Lineartronic) shudder or failure", "description": "The Lineartronic CVT can develop a shudder under light acceleration and, in more serious cases, fail outright, an issue significant enough that Subaru extended CVT warranty coverage and faced a related class action.", "symptoms": "A shudder or vibration during light acceleration, occasional whining under load, and in severe cases a total loss of forward drive.", "severity": "severe", "typical_mileage_km": 110000, "estimated_repair_cost_min": 3000, "estimated_repair_cost_max": 5500, "recommendation": "Ask if the CVT warranty extension applies to this VIN and test drive at steady highway cruise, feeling for shudder or hesitation."},
+            {"title": "External head gasket coolant seep", "description": "The 2.5L flat-four can develop a slow external coolant seep at the head gasket as it ages, usually visible as residue on the lower engine block.", "symptoms": "A sweet coolant smell and a slowly dropping coolant level, with dried residue visible on the lower sides of the engine block.", "severity": "moderate", "typical_mileage_km": 140000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1200, "recommendation": "Check coolant level and look underneath the engine for dried coolant residue or a sweet smell."},
+            {"title": "Windshield cracking from minor road debris", "description": "The windshield glass on this generation is widely reported to crack or chip more easily than average from small stones, sometimes without an obvious impact point.", "symptoms": "Chips or hairline cracks in the windshield with no obvious corresponding impact damage.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 900, "recommendation": "Inspect the windshield closely for chips or cracks and ask about replacement history and whether OEM glass was used."},
+            {"title": "Parasitic battery drain", "description": "Some vehicles develop a parasitic electrical draw that drains the battery overnight, often traced to the infotainment or keyless entry module.", "symptoms": "A dead or weak battery after the car sits for a few days, sometimes requiring a jump start even though the battery itself tests fine.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Ask if the vehicle has needed a jump start recently or sat unused for more than a week."},
+            {"title": "Oil consumption on the 2.5L engine", "description": "Some 2.5L engines consume oil above normal factory specification between changes.", "symptoms": "A dipstick reading noticeably lower than expected between oil changes, with no visible leaks underneath.", "severity": "minor", "typical_mileage_km": 100000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 800, "recommendation": "Ask for oil consumption and top-up history, and check the dipstick before a test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 75, "estimated_cost_max": 135},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "CVT fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD rear differential fluid", "interval_km": 60000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    }
+  ]
+}

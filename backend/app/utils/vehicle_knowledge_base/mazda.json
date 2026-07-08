@@ -1,0 +1,88 @@
+{
+  "make": "Mazda",
+  "models": [
+    {
+      "name": "Mazda3",
+      "generations": [
+        {
+          "label": "4th Gen",
+          "start_year": 2019,
+          "end_year": 2024,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 186,
+          "fuel_economy_l_per_100km": 7.8,
+          "reliability_stars": 4.4,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 600,
+          "common_competitors": "Honda Civic, Toyota Corolla, Volkswagen Jetta",
+          "base_value": 19500,
+          "reference_mileage_km": 50000,
+          "trims": [
+            {"name": "GX", "msrp_adjustment_pct": -0.07, "engine_options": "2.0L SkyActiv-G", "transmission_options": "6-speed Automatic"},
+            {"name": "GS", "msrp_adjustment_pct": 0.03, "engine_options": "2.5L SkyActiv-G", "transmission_options": "6-speed Automatic, 6MT"},
+            {"name": "GT Turbo", "msrp_adjustment_pct": 0.16, "engine_options": "2.5L SkyActiv-G Turbo", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Carbon buildup on intake valves", "description": "Like most direct-injection engines, the SkyActiv-G 2.5L can accumulate carbon on the intake valves over time, leading to a rough idle and reduced throttle response.", "symptoms": "A rough or uneven idle, hesitation when accelerating from a stop, and slightly reduced fuel economy.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 800, "recommendation": "Ask about idle quality and whether a walnut-shell intake cleaning has ever been performed."},
+            {"title": "Mazda Connect infotainment freezing", "description": "The infotainment system can freeze or fail to boot, occasionally requiring a full system reset.", "symptoms": "The infotainment display freezing on one screen or failing to boot at startup, sometimes requiring the ignition to be cycled to recover.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Cycle through navigation, audio, and phone pairing screens using the console dial during the test drive."},
+            {"title": "Clutch chatter on manual transmission models", "description": "6MT-equipped cars can develop clutch chatter or grabbiness from a stop as the clutch disc wears.", "symptoms": "A juddering or chattering sensation through the pedal and chassis when releasing the clutch from a stop.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1000, "recommendation": "Take several stop-and-go launches on the test drive to check for chatter or slipping."},
+            {"title": "AWD rear differential clutch pack wear", "description": "On i-Activ AWD models, the rear differential clutch pack can wear prematurely, reducing torque transfer in slippery conditions.", "symptoms": "Reduced traction or a slight slip-and-grab feeling when accelerating on wet, snowy, or gravel surfaces.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1400, "recommendation": "Ask about AWD fluid change history and test the car on a wet or gravel surface if possible."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 70, "estimated_cost_max": 130},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 85},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 140},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 110, "estimated_cost_max": 190}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CX-5",
+      "generations": [
+        {
+          "label": "2nd Gen",
+          "start_year": 2017,
+          "end_year": 2021,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 187,
+          "fuel_economy_l_per_100km": 8.7,
+          "reliability_stars": 4.3,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Honda CR-V, Toyota RAV4, Nissan Rogue",
+          "base_value": 21000,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "GX", "msrp_adjustment_pct": -0.08, "engine_options": "2.5L SkyActiv-G", "transmission_options": "6-speed Automatic"},
+            {"name": "GS", "msrp_adjustment_pct": 0.02, "engine_options": "2.5L SkyActiv-G", "transmission_options": "6-speed Automatic"},
+            {"name": "Signature Turbo", "msrp_adjustment_pct": 0.2, "engine_options": "2.5L SkyActiv-G Turbo", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Fuel dilution in oil on turbo models", "description": "The 2.5L Turbo engine, offered from 2019 onward, can experience gasoline diluting the engine oil on short, cold-weather trips.", "symptoms": "A gasoline smell on the oil dipstick and an oil level that appears to rise slightly between changes.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Ask about oil change intervals and check the oil for a gasoline smell on the dipstick."},
+            {"title": "Carbon buildup on intake valves", "description": "Direct injection leads to carbon accumulation on the intake valves over time, causing a rough idle and hesitation.", "symptoms": "A rough or uneven idle and a slight hesitation or flat spot when accelerating from low RPM.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 800, "recommendation": "Check idle smoothness at a stop and ask about any intake cleaning service history."},
+            {"title": "Infotainment lag and Bluetooth dropouts", "description": "The Mazda Connect system can lag when switching between screens and occasionally drops Bluetooth phone connections.", "symptoms": "A delay when switching infotainment screens and Bluetooth calls or audio cutting out mid-drive.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Pair a phone and test Bluetooth audio and calls during the test drive."},
+            {"title": "Brake pedal soft or spongy feel", "description": "Some owners report a spongy brake pedal that firms back up after a fluid flush and bleed.", "symptoms": "The brake pedal feeling soft or requiring extra travel before the brakes engage firmly.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 150, "estimated_repair_cost_max": 300, "recommendation": "Ask when the brake fluid was last flushed and test firm braking on the drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 80, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD rear differential fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    }
+  ]
+}

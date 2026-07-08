@@ -1,0 +1,162 @@
+{
+  "make": "Honda",
+  "models": [
+    {
+      "name": "Civic",
+      "generations": [
+        {
+          "label": "10th Gen",
+          "start_year": 2016,
+          "end_year": 2021,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 158,
+          "fuel_economy_l_per_100km": 7.4,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 600,
+          "common_competitors": "Toyota Corolla, Mazda3, Hyundai Elantra",
+          "base_value": 16500,
+          "reference_mileage_km": 60000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.06, "engine_options": "2.0L I4", "transmission_options": "CVT"},
+            {"name": "EX", "msrp_adjustment_pct": 0.0, "engine_options": "1.5L Turbo", "transmission_options": "CVT"},
+            {"name": "Si", "msrp_adjustment_pct": 0.15, "engine_options": "1.5L Turbo", "transmission_options": "6MT"}
+          ],
+          "known_issues": [
+            {"title": "AC compressor failure", "description": "The AC compressor clutch can wear prematurely, leading to loss of cooling and a chirping noise on startup.", "symptoms": "AC blows warm air, a chirping or squealing noise from the compressor on startup, and the AC clutch not engaging when the AC button is pressed.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1100, "recommendation": "Test AC thoroughly on a hot day before buying."},
+            {"title": "Infotainment screen freezing", "description": "The touchscreen unit can freeze or reboot randomly, requiring a software update or unit replacement.", "symptoms": "The touchscreen goes black or freezes mid-use and occasionally reboots on its own, temporarily disabling the backup camera and radio.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Cycle through radio, backup camera, and Bluetooth to confirm the screen is responsive."},
+            {"title": "CVT shudder", "description": "Some CVT-equipped cars develop a shudder under light acceleration as the transmission ages.", "symptoms": "A vibration or shudder felt through the pedal and floor during light throttle acceleration, most noticeable between 30 and 50 km/h.", "severity": "moderate", "typical_mileage_km": 180000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 3500, "recommendation": "Test drive at highway speed and light throttle, feeling for vibration."},
+            {"title": "Paint chipping on hood", "description": "Factory clear coat on early builds is prone to chipping on the hood and front fenders.", "symptoms": "Small chips or flaking in the clear coat on the hood and front fenders, visible as dull or rough patches in direct sunlight.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 900, "recommendation": "Inspect the hood and fenders closely in direct sunlight."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 70, "estimated_cost_max": 130},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 85},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 140},
+            {"name": "Transmission fluid (CVT)", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 110, "estimated_cost_max": 190},
+            {"name": "Timing chain inspection", "interval_km": 160000, "estimated_cost_min": 120, "estimated_cost_max": 220}
+          ]
+        },
+        {
+          "label": "9th Gen",
+          "start_year": 2012,
+          "end_year": 2015,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 143,
+          "fuel_economy_l_per_100km": 7.8,
+          "reliability_stars": 4.3,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 650,
+          "common_competitors": "Toyota Corolla, Mazda3, Ford Focus",
+          "base_value": 11000,
+          "reference_mileage_km": 90000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.05, "engine_options": "1.8L I4", "transmission_options": "5-speed Automatic"},
+            {"name": "EX-L", "msrp_adjustment_pct": 0.08, "engine_options": "1.8L I4", "transmission_options": "5-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Excessive oil consumption", "description": "Some engines burn oil faster than normal between changes, especially on highway-heavy cars.", "symptoms": "The low oil warning light appearing between scheduled changes, or a noticeably low dipstick reading despite no visible leaks.", "severity": "moderate", "typical_mileage_km": 140000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2000, "recommendation": "Ask for oil consumption history and check the dipstick before a long test drive."},
+            {"title": "Automatic transmission hesitation", "description": "A brief hesitation or shudder can occur during low-speed shifts.", "symptoms": "A momentary pause or jerk when shifting between 1st and 2nd gear at low speed, most noticeable in stop-and-go traffic.", "severity": "minor", "typical_mileage_km": 160000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1500, "recommendation": "Test drive through stop-and-go conditions, not just highway."},
+            {"title": "Rear suspension wear", "description": "Rear trailing arm bushings wear out, causing a knocking noise over bumps.", "symptoms": "A knocking or clunking noise from the rear of the car over bumps and potholes, sometimes with slightly looser rear-end handling.", "severity": "minor", "typical_mileage_km": 170000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 700, "recommendation": "Listen for clunks over speed bumps during the test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 65, "estimated_cost_max": 120},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 40, "estimated_cost_max": 80},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 80, "estimated_cost_max": 135},
+            {"name": "Automatic transmission fluid", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 300},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 300},
+            {"name": "Timing belt / water pump", "interval_km": 160000, "estimated_cost_min": 650, "estimated_cost_max": 1100}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Accord",
+      "generations": [
+        {
+          "label": "10th Gen",
+          "start_year": 2018,
+          "end_year": 2022,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 192,
+          "fuel_economy_l_per_100km": 7.6,
+          "reliability_stars": 4.4,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Toyota Camry, Mazda6, Nissan Altima",
+          "base_value": 21500,
+          "reference_mileage_km": 60000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.08, "engine_options": "1.5L Turbo", "transmission_options": "CVT"},
+            {"name": "Sport", "msrp_adjustment_pct": 0.05, "engine_options": "1.5L Turbo", "transmission_options": "CVT, 6MT"},
+            {"name": "Touring", "msrp_adjustment_pct": 0.2, "engine_options": "2.0L Turbo", "transmission_options": "10-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Fuel dilution in oil", "description": "Cold climates and short trips can cause gasoline to dilute engine oil on 1.5T engines, especially early production years.", "symptoms": "A gasoline smell on the dipstick, an oil level reading higher than expected, or a fuel dilution warning message on the dash.", "severity": "moderate", "typical_mileage_km": 50000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Ask about oil change intervals and whether the dealer performed the fuel dilution reflash update."},
+            {"title": "Infotainment lag", "description": "The touchscreen can be slow to respond, particularly with Apple CarPlay connected.", "symptoms": "Noticeable delay between touching the screen and the display responding, most apparent when CarPlay is active.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 350, "recommendation": "Connect a phone via CarPlay during the test drive to check responsiveness."},
+            {"title": "Road noise from tires", "description": "Factory all-season tires wear unevenly and become noisy, often mistaken for a mechanical issue.", "symptoms": "A humming or droning noise at highway speed that rises and falls with road surface, and visible uneven tread wear on inspection.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 900, "recommendation": "Check tread depth and wear pattern on all four tires."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 80, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid (CVT)", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 120, "estimated_cost_max": 200}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CR-V",
+      "generations": [
+        {
+          "label": "5th Gen",
+          "start_year": 2017,
+          "end_year": 2022,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 190,
+          "fuel_economy_l_per_100km": 8.1,
+          "reliability_stars": 4.3,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Toyota RAV4, Mazda CX-5, Nissan Rogue",
+          "base_value": 22500,
+          "reference_mileage_km": 65000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.07, "engine_options": "2.4L I4", "transmission_options": "CVT"},
+            {"name": "EX", "msrp_adjustment_pct": 0.05, "engine_options": "1.5L Turbo", "transmission_options": "CVT"},
+            {"name": "Touring", "msrp_adjustment_pct": 0.18, "engine_options": "1.5L Turbo", "transmission_options": "CVT"}
+          ],
+          "known_issues": [
+            {"title": "Fuel dilution in oil", "description": "The 1.5L turbo engine is prone to gasoline diluting the oil in cold climates, especially on short trips.", "symptoms": "A gasoline odor on the dipstick, an oil level that appears to rise between changes, or a fuel dilution alert on the instrument cluster.", "severity": "moderate", "typical_mileage_km": 55000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 300, "recommendation": "Ask if the ECU fuel dilution update was performed and check oil condition on the dipstick."},
+            {"title": "AC condenser corrosion", "description": "Road salt exposure can corrode the AC condenser, causing refrigerant leaks.", "symptoms": "AC that cools poorly or stops cooling altogether, sometimes with visible oily residue on the condenser fins at the front of the vehicle.", "severity": "moderate", "typical_mileage_km": 130000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1000, "recommendation": "Run the AC on max cold for several minutes to confirm it holds temperature."},
+            {"title": "Infotainment screen glitches", "description": "The touchscreen can freeze or show a black screen intermittently.", "symptoms": "The screen going blank or unresponsive at random, sometimes taking the backup camera feed down with it.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Test the backup camera and touchscreen response during the test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 80, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid (CVT)", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD rear differential fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    }
+  ]
+}
