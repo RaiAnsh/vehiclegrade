@@ -15,6 +15,16 @@ _llm_cache = None
 _llm_cache_built = False
 
 
+# Maps our short provider name (also used as the "<PROVIDER>_API_KEY" env
+# var prefix) to the model_provider string LangChain's init_chat_model
+# actually expects - these differ for Google (e.g. "google" -> "google_genai").
+LANGCHAIN_PROVIDER_NAMES = {
+    "anthropic": "anthropic",
+    "openai": "openai",
+    "google": "google_genai",
+}
+
+
 def _provider_and_key():
     provider = os.environ.get("LLM_PROVIDER", "").strip().lower()
 
@@ -27,6 +37,8 @@ def _provider_and_key():
         return "anthropic", os.environ["ANTHROPIC_API_KEY"]
     if os.environ.get("OPENAI_API_KEY"):
         return "openai", os.environ["OPENAI_API_KEY"]
+    if os.environ.get("GOOGLE_API_KEY"):
+        return "google", os.environ["GOOGLE_API_KEY"]
 
     return None, None
 
@@ -48,13 +60,15 @@ def get_llm():
     default_models = {
         "anthropic": "claude-sonnet-4-6",
         "openai": "gpt-4o-mini",
+        "google": "gemini-2.0-flash",
     }
     model = os.environ.get("LLM_MODEL", default_models.get(provider))
 
     try:
         from langchain.chat_models import init_chat_model
 
-        _llm_cache = init_chat_model(model, model_provider=provider, api_key=api_key, timeout=15)
+        model_provider = LANGCHAIN_PROVIDER_NAMES.get(provider, provider)
+        _llm_cache = init_chat_model(model, model_provider=model_provider, api_key=api_key, timeout=15)
     except Exception:
         # Any failure to construct the client (bad model name, missing
         # optional dependency, etc.) just means the AI layer stays off.
