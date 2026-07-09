@@ -15,7 +15,7 @@ Everything below is copy-paste steps for the parts that only exist inside each d
    ```
    FLASK_ENV=production
    FLASK_DEBUG=false
-   ALLOWED_ORIGINS=https://vehiclegrade.com,https://www.vehiclegrade.com
+   ALLOWED_ORIGINS=https://vehiclegrade.ca,https://www.vehiclegrade.ca
    ```
    Leave `LLM_PROVIDER` / `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` unset until you actually have a key — the app works fully without them.
 5. **Deploy**. Railway detects `backend/Procfile` and runs `gunicorn wsgi:app`. It sets `PORT` itself; `run.py`/`wsgi.py` already read it.
@@ -24,7 +24,7 @@ Everything below is copy-paste steps for the parts that only exist inside each d
    flask --app run.py seed-db
    ```
    This populates the fresh Postgres instance with all 17 makes' reference data + the seeded listing sample.
-7. **Get the public URL**: Railway assigns a `*.up.railway.app` domain automatically — note it, you'll point `api.` at it in step 3 below. In Settings → Networking, add a **Custom Domain**: `api.vehiclegrade.com` (use your actual domain). Railway will show you a CNAME target.
+7. **Get the public URL**: Railway assigns a `*.up.railway.app` domain automatically — note it, you'll point `api.` at it in step 3 below. In Settings → Networking, add a **Custom Domain**: `api.vehiclegrade.ca`. Railway will show you a CNAME target.
 
 ## 2. Vercel — frontend
 
@@ -32,11 +32,11 @@ Everything below is copy-paste steps for the parts that only exist inside each d
 2. **Root Directory**: set to `frontend` (Vercel auto-detects Next.js once this is set — no other config needed).
 3. **Environment Variables**: add
    ```
-   NEXT_PUBLIC_API_URL=https://api.vehiclegrade.com
+   NEXT_PUBLIC_API_URL=https://api.vehiclegrade.ca
    ```
    (Use the Railway `*.up.railway.app` URL here temporarily if DNS isn't live yet, then update it once the domain is pointed.)
 4. **Deploy.**
-5. **Custom domain**: Project → Settings → Domains → add `vehiclegrade.com` and `www.vehiclegrade.com`. Vercel will show the DNS records it needs (see below).
+5. **Custom domain**: Project → Settings → Domains → add `vehiclegrade.ca` and `www.vehiclegrade.ca`. Vercel will show the DNS records it needs (see below).
 
 ## 3. Spaceship — DNS
 
@@ -52,7 +52,7 @@ DNS propagation can take anywhere from a few minutes to a few hours. Vercel/Rail
 
 ## 4. Final step — lock down CORS
 
-Once `vehiclegrade.com` actually resolves, double check `ALLOWED_ORIGINS` on the Railway backend service matches the real domain exactly (including `https://`, no trailing slash), then redeploy the backend service if you changed it.
+Once `vehiclegrade.ca` actually resolves, double check `ALLOWED_ORIGINS` on the Railway backend service matches the real domain exactly (including `https://`, no trailing slash), then redeploy the backend service if you changed it.
 
 ---
 

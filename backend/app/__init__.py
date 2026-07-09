@@ -21,7 +21,7 @@ def create_app(config_class=Config):
     db.init_app(app)
 
     # Comma-separated list of allowed origins, e.g.
-    # "https://vehiclegrade.com,https://www.vehiclegrade.com". Defaults to
+    # "https://vehiclegrade.ca,https://www.vehiclegrade.ca". Defaults to
     # "*" for local dev so the Next.js dev server can call this API without
     # any setup; production deployments must set this explicitly.
     allowed_origins = os.environ.get("ALLOWED_ORIGINS", "*")
