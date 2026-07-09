@@ -30,9 +30,8 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* TODO: replace with your actual VehicleGrade repo URL */}
         <a
-          href="https://github.com"
+          href="https://github.com/RaiAnsh/vehiclegrade"
           target="_blank"
           rel="noreferrer"
           className="rounded-full glass-card px-4 py-2 text-sm transition-colors hover:bg-[var(--surface-hover)]"

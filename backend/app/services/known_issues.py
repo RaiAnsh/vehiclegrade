@@ -17,6 +17,12 @@ STATUS_COPY = {
 
 
 def status_for_issue(mileage_km, typical_mileage_km):
+    # A handful of knowledge-base entries are design quirks rather than
+    # mileage-dependent wear items (e.g. "cramped rear seat"), and are
+    # authored with typical_mileage_km=0 to mean "always applicable." Treat
+    # that as always "common now" instead of dividing by zero.
+    if typical_mileage_km <= 0:
+        return "common_now"
     ratio = mileage_km / typical_mileage_km
     if ratio < 0.6:
         return "not_yet_relevant"
