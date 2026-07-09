@@ -20,7 +20,7 @@ class Listing(db.Model):
     mileage_km = db.Column(db.Integer, nullable=False, index=True)
     price = db.Column(db.Float, nullable=False, index=True)
 
-    transmission = db.Column(db.String(20), nullable=False)  # "Automatic" | "Manual" | "CVT"
+    transmission = db.Column(db.String(50), nullable=False)  # e.g. "Automatic", "Manual", "8-speed Tiptronic Automatic"
     fuel_type = db.Column(db.String(20), nullable=False, default="Gasoline")
     title_status = db.Column(db.String(10), nullable=False, default="clean")
     condition = db.Column(db.String(10), nullable=False, default="good")  # excellent | good | fair | poor
