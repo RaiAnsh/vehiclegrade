@@ -51,8 +51,7 @@ export function Hero() {
           <Link href="/dashboard">
             <Button variant="primary">Try Demo</Button>
           </Link>
-          {/* TODO: replace with your actual VehicleGrade repo URL */}
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a href="https://github.com/RaiAnsh/vehiclegrade" target="_blank" rel="noreferrer">
             <Button variant="secondary">View GitHub</Button>
           </a>
         </motion.div>
