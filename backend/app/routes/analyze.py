@@ -75,6 +75,7 @@ def analyze_listing():
         seller_rating=float(payload["seller_rating"]),
         days_listed=int(payload["days_listed"]),
         description_text=payload.get("description_text"),
+        image_url=payload.get("image_url"),
     )
     listing.generation = generation
     listing.trim = trim

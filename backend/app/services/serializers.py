@@ -68,6 +68,7 @@ def _base_fields(listing, score, market_value, offer):
         "mileage_km": listing.mileage_km,
         "price": listing.price,
         "location": listing.location.city if listing.location else None,
+        "image_url": listing.image_url,
         "transmission": listing.transmission,
         "fuel_type": listing.fuel_type,
         "title_status": listing.title_status,

@@ -32,6 +32,11 @@ class Listing(db.Model):
     # scoring, kept for reference/debugging the paste-parser.
     description_text = db.Column(db.Text, nullable=True)
 
+    # Optional photo URL - either pasted in manually alongside a real listing
+    # (Kijiji/AutoTrader/FB Marketplace/etc.), or left blank. Purely
+    # cosmetic - never used by any scoring or valuation logic.
+    image_url = db.Column(db.String(500), nullable=True)
+
     created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
     # Future-proofs a real scraper: where the listing came from, and a link

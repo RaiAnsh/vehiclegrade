@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -28,7 +29,18 @@ export function ListingCard({ listing, index = 0 }: ListingCardProps) {
         <Card className="cursor-pointer p-5 transition-shadow hover:shadow-[0_0_32px_-8px_var(--accent-soft)]">
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-3">
-              <VehicleGlyph bodyType={listing.body_type} titleStatus={listing.title_status} />
+              {listing.image_url ? (
+                <Image
+                  src={listing.image_url}
+                  alt={`${listing.year} ${listing.make} ${listing.model}`}
+                  width={48}
+                  height={48}
+                  unoptimized
+                  className="h-12 w-12 rounded-lg object-cover"
+                />
+              ) : (
+                <VehicleGlyph bodyType={listing.body_type} titleStatus={listing.title_status} />
+              )}
               <div>
                 <p className="font-medium">
                   {listing.year} {listing.make} {listing.model}

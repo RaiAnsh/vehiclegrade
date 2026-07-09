@@ -92,6 +92,7 @@ export interface ListingSummary {
   mileage_km: number;
   price: number;
   location: string | null;
+  image_url: string | null;
   transmission: string;
   fuel_type: string;
   title_status: TitleStatus;
@@ -293,6 +294,7 @@ export interface AnalyzeInput {
   days_listed: number;
   location?: string;
   description_text?: string;
+  image_url?: string;
 }
 
 export interface ParsedListing {

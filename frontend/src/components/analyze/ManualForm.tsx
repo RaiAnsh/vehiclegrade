@@ -220,6 +220,16 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
       </div>
 
       <div className="mt-5">
+        <label className="mb-1.5 block text-xs text-muted">Image URL (optional)</label>
+        <Input
+          type="url"
+          placeholder="Paste a photo URL from the listing..."
+          value={value.image_url ?? ""}
+          onChange={(e) => update("image_url", e.target.value || undefined)}
+        />
+      </div>
+
+      <div className="mt-5">
         <label className="mb-1.5 block text-xs text-muted">Description (optional)</label>
         <textarea
           className="w-full rounded-xl bg-white/[0.04] border border-white/10 px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50 transition-colors"
