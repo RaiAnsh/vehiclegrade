@@ -1,0 +1,470 @@
+{
+  "make": "Lexus",
+  "models": [
+    {
+      "name": "ES",
+      "generations": [
+        {
+          "label": "7th Gen",
+          "start_year": 2019,
+          "end_year": 2024,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 302,
+          "fuel_economy_l_per_100km": 9.2,
+          "reliability_stars": 4.7,
+          "typical_lifespan_km": 310000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 800,
+          "common_competitors": "Acura TLX, Audi A6, BMW 5 Series, Toyota Avalon",
+          "base_value": 29500,
+          "reference_mileage_km": 60000,
+          "trims": [
+            {"name": "ES 250 AWD", "msrp_adjustment_pct": -0.05, "engine_options": "2.5L I4", "transmission_options": "8-speed Automatic"},
+            {"name": "ES 300h", "msrp_adjustment_pct": 0.02, "engine_options": "2.5L Hybrid", "transmission_options": "e-CVT"},
+            {"name": "ES 350", "msrp_adjustment_pct": 0.0, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "ES 350 F Sport", "msrp_adjustment_pct": 0.13, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Remote Touch interface lag", "description": "The touchpad-based infotainment interface on pre-2022 models can feel laggy and is a common ergonomics complaint rather than a mechanical fault.", "symptoms": "Cursor input on the center screen responding slowly or overshooting menu selections, most noticeable while driving over bumps.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Spend time navigating the infotainment menus during the test drive to judge whether the interface bothers you."},
+            {"title": "Hybrid battery cooling fan noise", "description": "On ES 300h models, the hybrid battery cooling fan intake beneath the rear seat can get clogged with debris, causing the fan to run louder to compensate.", "symptoms": "A whirring or vacuum-like noise from under the rear seat that increases in hot weather or during hard acceleration.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 80, "estimated_repair_cost_max": 250, "recommendation": "On hybrid trims, ask whether the battery cooling filter has been cleaned and listen for fan noise with the rear windows down."},
+            {"title": "Panoramic glass roof rattle", "description": "The fixed glass roof trim on higher trims can develop a rattle as the felt-lined seals compress over time.", "symptoms": "A light rattling or ticking noise from the headliner area over rough pavement.", "severity": "minor", "typical_mileage_km": 100000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 250, "recommendation": "Drive over rough pavement and listen near the headliner for rattles."},
+            {"title": "Front brake rotor warping", "description": "Front rotors on the heavier V6 trim can warp prematurely under hard braking.", "symptoms": "A pulsing sensation through the brake pedal and steering wheel when braking hard from highway speed.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 600, "recommendation": "Brake firmly from highway speed on the test drive and feel for pulsation."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 110, "estimated_cost_max": 180},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 110, "estimated_cost_max": 180},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 380},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 140, "estimated_cost_max": 230},
+            {"name": "Hybrid battery coolant filter cleaning (300h)", "interval_km": 60000, "estimated_cost_min": 40, "estimated_cost_max": 100}
+          ]
+        },
+        {
+          "label": "6th Gen",
+          "start_year": 2013,
+          "end_year": 2018,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 268,
+          "fuel_economy_l_per_100km": 9.8,
+          "reliability_stars": 4.6,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Acura TLX, Infiniti Q50, Toyota Avalon",
+          "base_value": 18500,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {"name": "ES 300h", "msrp_adjustment_pct": 0.01, "engine_options": "2.5L Hybrid", "transmission_options": "e-CVT"},
+            {"name": "ES 350", "msrp_adjustment_pct": 0.0, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "ES 350 Ultra Luxury", "msrp_adjustment_pct": 0.1, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Oil cooler O-ring seep", "description": "The 3.5L V6 (2GR-FE) oil-to-water cooler O-ring can harden and seep, allowing a small amount of oil and coolant to mix if left unaddressed.", "symptoms": "A milky discoloration on the oil filler cap or dipstick, or a slow coolant level drop with no visible external leak.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 700, "recommendation": "Pull the oil filler cap and dipstick to check for a milky residue, and ask for recent coolant level history."},
+            {"title": "Remote Touch controller sensitivity", "description": "The early mouse-style Remote Touch controller can feel overly sensitive or imprecise, a widely reported usability complaint rather than a failure.", "symptoms": "The on-screen cursor overshooting or jumping past the intended menu item when using the console controller.", "severity": "minor", "typical_mileage_km": 50000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Try operating the navigation and audio menus while stationary to judge the controller for yourself."},
+            {"title": "Dashboard trim becoming tacky", "description": "In hot, sun-exposed climates the soft-touch dash coating on this generation can turn sticky as the coating breaks down with UV exposure and heat.", "symptoms": "A tacky or slightly gummy feel to the dashboard and door armrests, sometimes with a faint chemical smell in a hot, closed cabin.", "severity": "minor", "typical_mileage_km": 130000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 900, "recommendation": "Touch the dash top and door armrests firmly to check for a sticky residue, especially on cars from hot climates."},
+            {"title": "Water pump weeping", "description": "The water pump can begin to weep coolant as it approaches the end of its service life.", "symptoms": "A sweet coolant smell near the front of the engine or a slowly dropping coolant level with an occasional low-coolant warning.", "severity": "moderate", "typical_mileage_km": 170000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 750, "recommendation": "Check underneath the front of the engine for coolant staining or crust."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 350},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 370},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 130, "estimated_cost_max": 220},
+            {"name": "Oil cooler O-ring inspection", "interval_km": 130000, "estimated_cost_min": 0, "estimated_cost_max": 150}
+          ]
+        },
+        {
+          "label": "5th Gen",
+          "start_year": 2007,
+          "end_year": 2012,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 272,
+          "fuel_economy_l_per_100km": 10.3,
+          "reliability_stars": 4.6,
+          "typical_lifespan_km": 290000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Acura TL, Infiniti M, Toyota Avalon",
+          "base_value": 11500,
+          "reference_mileage_km": 140000,
+          "trims": [
+            {"name": "ES 350", "msrp_adjustment_pct": -0.03, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "ES 350 Premium", "msrp_adjustment_pct": 0.04, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "ES 350 Ultra Luxury", "msrp_adjustment_pct": 0.09, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Dashboard becoming sticky", "description": "This generation is well known in hot climates for a soft-touch dash coating that degrades and turns tacky with prolonged sun and heat exposure.", "symptoms": "A gummy or tacky feel across the dashboard top, door panels, and center console, occasionally with a faint off-gassing smell in a hot cabin.", "severity": "minor", "typical_mileage_km": 120000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1200, "recommendation": "Press firmly on the dash top and console in direct sunlight to check for a sticky residue before buying."},
+            {"title": "Oil cooler O-ring seep", "description": "The 3.5L V6 (2GR-FE) oil-to-water cooler O-ring can harden with age and allow a small oil or coolant seep.", "symptoms": "A milky film on the dipstick or oil cap, or a gradual coolant loss with no visible puddle underneath.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 700, "recommendation": "Check the dipstick and oil cap for a milky discoloration and ask about recent coolant top-ups."},
+            {"title": "Water pump weeping", "description": "The water pump can begin to weep coolant as its seal wears out over time.", "symptoms": "A sweet coolant smell near the front of the engine or a slowly dropping coolant level.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 750, "recommendation": "Inspect underneath the front of the engine for coolant staining."},
+            {"title": "Front door speaker rattle", "description": "Factory door speakers can develop a buzz or rattle at higher volumes as the speaker cones age.", "symptoms": "A buzzing or rattling noise from the front doors when the stereo volume is raised, especially with bass-heavy audio.", "severity": "minor", "typical_mileage_km": 130000, "estimated_repair_cost_min": 150, "estimated_repair_cost_max": 400, "recommendation": "Play music at moderate-to-high volume and listen closely near each door."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 160},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 350},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 125, "estimated_cost_max": 210},
+            {"name": "Water pump inspection", "interval_km": 150000, "estimated_cost_min": 0, "estimated_cost_max": 150}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RX",
+      "generations": [
+        {
+          "label": "4th Gen",
+          "start_year": 2016,
+          "end_year": 2022,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 295,
+          "fuel_economy_l_per_100km": 10.1,
+          "reliability_stars": 4.6,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 850,
+          "common_competitors": "Acura MDX, Audi Q5, BMW X3, Infiniti QX60",
+          "base_value": 34500,
+          "reference_mileage_km": 60000,
+          "trims": [
+            {"name": "RX 350", "msrp_adjustment_pct": -0.02, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "RX 350 F Sport", "msrp_adjustment_pct": 0.1, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "RX 450h", "msrp_adjustment_pct": 0.12, "engine_options": "3.5L V6 Hybrid", "transmission_options": "e-CVT"},
+            {"name": "RX 350L", "msrp_adjustment_pct": 0.08, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Remote Touch / touchpad usability complaints", "description": "The center console touchpad interface on this generation is widely reported as fiddly to use while driving compared to a simple touchscreen.", "symptoms": "Difficulty accurately selecting menu items on the center display while the vehicle is moving, sometimes requiring several attempts.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Spend a few minutes operating the navigation and climate menus during the test drive to see if the controller suits you."},
+            {"title": "Oil cooler O-ring seep", "description": "The 3.5L V6 (2GR-FKS) shares a similar oil-to-water cooler design to earlier Toyota/Lexus V6 engines, and the O-ring seal can occasionally seep with age.", "symptoms": "A milky discoloration on the dipstick or filler cap, or a slow, unexplained coolant level drop.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 700, "recommendation": "Check the dipstick for milky residue and review coolant top-up history in service records."},
+            {"title": "Hybrid battery cooling fan noise (450h)", "description": "On the RX 450h, the hybrid battery cooling intake beneath the rear seat can collect debris, making the fan run louder than normal.", "symptoms": "A whirring or vacuum-like noise from under the rear seat, most noticeable during hard acceleration or hot weather.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 80, "estimated_repair_cost_max": 250, "recommendation": "On hybrid trims, listen for fan noise under the rear seat and ask if the battery cooling filter has been serviced."},
+            {"title": "Power liftgate motor slow operation", "description": "The power liftgate motor can slow down or stall partway through its cycle as it ages.", "symptoms": "The power liftgate opening or closing more slowly than normal, or stopping partway and needing a second button press.", "severity": "minor", "typical_mileage_km": 110000, "estimated_repair_cost_min": 250, "estimated_repair_cost_max": 600, "recommendation": "Cycle the power liftgate several times with the key fob to confirm smooth, full-range operation."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 110, "estimated_cost_max": 185},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 110, "estimated_cost_max": 180},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 380},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 140, "estimated_cost_max": 230},
+            {"name": "AWD transfer case / rear diff fluid", "interval_km": 90000, "estimated_cost_min": 150, "estimated_cost_max": 250}
+          ]
+        },
+        {
+          "label": "3rd Gen",
+          "start_year": 2010,
+          "end_year": 2015,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 275,
+          "fuel_economy_l_per_100km": 10.6,
+          "reliability_stars": 4.6,
+          "typical_lifespan_km": 290000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 800,
+          "common_competitors": "Acura MDX, Infiniti FX, Mercedes-Benz GLK",
+          "base_value": 20500,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {"name": "RX 350", "msrp_adjustment_pct": -0.02, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "RX 350 F Sport", "msrp_adjustment_pct": 0.09, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "RX 450h", "msrp_adjustment_pct": 0.13, "engine_options": "3.5L V6 Hybrid", "transmission_options": "e-CVT"}
+          ],
+          "known_issues": [
+            {"title": "Oil cooler O-ring seep", "description": "The 3.5L V6 (2GR-FE) oil-to-water cooler O-ring can harden with age, allowing a small amount of oil or coolant to seep.", "symptoms": "A milky discoloration on the dipstick or filler cap, or a slow, unexplained coolant loss with no visible external puddle.", "severity": "moderate", "typical_mileage_km": 155000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 700, "recommendation": "Check the dipstick and filler cap for milky residue and ask about coolant top-up history."},
+            {"title": "Dashboard trim becoming tacky", "description": "Cars from hot, sun-heavy climates can develop a sticky soft-touch dash coating as the material breaks down with UV and heat exposure over time.", "symptoms": "A gummy or tacky feel to the dashboard top and door armrests, sometimes with a faint chemical odor in a closed, hot cabin.", "severity": "minor", "typical_mileage_km": 130000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1100, "recommendation": "Press on the dash top and armrests in direct sunlight to check for stickiness before buying."},
+            {"title": "Water pump weeping", "description": "The water pump seal can start to weep coolant as it nears the end of its service life.", "symptoms": "A sweet coolant smell or coolant staining near the front of the engine, occasionally paired with a low coolant warning.", "severity": "moderate", "typical_mileage_km": 165000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 750, "recommendation": "Inspect underneath the front of the engine for coolant residue or crust."},
+            {"title": "Remote Touch controller precision complaints", "description": "The mouse-style Remote Touch console controller is a commonly cited ergonomics annoyance rather than a mechanical defect on this generation.", "symptoms": "The on-screen cursor jumping past the intended selection or feeling imprecise when operating the infotainment menus.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Operate the navigation and audio menus while parked to judge whether the controller works for you."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 350},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 370},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 130, "estimated_cost_max": 220},
+            {"name": "AWD transfer case / rear diff fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 240}
+          ]
+        },
+        {
+          "label": "2nd Gen",
+          "start_year": 2004,
+          "end_year": 2009,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 270,
+          "fuel_economy_l_per_100km": 11.2,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Acura MDX, Infiniti FX35, Mercedes-Benz M-Class",
+          "base_value": 12500,
+          "reference_mileage_km": 145000,
+          "trims": [
+            {"name": "RX 330", "msrp_adjustment_pct": -0.05, "engine_options": "3.3L V6", "transmission_options": "5-speed Automatic"},
+            {"name": "RX 350", "msrp_adjustment_pct": 0.0, "engine_options": "3.5L V6", "transmission_options": "5-speed Automatic"},
+            {"name": "RX 400h", "msrp_adjustment_pct": 0.1, "engine_options": "3.3L V6 Hybrid", "transmission_options": "e-CVT"}
+          ],
+          "known_issues": [
+            {"title": "Dashboard becoming sticky", "description": "This generation is one of the most commonly cited for a dashboard coating that turns tacky and gummy in hot, sun-exposed climates, occasionally prompting owner class-action claims.", "symptoms": "A sticky or gummy feel across the dash top, door panels, and console, with a noticeable texture change compared to a cool-climate car.", "severity": "minor", "typical_mileage_km": 140000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1300, "recommendation": "Press firmly on the dash and door trim in direct sunlight; a sticky feel is common and should factor into your offer."},
+            {"title": "ABS actuator issue (RX 400h hybrid)", "description": "Early RX 400h hybrid models were subject to a documented brake actuator software issue that could cause reduced regenerative braking assist under certain conditions, addressed by a factory recall.", "symptoms": "A firmer-than-normal brake pedal feel or a warning light related to the brake or hybrid system, most relevant on unrepaired hybrid examples.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "On 400h models, confirm the brake actuator recall was completed using the VIN on the manufacturer's recall lookup."},
+            {"title": "Water pump and timing belt service", "description": "The V6 engines in this generation use a timing belt design where the water pump is driven off the same belt, both needing replacement together at a set interval.", "symptoms": "No early warning symptoms in most cases; a neglected belt risks a sudden water pump failure or, in rare cases, engine damage if it fails.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 650, "estimated_repair_cost_max": 1100, "recommendation": "Confirm from service records whether the timing belt and water pump have been replaced on schedule."},
+            {"title": "Front suspension bushing wear", "description": "Front lower control arm bushings wear out over time, causing a looser, less precise steering feel.", "symptoms": "A slight clunk over bumps and a vaguer, less direct steering feel at highway speed.", "severity": "minor", "typical_mileage_km": 150000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 650, "recommendation": "Listen for clunks over bumps and note steering feel during the test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 90, "estimated_cost_max": 155},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 160},
+            {"name": "Automatic transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Timing belt & water pump", "interval_km": 160000, "estimated_cost_min": 700, "estimated_cost_max": 1150},
+            {"name": "AWD transfer case fluid", "interval_km": 90000, "estimated_cost_min": 130, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GX",
+      "generations": [
+        {
+          "label": "2nd Gen (Facelift)",
+          "start_year": 2014,
+          "end_year": 2023,
+          "body_type": "suv",
+          "drivetrain": "4WD",
+          "base_horsepower": 301,
+          "fuel_economy_l_per_100km": 14.7,
+          "reliability_stars": 4.6,
+          "typical_lifespan_km": 320000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 950,
+          "common_competitors": "Land Rover Discovery, Mercedes-Benz GLE, Toyota 4Runner",
+          "base_value": 38500,
+          "reference_mileage_km": 65000,
+          "trims": [
+            {"name": "GX 460", "msrp_adjustment_pct": -0.03, "engine_options": "4.6L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "GX 460 Premium", "msrp_adjustment_pct": 0.04, "engine_options": "4.6L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "GX 460 Luxury", "msrp_adjustment_pct": 0.1, "engine_options": "4.6L V8", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension (AHC) compressor wear", "description": "Vehicles equipped with the optional Adaptive Variable Suspension / height control air compressor can develop a failing compressor or leaking air spring over time, though the standard steel-spring GX is unaffected.", "symptoms": "The vehicle sitting noticeably lower on one corner, a warning message about the suspension system, or a labored pumping noise from under the rear when starting the vehicle.", "severity": "moderate", "typical_mileage_km": 170000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 2500, "recommendation": "Check ride height is level on all four corners after the vehicle has sat overnight, and ask if it has the air suspension option."},
+            {"title": "Remote Touch controller ergonomics", "description": "The console-mounted Remote Touch controller used on this generation is commonly described as fiddly to operate accurately while driving.", "symptoms": "Difficulty precisely selecting menu items on the center display while the vehicle is in motion.", "severity": "minor", "typical_mileage_km": 50000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Try operating the infotainment controller during the test drive to see if it suits your preference."},
+            {"title": "Third-row seat storage complexity", "description": "The side-hinged rear cargo door and manually stowed third row are a common ergonomic complaint but not a mechanical defect.", "symptoms": "A heavy, awkward third-row seat that must be manually folded and does not fold flat, reducing usable cargo space compared to rivals.", "severity": "minor", "typical_mileage_km": 0, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Practice folding the third row and loading cargo through the side-hinged door before buying if you need frequent cargo flexibility."},
+            {"title": "Fuel economy shortfall vs. competitors", "description": "The 4.6L V8 delivers notably worse fuel economy than most modern midsize luxury SUV rivals, a widely known tradeoff rather than a fault.", "symptoms": "Real-world fuel economy noticeably below the window sticker rating, especially in city driving or with a roof rack installed.", "severity": "minor", "typical_mileage_km": 0, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Budget for higher fuel costs than typical midsize SUVs when comparing total ownership cost."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 65, "estimated_cost_max": 115},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 115, "estimated_cost_max": 190},
+            {"name": "Automatic transmission fluid", "interval_km": 100000, "estimated_cost_min": 230, "estimated_cost_max": 400},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 230, "estimated_cost_max": 410},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 150, "estimated_cost_max": 240},
+            {"name": "Transfer case & front/rear diff fluid", "interval_km": 50000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Air suspension compressor inspection", "interval_km": 100000, "estimated_cost_min": 0, "estimated_cost_max": 180}
+          ]
+        },
+        {
+          "label": "2nd Gen (Pre-Facelift)",
+          "start_year": 2010,
+          "end_year": 2013,
+          "body_type": "suv",
+          "drivetrain": "4WD",
+          "base_horsepower": 301,
+          "fuel_economy_l_per_100km": 14.9,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 310000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Land Rover LR4, Mercedes-Benz GL, Toyota 4Runner",
+          "base_value": 22500,
+          "reference_mileage_km": 110000,
+          "trims": [
+            {"name": "GX 460", "msrp_adjustment_pct": -0.02, "engine_options": "4.6L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "GX 460 Premium", "msrp_adjustment_pct": 0.06, "engine_options": "4.6L V8", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension (AHC) compressor wear", "description": "On vehicles with the height control air suspension option, the compressor or air springs can wear out and begin leaking over time.", "symptoms": "The vehicle sitting lower on one or more corners, a suspension warning message, or an audible compressor running longer than normal after startup.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 2500, "recommendation": "Check that ride height is even on all four corners after the vehicle sits overnight."},
+            {"title": "Early production VSC software recalibration", "description": "The first model year of this generation received a factory software update to the Vehicle Stability Control system to improve handling response in aggressive maneuvers; unrepaired examples are now rare but worth confirming.", "symptoms": "No noticeable symptom in daily driving; the concern was specific to abrupt handling behavior during hard evasive maneuvers on unrepaired vehicles.", "severity": "minor", "typical_mileage_km": 0, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Check the VIN against the manufacturer recall database to confirm the stability control update was completed."},
+            {"title": "Remote Touch controller ergonomics", "description": "The console-mounted mouse-style controller is a commonly cited usability complaint rather than a reliability issue on this generation.", "symptoms": "Imprecise or slow cursor movement when navigating infotainment menus while driving.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Operate the console controller during the test drive to judge usability for yourself."},
+            {"title": "Timing belt service interval", "description": "The 4.6L V8 uses a timing belt (not a chain), which must be replaced at a set interval to avoid a costly failure.", "symptoms": "No early warning in most cases; a belt that is not replaced on schedule risks sudden failure and potential engine damage.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 1400, "recommendation": "Verify from service records whether the timing belt has been replaced on schedule."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 110, "estimated_cost_max": 185},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 105},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 105, "estimated_cost_max": 180},
+            {"name": "Automatic transmission fluid", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 380},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 390},
+            {"name": "Timing belt & water pump", "interval_km": 160000, "estimated_cost_min": 800, "estimated_cost_max": 1400},
+            {"name": "Transfer case & front/rear diff fluid", "interval_km": 50000, "estimated_cost_min": 170, "estimated_cost_max": 300}
+          ]
+        },
+        {
+          "label": "1st Gen",
+          "start_year": 2003,
+          "end_year": 2009,
+          "body_type": "suv",
+          "drivetrain": "4WD",
+          "base_horsepower": 235,
+          "fuel_economy_l_per_100km": 15.3,
+          "reliability_stars": 4.4,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Land Rover Discovery, Mercedes-Benz M-Class, Acura MDX",
+          "base_value": 12000,
+          "reference_mileage_km": 165000,
+          "trims": [
+            {"name": "GX 470", "msrp_adjustment_pct": 0.0, "engine_options": "4.7L V8", "transmission_options": "5-speed Automatic"},
+            {"name": "GX 470 Premium", "msrp_adjustment_pct": 0.07, "engine_options": "4.7L V8", "transmission_options": "5-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension (AHC) compressor and air spring wear", "description": "The height-adjustable air suspension fitted to most GX 470s is a well-documented wear item as the vehicle ages, with compressors and air springs eventually needing replacement.", "symptoms": "The rear or front of the vehicle sagging lower than normal, an audible compressor cycling frequently, or a suspension warning light on the dash.", "severity": "moderate", "typical_mileage_km": 170000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 2600, "recommendation": "Check ride height on all corners after the vehicle has been parked overnight, and budget for eventual air suspension repair or conversion to coil springs."},
+            {"title": "Dashboard trim becoming tacky", "description": "Vehicles from hot, sun-heavy climates can develop a sticky, degraded dash coating as the soft-touch material breaks down with age and UV exposure.", "symptoms": "A gummy or tacky feel to the dash top and door trim, most pronounced on vehicles that spent years outdoors in hot climates.", "severity": "minor", "typical_mileage_km": 140000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1100, "recommendation": "Press on the dash top and door trim in direct sunlight to check for a sticky residue."},
+            {"title": "Timing belt and water pump service", "description": "The 4.7L V8 uses a timing belt with the water pump driven off the same belt, both requiring replacement together at a set interval.", "symptoms": "No early warning signs in most cases; deferred replacement risks sudden belt or water pump failure.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 850, "estimated_repair_cost_max": 1500, "recommendation": "Confirm from service records whether the timing belt and water pump have been replaced on schedule."},
+            {"title": "Front lower control arm bushing wear", "description": "Front suspension bushings wear out over time and years of off-road-capable use, loosening steering feel.", "symptoms": "A vaguer, looser steering feel at highway speed and occasional clunking over bumps from the front suspension.", "severity": "minor", "typical_mileage_km": 150000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 650, "recommendation": "Note steering precision and listen for clunks over bumps during the test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Automatic transmission fluid", "interval_km": 100000, "estimated_cost_min": 210, "estimated_cost_max": 360},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 210, "estimated_cost_max": 370},
+            {"name": "Timing belt & water pump", "interval_km": 160000, "estimated_cost_min": 850, "estimated_cost_max": 1500},
+            {"name": "Transfer case & front/rear diff fluid", "interval_km": 50000, "estimated_cost_min": 160, "estimated_cost_max": 290}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IS",
+      "generations": [
+        {
+          "label": "3rd Gen",
+          "start_year": 2014,
+          "end_year": 2020,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 241,
+          "fuel_economy_l_per_100km": 9.6,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 290000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 800,
+          "common_competitors": "Acura TLX, Audi A4, BMW 3 Series, Infiniti Q50",
+          "base_value": 23500,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "IS 250", "msrp_adjustment_pct": -0.08, "engine_options": "2.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "IS 300 AWD", "msrp_adjustment_pct": 0.0, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "IS 350", "msrp_adjustment_pct": 0.1, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "IS 350 F Sport", "msrp_adjustment_pct": 0.18, "engine_options": "3.5L V6", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Oil cooler O-ring seep", "description": "The 3.5L V6 (2GR-FSE) direct-injection engine's oil-to-water cooler O-ring can harden with age, occasionally allowing a small oil or coolant seep.", "symptoms": "A milky discoloration on the dipstick or oil filler cap, or a slow, unexplained coolant level drop.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 700, "recommendation": "Check the dipstick and filler cap for milky residue and review coolant top-up history."},
+            {"title": "Run-flat tire ride and wear complaints", "description": "F Sport and higher trims are fitted with run-flat tires, which are known for a firmer ride and faster, more expensive wear than standard tires.", "symptoms": "A noticeably stiffer ride over rough pavement and tread wearing out faster than typical, with no spare tire included.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 1400, "recommendation": "Check remaining tread depth and ask if the car has ever needed a run-flat tire replaced, which can be costly."},
+            {"title": "Remote Touch interface lag", "description": "The touchpad-based infotainment controller on pre-2017 models can feel imprecise and laggy, a widely reported ergonomics complaint.", "symptoms": "The on-screen cursor overshooting menu selections or responding slowly to touchpad input while driving.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Try the touchpad controller during the test drive to judge whether it suits your preference."},
+            {"title": "Front brake rotor and pad wear", "description": "The sport-tuned brakes on F Sport trims wear faster than standard trims, especially with spirited driving.", "symptoms": "Increased brake dust, a grinding or squealing noise when pads are low, or a pulsing sensation from warped rotors under hard braking.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 700, "recommendation": "Ask about brake pad and rotor replacement history, particularly on F Sport trims."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 110, "estimated_cost_max": 185},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 110, "estimated_cost_max": 180},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 380},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 140, "estimated_cost_max": 230},
+            {"name": "AWD transfer case fluid (IS 300 AWD)", "interval_km": 90000, "estimated_cost_min": 150, "estimated_cost_max": 250}
+          ]
+        },
+        {
+          "label": "2nd Gen",
+          "start_year": 2006,
+          "end_year": 2013,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 204,
+          "fuel_economy_l_per_100km": 9.9,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Acura TSX, Audi A4, BMW 3 Series, Infiniti G37",
+          "base_value": 13500,
+          "reference_mileage_km": 115000,
+          "trims": [
+            {"name": "IS 250", "msrp_adjustment_pct": -0.08, "engine_options": "2.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "IS 350", "msrp_adjustment_pct": 0.1, "engine_options": "3.5L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "IS F", "msrp_adjustment_pct": 0.55, "engine_options": "5.0L V8", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Oil cooler O-ring seep (IS 350 / IS F)", "description": "The V6 and V8 direct-injection engines on the higher trims can develop a hardened oil-to-water cooler O-ring that seeps oil or coolant over time.", "symptoms": "A milky discoloration on the dipstick or filler cap, or a slow coolant level drop with no visible external leak.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 750, "recommendation": "Check the dipstick and filler cap for milky residue and ask about coolant service history."},
+            {"title": "Dashboard trim becoming tacky", "description": "Cars from hot, sun-exposed climates can develop a sticky, degraded soft-touch dash coating as the material breaks down over time.", "symptoms": "A gummy or tacky feel to the dashboard top and door armrests, most common on vehicles that spent years in hot climates.", "severity": "minor", "typical_mileage_km": 120000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1100, "recommendation": "Press on the dash top and armrests in direct sunlight to check for stickiness."},
+            {"title": "Water pump weeping", "description": "The water pump seal can begin to weep coolant as it nears the end of its service life.", "symptoms": "A sweet coolant smell or staining near the front of the engine, occasionally with a low coolant warning.", "severity": "moderate", "typical_mileage_km": 160000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 750, "recommendation": "Inspect underneath the front of the engine for coolant residue."},
+            {"title": "Rear seat legroom / trunk space limitations", "description": "The tight rear seat and shallow trunk are a common ownership complaint on this generation rather than a mechanical defect.", "symptoms": "Limited rear legroom for taller passengers and a smaller trunk opening than most competitors of the era.", "severity": "minor", "typical_mileage_km": 0, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 0, "recommendation": "Sit in the rear seat and load the trunk yourself before buying if space is a priority."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 95, "estimated_cost_max": 165},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 165},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 350},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 360},
+            {"name": "Coolant flush", "interval_km": 160000, "estimated_cost_min": 130, "estimated_cost_max": 220},
+            {"name": "Water pump inspection", "interval_km": 150000, "estimated_cost_min": 0, "estimated_cost_max": 150}
+          ]
+        },
+        {
+          "label": "1st Gen",
+          "start_year": 2001,
+          "end_year": 2005,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 215,
+          "fuel_economy_l_per_100km": 10.5,
+          "reliability_stars": 4.4,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Acura TL, Audi A4, BMW 3 Series",
+          "base_value": 7500,
+          "reference_mileage_km": 160000,
+          "trims": [
+            {"name": "IS 300", "msrp_adjustment_pct": 0.0, "engine_options": "3.0L I6", "transmission_options": "5-speed Automatic"},
+            {"name": "IS 300 SportCross", "msrp_adjustment_pct": 0.03, "engine_options": "3.0L I6", "transmission_options": "5-speed Automatic, 5MT"}
+          ],
+          "known_issues": [
+            {"title": "Dashboard becoming sticky", "description": "This generation is commonly cited in hot climates for a soft-touch dash coating that degrades and turns tacky with prolonged sun and heat exposure.", "symptoms": "A gummy or tacky feel across the dash top and door trim, with a visibly different texture than a cool-climate example.", "severity": "minor", "typical_mileage_km": 140000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1000, "recommendation": "Press on the dash and door trim in direct sunlight to check for a sticky residue before buying."},
+            {"title": "Automatic transmission valve body wear", "description": "High-mileage examples can develop rough or delayed shifts as the transmission valve body wears.", "symptoms": "A delayed or harsh shift between gears, particularly noticeable from a stop or during light acceleration.", "severity": "moderate", "typical_mileage_km": 200000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1800, "recommendation": "Test drive through varied speeds and note any harsh or delayed shifts."},
+            {"title": "Rear differential seal seep (manual trims)", "description": "The limited-slip rear differential fitted to some manual-transmission cars can develop a minor seal seep over time.", "symptoms": "A small oil spot or light staining underneath the rear of the vehicle near the differential housing.", "severity": "minor", "typical_mileage_km": 180000, "estimated_repair_cost_min": 150, "estimated_repair_cost_max": 400, "recommendation": "Check underneath the rear differential for oil staining, especially on manual-transmission cars."},
+            {"title": "Interior trim rattles", "description": "Interior trim panels and the console can develop rattles as the plastics and clips age.", "symptoms": "Buzzing or rattling noises from the dash, console, or door panels over rough pavement.", "severity": "minor", "typical_mileage_km": 150000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 200, "recommendation": "Drive over a rough road section and listen for interior rattles."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 85, "estimated_cost_max": 150},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 155},
+            {"name": "Automatic transmission fluid", "interval_km": 90000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 90000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "Rear differential fluid", "interval_km": 60000, "estimated_cost_min": 90, "estimated_cost_max": 160}
+          ]
+        }
+      ]
+    }
+  ]
+}

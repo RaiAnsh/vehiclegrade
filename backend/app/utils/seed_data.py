@@ -81,6 +81,9 @@ def _load_knowledge_base():
     all_generations = []
 
     for json_path in sorted(KNOWLEDGE_BASE_DIR.glob("*.json")):
+        if json_path.stem == "common_repairs":
+            continue
+
         with open(json_path) as f:
             data = json.load(f)
 

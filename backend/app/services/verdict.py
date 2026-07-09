@@ -13,12 +13,25 @@ GOOD_DEAL_LABELS = {"Exceptional Buy", "Good Buy"}
 BAD_DEAL_LABELS = {"Overpriced", "Avoid"}
 
 
-def build_verdict(listing, score, deal_label, confidence, known_issues, red_flags):
+REPAIR_COST_EROSION_THRESHOLD = 0.25  # repair costs eating this share of market value bias the call down
+
+
+def build_verdict(listing, score, deal_label, confidence, known_issues, red_flags, market_value=None, repair_estimate=None):
     severe_overdue = [i for i in known_issues if i["status"] == "overdue" and i["severity"] == "severe"]
+
+    heavy_repair_burden = (
+        repair_estimate is not None
+        and market_value
+        and repair_estimate["total_estimated_repair_cost_max"] >= market_value * REPAIR_COST_EROSION_THRESHOLD
+    )
 
     if listing.title_status == "salvage" or severe_overdue:
         recommendation = AVOID
     elif confidence["level"] == "low" or deal_label in BAD_DEAL_LABELS:
+        recommendation = CONSIDER
+    elif heavy_repair_burden:
+        # Repair costs alone eat a large share of the vehicle's value - even
+        # a good on-paper deal shouldn't read as an unqualified Recommended.
         recommendation = CONSIDER
     elif deal_label in GOOD_DEAL_LABELS and confidence["level"] != "low":
         recommendation = RECOMMENDED
@@ -42,6 +55,14 @@ def build_verdict(listing, score, deal_label, confidence, known_issues, red_flag
         sentences.append(f"{len(red_flags)} red flag(s) were found - review them before deciding.")
     else:
         sentences.append("No red flags were found for this listing.")
+
+    if heavy_repair_burden:
+        sentences.append(
+            f"The issues mentioned in the listing's description carry an estimated "
+            f"${repair_estimate['total_estimated_repair_cost_min']:,.0f}-"
+            f"${repair_estimate['total_estimated_repair_cost_max']:,.0f} in repair costs - "
+            f"enough to erode a large share of this vehicle's value, which is why this isn't a straightforward Recommended."
+        )
 
     if confidence["level"] == "low":
         sentences.append(

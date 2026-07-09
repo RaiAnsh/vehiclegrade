@@ -3,6 +3,8 @@ import { ScoreHeader } from "./ScoreHeader";
 import { VerdictCard } from "./VerdictCard";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 import { ValueComparison } from "./ValueComparison";
+import { RepairEstimateCard } from "./RepairEstimateCard";
+import { AIExplanationCard } from "./AIExplanationCard";
 import { ComparableListingsCard } from "./ComparableListingsCard";
 import { VehicleSummaryCard } from "./VehicleSummaryCard";
 import { ReliabilityCard } from "./ReliabilityCard";
@@ -31,8 +33,14 @@ export function VehicleReport({ listing }: VehicleReportProps) {
     <div className="space-y-6">
       <ScoreHeader listing={listing} />
       <VerdictCard verdict={listing.verdict} source={sources.verdict} />
+      {listing.ai_explanation && sources.ai_explanation && (
+        <AIExplanationCard explanation={listing.ai_explanation} source={sources.ai_explanation} />
+      )}
       <ConfidenceBadge confidence={listing.confidence} source={sources.confidence} />
       <ValueComparison listing={listing} />
+      {listing.repair_estimate && sources.repair_estimate && (
+        <RepairEstimateCard estimate={listing.repair_estimate} source={sources.repair_estimate} />
+      )}
       <ComparableListingsCard comparables={listing.comparable_listings} source={sources.comparable_listings} />
 
       <div className="grid gap-6 lg:grid-cols-2">

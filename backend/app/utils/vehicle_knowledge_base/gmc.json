@@ -1,0 +1,409 @@
+{
+  "make": "GMC",
+  "models": [
+    {
+      "name": "Sierra 1500",
+      "generations": [
+        {
+          "label": "GMT900",
+          "start_year": 2007,
+          "end_year": 2013,
+          "body_type": "truck",
+          "drivetrain": "4WD",
+          "base_horsepower": 315,
+          "fuel_economy_l_per_100km": 14.5,
+          "reliability_stars": 3.7,
+          "typical_lifespan_km": 320000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Ford F-150, Ram 1500, Toyota Tundra",
+          "base_value": 15500,
+          "reference_mileage_km": 160000,
+          "trims": [
+            {"name": "WT", "msrp_adjustment_pct": -0.15, "engine_options": "4.3L V6, 4.8L V8", "transmission_options": "4-speed Automatic, 6-speed Automatic"},
+            {"name": "SLE", "msrp_adjustment_pct": 0.0, "engine_options": "4.8L V8, 5.3L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.15, "engine_options": "5.3L V8, 6.2L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.32, "engine_options": "6.2L V8", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "AFM lifter failure and valve train tick", "description": "The Active Fuel Management system on the Gen IV 5.3L and 6.2L Vortec V8s deactivates cylinders to save fuel, and the lifters responsible for switching modes can collapse, producing a persistent tick and eventual camshaft damage.", "symptoms": "A persistent ticking or tapping noise from the engine at idle that grows louder as the engine warms up, sometimes with a check engine light for a misfire on a specific cylinder bank.", "severity": "severe", "typical_mileage_km": 150000, "estimated_repair_cost_min": 2200, "estimated_repair_cost_max": 5000, "recommendation": "Listen closely for engine tick at idle when warm and ask whether an AFM disabler has been installed."},
+            {"title": "Intake manifold gasket coolant leak", "description": "The plastic intake manifold gasket on the Vortec V8 can degrade and leak coolant into the valley of the engine or externally onto the exhaust.", "symptoms": "A sweet coolant smell from under the hood, a slowly dropping coolant level with no visible external puddle, and occasionally coolant burning off the exhaust manifold.", "severity": "moderate", "typical_mileage_km": 130000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 700, "recommendation": "Check coolant level and color, and smell for coolant odor around the engine bay after a drive."},
+            {"title": "Rear frame rust and corrosion", "description": "Trucks that spent winters in salt-belt states are prone to surface and structural rust starting behind the rear axle and along the frame rails.", "symptoms": "Visible flaking rust or bubbling paint on the frame rails, rear crossmember, or spare tire hoist area, sometimes with a rough or spongy feel when pressed with a screwdriver.", "severity": "severe", "typical_mileage_km": 170000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 3500, "recommendation": "Inspect the full length of the frame from underneath, especially behind the rear axle, and ask about the truck's winter history."},
+            {"title": "Instrument cluster gauge failure", "description": "The stepper motors driving the speedometer and other gauges can fail, causing needles to sweep erratically or drop to zero.", "symptoms": "The speedometer or fuel gauge needle jumping erratically, sticking, or dropping to zero while driving, sometimes intermittently.", "severity": "minor", "typical_mileage_km": 140000, "estimated_repair_cost_min": 200, "estimated_repair_cost_max": 500, "recommendation": "Watch all gauges during the test drive, including at startup, for erratic movement."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 80, "estimated_cost_max": 150},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 100},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 160},
+            {"name": "Automatic transmission fluid", "interval_km": 95000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 380},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 140, "estimated_cost_max": 240},
+            {"name": "Front & rear differential fluid", "interval_km": 100000, "estimated_cost_min": 170, "estimated_cost_max": 300},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 130, "estimated_cost_max": 210}
+          ]
+        },
+        {
+          "label": "K2XX",
+          "start_year": 2014,
+          "end_year": 2018,
+          "body_type": "truck",
+          "drivetrain": "4WD",
+          "base_horsepower": 355,
+          "fuel_economy_l_per_100km": 13.5,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 320000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Ford F-150, Ram 1500, Toyota Tundra",
+          "base_value": 26500,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {"name": "SL", "msrp_adjustment_pct": -0.12, "engine_options": "4.3L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "SLE", "msrp_adjustment_pct": 0.0, "engine_options": "5.3L V8", "transmission_options": "6-speed Automatic, 8-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.14, "engine_options": "5.3L V8, 6.2L V8", "transmission_options": "8-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.3, "engine_options": "6.2L V8", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "AFM lifter failure and valve train tick", "description": "The 5.3L and 6.2L EcoTec3 V8s carry over Active Fuel Management cylinder deactivation, and the lifters responsible for switching modes can collapse, producing a persistent tick and eventually camshaft damage.", "symptoms": "A persistent ticking or tapping noise from the engine at idle that becomes more pronounced during the transition between 8-cylinder and 4-cylinder mode.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 5200, "recommendation": "Listen closely for a ticking noise at idle, especially during the transition between 8-cylinder and 4-cylinder mode, and ask about AFM disabler installation."},
+            {"title": "8-speed transmission shudder", "description": "The 8L90 8-speed automatic can develop a shudder in torque converter lockup as clutch material wears, most common on 2015-2017 production.", "symptoms": "A shudder or vibration felt through the floor and pedals during light-throttle acceleration or steady highway cruise, especially between 45 and 70 km/h.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 1600, "estimated_repair_cost_max": 3500, "recommendation": "Test drive at steady highway speed and light throttle, feeling for shudder, and ask for transmission fluid service records."},
+            {"title": "Electric power steering assist failure", "description": "The electric power steering control module or motor can fault, temporarily increasing steering effort or triggering a steering warning.", "symptoms": "A sudden increase in steering effort, a 'Service Power Steering' or EPS warning light on the dash, and a whine or grinding noise from the steering column.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1300, "recommendation": "Turn the wheel lock-to-lock at low speed checking for consistent effort and watch for a steering warning light."},
+            {"title": "Infotainment IntelliLink freeze or reboot", "description": "The touchscreen infotainment unit can freeze, go black, or reboot on its own, sometimes disabling the backup camera feed.", "symptoms": "The touchscreen freezing mid-use, going blank, or rebooting spontaneously, which can temporarily disable the backup camera and radio.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 450, "recommendation": "Cycle through radio, backup camera, and phone pairing to confirm the screen stays responsive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 360},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 150, "estimated_cost_max": 250},
+            {"name": "Front & rear differential fluid", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 140, "estimated_cost_max": 220}
+          ]
+        },
+        {
+          "label": "T1XX",
+          "start_year": 2019,
+          "end_year": 2023,
+          "body_type": "truck",
+          "drivetrain": "4WD",
+          "base_horsepower": 310,
+          "fuel_economy_l_per_100km": 12.8,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 950,
+          "common_competitors": "Ford F-150, Ram 1500, Toyota Tundra",
+          "base_value": 38500,
+          "reference_mileage_km": 60000,
+          "trims": [
+            {"name": "SLE", "msrp_adjustment_pct": -0.08, "engine_options": "2.7L Turbo I4, 5.3L V8", "transmission_options": "8-speed Automatic, 10-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.08, "engine_options": "5.3L V8, 3.0L Duramax Diesel", "transmission_options": "10-speed Automatic"},
+            {"name": "AT4", "msrp_adjustment_pct": 0.2, "engine_options": "5.3L V8, 6.2L V8", "transmission_options": "10-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.34, "engine_options": "6.2L V8, 3.0L Duramax Diesel", "transmission_options": "10-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "DFM lifter failure and excessive oil consumption", "description": "Dynamic Fuel Management replaced AFM on the 5.3L and 6.2L V8s but retains cylinder deactivation, and the lifters can still collapse, causing valve train noise and oil consumption between changes.", "symptoms": "A ticking or tapping noise from the engine that changes with cylinder deactivation, along with an oil level noticeably lower than expected between scheduled changes.", "severity": "severe", "typical_mileage_km": 110000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 5500, "recommendation": "Listen for engine tick at idle when warm and ask for oil consumption and top-up history."},
+            {"title": "High-pressure fuel pump failure", "description": "The direct-injection high-pressure fuel pump on early 2019-2020 5.3L and 6.2L trucks can fail, cutting fuel delivery and causing the engine to stall or fail to start.", "symptoms": "A sudden loss of power or stalling while driving, difficulty restarting, or a check engine light with a fuel pressure fault code.", "severity": "severe", "typical_mileage_km": 60000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1400, "recommendation": "Ask whether the fuel pump recall or replacement has already been performed and check for open recalls by VIN."},
+            {"title": "10-speed transmission harsh shifts", "description": "Early production 10-speed automatics can exhibit harsh or delayed shifts, particularly from a stop and during light throttle cruising.", "symptoms": "A hard clunk when shifting from park into drive or reverse, or a rough, delayed shift feel during light acceleration.", "severity": "moderate", "typical_mileage_km": 70000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Test drive through several full shift cycles from a stop and note any harsh or delayed shifts, and ask about transmission software updates."},
+            {"title": "Electric power steering assist fault", "description": "A steering control module fault can cause a temporary loss of power steering assist, which was addressed by a recall on affected trucks.", "symptoms": "Steering effort suddenly becoming heavy, especially at low speed or when parking, along with a steering warning light on the dash.", "severity": "moderate", "typical_mileage_km": 50000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 900, "recommendation": "Check for open recalls by VIN and turn the wheel lock-to-lock at low speed to confirm consistent assist."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 95, "estimated_cost_max": 170},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 115},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 175},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 210, "estimated_cost_max": 370},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 150, "estimated_cost_max": 260},
+            {"name": "Front & rear differential fluid", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Fuel filter (diesel models)", "interval_km": 24000, "estimated_cost_min": 90, "estimated_cost_max": 160}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Terrain",
+      "generations": [
+        {
+          "label": "1st Gen",
+          "start_year": 2010,
+          "end_year": 2017,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 182,
+          "fuel_economy_l_per_100km": 9.5,
+          "reliability_stars": 3.5,
+          "typical_lifespan_km": 220000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Ford Escape, Toyota RAV4, Honda CR-V",
+          "base_value": 9000,
+          "reference_mileage_km": 140000,
+          "trims": [
+            {"name": "SLE-1", "msrp_adjustment_pct": -0.08, "engine_options": "2.4L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "SLE-2", "msrp_adjustment_pct": 0.0, "engine_options": "2.4L I4, 3.6L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "SLT-2", "msrp_adjustment_pct": 0.12, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.22, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "2.4L Ecotec timing chain wear", "description": "The timing chain and tensioner on the 2.4L Ecotec engine can stretch and wear prematurely, leading to a rattle on cold start and, if ignored, valve timing damage.", "symptoms": "A rattling or clattering noise from the front of the engine for a few seconds right after cold start, sometimes accompanied by a check engine light for camshaft position codes.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 1500, "estimated_repair_cost_max": 4000, "recommendation": "Start the engine cold if possible and listen closely for a rattle from the timing cover for the first few seconds."},
+            {"title": "Excessive oil consumption (2.4L Ecotec)", "description": "Piston ring design on the 2.4L engine allows oil to burn faster than normal, especially between 60,000 and 150,000 km.", "symptoms": "The low oil warning light appearing between scheduled changes, blue-tinted exhaust smoke on startup, or a consistently low dipstick reading despite no visible leaks.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2000, "recommendation": "Check the dipstick cold and ask for oil consumption and top-up history before a long test drive."},
+            {"title": "AC compressor and condenser failure", "description": "The AC compressor clutch and condenser can fail prematurely, leading to a loss of cooling.", "symptoms": "AC blowing warm air, a squealing noise from the compressor on startup, or oily residue around the condenser at the front of the vehicle.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1200, "recommendation": "Run the AC on max cold for several minutes to confirm it holds a consistent temperature."},
+            {"title": "Electric power steering motor failure", "description": "The electric power steering assist motor can fail, causing a sudden increase in steering effort, particularly at low speed.", "symptoms": "Steering suddenly becoming heavy, especially while parking or turning at low speed, sometimes with a 'Service Power Steering' message on the dash.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1100, "recommendation": "Turn the wheel lock-to-lock at low speed and confirm assist feels consistent and light."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 70, "estimated_cost_max": 130},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 85},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 140},
+            {"name": "Automatic transmission fluid", "interval_km": 95000, "estimated_cost_min": 170, "estimated_cost_max": 300},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 170, "estimated_cost_max": 310},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 110, "estimated_cost_max": 190},
+            {"name": "AWD rear differential fluid", "interval_km": 90000, "estimated_cost_min": 130, "estimated_cost_max": 220}
+          ]
+        },
+        {
+          "label": "2nd Gen",
+          "start_year": 2018,
+          "end_year": 2023,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 170,
+          "fuel_economy_l_per_100km": 8.5,
+          "reliability_stars": 3.8,
+          "typical_lifespan_km": 230000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Honda CR-V, Toyota RAV4, Mazda CX-5",
+          "base_value": 19000,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "SLE", "msrp_adjustment_pct": -0.07, "engine_options": "1.5L Turbo I4", "transmission_options": "9-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.06, "engine_options": "1.5L Turbo I4, 2.0L Turbo I4", "transmission_options": "9-speed Automatic"},
+            {"name": "AT4", "msrp_adjustment_pct": 0.16, "engine_options": "2.0L Turbo I4", "transmission_options": "9-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.22, "engine_options": "2.0L Turbo I4", "transmission_options": "9-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "1.5L turbo timing chain stretch", "description": "The 1.5L turbo four's timing chain and tensioner can wear prematurely, causing a rattle on cold start similar to the outgoing 2.4L engine.", "symptoms": "A rattling noise from the front of the engine for a few seconds right after cold start, sometimes with a check engine light for camshaft timing.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 2500, "recommendation": "Start the engine cold if possible and listen for a rattle from the timing cover before it warms up."},
+            {"title": "Engine stall / loss of power (fuel system)", "description": "A fuel injection pump or low-pressure fuel line issue on early 1.5L and 2.0L turbo models can cause a sudden loss of engine power or stalling, which was the subject of a manufacturer recall.", "symptoms": "The engine losing power or stalling unexpectedly while driving, sometimes with a check engine light or a fuel-related warning message.", "severity": "severe", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 700, "recommendation": "Check for open recalls by VIN and confirm the fuel system recall has been completed before buying."},
+            {"title": "9-speed transmission rough shifting", "description": "The 9T50/9T65 9-speed automatic can shift harshly or hesitate, particularly on AWD models paired with the 2.0L turbo.", "symptoms": "A hard clunk shifting into gear from a stop, or a hesitation and jerk during light throttle acceleration in stop-and-go traffic.", "severity": "moderate", "typical_mileage_km": 80000, "estimated_repair_cost_min": 1000, "estimated_repair_cost_max": 2800, "recommendation": "Test drive through stop-and-go conditions and note any hard or hesitant shifts, and ask about transmission software updates."},
+            {"title": "Infotainment touchscreen freeze or reboot", "description": "The IntelliLink touchscreen can freeze, go black, or reboot intermittently, sometimes affecting the backup camera display.", "symptoms": "The touchscreen freezing or going blank at random, occasionally taking the backup camera feed down with it.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Test the touchscreen, backup camera, and phone pairing during the test drive to confirm stable operation."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 75, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD rear differential fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Acadia",
+      "generations": [
+        {
+          "label": "1st Gen",
+          "start_year": 2007,
+          "end_year": 2016,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 275,
+          "fuel_economy_l_per_100km": 11.5,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 250000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 800,
+          "common_competitors": "Toyota Highlander, Honda Pilot, Ford Explorer",
+          "base_value": 11000,
+          "reference_mileage_km": 145000,
+          "trims": [
+            {"name": "SLE", "msrp_adjustment_pct": -0.06, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "SLT-1", "msrp_adjustment_pct": 0.05, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "SLT-2", "msrp_adjustment_pct": 0.12, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.22, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "3.6L V6 timing chain wear", "description": "The timing chains on the early 3.6L V6 (LY7/LLT) can stretch prematurely, producing a rattle at startup and, in advanced cases, triggering camshaft timing codes.", "symptoms": "A rattling or chain-slap noise from the front of the engine for a few seconds after cold start, sometimes with a check engine light for camshaft position.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 2400, "recommendation": "Start the engine cold and listen for a rattle from the timing cover before the noise disappears as it warms up."},
+            {"title": "Front wheel bearing failure", "description": "Front wheel bearings and hub assemblies wear out earlier than average, producing noise and eventually play in the wheel.", "symptoms": "A humming or grinding noise from the front of the vehicle that changes pitch with speed and gets louder in turns.", "severity": "moderate", "typical_mileage_km": 130000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 650, "recommendation": "Listen for a humming noise that changes with speed and turning during the test drive."},
+            {"title": "AC condenser leak", "description": "The AC condenser mounted at the front of the vehicle is prone to stone damage and corrosion-related leaks.", "symptoms": "AC that cools poorly or stops working, sometimes with visible oily residue on the condenser fins at the front of the vehicle.", "severity": "minor", "typical_mileage_km": 120000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 950, "recommendation": "Run the AC on max cold for several minutes to confirm it holds a consistent temperature."},
+            {"title": "Power liftgate motor failure", "description": "The power liftgate motor and struts can fail, causing the liftgate to open slowly, stall partway, or not respond to the button.", "symptoms": "The liftgate opening or closing slowly, stalling partway, or failing to respond to the button or key fob.", "severity": "minor", "typical_mileage_km": 110000, "estimated_repair_cost_min": 250, "estimated_repair_cost_max": 550, "recommendation": "Operate the power liftgate several times from the button, key fob, and interior switch to confirm smooth operation."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 75, "estimated_cost_max": 135},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 145},
+            {"name": "Automatic transmission fluid", "interval_km": 95000, "estimated_cost_min": 180, "estimated_cost_max": 310},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 110, "estimated_cost_max": 190},
+            {"name": "AWD transfer case fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        },
+        {
+          "label": "2nd Gen",
+          "start_year": 2017,
+          "end_year": 2023,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 193,
+          "fuel_economy_l_per_100km": 10.2,
+          "reliability_stars": 3.8,
+          "typical_lifespan_km": 240000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 780,
+          "common_competitors": "Honda Pilot, Toyota Highlander, Hyundai Santa Fe",
+          "base_value": 23500,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "SLE", "msrp_adjustment_pct": -0.08, "engine_options": "2.5L I4", "transmission_options": "6-speed Automatic, 9-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.04, "engine_options": "2.0L Turbo I4, 3.6L V6", "transmission_options": "9-speed Automatic"},
+            {"name": "AT4", "msrp_adjustment_pct": 0.16, "engine_options": "3.6L V6", "transmission_options": "9-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.25, "engine_options": "3.6L V6", "transmission_options": "9-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "3.6L V6 timing chain tensioner wear", "description": "The updated 3.6L V6 (LGX) is less prone to timing chain issues than earlier GM V6s but can still develop tensioner wear and a startup rattle over time.", "symptoms": "A brief rattling noise from the front of the engine at cold start that fades as the engine warms, occasionally with a camshaft timing fault code.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 2000, "recommendation": "Start the engine cold and listen for a rattle from the timing cover for the first few seconds."},
+            {"title": "2.5L four-cylinder oil consumption and lifter tick", "description": "Early 2017-2018 2.5L four-cylinder models can develop a valve train tick and burn oil faster than expected between changes.", "symptoms": "A ticking noise from the engine at idle and an oil level noticeably lower than expected at scheduled changes, without a visible external leak.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1600, "recommendation": "Check the dipstick cold and ask for oil consumption history, particularly on early 2017-2018 models."},
+            {"title": "AWD twin-clutch actuator failure", "description": "The rear AWD twin-clutch actuator that disconnects and engages the rear axle can fail, disabling all-wheel drive.", "symptoms": "An AWD warning light on the dash, a clunk when accelerating from a stop, or a noticeable loss of traction in slippery conditions despite AWD being selected.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 900, "estimated_repair_cost_max": 2000, "recommendation": "Ask if any AWD warning lights have appeared and, if possible, test on a wet or gravel surface."},
+            {"title": "Infotainment IntelliLink glitches", "description": "The touchscreen infotainment system can freeze, lag, or reboot intermittently, particularly with a phone connected via Apple CarPlay or Android Auto.", "symptoms": "The touchscreen freezing, lagging, or rebooting on its own, most noticeable when a phone is connected via CarPlay or Android Auto.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Connect a phone via CarPlay or Android Auto during the test drive to check for lag or freezing."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 80, "estimated_cost_max": 145},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 195, "estimated_cost_max": 335},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 195, "estimated_cost_max": 340},
+            {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD rear differential fluid", "interval_km": 90000, "estimated_cost_min": 145, "estimated_cost_max": 235}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yukon",
+      "generations": [
+        {
+          "label": "GMT900",
+          "start_year": 2007,
+          "end_year": 2014,
+          "body_type": "suv",
+          "drivetrain": "4WD",
+          "base_horsepower": 320,
+          "fuel_economy_l_per_100km": 15.5,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 950,
+          "common_competitors": "Ford Expedition, Toyota Sequoia, Chevrolet Tahoe",
+          "base_value": 16500,
+          "reference_mileage_km": 155000,
+          "trims": [
+            {"name": "SLE", "msrp_adjustment_pct": -0.08, "engine_options": "5.3L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.08, "engine_options": "5.3L V8, 6.2L V8", "transmission_options": "6-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.28, "engine_options": "6.2L V8", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "AFM lifter failure and valve train tick", "description": "The Gen IV 5.3L and 6.2L Vortec V8s use Active Fuel Management cylinder deactivation, and the lifters responsible for switching modes can collapse, producing a persistent tick and eventual camshaft damage.", "symptoms": "A persistent ticking or tapping noise from the engine at idle that grows louder as the engine warms, sometimes with a misfire code on a specific cylinder bank.", "severity": "severe", "typical_mileage_km": 150000, "estimated_repair_cost_min": 2300, "estimated_repair_cost_max": 5000, "recommendation": "Listen closely for engine tick at idle when warm and ask whether an AFM disabler has been installed."},
+            {"title": "Intake manifold gasket coolant leak", "description": "The plastic intake manifold gasket can degrade and leak coolant into the engine valley or externally near the throttle body.", "symptoms": "A sweet coolant smell from under the hood, a slowly dropping coolant level with no visible external puddle, and occasionally a low coolant warning light.", "severity": "moderate", "typical_mileage_km": 130000, "estimated_repair_cost_min": 350, "estimated_repair_cost_max": 700, "recommendation": "Check coolant level and color, and smell for coolant odor around the engine bay after a drive."},
+            {"title": "Air ride suspension compressor failure", "description": "Denali models equipped with rear air suspension can experience compressor or air spring failures, causing the rear to sag.", "symptoms": "The rear of the vehicle sagging noticeably overnight or after sitting, an uneven ride height, or a suspension warning light on the dash.", "severity": "moderate", "typical_mileage_km": 140000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1800, "recommendation": "Check ride height after the vehicle has sat overnight and look for a suspension or ride control warning light."},
+            {"title": "Instrument cluster gauge failure", "description": "Stepper motors driving the speedometer and other gauges can fail, causing needles to sweep erratically or drop to zero.", "symptoms": "The speedometer or fuel gauge needle jumping erratically, sticking, or dropping to zero intermittently while driving.", "severity": "minor", "typical_mileage_km": 140000, "estimated_repair_cost_min": 200, "estimated_repair_cost_max": 500, "recommendation": "Watch all gauges during the test drive, including at startup, for erratic movement."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 85, "estimated_cost_max": 155},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 55, "estimated_cost_max": 105},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 165},
+            {"name": "Automatic transmission fluid", "interval_km": 95000, "estimated_cost_min": 195, "estimated_cost_max": 345},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 210, "estimated_cost_max": 390},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 145, "estimated_cost_max": 245},
+            {"name": "Front & rear differential fluid", "interval_km": 100000, "estimated_cost_min": 175, "estimated_cost_max": 310},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 135, "estimated_cost_max": 215}
+          ]
+        },
+        {
+          "label": "K2XX",
+          "start_year": 2015,
+          "end_year": 2020,
+          "body_type": "suv",
+          "drivetrain": "4WD",
+          "base_horsepower": 355,
+          "fuel_economy_l_per_100km": 14.5,
+          "reliability_stars": 3.9,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Ford Expedition, Toyota Sequoia, Chevrolet Tahoe",
+          "base_value": 31000,
+          "reference_mileage_km": 105000,
+          "trims": [
+            {"name": "SLE", "msrp_adjustment_pct": -0.07, "engine_options": "5.3L V8", "transmission_options": "6-speed Automatic, 8-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.07, "engine_options": "5.3L V8, 6.2L V8", "transmission_options": "8-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.26, "engine_options": "6.2L V8", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "AFM lifter failure and valve train tick", "description": "The 5.3L and 6.2L EcoTec3 V8s carry over Active Fuel Management cylinder deactivation, and the lifters responsible for switching modes can collapse, producing a persistent tick and eventually camshaft damage.", "symptoms": "A persistent ticking or tapping noise from the engine at idle that becomes more pronounced during the transition between 8-cylinder and 4-cylinder mode.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 5300, "recommendation": "Listen closely for a ticking noise at idle, especially during the transition between 8-cylinder and 4-cylinder mode, and ask about AFM disabler installation."},
+            {"title": "8-speed transmission shudder", "description": "The 8L90 8-speed automatic can develop a shudder in torque converter lockup as clutch material wears, most common on 2015-2017 production.", "symptoms": "A shudder or vibration felt through the floor and pedals during light-throttle acceleration or steady highway cruise, especially between 45 and 70 km/h.", "severity": "moderate", "typical_mileage_km": 115000, "estimated_repair_cost_min": 1600, "estimated_repair_cost_max": 3500, "recommendation": "Test drive at steady highway speed and light throttle, feeling for shudder, and ask for transmission fluid service records."},
+            {"title": "Magnetic Ride Control shock leak", "description": "Denali models equipped with Magnetic Ride Control adaptive shocks can develop fluid leaks, degrading ride quality and damping.", "symptoms": "A noticeably softer or bouncier ride than expected, visible oily residue on the shock body, or a ride control warning message on the dash.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1500, "recommendation": "Inspect each shock body for oily residue and check for a ride control warning light during the test drive."},
+            {"title": "Power liftgate motor failure", "description": "The power liftgate motor and struts can fail, causing the liftgate to open slowly, stall partway, or not respond to controls.", "symptoms": "The liftgate opening or closing slowly, stalling partway, or failing to respond to the button or key fob.", "severity": "minor", "typical_mileage_km": 110000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 600, "recommendation": "Operate the power liftgate several times from the button, key fob, and interior switch to confirm smooth operation."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 90, "estimated_cost_max": 165},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 205, "estimated_cost_max": 355},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 150, "estimated_cost_max": 250},
+            {"name": "Front & rear differential fluid", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 140, "estimated_cost_max": 220}
+          ]
+        },
+        {
+          "label": "T1XX",
+          "start_year": 2021,
+          "end_year": 2024,
+          "body_type": "suv",
+          "drivetrain": "4WD",
+          "base_horsepower": 355,
+          "fuel_economy_l_per_100km": 13.0,
+          "reliability_stars": 3.9,
+          "typical_lifespan_km": 290000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1000,
+          "common_competitors": "Ford Expedition, Chevrolet Tahoe/Suburban, Jeep Grand Wagoneer",
+          "base_value": 51000,
+          "reference_mileage_km": 55000,
+          "trims": [
+            {"name": "SLE", "msrp_adjustment_pct": -0.1, "engine_options": "5.3L V8", "transmission_options": "10-speed Automatic"},
+            {"name": "SLT", "msrp_adjustment_pct": 0.05, "engine_options": "5.3L V8, 3.0L Duramax Diesel", "transmission_options": "10-speed Automatic"},
+            {"name": "AT4", "msrp_adjustment_pct": 0.2, "engine_options": "6.2L V8", "transmission_options": "10-speed Automatic"},
+            {"name": "Denali", "msrp_adjustment_pct": 0.32, "engine_options": "6.2L V8, 3.0L Duramax Diesel", "transmission_options": "10-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "DFM lifter failure and excessive oil consumption", "description": "Dynamic Fuel Management replaced AFM on the 5.3L and 6.2L V8s but retains cylinder deactivation, and the lifters can still collapse, causing valve train noise and oil consumption between changes.", "symptoms": "A ticking or tapping noise from the engine that changes with cylinder deactivation, along with an oil level noticeably lower than expected between scheduled changes.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 2600, "estimated_repair_cost_max": 5500, "recommendation": "Listen for engine tick at idle when warm and ask for oil consumption and top-up history."},
+            {"title": "High-pressure fuel pump failure", "description": "The direct-injection high-pressure fuel pump on early 2021 5.3L and 6.2L models can fail, cutting fuel delivery and causing a stall or no-start.", "symptoms": "A sudden loss of power or stalling while driving, difficulty restarting, or a check engine light with a fuel pressure fault code.", "severity": "severe", "typical_mileage_km": 55000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1400, "recommendation": "Ask whether the fuel pump recall or replacement has already been performed and check for open recalls by VIN."},
+            {"title": "Adaptive air ride suspension fault", "description": "AT4 and Denali models with adaptive air ride suspension can develop compressor or air spring faults, causing the vehicle to sag or ride unevenly.", "symptoms": "The vehicle sagging noticeably on one side or overnight, an inconsistent ride height between the front and rear, or a suspension warning light on the dash.", "severity": "moderate", "typical_mileage_km": 80000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 1900, "recommendation": "Check ride height after the vehicle has sat overnight and watch for a suspension warning light on the test drive."},
+            {"title": "10-speed transmission harsh shifts", "description": "Early production 10-speed automatics can exhibit harsh or delayed shifts, particularly from a stop and during light throttle cruising.", "symptoms": "A hard clunk when shifting from park into drive or reverse, or a rough, delayed shift feel during light acceleration.", "severity": "moderate", "typical_mileage_km": 65000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Test drive through several full shift cycles from a stop and note any harsh or delayed shifts, and ask about transmission software updates."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 95, "estimated_cost_max": 175},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 115},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 105, "estimated_cost_max": 180},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 215, "estimated_cost_max": 375},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 225, "estimated_cost_max": 405},
+            {"name": "Transfer case fluid", "interval_km": 80000, "estimated_cost_min": 155, "estimated_cost_max": 260},
+            {"name": "Front & rear differential fluid", "interval_km": 100000, "estimated_cost_min": 185, "estimated_cost_max": 325},
+            {"name": "Fuel filter (diesel models)", "interval_km": 24000, "estimated_cost_min": 90, "estimated_cost_max": 160}
+          ]
+        }
+      ]
+    }
+  ]
+}

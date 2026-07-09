@@ -1,0 +1,294 @@
+{
+  "make": "Mercedes-Benz",
+  "models": [
+    {
+      "name": "C-Class",
+      "generations": [
+        {
+          "label": "W205",
+          "start_year": 2015,
+          "end_year": 2021,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 241,
+          "fuel_economy_l_per_100km": 9.1,
+          "reliability_stars": 3.5,
+          "typical_lifespan_km": 240000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1600,
+          "common_competitors": "BMW 3 Series, Audi A4, Lexus IS",
+          "base_value": 26000,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "C300", "msrp_adjustment_pct": -0.05, "engine_options": "2.0L Turbo I4 (M274)", "transmission_options": "9G-Tronic Automatic"},
+            {"name": "C300 4MATIC", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (M274/M264)", "transmission_options": "9G-Tronic Automatic"},
+            {"name": "AMG C43", "msrp_adjustment_pct": 0.35, "engine_options": "3.0L Biturbo V6", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "AMG C63", "msrp_adjustment_pct": 0.75, "engine_options": "4.0L Biturbo V8 (M177)", "transmission_options": "7-speed AMG Speedshift RWD"}
+          ],
+          "known_issues": [
+            {"title": "Balance shaft gear failure (M274 engine)", "description": "The composite gear on the balance shaft of the M274 2.0L turbo four-cylinder can wear and shed teeth, allowing the balance shaft timing chain to skip and disrupt engine timing.", "symptoms": "A rattling or ticking noise from the front of the engine on cold start, stored misfire or camshaft/crankshaft correlation fault codes, and in advanced cases a sudden loss of power or engine failure.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 3500, "estimated_repair_cost_max": 7500, "recommendation": "Ask for service records showing a balance shaft gear inspection or replacement, and listen closely for a rattle in the first few seconds after a cold start."},
+            {"title": "Air suspension (AIRMATIC) leaks", "description": "On AIRMATIC-equipped cars, the air struts, air lines, and compressor degrade over time and develop slow leaks, causing the vehicle to sag or ride unevenly.", "symptoms": "The car sitting noticeably lower after sitting overnight, a suspension warning message on the dash, and the air compressor running loudly or continuously trying to maintain ride height.", "severity": "severe", "typical_mileage_km": 120000, "estimated_repair_cost_min": 1800, "estimated_repair_cost_max": 3500, "recommendation": "Check ride height first thing in the morning versus after a drive, and listen for excessive compressor cycling with the engine off."},
+            {"title": "9G-Tronic transmission hesitation", "description": "The 9-speed automatic can develop harsh or delayed shifts at low speed as valve body seals and adaptive shift logic wear, particularly noticeable in stop-and-go traffic.", "symptoms": "A pause or clunk when shifting from Park to Drive or Reverse, hesitation pulling away from a stop, and occasional harsh 1-2 upshifts.", "severity": "moderate", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2500, "recommendation": "Test drive through stop-and-go traffic with both a cold and fully warmed-up transmission, feeling for harsh or delayed shifts."},
+            {"title": "Valve cover and oil filter housing gasket leaks", "description": "The plastic valve cover and oil filter housing gaskets on the M274 engine harden with age and begin seeping oil.", "symptoms": "A burning oil smell, oil residue on the engine block and starter, and a gradually dropping oil level between changes.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 900, "recommendation": "Inspect the top and underside of the engine for oil residue and confirm the oil level is where it should be."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 16000, "estimated_cost_min": 150, "estimated_cost_max": 250},
+            {"name": "Cabin & engine air filter", "interval_km": 30000, "estimated_cost_min": 70, "estimated_cost_max": 120},
+            {"name": "Brake fluid flush", "interval_km": 30000, "estimated_cost_min": 130, "estimated_cost_max": 200},
+            {"name": "Transmission fluid (9G-Tronic)", "interval_km": 100000, "estimated_cost_min": 350, "estimated_cost_max": 550},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 180, "estimated_cost_max": 280},
+            {"name": "Balance shaft timing chain inspection", "interval_km": 100000, "estimated_cost_min": 150, "estimated_cost_max": 300}
+          ]
+        },
+        {
+          "label": "W204",
+          "start_year": 2008,
+          "end_year": 2014,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 228,
+          "fuel_economy_l_per_100km": 11.2,
+          "reliability_stars": 3.3,
+          "typical_lifespan_km": 220000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1700,
+          "common_competitors": "BMW 3 Series (E90), Audi A4 (B8), Lexus IS",
+          "base_value": 12000,
+          "reference_mileage_km": 120000,
+          "trims": [
+            {"name": "C300", "msrp_adjustment_pct": -0.05, "engine_options": "3.0L V6 (M272)", "transmission_options": "7G-Tronic Automatic"},
+            {"name": "C300 4MATIC", "msrp_adjustment_pct": 0.0, "engine_options": "3.0L V6 (M272)", "transmission_options": "7G-Tronic Automatic AWD"},
+            {"name": "C350", "msrp_adjustment_pct": 0.15, "engine_options": "3.5L V6 (M276)", "transmission_options": "7G-Tronic Automatic"},
+            {"name": "AMG C63", "msrp_adjustment_pct": 0.7, "engine_options": "6.2L V8 (M156)", "transmission_options": "7G-Tronic Automatic RWD"}
+          ],
+          "known_issues": [
+            {"title": "Balance shaft timing chain tensioner wear", "description": "The M272/M273 V6 engines use a balance shaft timing chain and tensioner that wear prematurely, allowing chain slap and, in advanced cases, jumped timing.", "symptoms": "A rattling noise from the front of the engine for the first few seconds after a cold start, stored camshaft position fault codes, and occasionally rough idle or a check engine light.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 5000, "recommendation": "Listen carefully for a cold-start rattle and ask whether the timing chain tensioner update or replacement has been performed."},
+            {"title": "Wiring harness insulation degradation", "description": "Certain wiring harnesses from this era used an environmentally friendly insulation that can crack and corrode with moisture exposure, causing intermittent electrical faults.", "symptoms": "Intermittent warning lights (ABS, ESP, airbag) with no real underlying fault, power windows or mirrors working sporadically, and in rare cases stalling or a no-start condition.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 2000, "recommendation": "Scan for stored electrical fault codes and test every power accessory (windows, mirrors, seats) during the inspection."},
+            {"title": "Rear subframe and wheel arch rust", "description": "Rear subframe mounting points and wheel arches are prone to corrosion in salt-belt climates, which can compromise structural integrity if left unaddressed.", "symptoms": "Bubbling paint or visible rust on the rear wheel arches and rocker panels, and flaking or scaled rust on the rear subframe when viewed from underneath.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 3000, "recommendation": "Have the rear subframe and wheel arches inspected on a lift, especially on cars from salt-belt regions."},
+            {"title": "AC compressor failure", "description": "The AC compressor clutch and evaporator are common failure points across the W204 lineup.", "symptoms": "Warm air from the vents, a clicking or grinding noise from the compressor, and visible refrigerant oil residue near the compressor.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1400, "recommendation": "Run the AC on maximum cold for at least 10 minutes to confirm it holds a consistent temperature."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 16000, "estimated_cost_min": 140, "estimated_cost_max": 220},
+            {"name": "Cabin & engine air filter", "interval_km": 30000, "estimated_cost_min": 65, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 30000, "estimated_cost_min": 120, "estimated_cost_max": 190},
+            {"name": "Automatic transmission fluid (7G-Tronic)", "interval_km": 100000, "estimated_cost_min": 300, "estimated_cost_max": 500},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 380},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 170, "estimated_cost_max": 260},
+            {"name": "Balance shaft timing chain tensioner inspection", "interval_km": 130000, "estimated_cost_min": 150, "estimated_cost_max": 300}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E-Class",
+      "generations": [
+        {
+          "label": "W213",
+          "start_year": 2017,
+          "end_year": 2023,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 255,
+          "fuel_economy_l_per_100km": 9.0,
+          "reliability_stars": 3.5,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1900,
+          "common_competitors": "BMW 5 Series, Audi A6, Lexus ES",
+          "base_value": 34000,
+          "reference_mileage_km": 65000,
+          "trims": [
+            {"name": "E300", "msrp_adjustment_pct": -0.08, "engine_options": "2.0L Turbo I4 (M264)", "transmission_options": "9G-Tronic Automatic"},
+            {"name": "E300 4MATIC", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (M264)", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "E450 4MATIC", "msrp_adjustment_pct": 0.25, "engine_options": "3.0L Biturbo V6", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "AMG E63 S", "msrp_adjustment_pct": 0.9, "engine_options": "4.0L Biturbo V8", "transmission_options": "9G-Tronic Automatic AWD"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension (AIRMATIC) leaks", "description": "Air struts, air supply lines, and the compressor are prone to leaks over time, causing the vehicle to sag or ride unevenly, especially at the rear.", "symptoms": "The car sitting visibly lower after sitting overnight, a 'Visit Workshop - Suspension Malfunction' message, and the compressor running loudly or almost continuously trying to hold ride height.", "severity": "severe", "typical_mileage_km": 90000, "estimated_repair_cost_min": 2000, "estimated_repair_cost_max": 4000, "recommendation": "Check ride height cold in the morning versus after driving, and have the suspension system scanned for stored fault codes before buying."},
+            {"title": "Balance shaft gear failure (M264/M274 engine)", "description": "The four-cylinder turbo engines share the composite balance shaft gear design that can wear and shed teeth, disrupting timing chain operation.", "symptoms": "A rattle from the front of the engine on cold start, stored misfire or camshaft correlation codes, and in severe cases sudden loss of power.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 3500, "estimated_repair_cost_max": 7000, "recommendation": "Ask for service history related to balance shaft or timing chain work and listen for a cold-start rattle."},
+            {"title": "Electric auxiliary water pump failure", "description": "Turbocharged models use an electric auxiliary coolant pump to manage heat soak after shutdown; this pump commonly wears out and fails.", "symptoms": "A coolant temperature warning light, occasional overheating messages after highway driving, and a whining or grinding noise from the pump with the engine off but the key on.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1200, "recommendation": "Check the coolant level and listen for auxiliary pump noise with the ignition on and engine off."},
+            {"title": "9G-Tronic transmission hesitation", "description": "The 9-speed automatic can develop harsh or delayed shifts at low speed, particularly noticeable pulling away from a stop or in slow traffic.", "symptoms": "A pause or clunk shifting into Drive or Reverse, hesitation from a standstill, and occasional harsh low-speed upshifts.", "severity": "moderate", "typical_mileage_km": 70000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2800, "recommendation": "Test drive through stop-and-go traffic with both a cold and fully warmed transmission."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 16000, "estimated_cost_min": 160, "estimated_cost_max": 260},
+            {"name": "Cabin & engine air filter", "interval_km": 30000, "estimated_cost_min": 75, "estimated_cost_max": 130},
+            {"name": "Brake fluid flush", "interval_km": 30000, "estimated_cost_min": 140, "estimated_cost_max": 210},
+            {"name": "Transmission fluid (9G-Tronic)", "interval_km": 100000, "estimated_cost_min": 380, "estimated_cost_max": 580},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 260, "estimated_cost_max": 420},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 190, "estimated_cost_max": 300},
+            {"name": "Air suspension inspection / compressor service", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 450}
+          ]
+        },
+        {
+          "label": "W212",
+          "start_year": 2010,
+          "end_year": 2016,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 268,
+          "fuel_economy_l_per_100km": 11.8,
+          "reliability_stars": 3.3,
+          "typical_lifespan_km": 240000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 2000,
+          "common_competitors": "BMW 5 Series (F10), Audi A6 (C7), Lexus GS",
+          "base_value": 16500,
+          "reference_mileage_km": 110000,
+          "trims": [
+            {"name": "E350", "msrp_adjustment_pct": -0.06, "engine_options": "3.5L V6 (M272/M276)", "transmission_options": "7G-Tronic Automatic"},
+            {"name": "E350 4MATIC", "msrp_adjustment_pct": 0.0, "engine_options": "3.5L V6 (M272/M276)", "transmission_options": "7G-Tronic Automatic AWD"},
+            {"name": "E550", "msrp_adjustment_pct": 0.3, "engine_options": "4.6L Biturbo V8", "transmission_options": "7G-Tronic Automatic"},
+            {"name": "AMG E63", "msrp_adjustment_pct": 0.8, "engine_options": "5.5L Biturbo V8", "transmission_options": "7-speed AMG Speedshift"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension (AIRMATIC) compressor and strut failure", "description": "The AIRMATIC compressor and air struts are common failure points on this generation, leading to sagging or uneven ride height.", "symptoms": "The car leaning to one side or squatting at the rear, the compressor running constantly or making a loud grinding noise, and a suspension warning message on the dash.", "severity": "severe", "typical_mileage_km": 110000, "estimated_repair_cost_min": 1800, "estimated_repair_cost_max": 3500, "recommendation": "Check ride height on level ground first thing in the morning and listen for excessive compressor cycling."},
+            {"title": "Balance shaft gear / timing chain wear (V6 engine)", "description": "The M272/M276 V6 engines share the balance shaft gear and timing chain design prone to wear and, eventually, chain skip.", "symptoms": "A rattle from the front of the engine on cold start, stored camshaft or crankshaft correlation codes, and occasionally rough idle.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 3000, "estimated_repair_cost_max": 6000, "recommendation": "Listen for a cold-start rattle and ask for records of any timing chain related repairs."},
+            {"title": "Trunk lid and rear fender rust", "description": "Certain early production examples are prone to premature rust bubbling around the trunk lid seams and rear wheel arches, which was the subject of a Mercedes-Benz corrosion goodwill program in some markets.", "symptoms": "Bubbling paint or visible rust spots along the trunk lid edges and rear fenders, most noticeable near seams and drain points.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 2500, "recommendation": "Inspect the trunk lid seams and rear fenders closely for bubbling paint, and ask if the vehicle was covered under Mercedes' corrosion goodwill program."},
+            {"title": "SAM control module failures", "description": "The front and rear Signal Acquisition Modules (SAM), which manage electrical distribution, can fail and cause a cascade of unrelated electrical faults.", "symptoms": "Multiple simultaneous warning lights across unrelated systems (ABS, airbag, lighting), power windows or mirrors not responding, and in some cases a no-start condition.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1500, "recommendation": "Check for multiple unrelated warning lights at once and test all power accessories."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 16000, "estimated_cost_min": 150, "estimated_cost_max": 240},
+            {"name": "Cabin & engine air filter", "interval_km": 30000, "estimated_cost_min": 70, "estimated_cost_max": 120},
+            {"name": "Brake fluid flush", "interval_km": 30000, "estimated_cost_min": 130, "estimated_cost_max": 200},
+            {"name": "Automatic transmission fluid (7G-Tronic)", "interval_km": 100000, "estimated_cost_min": 350, "estimated_cost_max": 550},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 240, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 180, "estimated_cost_max": 280},
+            {"name": "Air suspension compressor inspection", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 400}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GLC",
+      "generations": [
+        {
+          "label": "X253",
+          "start_year": 2016,
+          "end_year": 2022,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 241,
+          "fuel_economy_l_per_100km": 9.8,
+          "reliability_stars": 3.5,
+          "typical_lifespan_km": 240000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1700,
+          "common_competitors": "BMW X3, Audi Q5, Lexus NX",
+          "base_value": 28000,
+          "reference_mileage_km": 65000,
+          "trims": [
+            {"name": "GLC300 4MATIC", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (M274/M264)", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "GLC300 Coupe 4MATIC", "msrp_adjustment_pct": 0.1, "engine_options": "2.0L Turbo I4 (M274/M264)", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "AMG GLC43", "msrp_adjustment_pct": 0.35, "engine_options": "3.0L Biturbo V6", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "AMG GLC63", "msrp_adjustment_pct": 0.75, "engine_options": "4.0L Biturbo V8", "transmission_options": "9G-Tronic Automatic AWD"}
+          ],
+          "known_issues": [
+            {"title": "Balance shaft gear failure (M274 engine)", "description": "The four-cylinder turbo engine shares the composite balance shaft gear design that can wear and shed teeth, disrupting the timing chain.", "symptoms": "A rattling noise from the front of the engine on cold start, stored misfire or camshaft correlation fault codes, and in advanced cases sudden loss of power.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 3500, "estimated_repair_cost_max": 7000, "recommendation": "Ask for service records showing balance shaft or timing chain work and listen for a cold-start rattle."},
+            {"title": "Air suspension (AIR BODY CONTROL) leaks", "description": "On models with the optional air suspension, the air struts and compressor lines are prone to leaks that develop over time.", "symptoms": "The vehicle sitting noticeably lower on one corner or overall after sitting overnight, and a suspension warning message on the dash.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 1800, "estimated_repair_cost_max": 3200, "recommendation": "Check ride height cold in the morning and listen for the compressor running excessively."},
+            {"title": "9G-Tronic transmission hesitation", "description": "The 9-speed automatic can develop harsh or delayed shifts at low speed as it ages.", "symptoms": "A pause or clunk shifting into Drive or Reverse, and hesitation pulling away from a stop.", "severity": "moderate", "typical_mileage_km": 70000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2500, "recommendation": "Test drive through stop-and-go traffic, feeling for harsh or delayed shifts."},
+            {"title": "Panoramic sunroof drain clogging", "description": "Sunroof drain tubes can clog with leaves and debris, causing water to back up and leak into the cabin around the headliner and footwells.", "symptoms": "A musty odor inside the cabin, water stains on the headliner, damp carpet after rain, and occasionally electrical faults from water reaching control modules under the seats.", "severity": "moderate", "typical_mileage_km": 80000, "estimated_repair_cost_min": 200, "estimated_repair_cost_max": 1200, "recommendation": "Check for a musty smell and feel the carpet and footwells for dampness, especially after rain."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 16000, "estimated_cost_min": 150, "estimated_cost_max": 250},
+            {"name": "Cabin & engine air filter", "interval_km": 30000, "estimated_cost_min": 70, "estimated_cost_max": 125},
+            {"name": "Brake fluid flush", "interval_km": 30000, "estimated_cost_min": 130, "estimated_cost_max": 200},
+            {"name": "Transmission fluid (9G-Tronic)", "interval_km": 100000, "estimated_cost_min": 350, "estimated_cost_max": 550},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 180, "estimated_cost_max": 280},
+            {"name": "4MATIC transfer case fluid", "interval_km": 90000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Sunroof drain cleaning", "interval_km": 40000, "estimated_cost_min": 0, "estimated_cost_max": 150}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GLE",
+      "generations": [
+        {
+          "label": "W167",
+          "start_year": 2020,
+          "end_year": 2026,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 255,
+          "fuel_economy_l_per_100km": 10.2,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 250000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 2200,
+          "common_competitors": "BMW X5, Audi Q7, Volvo XC90",
+          "base_value": 46000,
+          "reference_mileage_km": 50000,
+          "trims": [
+            {"name": "GLE350", "msrp_adjustment_pct": -0.1, "engine_options": "2.0L Turbo I4 mild hybrid (M264)", "transmission_options": "9G-Tronic Automatic RWD"},
+            {"name": "GLE350 4MATIC", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 mild hybrid (M264)", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "GLE450 4MATIC", "msrp_adjustment_pct": 0.25, "engine_options": "3.0L Turbo I6 mild hybrid", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "AMG GLE63 S", "msrp_adjustment_pct": 0.85, "engine_options": "4.0L Biturbo V8 mild hybrid", "transmission_options": "9G-Tronic Automatic AWD"}
+          ],
+          "known_issues": [
+            {"title": "E-ACTIVE BODY CONTROL / air suspension faults", "description": "The advanced air suspension system standard on higher trims can develop air strut or compressor leaks, and the active roll-control hydraulic components can also weep fluid over time.", "symptoms": "Uneven ride height, a suspension warning message on the dash, and clunking or knocking over bumps from the active roll control hardware.", "severity": "severe", "typical_mileage_km": 70000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 5000, "recommendation": "Have the suspension system scanned for fault history and check that ride height is even and consistent."},
+            {"title": "48V mild hybrid (EQBoost) system faults", "description": "The integrated starter-generator and 48V battery pack used for the mild-hybrid system can develop faults that disable the stop-start and torque-boost functions.", "symptoms": "A message that stop-start is temporarily disabled, a reduced power warning, and a hybrid system fault light on the instrument cluster.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 1200, "estimated_repair_cost_max": 2800, "recommendation": "Confirm stop-start engages normally at idle and check for stored hybrid system fault codes."},
+            {"title": "MBUX infotainment glitches", "description": "The MBUX infotainment system and digital instrument cluster can freeze, reboot, or drop connectivity, usually resolved with a software update.", "symptoms": "The touchscreen freezing or going black momentarily, delayed response to touch or voice commands, and Bluetooth or Apple CarPlay disconnecting unexpectedly.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Test the touchscreen, voice control, and phone pairing thoroughly during the test drive."},
+            {"title": "9G-Tronic transmission hesitation", "description": "The 9-speed automatic can develop harsh or delayed shifts at low speed as it ages.", "symptoms": "A pause or clunk shifting into Drive or Reverse, and hesitation pulling away from a stop in slow traffic.", "severity": "moderate", "typical_mileage_km": 50000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2800, "recommendation": "Test drive through stop-and-go traffic, feeling for harsh or delayed shifts."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 16000, "estimated_cost_min": 170, "estimated_cost_max": 270},
+            {"name": "Cabin & engine air filter", "interval_km": 30000, "estimated_cost_min": 80, "estimated_cost_max": 140},
+            {"name": "Brake fluid flush", "interval_km": 30000, "estimated_cost_min": 150, "estimated_cost_max": 220},
+            {"name": "Transmission fluid (9G-Tronic)", "interval_km": 100000, "estimated_cost_min": 400, "estimated_cost_max": 600},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 270, "estimated_cost_max": 430},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 200, "estimated_cost_max": 310},
+            {"name": "Air suspension inspection / compressor service", "interval_km": 100000, "estimated_cost_min": 280, "estimated_cost_max": 480},
+            {"name": "48V hybrid battery & system inspection", "interval_km": 60000, "estimated_cost_min": 100, "estimated_cost_max": 250}
+          ]
+        },
+        {
+          "label": "W166",
+          "start_year": 2016,
+          "end_year": 2019,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 302,
+          "fuel_economy_l_per_100km": 12.4,
+          "reliability_stars": 3.2,
+          "typical_lifespan_km": 230000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 2100,
+          "common_competitors": "BMW X5, Audi Q7, Acura MDX",
+          "base_value": 24000,
+          "reference_mileage_km": 85000,
+          "trims": [
+            {"name": "GLE350", "msrp_adjustment_pct": -0.08, "engine_options": "3.5L V6", "transmission_options": "7G-Tronic Automatic RWD"},
+            {"name": "GLE350 4MATIC", "msrp_adjustment_pct": 0.0, "engine_options": "3.5L V6", "transmission_options": "7G-Tronic Automatic AWD"},
+            {"name": "GLE400 4MATIC", "msrp_adjustment_pct": 0.15, "engine_options": "3.0L Biturbo V6", "transmission_options": "9G-Tronic Automatic AWD"},
+            {"name": "AMG GLE63 S", "msrp_adjustment_pct": 0.7, "engine_options": "5.5L Biturbo V8", "transmission_options": "7-speed AMG Speedshift AWD"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension (AIRMATIC) failure", "description": "The air struts and compressor commonly fail on this generation, causing the vehicle to sag or ride unevenly, with rear struts failing most often.", "symptoms": "The rear end sagging noticeably at rest, the compressor running excessively or failing to build pressure, and a 'Suspension malfunction, visit workshop' message on the dash.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 2200, "estimated_repair_cost_max": 4000, "recommendation": "Check ride height cold in the morning and after driving, and have the suspension system scanned for fault codes before buying."},
+            {"title": "Balance shaft gear / timing chain wear (V6 engine)", "description": "The V6 engines used across this generation share a balance shaft gear and timing chain design prone to wear over time.", "symptoms": "A rattle from the front of the engine on cold start, stored camshaft or crankshaft correlation codes, and occasionally rough idle.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 3000, "estimated_repair_cost_max": 6000, "recommendation": "Listen for a cold-start rattle and ask about any prior timing chain related repairs."},
+            {"title": "4MATIC transfer case actuator fault", "description": "The electronically controlled transfer case can develop actuator motor faults, causing improper engagement between drive modes.", "symptoms": "An AWD or 4MATIC warning light, a clunking noise from the drivetrain during tight turns, and occasionally a reduced power message.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 1800, "recommendation": "Check for AWD warning lights and listen for unusual drivetrain noises while turning at low speed."},
+            {"title": "SAM control module faults", "description": "The Signal Acquisition Modules that manage electrical distribution can develop faults, causing a cascade of unrelated electrical issues.", "symptoms": "Multiple unrelated warning lights appearing together, power windows or mirrors intermittently unresponsive, and occasional dashboard display glitches.", "severity": "moderate", "typical_mileage_km": 140000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1500, "recommendation": "Check for multiple simultaneous warning lights and test all power accessories."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 16000, "estimated_cost_min": 160, "estimated_cost_max": 260},
+            {"name": "Cabin & engine air filter", "interval_km": 30000, "estimated_cost_min": 75, "estimated_cost_max": 130},
+            {"name": "Brake fluid flush", "interval_km": 30000, "estimated_cost_min": 140, "estimated_cost_max": 210},
+            {"name": "Transmission fluid", "interval_km": 100000, "estimated_cost_min": 380, "estimated_cost_max": 580},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 260, "estimated_cost_max": 420},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 190, "estimated_cost_max": 300},
+            {"name": "Air suspension inspection / compressor service", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 450},
+            {"name": "Transfer case fluid", "interval_km": 90000, "estimated_cost_min": 200, "estimated_cost_max": 350}
+          ]
+        }
+      ]
+    }
+  ]
+}

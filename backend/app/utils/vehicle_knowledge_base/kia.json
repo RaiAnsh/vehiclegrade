@@ -1,0 +1,167 @@
+{
+  "make": "Kia",
+  "models": [
+    {
+      "name": "Forte",
+      "generations": [
+        {
+          "label": "3rd Gen",
+          "start_year": 2019,
+          "end_year": 2021,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 147,
+          "fuel_economy_l_per_100km": 7.1,
+          "reliability_stars": 4.1,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "good",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 550,
+          "common_competitors": "Honda Civic, Toyota Corolla, Hyundai Elantra, Mazda3",
+          "base_value": 15500,
+          "reference_mileage_km": 55000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.06, "engine_options": "2.0L I4", "transmission_options": "IVT"},
+            {"name": "EX", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L I4", "transmission_options": "IVT"},
+            {"name": "GT", "msrp_adjustment_pct": 0.17, "engine_options": "1.6L Turbo", "transmission_options": "7-speed DCT"}
+          ],
+          "known_issues": [
+            {"title": "IVT shudder under acceleration", "description": "The Intelligent Variable Transmission (IVT) on LX/EX trims can develop a shudder under light throttle as belt wear increases with age.", "symptoms": "A vibration or shudder felt through the pedal and floor during light acceleration, most noticeable between 30 and 50 km/h.", "severity": "moderate", "typical_mileage_km": 170000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 3200, "recommendation": "Test drive at light throttle and highway speed, feeling for vibration through the floor."},
+            {"title": "AC compressor failure", "description": "The AC compressor clutch can wear prematurely, causing intermittent cooling loss and a chirping noise on startup.", "symptoms": "AC that blows warm intermittently, a chirping or squealing noise from the compressor on startup, and the AC clutch not always engaging.", "severity": "moderate", "typical_mileage_km": 140000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1100, "recommendation": "Run the AC on max cold for several minutes on a warm day to confirm consistent cooling."},
+            {"title": "Infotainment screen freezing", "description": "The touchscreen unit can freeze or reboot randomly, sometimes requiring a software update or unit replacement.", "symptoms": "The touchscreen going black or freezing mid-use and occasionally rebooting on its own, temporarily disabling the backup camera.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 400, "recommendation": "Cycle through radio, backup camera, and Bluetooth to confirm the screen is responsive."},
+            {"title": "Wind noise from door seals", "description": "Door weatherstripping can shrink or loosen over time, letting in wind noise at highway speed.", "symptoms": "A whistling or rushing noise from around the front door frames that increases with highway speed.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 100, "estimated_repair_cost_max": 350, "recommendation": "Drive at highway speed with the radio off and listen near the door frames."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 65, "estimated_cost_max": 120},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 85},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 140},
+            {"name": "IVT / transmission fluid", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 320},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 170, "estimated_cost_max": 310},
+            {"name": "Timing chain inspection", "interval_km": 160000, "estimated_cost_min": 120, "estimated_cost_max": 220},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 110, "estimated_cost_max": 190}
+          ]
+        },
+        {
+          "label": "2nd Gen",
+          "start_year": 2014,
+          "end_year": 2018,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 145,
+          "fuel_economy_l_per_100km": 7.5,
+          "reliability_stars": 3.9,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 600,
+          "common_competitors": "Honda Civic, Toyota Corolla, Mazda3, Ford Focus",
+          "base_value": 9500,
+          "reference_mileage_km": 95000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.05, "engine_options": "1.8L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "EX", "msrp_adjustment_pct": 0.05, "engine_options": "2.0L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "SX", "msrp_adjustment_pct": 0.15, "engine_options": "1.6L Turbo", "transmission_options": "7-speed DCT"}
+          ],
+          "known_issues": [
+            {"title": "Engine compartment fire risk (ABS module short)", "description": "Some cars are covered under Kia's ABS module recall, where a fluid leak inside the module can short-circuit and, in rare cases, cause an engine bay fire.", "symptoms": "A burning smell from the engine bay, an illuminated ABS or brake warning light, or visible corrosion and fluid staining around the ABS module.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1200, "recommendation": "Check the VIN against Kia's recall database and ask for proof the ABS module recall repair was completed."},
+            {"title": "Excessive oil consumption", "description": "Some 1.8L and 2.0L engines burn oil faster than normal between changes, especially on highway-heavy cars.", "symptoms": "The low oil warning light appearing between scheduled changes, or a noticeably low dipstick reading despite no visible leaks.", "severity": "moderate", "typical_mileage_km": 140000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2000, "recommendation": "Ask for oil consumption history and check the dipstick before a long test drive."},
+            {"title": "Dual-clutch transmission hesitation (SX)", "description": "SX models with the 7-speed DCT can develop a hesitation or jerky feel from a stop as the clutch packs wear.", "symptoms": "A noticeable delay or jerky lurch when pulling away from a stop, especially pronounced on inclines or in stop-and-go traffic.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 1000, "estimated_repair_cost_max": 3000, "recommendation": "Test drive from a full stop repeatedly, including uphill, to feel for hesitation or shudder."},
+            {"title": "Clear coat peeling on trunk lid", "description": "Factory clear coat on early builds is prone to peeling or bubbling on the trunk lid and roof.", "symptoms": "Flaking or bubbling clear coat visible on the trunk lid and roof, appearing as dull or rough patches in direct sunlight.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 900, "recommendation": "Inspect the trunk lid and roof closely in direct sunlight."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 60, "estimated_cost_max": 115},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 40, "estimated_cost_max": 80},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 80, "estimated_cost_max": 135},
+            {"name": "Automatic transmission fluid", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 300},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 300},
+            {"name": "Timing chain inspection", "interval_km": 160000, "estimated_cost_min": 120, "estimated_cost_max": 220}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Optima",
+      "generations": [
+        {
+          "label": "4th Gen",
+          "start_year": 2016,
+          "end_year": 2020,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 185,
+          "fuel_economy_l_per_100km": 8.4,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 700,
+          "common_competitors": "Honda Accord, Toyota Camry, Hyundai Sonata, Mazda6",
+          "base_value": 17000,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.08, "engine_options": "2.4L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "EX", "msrp_adjustment_pct": 0.02, "engine_options": "2.4L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "SX Turbo", "msrp_adjustment_pct": 0.2, "engine_options": "2.0L Turbo", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Engine failure from connecting rod bearing wear", "description": "2.4L Theta II GDI engines in this generation are covered under Kia's engine recall program for premature rod bearing wear that can cause knocking, stalling, or a seized engine.", "symptoms": "A deep knocking noise from the engine that intensifies under load or at idle, sometimes followed by a sudden stall or the engine seizing entirely.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 4000, "estimated_repair_cost_max": 6500, "recommendation": "Ask for recall and warranty records confirming engine inspection or replacement, and listen for knocking at idle and under load."},
+            {"title": "Engine compartment fire risk (brake fluid leak into ABS module)", "description": "A subset of these cars are covered under Kia's ABS module recall, where an internal fluid leak can short-circuit and, in rare cases, ignite a fire in the engine bay.", "symptoms": "A burning smell from the engine bay, an illuminated ABS or brake warning light, or visible corrosion around the ABS module.", "severity": "severe", "typical_mileage_km": 120000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1200, "recommendation": "Check the VIN against Kia's recall database and confirm the ABS module recall repair was completed."},
+            {"title": "Panoramic sunroof rattle or cracking", "description": "The panoramic sunroof on EX/SX trims can develop a rattle from loose trim clips, and in rarer cases the glass can crack from temperature swings.", "symptoms": "A rattling or buzzing noise from the roof area over bumps, or visible stress cracks in the sunroof glass with no obvious impact damage.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 1200, "recommendation": "Open and close the sunroof and inspect the glass closely for stress cracks around the edges."},
+            {"title": "Infotainment (UVO) lag and glitches", "description": "The UVO touchscreen system can be slow to respond or freeze intermittently, particularly with Apple CarPlay connected.", "symptoms": "Noticeable delay between touching the screen and the display responding, or the screen freezing mid-use, most apparent when CarPlay is active.", "severity": "minor", "typical_mileage_km": 80000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 350, "recommendation": "Connect a phone via CarPlay during the test drive to check responsiveness."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 75, "estimated_cost_max": 135},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 90},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Automatic transmission fluid", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Timing chain inspection", "interval_km": 160000, "estimated_cost_min": 120, "estimated_cost_max": 220},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 120, "estimated_cost_max": 200}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sportage",
+      "generations": [
+        {
+          "label": "4th Gen",
+          "start_year": 2017,
+          "end_year": 2021,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 181,
+          "fuel_economy_l_per_100km": 9.3,
+          "reliability_stars": 3.9,
+          "typical_lifespan_km": 250000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Honda CR-V, Toyota RAV4, Hyundai Tucson, Mazda CX-5",
+          "base_value": 18500,
+          "reference_mileage_km": 75000,
+          "trims": [
+            {"name": "LX", "msrp_adjustment_pct": -0.07, "engine_options": "2.4L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "EX", "msrp_adjustment_pct": 0.05, "engine_options": "2.4L I4", "transmission_options": "6-speed Automatic"},
+            {"name": "SX Turbo", "msrp_adjustment_pct": 0.2, "engine_options": "2.0L Turbo", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Engine stall from connecting rod bearing wear", "description": "2.4L Theta II GDI engines in this generation are covered under Kia's engine recall program for premature rod bearing wear that can cause knocking, stalling, or a seized engine.", "symptoms": "A deep knocking noise from the engine that intensifies under load or at idle, sometimes followed by a sudden stall or the engine seizing entirely.", "severity": "severe", "typical_mileage_km": 135000, "estimated_repair_cost_min": 4000, "estimated_repair_cost_max": 7000, "recommendation": "Ask for recall and warranty records confirming engine inspection or replacement, and listen for knocking at idle and under load."},
+            {"title": "AC condenser corrosion", "description": "Road salt exposure can corrode the front-mounted AC condenser, leading to slow refrigerant leaks.", "symptoms": "AC that gradually cools less effectively over time before blowing warm air, sometimes with visible corrosion on the condenser fins.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1000, "recommendation": "Run the AC on max cold for several minutes to confirm it holds temperature."},
+            {"title": "Panoramic sunroof cracking", "description": "The panoramic sunroof glass, shared with related Hyundai-Kia platforms, has a documented history of cracking without impact during temperature swings.", "symptoms": "Visible spiderweb cracking in the sunroof panel with no obvious impact damage, sometimes preceded by a loud popping noise.", "severity": "moderate", "typical_mileage_km": 65000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1200, "recommendation": "Inspect the sunroof glass closely for stress cracks around the edges."},
+            {"title": "Turbo wastegate rattle (SX)", "description": "The 2.0T engine's turbocharger wastegate can develop play, producing a rattle at idle and under light boost.", "symptoms": "A metallic rattling noise from the engine bay at idle or during light acceleration, most noticeable when cold.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 900, "recommendation": "Listen for a rattle at idle right after a cold start and during light acceleration."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 10000, "estimated_cost_min": 80, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Automatic transmission fluid", "interval_km": 90000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 330},
+            {"name": "Coolant flush", "interval_km": 150000, "estimated_cost_min": 120, "estimated_cost_max": 200},
+            {"name": "AWD rear differential fluid", "interval_km": 90000, "estimated_cost_min": 140, "estimated_cost_max": 230}
+          ]
+        }
+      ]
+    }
+  ]
+}

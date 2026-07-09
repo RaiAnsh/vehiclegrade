@@ -1,0 +1,228 @@
+{
+  "repairs": [
+    {
+      "id": "transmission_replacement",
+      "title": "Transmission replacement/rebuild",
+      "keywords": ["transmission", "trans slipping", "trans is going", "slipping gears", "won't shift", "wont shift", "gearbox", "transmission slipping", "transmission failure", "no reverse", "no drive", "shudders when shifting", "delayed engagement"],
+      "estimated_cost_min": 1800,
+      "estimated_cost_max": 4500,
+      "severity": "major"
+    },
+    {
+      "id": "head_gasket",
+      "title": "Head gasket replacement",
+      "keywords": ["head gasket", "blown head gasket", "white smoke from exhaust", "milky oil", "oil in coolant", "coolant in oil", "overheating and white smoke"],
+      "estimated_cost_min": 1200,
+      "estimated_cost_max": 2800,
+      "severity": "major"
+    },
+    {
+      "id": "engine_replacement",
+      "title": "Engine replacement/rebuild",
+      "keywords": ["blown engine", "engine seized", "knocking engine", "rod knock", "engine needs to be replaced", "no compression", "spun bearing", "engine failure"],
+      "estimated_cost_min": 3000,
+      "estimated_cost_max": 7000,
+      "severity": "major"
+    },
+    {
+      "id": "timing_belt_chain",
+      "title": "Timing belt/chain replacement",
+      "keywords": ["timing belt", "timing chain", "timing chain rattle", "timing belt due", "timing belt never changed", "chain tensioner"],
+      "estimated_cost_min": 600,
+      "estimated_cost_max": 1800,
+      "severity": "moderate"
+    },
+    {
+      "id": "clutch_replacement",
+      "title": "Clutch replacement",
+      "keywords": ["clutch", "clutch slipping", "clutch is going", "clutch needs replacing", "hard to shift manual", "grinding gears manual"],
+      "estimated_cost_min": 800,
+      "estimated_cost_max": 1800,
+      "severity": "moderate"
+    },
+    {
+      "id": "brake_service",
+      "title": "Brake pads/rotors/calipers service",
+      "keywords": ["brakes", "brake pads", "rotors", "squeaky brakes", "grinding brakes", "brake noise", "warped rotors", "brake caliper", "soft brake pedal"],
+      "estimated_cost_min": 300,
+      "estimated_cost_max": 900,
+      "severity": "minor"
+    },
+    {
+      "id": "windshield_replacement",
+      "title": "Windshield repair/replacement",
+      "keywords": ["cracked windshield", "windshield crack", "chipped windshield", "broken windshield", "windshield needs replacing", "windshield damage"],
+      "estimated_cost_min": 300,
+      "estimated_cost_max": 700,
+      "severity": "minor"
+    },
+    {
+      "id": "ac_compressor",
+      "title": "AC compressor/system repair",
+      "keywords": ["ac not working", "a/c not working", "ac compressor", "air conditioning broken", "ac blowing warm", "no cold air", "ac needs recharge", "ac leak"],
+      "estimated_cost_min": 500,
+      "estimated_cost_max": 1500,
+      "severity": "moderate"
+    },
+    {
+      "id": "alternator_starter",
+      "title": "Alternator/starter replacement",
+      "keywords": ["alternator", "starter", "won't start", "wont start", "battery keeps dying", "car won't crank", "car wont crank", "electrical drain"],
+      "estimated_cost_min": 400,
+      "estimated_cost_max": 1000,
+      "severity": "moderate"
+    },
+    {
+      "id": "water_pump",
+      "title": "Water pump replacement",
+      "keywords": ["water pump", "coolant leak", "leaking coolant", "water pump leaking"],
+      "estimated_cost_min": 400,
+      "estimated_cost_max": 900,
+      "severity": "moderate"
+    },
+    {
+      "id": "radiator",
+      "title": "Radiator replacement",
+      "keywords": ["radiator", "radiator leak", "radiator cracked", "overheating"],
+      "estimated_cost_min": 400,
+      "estimated_cost_max": 1000,
+      "severity": "moderate"
+    },
+    {
+      "id": "exhaust_catalytic",
+      "title": "Exhaust system/catalytic converter repair",
+      "keywords": ["exhaust", "catalytic converter", "cat converter", "muffler", "exhaust leak", "loud exhaust", "check engine catalyst", "rattling exhaust"],
+      "estimated_cost_min": 500,
+      "estimated_cost_max": 2200,
+      "severity": "moderate"
+    },
+    {
+      "id": "suspension_struts",
+      "title": "Suspension/struts/shocks repair",
+      "keywords": ["suspension", "struts", "shocks", "clunking noise", "bouncy ride", "sagging suspension", "air suspension", "control arm", "sway bar link"],
+      "estimated_cost_min": 500,
+      "estimated_cost_max": 1600,
+      "severity": "moderate"
+    },
+    {
+      "id": "tires",
+      "title": "Tire replacement (set)",
+      "keywords": ["needs tires", "tires are worn", "bald tires", "tires need replacing", "low tread"],
+      "estimated_cost_min": 500,
+      "estimated_cost_max": 1200,
+      "severity": "minor"
+    },
+    {
+      "id": "battery",
+      "title": "Battery replacement",
+      "keywords": ["battery is dead", "needs new battery", "battery old", "battery not holding charge"],
+      "estimated_cost_min": 150,
+      "estimated_cost_max": 350,
+      "severity": "minor"
+    },
+    {
+      "id": "wheel_bearing",
+      "title": "Wheel bearing replacement",
+      "keywords": ["wheel bearing", "humming noise wheel", "grinding noise from wheel", "roaring noise at speed"],
+      "estimated_cost_min": 300,
+      "estimated_cost_max": 700,
+      "severity": "minor"
+    },
+    {
+      "id": "cv_axle",
+      "title": "CV axle/joint replacement",
+      "keywords": ["cv axle", "cv joint", "clicking noise when turning", "torn cv boot"],
+      "estimated_cost_min": 250,
+      "estimated_cost_max": 650,
+      "severity": "minor"
+    },
+    {
+      "id": "fuel_pump",
+      "title": "Fuel pump replacement",
+      "keywords": ["fuel pump", "car sputters", "hard to start intermittent", "loses power at speed", "whining noise from tank"],
+      "estimated_cost_min": 500,
+      "estimated_cost_max": 1200,
+      "severity": "moderate"
+    },
+    {
+      "id": "turbo_repair",
+      "title": "Turbocharger repair/replacement",
+      "keywords": ["turbo", "turbo failure", "loss of boost", "turbo whine", "turbo lag getting worse"],
+      "estimated_cost_min": 1200,
+      "estimated_cost_max": 3000,
+      "severity": "major"
+    },
+    {
+      "id": "paint_bodywork",
+      "title": "Paint/bodywork repair (per panel)",
+      "keywords": ["dent", "scratched paint", "needs paint", "body damage", "fender bender damage", "bumper damage", "hail damage"],
+      "estimated_cost_min": 400,
+      "estimated_cost_max": 1500,
+      "severity": "minor"
+    },
+    {
+      "id": "rust_repair",
+      "title": "Rust repair",
+      "keywords": ["rust", "rusted frame", "rust holes", "rust spots", "frame rust", "undercarriage rust"],
+      "estimated_cost_min": 500,
+      "estimated_cost_max": 3000,
+      "severity": "major"
+    },
+    {
+      "id": "electrical_fault",
+      "title": "Electrical fault diagnosis/repair",
+      "keywords": ["electrical issue", "electrical gremlin", "wiring issue", "intermittent electrical", "dash lights flickering", "random warning lights"],
+      "estimated_cost_min": 300,
+      "estimated_cost_max": 1200,
+      "severity": "moderate"
+    },
+    {
+      "id": "check_engine_light",
+      "title": "Check engine light diagnosis",
+      "keywords": ["check engine light", "cel is on", "engine light on", "service engine soon"],
+      "estimated_cost_min": 150,
+      "estimated_cost_max": 600,
+      "severity": "minor"
+    },
+    {
+      "id": "power_window_lock",
+      "title": "Power window/lock actuator repair",
+      "keywords": ["power window", "window won't go up", "window wont go up", "door lock actuator", "power lock not working"],
+      "estimated_cost_min": 200,
+      "estimated_cost_max": 500,
+      "severity": "minor"
+    },
+    {
+      "id": "infotainment_repair",
+      "title": "Infotainment/electronics repair",
+      "keywords": ["infotainment", "screen not working", "radio not working", "touchscreen frozen", "backup camera not working"],
+      "estimated_cost_min": 200,
+      "estimated_cost_max": 800,
+      "severity": "minor"
+    },
+    {
+      "id": "interior_wear",
+      "title": "Interior repair (seats/trim/upholstery)",
+      "keywords": ["torn seat", "ripped upholstery", "cracked dash", "interior wear", "torn interior", "missing trim"],
+      "estimated_cost_min": 150,
+      "estimated_cost_max": 800,
+      "severity": "minor"
+    },
+    {
+      "id": "power_steering",
+      "title": "Power steering repair",
+      "keywords": ["power steering", "steering is hard", "steering pump noise", "steering fluid leak"],
+      "estimated_cost_min": 300,
+      "estimated_cost_max": 900,
+      "severity": "moderate"
+    },
+    {
+      "id": "differential_transfer_case",
+      "title": "Differential/transfer case repair",
+      "keywords": ["differential", "transfer case", "4wd not engaging", "awd noise", "whining from rear axle"],
+      "estimated_cost_min": 800,
+      "estimated_cost_max": 2200,
+      "severity": "major"
+    }
+  ]
+}

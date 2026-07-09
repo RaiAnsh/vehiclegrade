@@ -1,0 +1,297 @@
+{
+  "make": "Dodge",
+  "models": [
+    {
+      "name": "Ram 1500",
+      "generations": [
+        {
+          "label": "5th Gen (DT)",
+          "start_year": 2019,
+          "end_year": 2024,
+          "body_type": "pickup truck",
+          "drivetrain": "4WD",
+          "base_horsepower": 305,
+          "fuel_economy_l_per_100km": 13.1,
+          "reliability_stars": 3.8,
+          "typical_lifespan_km": 300000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Ford F-150, Chevrolet Silverado 1500, Toyota Tundra",
+          "base_value": 34000,
+          "reference_mileage_km": 60000,
+          "trims": [
+            {"name": "Tradesman", "msrp_adjustment_pct": -0.12, "engine_options": "3.6L V6, 5.7L V8 Hemi", "transmission_options": "8-speed Automatic"},
+            {"name": "Big Horn", "msrp_adjustment_pct": 0.0, "engine_options": "5.7L V8 Hemi, 3.0L EcoDiesel", "transmission_options": "8-speed Automatic"},
+            {"name": "Laramie", "msrp_adjustment_pct": 0.18, "engine_options": "5.7L V8 Hemi, 3.0L EcoDiesel", "transmission_options": "8-speed Automatic"},
+            {"name": "Rebel", "msrp_adjustment_pct": 0.22, "engine_options": "5.7L V8 Hemi", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Exhaust manifold bolt failure (5.7L Hemi)", "description": "The factory exhaust manifold bolts on the 5.7L Hemi are prone to loosening or snapping due to heat cycling, allowing the manifold to separate from the head.", "symptoms": "A loud ticking or tapping noise from the engine that gets louder under acceleration and is most noticeable on cold start, sometimes accompanied by a faint exhaust smell.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1200, "recommendation": "Listen closely for a ticking noise on cold start; ask if upgraded manifold studs/bolts have already been installed."},
+            {"title": "Electronic shifter (eTorque/8HP) mis-shift and 8-speed shudder", "description": "The ZF-sourced 8-speed automatic can develop a shudder or hesitation during light-throttle acceleration and low-speed shifts, particularly on trucks with the eTorque mild-hybrid system.", "symptoms": "A shudder or vibration felt through the floor between 30-70 km/h under light acceleration, or a delayed/harsh 1-2 shift.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 4500, "recommendation": "Test drive at steady light throttle on flat road and feel for shudder; check transmission fluid service history."},
+            {"title": "TIPM (Totally Integrated Power Module) failure", "description": "The TIPM, which controls fuel pump relay, starter relay, and various electrical circuits, can fail intermittently or completely, especially on higher-mileage trucks.", "symptoms": "Intermittent no-start, fuel pump not priming, random dash warning lights, headlights or wipers not working correctly, or the truck stalling while driving.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1400, "recommendation": "Check for stored electrical fault codes with an OBD-II scanner and ask about any history of no-start complaints."},
+            {"title": "Air suspension leaks (air-ride equipped trucks)", "description": "Optional four-corner air suspension compressors and air springs can develop leaks over time, especially in cold climates.", "symptoms": "The truck sitting noticeably lower on one corner overnight, an air compressor that runs excessively or continuously, or a suspension fault warning on the dash.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 2200, "recommendation": "Park the truck overnight and check ride height in the morning before deciding to buy."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 100},
+            {"name": "Transmission fluid (8-speed auto)", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 450},
+            {"name": "Front & rear differential fluid", "interval_km": 50000, "estimated_cost_min": 150, "estimated_cost_max": 280},
+            {"name": "Transfer case fluid (4WD)", "interval_km": 50000, "estimated_cost_min": 130, "estimated_cost_max": 220},
+            {"name": "Spark plugs", "interval_km": 50000, "estimated_cost_min": 200, "estimated_cost_max": 380},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 100, "estimated_cost_max": 170},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 140, "estimated_cost_max": 240}
+          ]
+        },
+        {
+          "label": "4th Gen (DS/DJ)",
+          "start_year": 2009,
+          "end_year": 2018,
+          "body_type": "pickup truck",
+          "drivetrain": "4WD",
+          "base_horsepower": 305,
+          "fuel_economy_l_per_100km": 13.8,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 950,
+          "common_competitors": "Ford F-150, Chevrolet Silverado 1500, Toyota Tundra",
+          "base_value": 17500,
+          "reference_mileage_km": 130000,
+          "trims": [
+            {"name": "SLT", "msrp_adjustment_pct": -0.08, "engine_options": "3.6L V6, 5.7L V8 Hemi", "transmission_options": "6-speed Automatic, 8-speed Automatic"},
+            {"name": "Big Horn/Lone Star", "msrp_adjustment_pct": 0.0, "engine_options": "5.7L V8 Hemi", "transmission_options": "8-speed Automatic"},
+            {"name": "Laramie", "msrp_adjustment_pct": 0.15, "engine_options": "5.7L V8 Hemi, 3.0L EcoDiesel", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Frame rust", "description": "Trucks sold or driven in road-salt regions are prone to surface and structural rust on the frame rails and rear crossmember, a widely documented issue for this generation.", "symptoms": "Visible flaking or bubbling rust on the frame rails, rear crossmember, or trailer hitch mounting area, sometimes with rust perforation.", "severity": "severe", "typical_mileage_km": 150000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 3500, "recommendation": "Inspect the full frame from underneath, including the rear crossmember, and check for any prior frame rust recall or warranty repair."},
+            {"title": "Exhaust manifold bolt failure (5.7L Hemi)", "description": "Same factory exhaust manifold bolt design as later generations; bolts loosen or snap from heat cycling.", "symptoms": "A ticking or tapping noise from the engine bay, louder under acceleration and most noticeable on cold start.", "severity": "moderate", "typical_mileage_km": 70000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1200, "recommendation": "Listen for ticking on cold start and ask about prior manifold bolt repairs."},
+            {"title": "TIPM electrical failures", "description": "The Totally Integrated Power Module is a documented weak point across this generation, causing a range of intermittent electrical faults.", "symptoms": "Intermittent no-start, fuel pump failing to prime, random warning lights, or accessories (wipers, lights) behaving erratically.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1400, "recommendation": "Scan for stored codes and ask the seller about any electrical gremlins or no-start events."},
+            {"title": "Front suspension ball joint and tie rod wear", "description": "Front-end suspension components wear faster than average, especially on trucks used for towing or on rough roads.", "symptoms": "A clunking noise from the front suspension over bumps, uneven or accelerated front tire wear, and looseness in steering feel.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1000, "recommendation": "Have the front end inspected on a lift and check for play in ball joints and tie rod ends."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 12000, "estimated_cost_min": 85, "estimated_cost_max": 150},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 90},
+            {"name": "Transmission fluid (auto)", "interval_km": 95000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Front & rear differential fluid", "interval_km": 50000, "estimated_cost_min": 140, "estimated_cost_max": 260},
+            {"name": "Transfer case fluid (4WD)", "interval_km": 50000, "estimated_cost_min": 120, "estimated_cost_max": 210},
+            {"name": "Spark plugs", "interval_km": 50000, "estimated_cost_min": 190, "estimated_cost_max": 350},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 160},
+            {"name": "Frame rust inspection & treatment", "interval_km": 40000, "estimated_cost_min": 0, "estimated_cost_max": 300}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Charger",
+      "generations": [
+        {
+          "label": "LD (7th Gen)",
+          "start_year": 2015,
+          "end_year": 2023,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 292,
+          "fuel_economy_l_per_100km": 11.2,
+          "reliability_stars": 3.7,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 850,
+          "common_competitors": "Chevrolet Impala, Ford Taurus, Toyota Avalon",
+          "base_value": 19500,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "SXT", "msrp_adjustment_pct": -0.1, "engine_options": "3.6L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "GT", "msrp_adjustment_pct": 0.05, "engine_options": "3.6L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "R/T", "msrp_adjustment_pct": 0.2, "engine_options": "5.7L V8 Hemi", "transmission_options": "8-speed Automatic"},
+            {"name": "Scat Pack", "msrp_adjustment_pct": 0.45, "engine_options": "6.4L V8 Hemi", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "8-speed automatic (ZF) shudder", "description": "The ZF-sourced 8HP45/8HP70 automatic transmission is prone to a torque converter shudder that worsens as fluid ages, a widely reported issue across Chrysler/Dodge/Jeep products using this transmission.", "symptoms": "A vibration or shudder felt through the pedal and console during light-throttle acceleration, typically between 30-70 km/h, and sometimes a delayed engagement into gear from Park.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 4500, "recommendation": "Test drive at light, steady throttle and feel for shudder; ask for transmission fluid service records."},
+            {"title": "Uconnect infotainment freezing/reboot loops", "description": "The Uconnect touchscreen system can freeze, go black, or enter reboot loops, sometimes tied to a known software bug requiring a dealer reflash.", "symptoms": "The touchscreen freezing, going black, or repeatedly rebooting, occasionally disabling the backup camera and climate controls that are integrated into the screen.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 600, "recommendation": "Cycle through all touchscreen functions including climate and backup camera during the test drive."},
+            {"title": "TIPM electrical faults", "description": "The Totally Integrated Power Module can develop intermittent faults affecting the fuel pump relay, starter, and other circuits.", "symptoms": "Intermittent no-start, random warning lights on the dash, or accessories such as power windows and wipers behaving erratically.", "severity": "severe", "typical_mileage_km": 120000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1300, "recommendation": "Scan for stored fault codes and ask about any history of no-start or electrical issues."},
+            {"title": "Exhaust manifold ticking (5.7L/6.4L Hemi)", "description": "V8 Hemi engines can develop exhaust manifold bolt loosening, causing an exhaust leak at the manifold-to-head joint.", "symptoms": "A ticking or tapping noise from the engine bay that is louder on cold start and under acceleration.", "severity": "moderate", "typical_mileage_km": 65000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1100, "recommendation": "Listen for ticking on cold start, especially before the engine reaches operating temperature."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 85, "estimated_cost_max": 150},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Transmission fluid (8-speed auto)", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 450},
+            {"name": "Rear differential fluid", "interval_km": 50000, "estimated_cost_min": 130, "estimated_cost_max": 240},
+            {"name": "Spark plugs", "interval_km": 50000, "estimated_cost_min": 190, "estimated_cost_max": 360},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 160},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 130, "estimated_cost_max": 220}
+          ]
+        },
+        {
+          "label": "LX (6th Gen)",
+          "start_year": 2011,
+          "end_year": 2014,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 292,
+          "fuel_economy_l_per_100km": 11.6,
+          "reliability_stars": 3.5,
+          "typical_lifespan_km": 240000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Chevrolet Impala, Ford Taurus, Nissan Maxima",
+          "base_value": 11000,
+          "reference_mileage_km": 140000,
+          "trims": [
+            {"name": "SE/SXT", "msrp_adjustment_pct": -0.1, "engine_options": "3.6L V6", "transmission_options": "5-speed Automatic, 8-speed Automatic"},
+            {"name": "R/T", "msrp_adjustment_pct": 0.2, "engine_options": "5.7L V8 Hemi", "transmission_options": "5-speed Automatic, 8-speed Automatic"},
+            {"name": "SRT8", "msrp_adjustment_pct": 0.5, "engine_options": "6.4L V8 Hemi", "transmission_options": "5-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "8-speed automatic (ZF) shudder", "description": "Early adoption of the ZF 8-speed automatic (2012+) brought torque converter shudder issues similar to later model years.", "symptoms": "A shudder felt through the pedal during light acceleration between 30-70 km/h, and occasional harsh or delayed shifts.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 4200, "recommendation": "Test drive at light throttle on a smooth road and feel for shudder; ask about transmission fluid changes."},
+            {"title": "TIPM electrical faults", "description": "The Totally Integrated Power Module is a well-documented failure point on this generation, affecting fuel pump priming and other relays.", "symptoms": "Intermittent no-start, fuel pump not engaging, or random accessory failures such as wipers or power locks not working.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1300, "recommendation": "Scan for stored electrical codes and ask about any history of no-start complaints."},
+            {"title": "Water pump failure (3.6L Pentastar)", "description": "Early 3.6L Pentastar V6 engines had a documented water pump design weakness leading to premature failure.", "symptoms": "Coolant leaking from the front of the engine, an overheating warning light, or a whining noise from the water pump area.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 900, "recommendation": "Check coolant level and look for leaks or residue near the water pump; ask about replacement history."},
+            {"title": "Uconnect touchscreen failures", "description": "Early Uconnect touchscreen units can fail or become unresponsive over time.", "symptoms": "A blank or unresponsive touchscreen, loss of radio and backup camera display, or the unit failing to boot.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 550, "recommendation": "Test all touchscreen functions including navigation and backup camera before purchase."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 80, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 90},
+            {"name": "Transmission fluid (auto)", "interval_km": 95000, "estimated_cost_min": 220, "estimated_cost_max": 400},
+            {"name": "Rear differential fluid", "interval_km": 50000, "estimated_cost_min": 120, "estimated_cost_max": 220},
+            {"name": "Spark plugs", "interval_km": 50000, "estimated_cost_min": 180, "estimated_cost_max": 340},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 90, "estimated_cost_max": 150},
+            {"name": "Water pump inspection (3.6L)", "interval_km": 80000, "estimated_cost_min": 0, "estimated_cost_max": 900}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Challenger",
+      "generations": [
+        {
+          "label": "LC/LA (Facelift)",
+          "start_year": 2015,
+          "end_year": 2023,
+          "body_type": "coupe",
+          "drivetrain": "RWD",
+          "base_horsepower": 305,
+          "fuel_economy_l_per_100km": 11.5,
+          "reliability_stars": 3.7,
+          "typical_lifespan_km": 250000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Ford Mustang, Chevrolet Camaro",
+          "base_value": 22000,
+          "reference_mileage_km": 65000,
+          "trims": [
+            {"name": "SXT", "msrp_adjustment_pct": -0.12, "engine_options": "3.6L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "R/T", "msrp_adjustment_pct": 0.15, "engine_options": "5.7L V8 Hemi", "transmission_options": "8-speed Automatic, 6MT"},
+            {"name": "Scat Pack", "msrp_adjustment_pct": 0.4, "engine_options": "6.4L V8 Hemi", "transmission_options": "8-speed Automatic, 6MT"},
+            {"name": "SRT Hellcat", "msrp_adjustment_pct": 0.9, "engine_options": "6.2L Supercharged V8", "transmission_options": "8-speed Automatic, 6MT"}
+          ],
+          "known_issues": [
+            {"title": "8-speed automatic (ZF) shudder", "description": "The ZF 8-speed automatic used in V6 and V8 automatic models is prone to torque converter shudder as fluid ages, consistent with the same transmission's issues in Charger and Ram products.", "symptoms": "A shudder felt through the pedal during light throttle acceleration, most noticeable between 30-70 km/h, sometimes with a delayed engagement from a stop.", "severity": "moderate", "typical_mileage_km": 85000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 4500, "recommendation": "Test drive at light steady throttle and feel for shudder; ask for transmission fluid service history."},
+            {"title": "Rear axle/differential whine on Hellcat/Scat Pack", "description": "High-power variants can develop a whining or humming noise from the rear differential, especially on cars used for hard launches or track days.", "symptoms": "A whining or howling noise from the rear axle that changes with vehicle speed, sometimes worse during deceleration.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 2500, "recommendation": "Listen for whining noise during test drive at varying speeds and ask about track use or launch control history."},
+            {"title": "Uconnect infotainment freezing", "description": "The touchscreen system can freeze or reboot randomly, a known issue across this Chrysler/Dodge platform generation.", "symptoms": "The touchscreen freezing, going black, or rebooting on its own, occasionally affecting the backup camera and climate display.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 550, "recommendation": "Cycle through touchscreen menus, backup camera, and climate controls to confirm normal operation."},
+            {"title": "Exhaust manifold ticking (V8 Hemi models)", "description": "V8 Hemi-equipped cars can develop exhaust manifold bolt loosening, resulting in a ticking noise.", "symptoms": "A ticking or tapping noise from the engine bay, more pronounced on cold start and under acceleration.", "severity": "moderate", "typical_mileage_km": 60000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1100, "recommendation": "Listen carefully for ticking noise during cold start before the engine warms up."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 85, "estimated_cost_max": 160},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Transmission fluid (8-speed auto)", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 450},
+            {"name": "Rear differential fluid", "interval_km": 50000, "estimated_cost_min": 140, "estimated_cost_max": 260},
+            {"name": "Spark plugs", "interval_km": 50000, "estimated_cost_min": 190, "estimated_cost_max": 370},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 165},
+            {"name": "Supercharger belt inspection (Hellcat)", "interval_km": 50000, "estimated_cost_min": 0, "estimated_cost_max": 400},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 130, "estimated_cost_max": 220}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Durango",
+      "generations": [
+        {
+          "label": "3rd Gen",
+          "start_year": 2011,
+          "end_year": 2024,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 295,
+          "fuel_economy_l_per_100km": 12.4,
+          "reliability_stars": 3.8,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "Ford Explorer, Chevrolet Traverse, Toyota Highlander",
+          "base_value": 20500,
+          "reference_mileage_km": 75000,
+          "trims": [
+            {"name": "SXT", "msrp_adjustment_pct": -0.1, "engine_options": "3.6L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "GT", "msrp_adjustment_pct": 0.05, "engine_options": "3.6L V6", "transmission_options": "8-speed Automatic"},
+            {"name": "Citadel", "msrp_adjustment_pct": 0.22, "engine_options": "3.6L V6, 5.7L V8 Hemi", "transmission_options": "8-speed Automatic"},
+            {"name": "R/T", "msrp_adjustment_pct": 0.3, "engine_options": "5.7L V8 Hemi", "transmission_options": "8-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "8-speed automatic (ZF) shudder", "description": "Shares the ZF 8-speed automatic with other Chrysler/Dodge products, and is similarly prone to torque converter shudder as the fluid ages.", "symptoms": "A shudder or vibration felt through the floor during light acceleration, most noticeable between 30-70 km/h.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 4500, "recommendation": "Test drive at steady light throttle and feel for shudder; ask about transmission fluid service history."},
+            {"title": "TIPM electrical faults", "description": "The Totally Integrated Power Module can fail intermittently, a common issue across this Chrysler/Dodge platform.", "symptoms": "Intermittent no-start, random warning lights, or accessories such as power windows and wipers malfunctioning.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1400, "recommendation": "Scan for stored fault codes and ask about any electrical or no-start complaints."},
+            {"title": "Rear liftgate/third row electrical issues", "description": "Power liftgate and third-row seat electronics can develop wiring or module faults over time.", "symptoms": "The power liftgate failing to open or close fully, or third-row power fold/recline features not responding.", "severity": "minor", "typical_mileage_km": 100000, "estimated_repair_cost_min": 150, "estimated_repair_cost_max": 700, "recommendation": "Test the power liftgate and all third-row seat functions during inspection."},
+            {"title": "Exhaust manifold ticking (5.7L Hemi)", "description": "V8 Hemi models can develop the same exhaust manifold bolt loosening seen across the Hemi engine family.", "symptoms": "A ticking noise from the engine bay, louder on cold start and under acceleration.", "severity": "moderate", "typical_mileage_km": 65000, "estimated_repair_cost_min": 400, "estimated_repair_cost_max": 1150, "recommendation": "Listen for ticking noise on cold start before the engine reaches operating temperature."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 85, "estimated_cost_max": 150},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 50, "estimated_cost_max": 95},
+            {"name": "Transmission fluid (8-speed auto)", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 450},
+            {"name": "AWD transfer case fluid", "interval_km": 50000, "estimated_cost_min": 130, "estimated_cost_max": 230},
+            {"name": "Rear differential fluid", "interval_km": 50000, "estimated_cost_min": 130, "estimated_cost_max": 240},
+            {"name": "Spark plugs", "interval_km": 50000, "estimated_cost_min": 190, "estimated_cost_max": 360},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 95, "estimated_cost_max": 160},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 135, "estimated_cost_max": 225}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grand Caravan",
+      "generations": [
+        {
+          "label": "5th Gen",
+          "start_year": 2008,
+          "end_year": 2020,
+          "body_type": "minivan",
+          "drivetrain": "FWD",
+          "base_horsepower": 283,
+          "fuel_economy_l_per_100km": 11.2,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "excellent",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Toyota Sienna, Honda Odyssey, Kia Sedona",
+          "base_value": 10500,
+          "reference_mileage_km": 130000,
+          "trims": [
+            {"name": "Canada Value Package/SE", "msrp_adjustment_pct": -0.1, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "SXT", "msrp_adjustment_pct": 0.05, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"},
+            {"name": "Crew/GT", "msrp_adjustment_pct": 0.15, "engine_options": "3.6L V6", "transmission_options": "6-speed Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Stow 'n Go seat track wear and rust", "description": "The folding Stow 'n Go second and third row seat mechanisms and floor tracks are prone to rust and binding, especially in road-salt regions.", "symptoms": "Seats that are difficult to fold or deploy into the floor wells, a grinding or squeaking noise when operating Stow 'n Go, or visible rust around the seat track latches.", "severity": "minor", "typical_mileage_km": 120000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 500, "recommendation": "Operate all Stow 'n Go seats through a full fold-and-deploy cycle to confirm they move smoothly."},
+            {"title": "Power sliding door and liftgate failures", "description": "Power sliding door and liftgate cables, motors, and latch modules wear out and can fail to open or close properly.", "symptoms": "A sliding door or liftgate that opens/closes slowly, gets stuck partway, or fails to latch, sometimes with an error chime or warning light.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 200, "estimated_repair_cost_max": 900, "recommendation": "Test both power sliding doors and the liftgate through several full open/close cycles."},
+            {"title": "TIPM electrical faults", "description": "The Totally Integrated Power Module can fail intermittently, affecting the fuel pump relay and other circuits, similar to other Chrysler/Dodge products of this era.", "symptoms": "Intermittent no-start, fuel pump not priming, or random dash warning lights and accessory failures.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1300, "recommendation": "Scan for stored fault codes and ask about any no-start history."},
+            {"title": "Automatic transmission wear", "description": "The 6-speed automatic (62TE) can develop harsh or slipping shifts as it ages, particularly if fluid was never serviced.", "symptoms": "Harsh or delayed shifts, slipping under acceleration, or a flare in RPM between gear changes.", "severity": "moderate", "typical_mileage_km": 150000, "estimated_repair_cost_min": 300, "estimated_repair_cost_max": 3800, "recommendation": "Test drive through all gears, accelerating firmly, and feel for harsh or slipping shifts; ask for transmission fluid service history."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter", "interval_km": 8000, "estimated_cost_min": 75, "estimated_cost_max": 140},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 45, "estimated_cost_max": 90},
+            {"name": "Transmission fluid (62TE 6-speed)", "interval_km": 95000, "estimated_cost_min": 200, "estimated_cost_max": 380},
+            {"name": "Spark plugs", "interval_km": 50000, "estimated_cost_min": 170, "estimated_cost_max": 330},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 85, "estimated_cost_max": 150},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 120, "estimated_cost_max": 210},
+            {"name": "Power sliding door cable/track lubrication", "interval_km": 30000, "estimated_cost_min": 0, "estimated_cost_max": 150}
+          ]
+        }
+      ]
+    }
+  ]
+}

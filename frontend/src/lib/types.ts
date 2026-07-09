@@ -16,7 +16,7 @@ export type IssueStatus = "not_yet_relevant" | "approaching" | "common_now" | "o
 
 export type Condition = "excellent" | "good" | "fair" | "poor";
 
-export type DataSourceType = "reference_data" | "market_sample" | "estimate";
+export type DataSourceType = "reference_data" | "market_sample" | "estimate" | "ai_generated";
 
 export interface DataSourceInfo {
   source: DataSourceType;
@@ -172,6 +172,29 @@ export interface OwnershipCost {
   total_annual: number;
 }
 
+export interface DetectedIssue {
+  title: string;
+  source: "reference_data" | "estimate";
+  matched_known_issue: boolean;
+  estimated_repair_cost_min: number;
+  estimated_repair_cost_max: number;
+  severity: IssueSeverity;
+}
+
+export interface RepairEstimate {
+  detected_issues: DetectedIssue[];
+  total_estimated_repair_cost_min: number;
+  total_estimated_repair_cost_max: number;
+  adjusted_offer_min: number;
+  adjusted_offer_max: number;
+  disclosure: string;
+}
+
+export interface AIExplanation {
+  narrative: string;
+  additional_notes: string[];
+}
+
 export interface ListingDetail extends ListingSummary {
   score_reasons: string[];
   value_breakdown: ValueBreakdown;
@@ -190,6 +213,8 @@ export interface ListingDetail extends ListingSummary {
   verdict: Verdict;
   inspection_checklist: string[];
   data_sources: Record<string, DataSourceInfo>;
+  repair_estimate?: RepairEstimate;
+  ai_explanation?: AIExplanation;
 }
 
 export interface ListingsResponse {

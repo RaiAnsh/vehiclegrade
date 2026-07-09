@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const LINKS = [
@@ -10,11 +11,15 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-[var(--background)]/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--accent)] text-sm text-white">
-            F
-          </span>
-          VehicleGrade
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="VehicleGrade.ca"
+            width={1536}
+            height={1024}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 text-sm text-muted sm:flex">

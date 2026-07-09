@@ -1,0 +1,337 @@
+{
+  "make": "Audi",
+  "models": [
+    {
+      "name": "A4",
+      "generations": [
+        {
+          "label": "B8 (Typ 8K)",
+          "start_year": 2009,
+          "end_year": 2016,
+          "body_type": "sedan",
+          "drivetrain": "AWD",
+          "base_horsepower": 211,
+          "fuel_economy_l_per_100km": 9.8,
+          "reliability_stars": 3.2,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 1500,
+          "common_competitors": "BMW 3 Series, Mercedes-Benz C-Class, Volvo S60",
+          "base_value": 11500,
+          "reference_mileage_km": 150000,
+          "trims": [
+            {"name": "2.0T Premium", "msrp_adjustment_pct": -0.08, "engine_options": "2.0L Turbo I4 (211 hp)", "transmission_options": "CVT (Multitronic)"},
+            {"name": "2.0T Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (211-220 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "2.0T Prestige", "msrp_adjustment_pct": 0.12, "engine_options": "2.0L Turbo I4 (220 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "3.2 Quattro", "msrp_adjustment_pct": 0.18, "engine_options": "3.2L V6 (265 hp)", "transmission_options": "6-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Timing chain tensioner failure", "description": "Early EA888 2.0T engines use a hydraulic timing chain tensioner that can wear out and lose tension, allowing the chain to skip teeth on the crank or cam sprocket.", "symptoms": "A rattling or ticking noise from the front of the engine on cold start-up that fades as the engine warms, a check engine light for cam/crank correlation, and in severe cases a rough-running or non-starting engine with bent valves.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 2500, "estimated_repair_cost_max": 6000, "recommendation": "Listen carefully for a cold start rattle and ask for records of any timing chain tensioner service or recall work before buying."},
+            {"title": "Carbon buildup on intake valves", "description": "Because the 2.0T TFSI engine injects fuel directly into the cylinder rather than over the intake valves, there is no detergent fuel wash to keep the valves clean, so carbon deposits accumulate over time.", "symptoms": "Rough idle, hesitation on acceleration, a noticeable loss of power, and an illuminated check engine light for a misfire or lean condition, usually worsening gradually rather than appearing suddenly.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1200, "recommendation": "Ask if walnut-shell media blasting has ever been performed and pay attention to idle smoothness during the test drive."},
+            {"title": "Water pump / thermostat housing failure", "description": "The plastic-impeller water pump and plastic thermostat housing used on the 2.0T engine are prone to cracking and internal wear as they age, leading to coolant leaks and eventual overheating.", "symptoms": "Coolant puddles under the front of the engine, a slowly dropping coolant level, a sweet coolant smell, or a temperature gauge that creeps up in traffic.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1300, "recommendation": "Check under the car for coolant staining and ask whether the water pump and thermostat housing have already been replaced."},
+            {"title": "Excessive oil consumption (early EA888)", "description": "Early production EA888 2.0T engines (roughly 2009-2011) were the subject of a class action over piston ring design that allows oil to be consumed faster than normal.", "symptoms": "The low oil warning light appearing between scheduled oil changes, or a dipstick reading noticeably lower than full despite no visible external leaks.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 2500, "recommendation": "Ask the seller for an oil consumption history and check the dipstick yourself before a longer test drive."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 120, "estimated_cost_max": 180},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 60, "estimated_cost_max": 110},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 130, "estimated_cost_max": 200},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 280, "estimated_cost_max": 420},
+            {"name": "Multitronic/Tiptronic transmission fluid", "interval_km": 80000, "estimated_cost_min": 350, "estimated_cost_max": 550},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 180, "estimated_cost_max": 280},
+            {"name": "PCV / breather valve replacement", "interval_km": 100000, "estimated_cost_min": 250, "estimated_cost_max": 400},
+            {"name": "Timing chain tensioner inspection", "interval_km": 130000, "estimated_cost_min": 1200, "estimated_cost_max": 2000}
+          ]
+        },
+        {
+          "label": "B9 (Typ 8W)",
+          "start_year": 2017,
+          "end_year": 2024,
+          "body_type": "sedan",
+          "drivetrain": "AWD",
+          "base_horsepower": 248,
+          "fuel_economy_l_per_100km": 8.7,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 1600,
+          "common_competitors": "BMW 3 Series, Mercedes-Benz C-Class, Genesis G70",
+          "base_value": 24000,
+          "reference_mileage_km": 70000,
+          "trims": [
+            {"name": "Premium", "msrp_adjustment_pct": -0.09, "engine_options": "2.0L Turbo I4 (188-248 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (248 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "Prestige", "msrp_adjustment_pct": 0.14, "engine_options": "2.0L Turbo I4 (248 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "S4 3.0T", "msrp_adjustment_pct": 0.35, "engine_options": "3.0L Turbo V6 (349 hp)", "transmission_options": "8-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Carbon buildup on intake valves", "description": "Despite updated engineering, the direct-injection 2.0T EA888 Gen3B engine still allows carbon deposits to accumulate on the backs of the intake valves without port injection to wash them clean.", "symptoms": "A rough or uneven idle, hesitation under light acceleration, and gradually worsening throttle response over tens of thousands of kilometers.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 600, "estimated_repair_cost_max": 1300, "recommendation": "Ask about any walnut blasting or intake cleaning service history and monitor idle quality during the test drive."},
+            {"title": "Electric water pump failure", "description": "The electronically controlled water pump used on the B9's 2.0T engine can fail internally, cutting off coolant circulation.", "symptoms": "A coolant temperature warning light, a rapid rise in engine temperature, or a faint coolant smell from under the hood, sometimes accompanied by a whining noise from the pump before failure.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 650, "estimated_repair_cost_max": 1100, "recommendation": "Verify the coolant level and check service records for a prior water pump replacement."},
+            {"title": "S tronic (DSG) mechatronic and clutch pack wear", "description": "The 7-speed dual-clutch S tronic transmission's clutch packs and mechatronic control unit can wear prematurely, especially in stop-and-go traffic or with towing.", "symptoms": "Jerky or hesitant shifts at low speed, a shudder from a stop, or a delayed engagement when shifting from park into drive.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 1800, "estimated_repair_cost_max": 3200, "recommendation": "Test drive through stop-and-go traffic and parking-lot maneuvers, paying close attention to low-speed shift quality."},
+            {"title": "MMI infotainment freezing", "description": "The MMI touch infotainment system can freeze, lag, or randomly disconnect from Apple CarPlay/Android Auto, usually resolved with a software update.", "symptoms": "The center screen becoming unresponsive, a frozen backup camera image, or a repeated dropped connection to a paired phone.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 500, "recommendation": "Pair a phone via CarPlay/Android Auto and cycle through infotainment menus to confirm responsiveness."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 130, "estimated_cost_max": 190},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 65, "estimated_cost_max": 120},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 140, "estimated_cost_max": 210},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 300, "estimated_cost_max": 450},
+            {"name": "S tronic (DSG) fluid & filter", "interval_km": 65000, "estimated_cost_min": 400, "estimated_cost_max": 650},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 290},
+            {"name": "Water pump inspection", "interval_km": 90000, "estimated_cost_min": 100, "estimated_cost_max": 200},
+            {"name": "PCV / breather valve replacement", "interval_km": 90000, "estimated_cost_min": 260, "estimated_cost_max": 420}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A6",
+      "generations": [
+        {
+          "label": "C7 (Typ 4G)",
+          "start_year": 2012,
+          "end_year": 2018,
+          "body_type": "sedan",
+          "drivetrain": "AWD",
+          "base_horsepower": 220,
+          "fuel_economy_l_per_100km": 9.0,
+          "reliability_stars": 3.3,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1900,
+          "common_competitors": "BMW 5 Series, Mercedes-Benz E-Class, Lexus GS",
+          "base_value": 16500,
+          "reference_mileage_km": 130000,
+          "trims": [
+            {"name": "2.0T Premium", "msrp_adjustment_pct": -0.1, "engine_options": "2.0L Turbo I4 (220 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "2.0T Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (220-252 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "3.0T Prestige", "msrp_adjustment_pct": 0.22, "engine_options": "3.0L Supercharged V6 (310-333 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "TDI Premium Plus", "msrp_adjustment_pct": 0.05, "engine_options": "3.0L Turbo Diesel V6 (240 hp)", "transmission_options": "8-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Timing chain guide wear (3.0 supercharged V6)", "description": "The composite timing chain guides on the supercharged 3.0T V6 wear down over time and can shed material into the timing cover, allowing chain slack to develop.", "symptoms": "A rattling noise from the front of the engine on startup, metallic debris found in the oil pan on inspection, and in advanced cases a check engine light for cam timing faults.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 3000, "estimated_repair_cost_max": 6500, "recommendation": "Listen for a cold-start rattle from the supercharged V6 and ask for any timing component service history."},
+            {"title": "Carbon buildup on intake valves", "description": "Both the 2.0T and 3.0T direct-injection engines accumulate carbon on the intake valves without port fuel injection to help clean them.", "symptoms": "Rough idle, reduced throttle response, and occasional misfire codes that develop gradually as mileage increases.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1400, "recommendation": "Ask about intake cleaning history and note idle smoothness during a cold start."},
+            {"title": "Adaptive air suspension failure", "description": "Cars equipped with the optional Adaptive Air Suspension use air struts and a compressor that wear out and leak with age.", "symptoms": "The car sitting noticeably lower on one side or corner, a suspension warning message on the dash, or an audible compressor running excessively trying to maintain ride height.", "severity": "moderate", "typical_mileage_km": 130000, "estimated_repair_cost_min": 1200, "estimated_repair_cost_max": 2800, "recommendation": "Check ride height is level on all four corners after the car has sat overnight, and look for suspension warning lights."},
+            {"title": "MMI and electrical gremlins", "description": "Random dashboard warning lights and MMI system freezes are a common minor annoyance, often resolved with a software update or module reset.", "symptoms": "Intermittent warning lights for systems that otherwise function normally, or the MMI screen freezing and requiring a restart.", "severity": "minor", "typical_mileage_km": 90000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 600, "recommendation": "Have a diagnostic scan performed to check for stored fault codes not currently displayed on the dash."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 140, "estimated_cost_max": 210},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 70, "estimated_cost_max": 130},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 150, "estimated_cost_max": 230},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 320, "estimated_cost_max": 480},
+            {"name": "Transmission fluid (8-speed Tiptronic)", "interval_km": 80000, "estimated_cost_min": 380, "estimated_cost_max": 600},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 300},
+            {"name": "Supercharger drive belt & service (3.0T)", "interval_km": 100000, "estimated_cost_min": 300, "estimated_cost_max": 500},
+            {"name": "Quattro rear differential fluid", "interval_km": 90000, "estimated_cost_min": 180, "estimated_cost_max": 280}
+          ]
+        },
+        {
+          "label": "C8 (Typ 4K)",
+          "start_year": 2019,
+          "end_year": 2024,
+          "body_type": "sedan",
+          "drivetrain": "AWD",
+          "base_horsepower": 261,
+          "fuel_economy_l_per_100km": 9.0,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 2000,
+          "common_competitors": "BMW 5 Series, Mercedes-Benz E-Class, Genesis G80",
+          "base_value": 34000,
+          "reference_mileage_km": 55000,
+          "trims": [
+            {"name": "Premium", "msrp_adjustment_pct": -0.09, "engine_options": "2.0L Turbo I4 MHEV (261 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 MHEV (261 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "Prestige", "msrp_adjustment_pct": 0.15, "engine_options": "2.0L Turbo I4 MHEV (261 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "S6 2.9T", "msrp_adjustment_pct": 0.4, "engine_options": "2.9L Twin-Turbo V6 (444 hp)", "transmission_options": "8-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Dual-screen MMI touch response issues", "description": "The C8's dual-touchscreen MMI Touch Response system, particularly the lower climate control screen, can develop input lag or intermittent unresponsiveness.", "symptoms": "A delay between tapping the screen and the command registering, or the lower climate screen occasionally freezing and requiring a restart.", "severity": "minor", "typical_mileage_km": 40000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 500, "recommendation": "Operate the climate and infotainment touchscreens repeatedly during the test drive to check for lag or freezing."},
+            {"title": "Carbon buildup on intake valves", "description": "The direct-injection 2.0T engine still accumulates carbon deposits on the intake valves over time despite mild-hybrid updates.", "symptoms": "A rough idle, reduced throttle response, and occasional misfire codes that worsen gradually with mileage.", "severity": "moderate", "typical_mileage_km": 100000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1400, "recommendation": "Ask about intake cleaning history and monitor idle smoothness during a cold start."},
+            {"title": "Adaptive air suspension failure", "description": "The standard adaptive air suspension's air struts, compressor, and valve block can fail or leak with age, common across the Audi lineup.", "symptoms": "Uneven ride height between corners, a suspension fault warning message, or the compressor running excessively trying to maintain level.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 1400, "estimated_repair_cost_max": 3000, "recommendation": "Check that the car sits level on all four corners after sitting overnight and watch for suspension warning lights."},
+            {"title": "48V mild-hybrid battery and belt-alternator-starter issues", "description": "The 48V mild-hybrid system's lithium-ion battery or belt-alternator-starter unit can develop faults that disable coasting and start-stop functionality.", "symptoms": "The start-stop system no longer engaging at idle, a hybrid system warning message, or reduced fuel economy from lost regenerative coasting.", "severity": "moderate", "typical_mileage_km": 90000, "estimated_repair_cost_min": 500, "estimated_repair_cost_max": 1500, "recommendation": "Confirm start-stop functions normally at a traffic light and ask if any hybrid system warnings have appeared."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 150, "estimated_cost_max": 220},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 75, "estimated_cost_max": 140},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 160, "estimated_cost_max": 240},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 340, "estimated_cost_max": 500},
+            {"name": "S tronic (DSG) fluid & filter", "interval_km": 65000, "estimated_cost_min": 420, "estimated_cost_max": 680},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 210, "estimated_cost_max": 320},
+            {"name": "Air suspension component inspection", "interval_km": 80000, "estimated_cost_min": 150, "estimated_cost_max": 300},
+            {"name": "Quattro rear differential fluid", "interval_km": 90000, "estimated_cost_min": 190, "estimated_cost_max": 300}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Q5",
+      "generations": [
+        {
+          "label": "Typ 8R (1st Gen)",
+          "start_year": 2009,
+          "end_year": 2017,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 211,
+          "fuel_economy_l_per_100km": 10.2,
+          "reliability_stars": 3.3,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 1600,
+          "common_competitors": "BMW X3, Mercedes-Benz GLC, Lexus RX",
+          "base_value": 14000,
+          "reference_mileage_km": 140000,
+          "trims": [
+            {"name": "2.0T Premium", "msrp_adjustment_pct": -0.08, "engine_options": "2.0L Turbo I4 (211 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "2.0T Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (220 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "3.0T Prestige", "msrp_adjustment_pct": 0.18, "engine_options": "3.0L Supercharged V6 (272 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "SQ5 3.0T", "msrp_adjustment_pct": 0.32, "engine_options": "3.0L Supercharged V6 (354 hp)", "transmission_options": "8-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Timing chain tensioner failure", "description": "The 2.0T EA888 engine's hydraulic timing chain tensioner can wear out over time, allowing the chain to develop slack and skip.", "symptoms": "A rattling or ticking noise from the front of the engine on cold start-up, a check engine light for cam/crank correlation, and in severe cases a rough-running engine.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 2600, "estimated_repair_cost_max": 6000, "recommendation": "Listen for a cold-start rattle and ask for records of any timing chain service before purchasing."},
+            {"title": "Carbon buildup on intake valves", "description": "Direct fuel injection on the 2.0T and 3.0T engines means no port injection fuel wash over the intake valves, allowing carbon to accumulate.", "symptoms": "Rough idle, hesitation under light throttle, and gradually worsening power delivery over tens of thousands of kilometers.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 650, "estimated_repair_cost_max": 1300, "recommendation": "Ask about intake valve cleaning history and monitor idle smoothness on a cold start."},
+            {"title": "Water pump / thermostat housing failure", "description": "The plastic-impeller water pump and plastic thermostat housing on the 2.0T engine are prone to cracking with age and heat cycling.", "symptoms": "Coolant staining under the front of the vehicle, a slowly dropping coolant level, or a rising temperature gauge in stop-and-go traffic.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1300, "recommendation": "Check for coolant residue under the engine and ask whether the water pump has already been replaced."},
+            {"title": "Timing chain guide wear (3.0 supercharged V6)", "description": "On Prestige and SQ5 models with the supercharged 3.0T V6, the composite timing chain guides wear down and can shed material into the engine.", "symptoms": "A rattling noise from the front of the engine at startup and metallic debris visible in the oil on inspection.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 3200, "estimated_repair_cost_max": 6500, "recommendation": "Listen carefully for a cold start rattle on supercharged V6 models and ask for timing component service history."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 130, "estimated_cost_max": 200},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 65, "estimated_cost_max": 120},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 140, "estimated_cost_max": 220},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 300, "estimated_cost_max": 460},
+            {"name": "Transmission fluid (8-speed Tiptronic)", "interval_km": 80000, "estimated_cost_min": 380, "estimated_cost_max": 580},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 290},
+            {"name": "Quattro rear differential fluid", "interval_km": 90000, "estimated_cost_min": 180, "estimated_cost_max": 280},
+            {"name": "Timing chain tensioner inspection", "interval_km": 130000, "estimated_cost_min": 1200, "estimated_cost_max": 2000}
+          ]
+        },
+        {
+          "label": "Typ FY (2nd Gen)",
+          "start_year": 2018,
+          "end_year": 2024,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 248,
+          "fuel_economy_l_per_100km": 9.4,
+          "reliability_stars": 3.6,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 1700,
+          "common_competitors": "BMW X3, Mercedes-Benz GLC, Genesis GV70",
+          "base_value": 27000,
+          "reference_mileage_km": 65000,
+          "trims": [
+            {"name": "Premium", "msrp_adjustment_pct": -0.08, "engine_options": "2.0L Turbo I4 (248 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "2.0L Turbo I4 (248 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "Prestige", "msrp_adjustment_pct": 0.14, "engine_options": "2.0L Turbo I4 (248 hp)", "transmission_options": "7-speed S tronic"},
+            {"name": "SQ5 3.0T", "msrp_adjustment_pct": 0.35, "engine_options": "3.0L Turbo V6 (349-362 hp)", "transmission_options": "8-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Carbon buildup on intake valves", "description": "The direct-injection 2.0T engine continues to accumulate carbon deposits on the intake valves without a port injection system to wash them clean.", "symptoms": "A rough idle, hesitation under light acceleration, and occasional misfire codes that worsen gradually with mileage.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 650, "estimated_repair_cost_max": 1300, "recommendation": "Ask about intake cleaning history and pay attention to idle smoothness on a cold start."},
+            {"title": "Panoramic sunroof drain clogging", "description": "The drain tubes for the panoramic sunroof can clog with debris, allowing water to back up and leak into the cabin instead of draining outside.", "symptoms": "Damp or wet carpet in the front or rear footwells, a musty smell inside the cabin, or visible water staining on the headliner near the sunroof.", "severity": "minor", "typical_mileage_km": 70000, "estimated_repair_cost_min": 150, "estimated_repair_cost_max": 450, "recommendation": "Check the footwell carpets for dampness and ask if the sunroof drains have been cleaned recently."},
+            {"title": "S tronic (DSG) mechatronic and clutch pack wear", "description": "The 7-speed dual-clutch S tronic transmission's clutch packs and mechatronic unit can wear prematurely under heavy stop-and-go use.", "symptoms": "Jerky or hesitant shifts at low speed, a shudder pulling away from a stop, or a delay engaging drive from park.", "severity": "severe", "typical_mileage_km": 100000, "estimated_repair_cost_min": 1800, "estimated_repair_cost_max": 3200, "recommendation": "Test drive through stop-and-go traffic and low-speed maneuvers to check for hesitation or shudder."},
+            {"title": "MMI infotainment glitches", "description": "The MMI touch infotainment system can lag, freeze, or intermittently drop a connected phone via Apple CarPlay or Android Auto.", "symptoms": "A delayed response to screen taps, the display freezing momentarily, or a dropped Bluetooth/CarPlay connection during use.", "severity": "minor", "typical_mileage_km": 55000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 500, "recommendation": "Connect a phone and cycle through infotainment menus during the test drive to confirm responsiveness."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 140, "estimated_cost_max": 210},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 70, "estimated_cost_max": 130},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 150, "estimated_cost_max": 230},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 310, "estimated_cost_max": 470},
+            {"name": "S tronic (DSG) fluid & filter", "interval_km": 65000, "estimated_cost_min": 400, "estimated_cost_max": 650},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 200, "estimated_cost_max": 300},
+            {"name": "Quattro rear differential fluid", "interval_km": 90000, "estimated_cost_min": 190, "estimated_cost_max": 290},
+            {"name": "Sunroof drain cleaning", "interval_km": 40000, "estimated_cost_min": 80, "estimated_cost_max": 150}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Q7",
+      "generations": [
+        {
+          "label": "Typ 4L (1st Gen)",
+          "start_year": 2007,
+          "end_year": 2015,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 280,
+          "fuel_economy_l_per_100km": 13.8,
+          "reliability_stars": 3.0,
+          "typical_lifespan_km": 250000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 2100,
+          "common_competitors": "BMW X5, Mercedes-Benz GL-Class, Volvo XC90",
+          "base_value": 12000,
+          "reference_mileage_km": 160000,
+          "trims": [
+            {"name": "3.6 Premium", "msrp_adjustment_pct": -0.1, "engine_options": "3.6L V6 (280 hp)", "transmission_options": "6-speed Tiptronic Automatic"},
+            {"name": "3.6 Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "3.6L V6 (280 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "4.2 Prestige", "msrp_adjustment_pct": 0.2, "engine_options": "4.2L V8 (350 hp)", "transmission_options": "6-speed Tiptronic Automatic"},
+            {"name": "3.0 TDI Premium Plus", "msrp_adjustment_pct": 0.08, "engine_options": "3.0L Turbo Diesel V6 (240 hp)", "transmission_options": "8-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension failure", "description": "The standard adaptive air suspension's air struts and compressor commonly wear out and fail as the vehicle ages, especially in cars that sat outdoors year-round.", "symptoms": "The vehicle sagging visibly on one or more corners, a suspension warning message on the dash, an inability to raise the vehicle for off-road mode, or a compressor that runs constantly trying to maintain ride height.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 1800, "estimated_repair_cost_max": 3500, "recommendation": "Check that the vehicle sits level on all four corners after sitting overnight and test raising/lowering the suspension through its settings."},
+            {"title": "Timing chain guide/tensioner wear (3.6 and 4.2 FSI)", "description": "The composite timing chain guides on both the 3.6L V6 and 4.2L V8 FSI engines wear down over time and can shed material or allow the chain to develop slack.", "symptoms": "A rattling noise from the front of the engine on cold start-up, metallic debris found during an oil change, and in advanced cases a check engine light for cam timing faults or rough running.", "severity": "severe", "typical_mileage_km": 150000, "estimated_repair_cost_min": 3500, "estimated_repair_cost_max": 7500, "recommendation": "Listen for a cold start rattle and budget for a specialist pre-purchase inspection given the labor-intensive engine-out repair on the V8."},
+            {"title": "Carbon buildup on intake valves", "description": "The direct-injection FSI engines accumulate carbon deposits on the intake valves over time without port fuel injection to help clean them.", "symptoms": "A rough idle, reduced throttle response, and occasional misfire codes that develop gradually with mileage.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1400, "recommendation": "Ask about intake cleaning history and monitor idle smoothness during a cold start."},
+            {"title": "Water pump / coolant flange failure", "description": "Plastic coolant flanges and the water pump housing are prone to cracking with age and heat cycling, leading to coolant leaks.", "symptoms": "Coolant puddles under the vehicle, a slowly dropping coolant level, or a rising temperature gauge, particularly during hot weather or towing.", "severity": "moderate", "typical_mileage_km": 120000, "estimated_repair_cost_min": 800, "estimated_repair_cost_max": 1500, "recommendation": "Check for coolant staining under the engine bay and ask whether the water pump and coolant flanges have been replaced."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 150, "estimated_cost_max": 230},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 75, "estimated_cost_max": 140},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 160, "estimated_cost_max": 250},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 350, "estimated_cost_max": 520},
+            {"name": "Transmission fluid (Tiptronic)", "interval_km": 80000, "estimated_cost_min": 400, "estimated_cost_max": 620},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 220, "estimated_cost_max": 330},
+            {"name": "Air suspension component inspection", "interval_km": 60000, "estimated_cost_min": 150, "estimated_cost_max": 300},
+            {"name": "Quattro rear differential & transfer case fluid", "interval_km": 90000, "estimated_cost_min": 220, "estimated_cost_max": 350}
+          ]
+        },
+        {
+          "label": "Typ 4M (2nd Gen)",
+          "start_year": 2016,
+          "end_year": 2023,
+          "body_type": "suv",
+          "drivetrain": "AWD",
+          "base_horsepower": 252,
+          "fuel_economy_l_per_100km": 10.7,
+          "reliability_stars": 3.4,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "fair",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 2000,
+          "common_competitors": "BMW X5, Mercedes-Benz GLE, Volvo XC90",
+          "base_value": 26000,
+          "reference_mileage_km": 75000,
+          "trims": [
+            {"name": "Premium", "msrp_adjustment_pct": -0.09, "engine_options": "2.0L Turbo I4 (252 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "Premium Plus", "msrp_adjustment_pct": 0.0, "engine_options": "3.0L Turbo V6 (333 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "Prestige", "msrp_adjustment_pct": 0.15, "engine_options": "3.0L Turbo V6 (333 hp)", "transmission_options": "8-speed Tiptronic Automatic"},
+            {"name": "SQ7 4.0T", "msrp_adjustment_pct": 0.38, "engine_options": "4.0L Twin-Turbo V8 (500 hp)", "transmission_options": "8-speed Tiptronic Automatic"}
+          ],
+          "known_issues": [
+            {"title": "Air suspension failure", "description": "The standard adaptive air suspension's air struts, compressor, and valve block can leak or fail as seals age, a recurring issue across Audi's larger models.", "symptoms": "The vehicle sitting unevenly on one or more corners, a suspension fault warning on the dash, an inability to use off-road lift modes, or a compressor running excessively to maintain ride height.", "severity": "severe", "typical_mileage_km": 130000, "estimated_repair_cost_min": 1800, "estimated_repair_cost_max": 3600, "recommendation": "Check that the vehicle sits level on all four corners after sitting overnight and test the vehicle's ride-height adjustment settings."},
+            {"title": "Carbon buildup on intake valves", "description": "Both the 2.0T and 3.0T direct-injection engines accumulate carbon deposits on the intake valves without a port injection system to wash them clean.", "symptoms": "A rough or uneven idle, hesitation on light acceleration, and occasional misfire codes that worsen gradually with mileage.", "severity": "moderate", "typical_mileage_km": 110000, "estimated_repair_cost_min": 700, "estimated_repair_cost_max": 1400, "recommendation": "Ask about intake valve cleaning history and monitor idle smoothness during a cold start."},
+            {"title": "MMI touch and Virtual Cockpit glitches", "description": "The MMI touch infotainment system and digital Virtual Cockpit display can occasionally freeze or lag, usually resolved with a software update.", "symptoms": "A frozen or unresponsive center touchscreen, a delayed reaction to inputs, or the digital instrument cluster briefly blanking out or rebooting.", "severity": "minor", "typical_mileage_km": 60000, "estimated_repair_cost_min": 0, "estimated_repair_cost_max": 500, "recommendation": "Cycle through infotainment and instrument cluster menus during the test drive to confirm normal responsiveness."},
+            {"title": "Timing chain tensioner wear (3.0T V6)", "description": "While less frequent than on earlier Audi engines, the timing chain tensioner on the 3.0T turbocharged V6 can still wear and allow chain slack to develop.", "symptoms": "A rattling noise from the front of the engine on cold start-up and, in advanced cases, a check engine light for cam/crank timing faults.", "severity": "severe", "typical_mileage_km": 140000, "estimated_repair_cost_min": 2800, "estimated_repair_cost_max": 5500, "recommendation": "Listen for a cold-start rattle from the engine bay and ask about any timing chain service history."}
+          ],
+          "maintenance_items": [
+            {"name": "Engine oil & filter (full synthetic)", "interval_km": 12000, "estimated_cost_min": 150, "estimated_cost_max": 220},
+            {"name": "Cabin & engine air filter", "interval_km": 24000, "estimated_cost_min": 75, "estimated_cost_max": 140},
+            {"name": "Brake fluid flush", "interval_km": 48000, "estimated_cost_min": 160, "estimated_cost_max": 250},
+            {"name": "Spark plugs", "interval_km": 60000, "estimated_cost_min": 340, "estimated_cost_max": 500},
+            {"name": "Transmission fluid (8-speed Tiptronic)", "interval_km": 80000, "estimated_cost_min": 400, "estimated_cost_max": 620},
+            {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 210, "estimated_cost_max": 320},
+            {"name": "Air suspension component inspection", "interval_km": 60000, "estimated_cost_min": 150, "estimated_cost_max": 300},
+            {"name": "Quattro rear differential & transfer case fluid", "interval_km": 90000, "estimated_cost_min": 220, "estimated_cost_max": 350}
+          ]
+        }
+      ]
+    }
+  ]
+}
