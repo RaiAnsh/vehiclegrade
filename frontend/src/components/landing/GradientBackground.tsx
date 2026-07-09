@@ -14,12 +14,12 @@ export function GradientBackground() {
         transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
-        className="absolute top-1/3 -right-40 h-[28rem] w-[28rem] rounded-full bg-purple-500/20 blur-[120px]"
+        className="absolute top-1/3 -right-40 h-[28rem] w-[28rem] rounded-full bg-white/10 blur-[120px]"
         animate={{ x: [0, -50, 30, 0], y: [0, -30, 20, 0] }}
         transition={{ duration: 28, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
-        className="absolute bottom-0 left-1/4 h-[24rem] w-[24rem] rounded-full bg-emerald-400/10 blur-[110px]"
+        className="absolute bottom-0 left-1/4 h-[24rem] w-[24rem] rounded-full bg-red-900/15 blur-[110px]"
         animate={{ x: [0, 30, -40, 0], y: [0, -20, 30, 0] }}
         transition={{ duration: 32, repeat: Infinity, ease: "easeInOut" }}
       />

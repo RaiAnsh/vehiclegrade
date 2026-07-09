@@ -8,8 +8,8 @@
   --border-glass: rgba(255, 255, 255, 0.09);
   --foreground: #f4f6fb;
   --muted: #8b93a7;
-  --accent: #4f8cff;
-  --accent-soft: #4f8cff26;
+  --accent: #e0212a;
+  --accent-soft: #e0212a26;
   --excellent: #34d399;
   --good: #4f8cff;
   --fair: #fbbf24;
@@ -49,7 +49,7 @@ body {
 }
 
 .accent-gradient-text {
-  background: linear-gradient(90deg, #93c5fd, #4f8cff 60%, #a78bfa);
+  background: linear-gradient(90deg, #ff6b6b, #e0212a 55%, #8b0000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
