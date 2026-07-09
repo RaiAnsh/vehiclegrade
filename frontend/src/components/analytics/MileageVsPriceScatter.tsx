@@ -28,9 +28,10 @@ export function MileageVsPriceScatter({ data }: { data: DashboardStats["mileage_
         <Tooltip
           cursor={{ strokeDasharray: "3 3" }}
           contentStyle={chartTooltipStyle}
-          formatter={(value: number, name: string) =>
-            name === "Mileage" ? [`${value.toLocaleString()} km`, name] : [`$${value.toLocaleString()}`, name]
-          }
+          formatter={(value, name) => {
+            const num = Number(value);
+            return name === "Mileage" ? [`${num.toLocaleString()} km`, name] : [`$${num.toLocaleString()}`, name];
+          }}
         />
         <Scatter data={data} fill="var(--accent)" fillOpacity={0.7} />
       </ScatterChart>
