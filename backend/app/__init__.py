@@ -31,6 +31,8 @@ def create_app(config_class=Config):
     with app.app_context():
         from app import models  # noqa: F401 - ensures models are registered with SQLAlchemy
 
+        _sync_schema()
+
         from app.routes import register_routes
         register_routes(app)
 
@@ -38,3 +40,39 @@ def create_app(config_class=Config):
         register_cli(app)
 
     return app
+
+
+def _sync_schema():
+    """Additive-only schema sync: adds any columns that exist on a model but
+    not yet on its table.
+
+    This project has no migration tool (Flask-Migrate/Alembic) - the models
+    are the only source of truth, and `seed-db` is a manual, destructive
+    (drop + recreate) CLI command. That means a normal model change like
+    adding a new nullable column (e.g. Listing.image_url) silently breaks
+    every route touching that table in production until someone remembers to
+    run a manual migration. Running this on every startup means a plain
+    `git push` is enough to keep the live schema in sync - it only ever adds
+    missing columns, never drops or alters existing ones, so it's safe to
+    run unconditionally.
+    """
+    from sqlalchemy import inspect, text
+
+    inspector = inspect(db.engine)
+    for table in db.metadata.sorted_tables:
+        if not inspector.has_table(table.name):
+            continue
+        existing_columns = {col["name"] for col in inspector.get_columns(table.name)}
+        for column in table.columns:
+            if column.name in existing_columns:
+                continue
+            if not column.nullable:
+                # Adding a NOT NULL column to a table that already has rows
+                # needs a default/backfill strategy - out of scope for this
+                # auto-sync, so it's skipped rather than risking a startup
+                # crash. New required columns still need a real migration.
+                continue
+            column_type = column.type.compile(dialect=db.engine.dialect)
+            ddl = f'ALTER TABLE "{table.name}" ADD COLUMN "{column.name}" {column_type}'
+            with db.engine.begin() as conn:
+                conn.execute(text(ddl))
