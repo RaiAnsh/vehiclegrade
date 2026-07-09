@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "VehicleGrade — Vehicle Intelligence for Smarter Used Car Buyers",
   description:
     "Analyze used vehicle listings, estimate fair market value, uncover known issues, and negotiate smarter with a transparent, rule-based scoring engine.",
+  verification: {
+    google: "b9CQgRU51vNrsvB3F_tD9rolTWLXizwJmepacQT0lHk",
+  },
 };
 
 export default function RootLayout({
