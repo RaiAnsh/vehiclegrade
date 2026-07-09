@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -13,9 +14,30 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-3xl text-center">
         <motion.div
+          initial={{ opacity: 0, scale: 0.4, rotate: -25 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0, y: [0, -10, 0] }}
+          transition={{
+            opacity: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
+            scale: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
+            rotate: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
+            y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.7 },
+          }}
+          className="mx-auto mb-6 h-24 w-24 sm:h-28 sm:w-28"
+        >
+          <Image
+            src="/circle_logo.png"
+            alt="VehicleGrade.ca"
+            width={256}
+            height={256}
+            priority
+            className="h-full w-full drop-shadow-[0_0_45px_rgba(220,38,38,0.4)]"
+          />
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
           className="mb-6 inline-flex items-center gap-2 rounded-full glass-card px-4 py-1.5 text-xs text-muted"
         >
           Rule-based vehicle intelligence &middot; No machine learning
@@ -24,7 +46,7 @@ export function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.05 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
           className="text-4xl font-semibold tracking-tight sm:text-6xl"
         >
           Should You Buy That{" "}
@@ -34,7 +56,7 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
           className="mx-auto mt-6 max-w-xl text-lg text-muted"
         >
           Analyze listings, estimate fair market value, uncover known issues
@@ -45,7 +67,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.25 }}
+          transition={{ duration: 0.6, delay: 0.45 }}
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <Link href="/dashboard">
