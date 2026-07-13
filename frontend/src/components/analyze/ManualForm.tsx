@@ -36,14 +36,28 @@ interface ManualFormProps {
   onSubmit: () => void;
   submitting: boolean;
   error: string | null;
+  // Field names that were filled in by the AI parsing fallback rather than
+  // the rule-based parser or the user, so the form can flag them for a
+  // closer review instead of implying they're as certain as a manual entry.
+  aiFields?: string[];
 }
 
-export function ManualForm({ value, onChange, onSubmit, submitting, error }: ManualFormProps) {
+function AIAssistedTag() {
+  return (
+    <span className="ml-1.5 rounded-full bg-purple-400/15 px-1.5 py-0.5 text-[10px] font-medium text-purple-300 ring-1 ring-purple-400/30">
+      AI-assisted
+    </span>
+  );
+}
+
+export function ManualForm({ value, onChange, onSubmit, submitting, error, aiFields = [] }: ManualFormProps) {
   const { catalog } = useCatalog();
 
   function update<K extends keyof ManualFormValue>(key: K, val: ManualFormValue[K]) {
     onChange({ ...value, [key]: val });
   }
+
+  const isAiField = (field: string) => aiFields.includes(field);
 
   const selectedMake = catalog?.makes.find((m) => m.name === value.make);
   const models = selectedMake?.models ?? [];
@@ -71,7 +85,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
     <Card className="p-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Make</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Make
+            {isAiField("make") && <AIAssistedTag />}
+          </label>
           <Select
             value={value.make ?? ""}
             onChange={(e) => onChange({ ...value, make: e.target.value || undefined, model: undefined, trim: undefined })}
@@ -86,7 +103,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Model</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Model
+            {isAiField("model") && <AIAssistedTag />}
+          </label>
           <Select
             value={value.model ?? ""}
             onChange={(e) => onChange({ ...value, model: e.target.value || undefined, trim: undefined })}
@@ -102,7 +122,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Year</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Year
+            {isAiField("year") && <AIAssistedTag />}
+          </label>
           <Input
             type="number"
             placeholder="e.g. 2018"
@@ -125,7 +148,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Mileage (km)</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Mileage (km)
+            {isAiField("mileage_km") && <AIAssistedTag />}
+          </label>
           <Input
             type="number"
             placeholder="e.g. 95000"
@@ -135,7 +161,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Price ($)</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Price ($)
+            {isAiField("price") && <AIAssistedTag />}
+          </label>
           <Input
             type="number"
             placeholder="e.g. 15900"
@@ -145,7 +174,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Transmission</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Transmission
+            {isAiField("transmission") && <AIAssistedTag />}
+          </label>
           <Select value={value.transmission ?? ""} onChange={(e) => update("transmission", e.target.value || undefined)}>
             <option value="">Select transmission</option>
             {TRANSMISSIONS.map((t) => (
@@ -157,7 +189,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Fuel type</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Fuel type
+            {isAiField("fuel_type") && <AIAssistedTag />}
+          </label>
           <Select value={value.fuel_type ?? ""} onChange={(e) => update("fuel_type", e.target.value || undefined)}>
             <option value="">Gasoline (default)</option>
             {FUEL_TYPES.map((f) => (
@@ -169,7 +204,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Title status</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Title status
+            {isAiField("title_status") && <AIAssistedTag />}
+          </label>
           <Select
             value={value.title_status ?? ""}
             onChange={(e) => update("title_status", (e.target.value || undefined) as TitleStatus | undefined)}
@@ -184,7 +222,10 @@ export function ManualForm({ value, onChange, onSubmit, submitting, error }: Man
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs text-muted">Location</label>
+          <label className="mb-1.5 block text-xs text-muted">
+            Location
+            {isAiField("location") && <AIAssistedTag />}
+          </label>
           <Select value={value.location ?? ""} onChange={(e) => update("location", e.target.value || undefined)}>
             <option value="">Unknown</option>
             {LOCATIONS.map((city) => (

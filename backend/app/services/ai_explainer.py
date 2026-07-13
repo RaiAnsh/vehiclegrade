@@ -8,19 +8,10 @@ no LLM is configured or anything goes wrong, so the rest of the report is
 never affected by this being on or off.
 """
 
-from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
-
 from pydantic import BaseModel, Field
 
 from app.services.llm_client import get_llm
-
-# Hard wall-clock cap on the LLM call, enforced independently of whatever
-# timeout (or lack thereof) the underlying provider SDK actually honors. A
-# request thread blocked on a hanging network call can outlive gunicorn's
-# own worker timeout and get hard-killed before our try/except ever runs, so
-# this is a second, code-level guarantee that a slow/hung provider can never
-# take the rest of the report down with it.
-_LLM_CALL_TIMEOUT_SECONDS = 10
+from app.services.llm_timeout import run_with_timeout
 
 SYSTEM_PROMPT = """You are a plain-English explainer for a used-vehicle analysis report.
 
@@ -68,14 +59,5 @@ def generate_explanation(report_summary, description_text):
             },
         ])
 
-    executor = ThreadPoolExecutor(max_workers=1)
-    try:
-        result = executor.submit(_call).result(timeout=_LLM_CALL_TIMEOUT_SECONDS)
-        return result.model_dump()
-    except (Exception, FutureTimeoutError):
-        return None
-    finally:
-        # wait=False: if _call() timed out, don't block the request thread
-        # waiting for a possibly-hung network call to finish - let it die on
-        # its own in the background instead.
-        executor.shutdown(wait=False)
+    result = run_with_timeout(_call)
+    return result.model_dump() if result is not None else None

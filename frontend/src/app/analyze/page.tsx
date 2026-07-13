@@ -12,6 +12,7 @@ import { AnalyzeInput, ListingDetail } from "@/lib/types";
 export default function AnalyzePage() {
   const [mode, setMode] = useState<InputMode>("manual");
   const [formValue, setFormValue] = useState<ManualFormValue>({});
+  const [aiFields, setAiFields] = useState<string[]>([]);
   const [report, setReport] = useState<ListingDetail | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -41,15 +42,23 @@ export default function AnalyzePage() {
       <div className="mt-6 space-y-6">
         {mode === "paste" && (
           <PasteTextForm
-            onParsed={(parsed) => {
+            onParsed={({ _fields_from_ai, ...parsed }) => {
               setFormValue((prev) => ({ ...prev, ...parsed }));
+              setAiFields(_fields_from_ai ?? []);
               setMode("manual");
             }}
           />
         )}
 
         {mode === "manual" && (
-          <ManualForm value={formValue} onChange={setFormValue} onSubmit={handleSubmit} submitting={submitting} error={error} />
+          <ManualForm
+            value={formValue}
+            onChange={setFormValue}
+            onSubmit={handleSubmit}
+            submitting={submitting}
+            error={error}
+            aiFields={aiFields}
+          />
         )}
 
         {report && <VehicleReport listing={report} />}

@@ -38,7 +38,8 @@ export function PasteTextForm({ onParsed }: PasteTextFormProps) {
 
       <p className="mt-2 text-xs text-muted">
         We extract year, make, model, price, mileage, title status, transmission, fuel type, and location with simple
-        pattern matching - no AI involved. Review the prefilled form before analyzing.
+        pattern matching first. If a field is still missing and AI assistance is available, it may fill in the rest
+        (marked &ldquo;AI-assisted&rdquo;) &mdash; always review the prefilled form before analyzing.
       </p>
 
       {error && <p className="mt-3 text-sm text-[var(--avoid)]">{error}</p>}

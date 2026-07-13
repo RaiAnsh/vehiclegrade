@@ -332,4 +332,8 @@ export interface ParsedListing {
   transmission?: string;
   fuel_type?: string;
   location?: string;
+  // Field names filled in by the AI fallback (only fields the rule-based
+  // parser couldn't find) - never present if no LLM is configured, or if
+  // the rule-based parser found everything on its own.
+  _fields_from_ai?: string[];
 }

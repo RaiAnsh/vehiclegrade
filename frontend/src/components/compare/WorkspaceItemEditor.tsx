@@ -32,6 +32,7 @@ export function WorkspaceItemEditor({
   const [mode, setMode] = useState<InputMode>("manual");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [aiFields, setAiFields] = useState<string[]>([]);
 
   function handleAnalyze() {
     setSubmitting(true);
@@ -63,8 +64,9 @@ export function WorkspaceItemEditor({
 
       {mode === "paste" && (
         <PasteTextForm
-          onParsed={(parsed) => {
+          onParsed={({ _fields_from_ai, ...parsed }) => {
             onFormValueChange({ ...formValue, ...parsed });
+            setAiFields(_fields_from_ai ?? []);
             setMode("manual");
           }}
         />
@@ -77,6 +79,7 @@ export function WorkspaceItemEditor({
           onSubmit={handleAnalyze}
           submitting={submitting}
           error={error}
+          aiFields={aiFields}
         />
       )}
 
