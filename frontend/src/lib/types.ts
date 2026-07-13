@@ -16,7 +16,13 @@ export type IssueStatus = "not_yet_relevant" | "approaching" | "common_now" | "o
 
 export type Condition = "excellent" | "good" | "fair" | "poor";
 
-export type DataSourceType = "reference_data" | "market_sample" | "estimate" | "ai_generated";
+export type DataSourceType =
+  | "reference_data"
+  | "market_sample"
+  | "estimate"
+  | "ai_generated"
+  | "seller_provided"
+  | "official_recall";
 
 export interface DataSourceInfo {
   source: DataSourceType;
@@ -30,11 +36,20 @@ export interface ConfidenceFactor {
   points: number;
 }
 
+// How specifically the known-issue/reliability data attached to a report
+// matches the vehicle: an exact trim/engine match, a generation-level match
+// (trim not identified), a match borrowed via a shared engine/component
+// (reachable once engine-family data exists), or no match at all.
+export type MatchTypeTier = "exact_vehicle" | "generation" | "engine_component" | "unsupported";
+
+export type MatchType = MatchTypeTier | null;
+
 export interface Confidence {
   score: number;
   level: ConfidenceLevel;
   factors: ConfidenceFactor[];
   missing_data: string[];
+  match_type?: MatchType;
 }
 
 export interface ComparableListing {

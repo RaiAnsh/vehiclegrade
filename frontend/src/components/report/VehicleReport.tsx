@@ -3,6 +3,7 @@ import { StandardDisclaimer } from "@/components/layout/StandardDisclaimer";
 import { ScoreHeader } from "./ScoreHeader";
 import { VerdictCard } from "./VerdictCard";
 import { ConfidenceBadge } from "./ConfidenceBadge";
+import { MatchTypeBadge } from "./MatchTypeBadge";
 import { ValueComparison } from "./ValueComparison";
 import { RepairEstimateCard } from "./RepairEstimateCard";
 import { AIExplanationCard } from "./AIExplanationCard";
@@ -46,6 +47,7 @@ export function VehicleReport({ listing }: VehicleReportProps) {
         <AIExplanationCard explanation={listing.ai_explanation} source={sources.ai_explanation} />
       )}
       <ConfidenceBadge confidence={listing.confidence} source={sources.confidence} />
+      <MatchTypeBadge matchType={listing.confidence.match_type} />
       <ValueComparison listing={listing} />
       {listing.repair_estimate && sources.repair_estimate && (
         <RepairEstimateCard estimate={listing.repair_estimate} source={sources.repair_estimate} />

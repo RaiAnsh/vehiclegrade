@@ -25,8 +25,13 @@ NO_MILEAGE_PENALTY = 25
 UNBANDED_COMPARABLES_PENALTY = 6
 
 
-def compute_confidence(listing, comparables_summary):
-    """Return {score, level, factors, missing_data} for a listing."""
+def compute_confidence(listing, comparables_summary, match_type=None):
+    """Return {score, level, factors, missing_data, match_type} for a listing.
+
+    `match_type` (see app.services.match_type) is attached as-is for display -
+    it doesn't affect the score itself, since a missing/generation-level match
+    already lowers the score via the known-issue-data and trim penalties below.
+    """
     factors = []
     missing_data = []
 
@@ -93,4 +98,5 @@ def compute_confidence(listing, comparables_summary):
         "level": level,
         "factors": factors,
         "missing_data": missing_data,
+        "match_type": match_type,
     }

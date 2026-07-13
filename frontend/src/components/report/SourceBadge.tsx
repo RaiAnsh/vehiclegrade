@@ -6,6 +6,8 @@ const SOURCE_STYLES: Record<DataSourceType, string> = {
   market_sample: "bg-[var(--fair)]/15 text-[var(--fair)] ring-1 ring-[var(--fair)]/30",
   estimate: "bg-white/10 text-muted ring-1 ring-white/15",
   ai_generated: "bg-purple-400/15 text-purple-300 ring-1 ring-purple-400/30",
+  seller_provided: "bg-white/10 text-muted ring-1 ring-white/15",
+  official_recall: "bg-[var(--good)]/15 text-[var(--good)] ring-1 ring-[var(--good)]/30",
 };
 
 interface SourceBadgeProps {
