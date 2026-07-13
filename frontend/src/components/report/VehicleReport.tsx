@@ -11,6 +11,7 @@ import { ComparableListingsCard } from "./ComparableListingsCard";
 import { VehicleSummaryCard } from "./VehicleSummaryCard";
 import { ReliabilityCard } from "./ReliabilityCard";
 import { KnownIssuesList } from "./KnownIssuesList";
+import { GeneralGuidanceCard } from "./GeneralGuidanceCard";
 import { MaintenanceTimeline } from "./MaintenanceTimeline";
 import { InspectionChecklistCard } from "./InspectionChecklistCard";
 import { SellerQuestionsList } from "./SellerQuestionsList";
@@ -59,6 +60,9 @@ export function VehicleReport({ listing }: VehicleReportProps) {
         <ReliabilityCard listing={listing} />
       </div>
 
+      {listing.general_guidance && sources.general_guidance && (
+        <GeneralGuidanceCard guidance={listing.general_guidance} source={sources.general_guidance} />
+      )}
       <KnownIssuesList issues={listing.known_issues} source={sources.known_issues} />
       <MaintenanceTimeline timeline={listing.maintenance_timeline} source={sources.maintenance_timeline} />
       <InspectionChecklistCard checklist={listing.inspection_checklist} />

@@ -4,6 +4,7 @@ const TIER_COLOR: Record<MatchTypeTier, string> = {
   exact_vehicle: "var(--good)",
   generation: "var(--fair)",
   engine_component: "var(--fair)",
+  general_guidance: "var(--avoid)",
   unsupported: "var(--avoid)",
 };
 
@@ -11,6 +12,7 @@ const TIER_LABEL: Record<MatchTypeTier, string> = {
   exact_vehicle: "Matched to this exact trim/engine",
   generation: "Matched to this generation (trim not identified)",
   engine_component: "Matched via a shared engine/component",
+  general_guidance: "No vehicle-specific data yet - showing general guidance",
   unsupported: "No known-issue data recorded yet",
 };
 

@@ -47,6 +47,11 @@ export function KnownIssuesList({ issues, source }: KnownIssuesListProps) {
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <p className="font-medium">{issue.title}</p>
                 <div className="flex items-center gap-2">
+                  {issue.match_tier === "engine_component" && (
+                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-muted ring-1 ring-white/15">
+                      Shared engine
+                    </span>
+                  )}
                   <Badge>{SEVERITY_LABEL[issue.severity]}</Badge>
                   <span
                     className="rounded-full px-3 py-1 text-xs font-medium"
@@ -56,6 +61,12 @@ export function KnownIssuesList({ issues, source }: KnownIssuesListProps) {
                   </span>
                 </div>
               </div>
+              {issue.match_tier === "engine_component" && (
+                <p className="mt-2 text-xs text-muted">
+                  Reported for a different generation that shares this vehicle&apos;s engine - not
+                  confirmed for this exact generation.
+                </p>
+              )}
 
               <p className="mt-2 text-sm text-muted">{issue.description}</p>
               {issue.symptoms && (

@@ -38,9 +38,15 @@ export interface ConfidenceFactor {
 
 // How specifically the known-issue/reliability data attached to a report
 // matches the vehicle: an exact trim/engine match, a generation-level match
-// (trim not identified), a match borrowed via a shared engine/component
-// (reachable once engine-family data exists), or no match at all.
-export type MatchTypeTier = "exact_vehicle" | "generation" | "engine_component" | "unsupported";
+// (trim not identified), a match borrowed via a shared engine/component, only
+// generic mileage/age-based guidance (no vehicle-specific data at all), or no
+// match at all (a defensive fallback that general_guidance normally prevents).
+export type MatchTypeTier =
+  | "exact_vehicle"
+  | "generation"
+  | "engine_component"
+  | "general_guidance"
+  | "unsupported";
 
 export type MatchType = MatchTypeTier | null;
 
@@ -159,6 +165,7 @@ export interface KnownIssue {
   estimated_repair_cost_max: number;
   symptoms: string | null;
   recommendation: string;
+  match_tier: MatchTypeTier;
 }
 
 export interface MaintenanceTimelineItem {
@@ -167,6 +174,7 @@ export interface MaintenanceTimelineItem {
   due_in_km: number;
   estimated_cost_min: number | null;
   estimated_cost_max: number | null;
+  match_tier: MatchTypeTier;
 }
 
 export interface MaintenanceTimeline {
@@ -231,6 +239,7 @@ export interface ListingDetail extends ListingSummary {
   data_sources: Record<string, DataSourceInfo>;
   repair_estimate?: RepairEstimate;
   ai_explanation?: AIExplanation;
+  general_guidance?: string[];
   generated_at: string;
 }
 

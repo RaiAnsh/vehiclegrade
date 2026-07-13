@@ -10,11 +10,12 @@ from app.services.ai_explainer import generate_explanation
 from app.services.comparable_vehicles import find_comparable_vehicles
 from app.services.confidence import compute_confidence
 from app.services.deal_engine import classify_deal, score_listing, suggest_offer
+from app.services.general_guidance import build_general_guidance
 from app.services.inspection_checklist import build_inspection_checklist
 from app.services.known_issues import evaluate_known_issues
 from app.services.maintenance_timeline import build_timeline
 from app.services.market_comparables import find_comparables, summarize_comparables
-from app.services.match_type import compute_match_type
+from app.services.match_type import GENERAL_GUIDANCE, compute_match_type
 from app.services.mileage_analysis import classify_mileage
 from app.services.negotiation import build_negotiation
 from app.services.ownership_cost import estimate_ownership_cost
@@ -163,6 +164,10 @@ def listing_detail(listing):
         )
         detail["repair_estimate"] = repair_estimate
         data_sources["repair_estimate"] = {"source": "estimate", "label": SOURCE_LABELS["estimate"]}
+
+    if match_type == GENERAL_GUIDANCE:
+        detail["general_guidance"] = build_general_guidance(listing)
+        data_sources["general_guidance"] = {"source": "estimate", "label": SOURCE_LABELS["estimate"]}
 
     detail["data_sources"] = data_sources
 

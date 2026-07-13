@@ -23,6 +23,9 @@ function ItemRow({ item, color }: { item: MaintenanceTimelineItem; color: string
           Est. ${item.estimated_cost_min.toLocaleString()} - ${item.estimated_cost_max.toLocaleString()}
         </p>
       )}
+      {item.match_tier === "engine_component" && (
+        <p className="mt-1 text-xs text-muted">Via shared engine, different generation</p>
+      )}
     </div>
   );
 }
