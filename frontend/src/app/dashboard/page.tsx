@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import { StatsGrid } from "@/components/dashboard/StatsGrid";
+import { DemoDataNotice } from "@/components/layout/DemoDataNotice";
 import { FilterPanel } from "@/components/dashboard/FilterPanel";
 import { ListingGrid } from "@/components/dashboard/ListingGrid";
 import { useDebounce } from "@/hooks/useDebounce";
@@ -17,7 +18,8 @@ export default function DashboardPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
       <h1 className="text-3xl font-semibold tracking-tight">Dashboard</h1>
-      <p className="mt-2 text-muted">A live read on today&apos;s used vehicle listings and where the deals are.</p>
+      <p className="mt-2 text-muted">Browse sample used vehicle listings and see how VehicleGrade scores them.</p>
+      <DemoDataNotice />
 
       <div className="mt-8">
         <StatsGrid />

@@ -24,6 +24,14 @@ export const metadata: Metadata = {
   },
 };
 
+// Anonymous usage analytics (Plausible), enabled only when
+// NEXT_PUBLIC_PLAUSIBLE_DOMAIN is set. Plausible's script is a single
+// lightweight tag with no cookies/no npm dependency, so it's added directly
+// here rather than through an SDK. No-ops entirely if unset, since creating
+// the actual Plausible/Umami account is something only the project owner
+// can do.
+const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +42,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        {plausibleDomain && (
+          <script defer data-domain={plausibleDomain} src="https://plausible.io/js/script.js" />
+        )}
+      </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>

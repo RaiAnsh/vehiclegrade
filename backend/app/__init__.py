@@ -12,11 +12,14 @@ from flask_cors import CORS
 
 from app.config import Config
 from app.extensions import db
+from app.services.error_tracking import init_error_tracking
 
 
 def create_app(config_class=Config):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(config_class)
+
+    init_error_tracking(app)
 
     db.init_app(app)
 

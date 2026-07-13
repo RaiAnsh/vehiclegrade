@@ -6,6 +6,7 @@ from app.models.known_issue import KnownIssue
 from app.models.maintenance_item import MaintenanceItem
 from app.models.location import Location
 from app.models.listing import Listing, VALID_TITLE_STATUSES
+from app.models.feedback import Feedback
 
 __all__ = [
     "VehicleMake",
@@ -17,4 +18,5 @@ __all__ = [
     "Location",
     "Listing",
     "VALID_TITLE_STATUSES",
+    "Feedback",
 ]

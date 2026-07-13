@@ -74,3 +74,17 @@ export function parseListingText(text: string): Promise<ParsedListing> {
     body: JSON.stringify({ text }),
   });
 }
+
+export interface FeedbackInput {
+  message: string;
+  email?: string;
+  category?: string;
+  page_url?: string;
+}
+
+export function submitFeedback(input: FeedbackInput): Promise<{ status: string }> {
+  return apiFetch<{ status: string }>("/feedback", {
+    method: "POST",
+    body: JSON.stringify(input),
+  });
+}

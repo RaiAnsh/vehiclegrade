@@ -1,6 +1,7 @@
 "use client";
 
 import { ChartCard } from "@/components/analytics/ChartCard";
+import { DemoDataNotice } from "@/components/layout/DemoDataNotice";
 import { PriceByMakeChart } from "@/components/analytics/PriceByMakeChart";
 import { PriceByModelChart } from "@/components/analytics/PriceByModelChart";
 import { MileageVsPriceScatter } from "@/components/analytics/MileageVsPriceScatter";
@@ -17,7 +18,8 @@ export default function AnalyticsPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
       <h1 className="text-3xl font-semibold tracking-tight">Analytics</h1>
-      <p className="mt-2 text-muted">A market-wide view across every listing VehicleGrade has analyzed.</p>
+      <p className="mt-2 text-muted">Aggregate view across the sample listings in VehicleGrade&apos;s demo dataset.</p>
+      <DemoDataNotice />
 
       <div className="mt-8 grid gap-5 lg:grid-cols-2">
         <ChartCard title="Average price by make" loading={loading} index={0}>

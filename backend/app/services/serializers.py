@@ -4,6 +4,8 @@ that returns a listing - GET /listings, GET /listing/:id, POST /analyze,
 POST /search - produces an identical, consistent shape.
 """
 
+from datetime import datetime
+
 from app.services.ai_explainer import generate_explanation
 from app.services.comparable_vehicles import find_comparable_vehicles
 from app.services.confidence import compute_confidence
@@ -102,6 +104,7 @@ def listing_detail(listing):
     detail = _base_fields(listing, score, market_value, offer)
     detail["score_reasons"] = reasons
     detail["value_breakdown"] = breakdown
+    detail["generated_at"] = datetime.utcnow().isoformat()
 
     detail["vehicle_summary"] = {
         "engine": listing.trim.engine_options if listing.trim else None,

@@ -1,4 +1,5 @@
 import { ListingDetail } from "@/lib/types";
+import { StandardDisclaimer } from "@/components/layout/StandardDisclaimer";
 import { ScoreHeader } from "./ScoreHeader";
 import { VerdictCard } from "./VerdictCard";
 import { ConfidenceBadge } from "./ConfidenceBadge";
@@ -31,6 +32,14 @@ export function VehicleReport({ listing }: VehicleReportProps) {
 
   return (
     <div className="space-y-6">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <StandardDisclaimer />
+        {listing.generated_at && (
+          <span className="whitespace-nowrap text-xs text-muted">
+            Report generated {new Date(listing.generated_at).toLocaleDateString()}
+          </span>
+        )}
+      </div>
       <ScoreHeader listing={listing} />
       <VerdictCard verdict={listing.verdict} source={sources.verdict} />
       {listing.ai_explanation && sources.ai_explanation && (

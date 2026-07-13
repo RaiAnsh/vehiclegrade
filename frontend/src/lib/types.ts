@@ -216,6 +216,7 @@ export interface ListingDetail extends ListingSummary {
   data_sources: Record<string, DataSourceInfo>;
   repair_estimate?: RepairEstimate;
   ai_explanation?: AIExplanation;
+  generated_at: string;
 }
 
 export interface ListingsResponse {
