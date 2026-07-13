@@ -15,10 +15,19 @@ class Listing(db.Model):
     generation_id = db.Column(db.Integer, db.ForeignKey("generations.id"), nullable=False, index=True)
     trim_id = db.Column(db.Integer, db.ForeignKey("trims.id"), nullable=True, index=True)
     location_id = db.Column(db.Integer, db.ForeignKey("locations.id"), nullable=False, index=True)
+    # Optional: the specific Engine this listing actually has, if known (e.g.
+    # user-supplied or parsed from a description). Nullable - falls back to
+    # trim.engine_id / generation-level matching when absent.
+    engine_id = db.Column(db.Integer, db.ForeignKey("engines.id"), nullable=True, index=True)
 
     year = db.Column(db.Integer, nullable=False)
     mileage_km = db.Column(db.Integer, nullable=False, index=True)
     price = db.Column(db.Float, nullable=False, index=True)
+
+    # Optional VIN, when the user has one - never required, never used for
+    # scoring (VIN-decoded specs would just duplicate the reference data this
+    # app already has). Purely a reference/lookup convenience.
+    vin = db.Column(db.String(17), nullable=True)
 
     transmission = db.Column(db.String(50), nullable=False)  # e.g. "Automatic", "Manual", "8-speed Tiptronic Automatic"
     fuel_type = db.Column(db.String(20), nullable=False, default="Gasoline")
@@ -54,6 +63,7 @@ class Listing(db.Model):
     generation = db.relationship("Generation", back_populates="listings")
     trim = db.relationship("Trim", back_populates="listings")
     location = db.relationship("Location", back_populates="listings")
+    engine = db.relationship("Engine")
 
     def __repr__(self):
         return f"<Listing #{self.id} gen={self.generation_id}>"

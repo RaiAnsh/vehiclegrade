@@ -13,6 +13,12 @@ class KnownIssue(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     generation_id = db.Column(db.Integer, db.ForeignKey("generations.id"), nullable=False, index=True)
+    # Optional: which engine this issue is actually caused by, if known. Lets
+    # the same issue surface for other generations sharing that engine
+    # (see app.services.match_type) instead of only ever matching the exact
+    # generation it was authored against. Nullable - most existing rows won't
+    # have this until reviewed.
+    engine_id = db.Column(db.Integer, db.ForeignKey("engines.id"), nullable=True, index=True)
 
     title = db.Column(db.String(100), nullable=False)  # "AC compressor failure"
     description = db.Column(db.Text, nullable=False)
@@ -25,6 +31,7 @@ class KnownIssue(db.Model):
     recommendation = db.Column(db.Text, nullable=False)
 
     generation = db.relationship("Generation", back_populates="known_issues")
+    engine = db.relationship("Engine")
 
     def __repr__(self):
         return f"<KnownIssue {self.title}>"

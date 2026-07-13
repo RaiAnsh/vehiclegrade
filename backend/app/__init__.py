@@ -61,6 +61,12 @@ def _sync_schema():
     """
     from sqlalchemy import inspect, text
 
+    # Creates any brand-new tables (e.g. Engine/GenerationEngine) that don't
+    # exist yet. Safe/idempotent - only ever adds tables that are entirely
+    # missing, never touches or alters a table that already exists, so this
+    # can run unconditionally alongside the column-ALTER loop below.
+    db.create_all()
+
     inspector = inspect(db.engine)
     for table in db.metadata.sorted_tables:
         if not inspector.has_table(table.name):

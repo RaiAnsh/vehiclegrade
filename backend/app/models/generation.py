@@ -38,11 +38,18 @@ class Generation(db.Model):
     base_value = db.Column(db.Float, nullable=False)
     reference_mileage_km = db.Column(db.Integer, nullable=False)
 
+    # When this generation's reference data (known issues, reliability
+    # figures, etc.) was last reviewed by a person - nullable since almost
+    # all existing seeded generations don't have this yet. Purely
+    # informational today; not read by any scoring logic.
+    reference_reviewed_at = db.Column(db.DateTime, nullable=True)
+
     model = db.relationship("VehicleModel", back_populates="generations")
     trims = db.relationship("Trim", back_populates="generation")
     known_issues = db.relationship("KnownIssue", back_populates="generation")
     maintenance_items = db.relationship("MaintenanceItem", back_populates="generation")
     listings = db.relationship("Listing", back_populates="generation")
+    engines = db.relationship("GenerationEngine", back_populates="generation")
 
     def __repr__(self):
         return f"<Generation {self.label} ({self.start_year}-{self.end_year})>"

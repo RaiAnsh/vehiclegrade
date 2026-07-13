@@ -1,0 +1,166 @@
+{
+  "1": {
+    "vehicle": "2010 Audi A4",
+    "vehiclegrade_score": 78,
+    "deal_label": "Good Buy",
+    "verdict": {
+      "recommendation": "Recommended",
+      "paragraph": "This 2010 Audi A4 scores 78/100 (Good Buy), with high confidence in this assessment (92/100). 1 red flag(s) were found - review them before deciding."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "common_now": 2,
+      "overdue": 2
+    }
+  },
+  "2": {
+    "vehicle": "2012 Audi A4",
+    "vehiclegrade_score": 67,
+    "deal_label": "Fair Deal",
+    "verdict": {
+      "recommendation": "Avoid",
+      "paragraph": "This 2012 Audi A4 scores 67/100 (Fair Deal), with high confidence in this assessment (92/100). It has severe known issue(s) past their typical onset mileage (Timing chain tensioner failure), which drives this to an Avoid regardless of price."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "overdue": 4
+    }
+  },
+  "3": {
+    "vehicle": "2015 Audi A4",
+    "vehiclegrade_score": 63,
+    "deal_label": "Fair Deal",
+    "verdict": {
+      "recommendation": "Consider",
+      "paragraph": "This 2015 Audi A4 scores 63/100 (Fair Deal), with high confidence in this assessment (94/100). No red flags were found for this listing."
+    },
+    "confidence_score": 94,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "common_now": 4
+    }
+  },
+  "4": {
+    "vehicle": "2010 Audi A4",
+    "vehiclegrade_score": 77,
+    "deal_label": "Good Buy",
+    "verdict": {
+      "recommendation": "Recommended",
+      "paragraph": "This 2010 Audi A4 scores 77/100 (Good Buy), with high confidence in this assessment (92/100). 1 red flag(s) were found - review them before deciding."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "common_now": 1,
+      "overdue": 3
+    }
+  },
+  "5": {
+    "vehicle": "2010 Audi A4",
+    "vehiclegrade_score": 48,
+    "deal_label": "Overpriced",
+    "verdict": {
+      "recommendation": "Avoid",
+      "paragraph": "This 2010 Audi A4 scores 48/100 (Overpriced), with high confidence in this assessment (92/100). It has severe known issue(s) past their typical onset mileage (Timing chain tensioner failure), which drives this to an Avoid regardless of price."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "overdue": 4
+    }
+  },
+  "6": {
+    "vehicle": "2014 Audi A4",
+    "vehiclegrade_score": 62,
+    "deal_label": "Fair Deal",
+    "verdict": {
+      "recommendation": "Avoid",
+      "paragraph": "This 2014 Audi A4 scores 62/100 (Fair Deal), with high confidence in this assessment (92/100). It has severe known issue(s) past their typical onset mileage (Timing chain tensioner failure), which drives this to an Avoid regardless of price."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "overdue": 4
+    }
+  },
+  "7": {
+    "vehicle": "2013 Audi A4",
+    "vehiclegrade_score": 9,
+    "deal_label": "Avoid",
+    "verdict": {
+      "recommendation": "Avoid",
+      "paragraph": "This 2013 Audi A4 scores 9/100 (Avoid), with high confidence in this assessment (92/100). It has severe known issue(s) past their typical onset mileage (Timing chain tensioner failure), which drives this to an Avoid regardless of price."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "overdue": 4
+    }
+  },
+  "8": {
+    "vehicle": "2015 Audi A4",
+    "vehiclegrade_score": 64,
+    "deal_label": "Fair Deal",
+    "verdict": {
+      "recommendation": "Consider",
+      "paragraph": "This 2015 Audi A4 scores 64/100 (Fair Deal), with high confidence in this assessment (92/100). No red flags were found for this listing."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "common_now": 1,
+      "overdue": 3
+    }
+  },
+  "9": {
+    "vehicle": "2013 Audi A4",
+    "vehiclegrade_score": 28,
+    "deal_label": "Avoid",
+    "verdict": {
+      "recommendation": "Avoid",
+      "paragraph": "This 2013 Audi A4 scores 28/100 (Avoid), with high confidence in this assessment (92/100). It has severe known issue(s) past their typical onset mileage (Timing chain tensioner failure), which drives this to an Avoid regardless of price."
+    },
+    "confidence_score": 92,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "overdue": 4
+    }
+  },
+  "10": {
+    "vehicle": "2016 Audi A4",
+    "vehiclegrade_score": 80,
+    "deal_label": "Good Buy",
+    "verdict": {
+      "recommendation": "Recommended",
+      "paragraph": "This 2016 Audi A4 scores 80/100 (Good Buy), with high confidence in this assessment (94/100). 1 red flag(s) were found - review them before deciding."
+    },
+    "confidence_score": 94,
+    "confidence_level": "high",
+    "match_type": "exact_vehicle",
+    "known_issues_count": 4,
+    "known_issues_by_status": {
+      "approaching": 3,
+      "common_now": 1
+    }
+  }
+}
