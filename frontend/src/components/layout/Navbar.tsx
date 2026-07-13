@@ -5,6 +5,7 @@ const LINKS = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/analytics", label: "Analytics" },
   { href: "/analyze", label: "Analyze" },
+  { href: "/compare", label: "Compare" },
 ];
 
 export function Navbar() {
