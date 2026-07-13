@@ -7,6 +7,7 @@ from app.routes.analyze import analyze_bp
 from app.routes.parse_listing import parse_listing_bp
 from app.routes.stats import stats_bp
 from app.routes.feedback import feedback_bp
+from app.routes.community import community_bp
 
 
 def register_routes(app):
@@ -17,3 +18,4 @@ def register_routes(app):
     app.register_blueprint(parse_listing_bp)
     app.register_blueprint(stats_bp)
     app.register_blueprint(feedback_bp)
+    app.register_blueprint(community_bp)

@@ -19,6 +19,7 @@ import { NegotiationAssistant } from "./NegotiationAssistant";
 import { RedFlagsList } from "./RedFlagsList";
 import { OwnershipCostCard } from "./OwnershipCostCard";
 import { ComparableVehiclesCard } from "./ComparableVehiclesCard";
+import { ContributeComparableCard } from "./ContributeComparableCard";
 
 interface VehicleReportProps {
   listing: ListingDetail;
@@ -78,6 +79,8 @@ export function VehicleReport({ listing }: VehicleReportProps) {
       </div>
 
       <ComparableVehiclesCard vehicles={listing.comparable_vehicles} source={sources.comparable_vehicles} />
+
+      <ContributeComparableCard listing={listing} />
     </div>
   );
 }

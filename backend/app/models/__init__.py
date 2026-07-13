@@ -9,6 +9,7 @@ from app.models.maintenance_item import MaintenanceItem
 from app.models.location import Location
 from app.models.listing import Listing, VALID_TITLE_STATUSES
 from app.models.feedback import Feedback
+from app.models.community_comparable import CommunityComparable
 
 __all__ = [
     "VehicleMake",
@@ -23,4 +24,5 @@ __all__ = [
     "Listing",
     "VALID_TITLE_STATUSES",
     "Feedback",
+    "CommunityComparable",
 ]
