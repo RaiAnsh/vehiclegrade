@@ -1,12 +1,8 @@
 "use client";
 
-import { useState } from "react";
-
-import { InputMode, InputModeToggle } from "@/components/analyze/InputModeToggle";
-import { ManualForm, ManualFormValue } from "@/components/analyze/ManualForm";
-import { PasteTextForm } from "@/components/analyze/PasteTextForm";
-import { analyzeListing } from "@/lib/api";
-import { AnalyzeInput, ListingDetail } from "@/lib/types";
+import { ListingIntake } from "@/components/analyze/ListingIntake";
+import { ManualFormValue } from "@/components/analyze/ManualForm";
+import { ListingDetail } from "@/lib/types";
 
 interface WorkspaceItemEditorProps {
   index: number;
@@ -18,9 +14,8 @@ interface WorkspaceItemEditorProps {
 }
 
 // One listing slot in the Comparison Workspace. Reuses the exact same
-// manual-entry / paste-and-review / analyze flow as the standalone Analyze
-// page, so a listing added here goes through the same required review step
-// before it's scored.
+// paste -> confirm -> analyze flow as the standalone Analyze page, so a
+// listing added here goes through the same review step before it's scored.
 export function WorkspaceItemEditor({
   index,
   formValue,
@@ -29,20 +24,6 @@ export function WorkspaceItemEditor({
   onReportChange,
   onRemove,
 }: WorkspaceItemEditorProps) {
-  const [mode, setMode] = useState<InputMode>("manual");
-  const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [aiFields, setAiFields] = useState<string[]>([]);
-
-  function handleAnalyze() {
-    setSubmitting(true);
-    setError(null);
-    analyzeListing(formValue as AnalyzeInput)
-      .then((data) => onReportChange(data))
-      .catch((err) => setError(err.message))
-      .finally(() => setSubmitting(false));
-  }
-
   const label = report ? `${report.year} ${report.make} ${report.model}` : `Listing ${index + 1}`;
 
   return (
@@ -58,30 +39,12 @@ export function WorkspaceItemEditor({
         </button>
       </div>
 
-      <div className="mb-4">
-        <InputModeToggle mode={mode} onChange={setMode} />
-      </div>
-
-      {mode === "paste" && (
-        <PasteTextForm
-          onParsed={({ _fields_from_ai, ...parsed }) => {
-            onFormValueChange({ ...formValue, ...parsed });
-            setAiFields(_fields_from_ai ?? []);
-            setMode("manual");
-          }}
-        />
-      )}
-
-      {mode === "manual" && (
-        <ManualForm
-          value={formValue}
-          onChange={onFormValueChange}
-          onSubmit={handleAnalyze}
-          submitting={submitting}
-          error={error}
-          aiFields={aiFields}
-        />
-      )}
+      <ListingIntake
+        compact
+        initialFormValue={formValue}
+        onFormValueChange={onFormValueChange}
+        onAnalyzed={onReportChange}
+      />
 
       {report && (
         <p className="mt-3 text-xs text-[var(--good)]">
