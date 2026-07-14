@@ -1,0 +1,978 @@
+{
+  "_meta": {
+    "description": "Import-ready engine family data for the 20-30 highest-value generations already in the VehicleGrade catalog (common Canadian used vehicles). Consumed by `flask --app run.py import-engine-data`. Every engine is a real, identifiable manufacturer engine family - never a guess. Adding coverage for a new generation/engine later only requires adding an entry here and re-running the command; no application code changes needed.",
+    "reviewed_at": "2026-07-13",
+    "schema": {
+      "engines[]": "one Engine row each, matched/upserted by unique `name`",
+      "generation_links[]": "{make, model, generation_label} - creates a GenerationEngine row (this engine is a real possible engine for that generation, whether or not it can be pinned to a specific trim)",
+      "trim_links[]": "{make, model, generation_label, trim} - sets Trim.engine_id, ONLY used when that trim's engine_options string names exactly this one engine unambiguously. Trims whose engine_options lists more than one candidate engine are deliberately left out of every engine's trim_links, so Trim.engine_id stays null and match confidence is not overstated.",
+      "known_issue_links[]": "{make, model, generation_label, title} - sets KnownIssue.engine_id, ONLY for issues genuinely caused by the engine itself (timing chain/AFM/DFM/balance-shaft/rod-bearing/fuel-dilution/water-pump-driven-by-engine issues). Transmission, infotainment, suspension, electrical, body and interior issues are never linked to an engine.",
+      "maintenance_item_links[]": "{make, model, generation_label, name} - same idea as known_issue_links, for MaintenanceItem rows."
+    }
+  },
+  "engines": [
+    {
+      "name": "Honda 1.5L Turbo VTEC (L15B family)",
+      "code": "L15B7",
+      "manufacturer": "Honda",
+      "displacement_l": 1.5,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2015,
+      "production_end_year": 2022,
+      "confidence": "verified",
+      "source_name": "Honda 1.5T fuel-dilution class-action settlement (Bourdouvalis, et al. v. American Honda Motor Co.) and widespread owner/dealer TSB reports across Civic, Accord and CR-V",
+      "description": "Honda's direct-injected 1.5L turbo four, sold under several internal codes depending on application (e.g. L15B7 in Civic). Grouped as one family here because the fuel-dilution-in-cold-climates defect and the resulting litigation covered the family as a whole, not a single code.",
+      "generation_links": [
+        {"make": "Honda", "model": "Civic", "generation_label": "10th Gen"},
+        {"make": "Honda", "model": "Accord", "generation_label": "10th Gen"},
+        {"make": "Honda", "model": "CR-V", "generation_label": "5th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Honda", "model": "Civic", "generation_label": "10th Gen", "trim": "EX"},
+        {"make": "Honda", "model": "Civic", "generation_label": "10th Gen", "trim": "Si"},
+        {"make": "Honda", "model": "Accord", "generation_label": "10th Gen", "trim": "LX"},
+        {"make": "Honda", "model": "Accord", "generation_label": "10th Gen", "trim": "Sport"},
+        {"make": "Honda", "model": "CR-V", "generation_label": "5th Gen", "trim": "EX"},
+        {"make": "Honda", "model": "CR-V", "generation_label": "5th Gen", "trim": "Touring"}
+      ],
+      "known_issue_links": [
+        {"make": "Honda", "model": "Accord", "generation_label": "10th Gen", "title": "Fuel dilution in oil"},
+        {"make": "Honda", "model": "CR-V", "generation_label": "5th Gen", "title": "Fuel dilution in oil"}
+      ]
+    },
+    {
+      "name": "Honda 2.0L I4 (K20C2)",
+      "code": "K20C2",
+      "manufacturer": "Honda",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2016,
+      "production_end_year": 2021,
+      "confidence": "probable",
+      "source_name": "Honda service literature / engine code as documented in enthusiast and repair references",
+      "description": "Base naturally-aspirated 2.0L four fitted to the 10th-gen Civic LX.",
+      "generation_links": [
+        {"make": "Honda", "model": "Civic", "generation_label": "10th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Honda", "model": "Civic", "generation_label": "10th Gen", "trim": "LX"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Honda 1.8L I4 (R18Z1)",
+      "code": "R18Z1",
+      "manufacturer": "Honda",
+      "displacement_l": 1.8,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2012,
+      "production_end_year": 2015,
+      "confidence": "probable",
+      "source_name": "Honda service literature / engine code as documented in enthusiast and repair references",
+      "description": "SOHC i-VTEC four used across the 9th-gen Civic lineup.",
+      "generation_links": [
+        {"make": "Honda", "model": "Civic", "generation_label": "9th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Honda", "model": "Civic", "generation_label": "9th Gen", "trim": "LX"},
+        {"make": "Honda", "model": "Civic", "generation_label": "9th Gen", "trim": "EX-L"}
+      ],
+      "known_issue_links": [
+        {"make": "Honda", "model": "Civic", "generation_label": "9th Gen", "title": "Excessive oil consumption"}
+      ]
+    },
+    {
+      "name": "Honda 2.4L I4 (K24W7)",
+      "code": "K24W7",
+      "manufacturer": "Honda",
+      "displacement_l": 2.4,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2017,
+      "production_end_year": 2022,
+      "confidence": "probable",
+      "source_name": "Honda service literature / engine code as documented in enthusiast and repair references",
+      "description": "Base naturally-aspirated engine on the 5th-gen CR-V LX.",
+      "generation_links": [
+        {"make": "Honda", "model": "CR-V", "generation_label": "5th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Honda", "model": "CR-V", "generation_label": "5th Gen", "trim": "LX"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Honda 2.0L Turbo I4 (K20C4)",
+      "code": "K20C4",
+      "manufacturer": "Honda",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2018,
+      "production_end_year": 2022,
+      "confidence": "probable",
+      "source_name": "Honda service literature / engine code as documented in enthusiast and repair references",
+      "description": "Higher-output turbo four fitted only to the 10th-gen Accord Touring.",
+      "generation_links": [
+        {"make": "Honda", "model": "Accord", "generation_label": "10th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Honda", "model": "Accord", "generation_label": "10th Gen", "trim": "Touring"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Toyota 1.8L I4 (2ZR-FAE)",
+      "code": "2ZR-FAE",
+      "manufacturer": "Toyota",
+      "displacement_l": 1.8,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2014,
+      "production_end_year": 2019,
+      "confidence": "probable",
+      "source_name": "Toyota engine code as documented in enthusiast and repair references",
+      "description": "Valvematic four used across the entire 11th-gen Corolla lineup.",
+      "generation_links": [
+        {"make": "Toyota", "model": "Corolla", "generation_label": "11th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Toyota", "model": "Corolla", "generation_label": "11th Gen", "trim": "LE"},
+        {"make": "Toyota", "model": "Corolla", "generation_label": "11th Gen", "trim": "S"}
+      ],
+      "known_issue_links": [
+        {"make": "Toyota", "model": "Corolla", "generation_label": "11th Gen", "title": "Water pump wear"}
+      ]
+    },
+    {
+      "name": "Toyota 2.0L I4 (M20A-FKS Dynamic Force)",
+      "code": "M20A-FKS",
+      "manufacturer": "Toyota",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2020,
+      "production_end_year": 2024,
+      "confidence": "probable",
+      "source_name": "Toyota Dynamic Force engine family specs as published by Toyota",
+      "description": "Dynamic Force four used across the whole 12th-gen Corolla lineup.",
+      "generation_links": [
+        {"make": "Toyota", "model": "Corolla", "generation_label": "12th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Toyota", "model": "Corolla", "generation_label": "12th Gen", "trim": "L"},
+        {"make": "Toyota", "model": "Corolla", "generation_label": "12th Gen", "trim": "SE"},
+        {"make": "Toyota", "model": "Corolla", "generation_label": "12th Gen", "trim": "XSE"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Toyota 2.5L I4 (A25A-FKS Dynamic Force)",
+      "code": "A25A-FKS",
+      "manufacturer": "Toyota",
+      "displacement_l": 2.5,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2018,
+      "production_end_year": 2024,
+      "confidence": "verified",
+      "source_name": "Toyota Dynamic Force engine family specs as published by Toyota - same engine shared across Camry and RAV4 in this era",
+      "description": "Toyota's Dynamic Force 2.5L four, used across both the 8th-gen Camry (LE/SE) and 5th-gen RAV4 four-cylinder trims.",
+      "generation_links": [
+        {"make": "Toyota", "model": "Camry", "generation_label": "8th Gen"},
+        {"make": "Toyota", "model": "RAV4", "generation_label": "5th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Toyota", "model": "Camry", "generation_label": "8th Gen", "trim": "LE"},
+        {"make": "Toyota", "model": "Camry", "generation_label": "8th Gen", "trim": "SE"},
+        {"make": "Toyota", "model": "RAV4", "generation_label": "5th Gen", "trim": "LE"},
+        {"make": "Toyota", "model": "RAV4", "generation_label": "5th Gen", "trim": "XLE"},
+        {"make": "Toyota", "model": "RAV4", "generation_label": "5th Gen", "trim": "TRD Off-Road"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Toyota 3.5L V6 (2GR-FKS)",
+      "code": "2GR-FKS",
+      "manufacturer": "Toyota",
+      "displacement_l": 3.5,
+      "cylinders": 6,
+      "configuration": "V6",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2018,
+      "production_end_year": 2024,
+      "confidence": "probable",
+      "source_name": "Toyota engine code as documented in enthusiast and repair references",
+      "description": "V6 fitted only to the 8th-gen Camry XSE V6.",
+      "generation_links": [
+        {"make": "Toyota", "model": "Camry", "generation_label": "8th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Toyota", "model": "Camry", "generation_label": "8th Gen", "trim": "XSE V6"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Mazda SkyActiv-G 2.0L NA I4",
+      "code": "SkyActiv-G 2.0",
+      "manufacturer": "Mazda",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2019,
+      "production_end_year": 2024,
+      "confidence": "probable",
+      "source_name": "Mazda SkyActiv-G engine family specs as published by Mazda",
+      "description": "Base direct-injection four fitted only to the 4th-gen Mazda3 GX.",
+      "generation_links": [
+        {"make": "Mazda", "model": "Mazda3", "generation_label": "4th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Mazda", "model": "Mazda3", "generation_label": "4th Gen", "trim": "GX"}
+      ],
+      "known_issue_links": [
+        {"make": "Mazda", "model": "Mazda3", "generation_label": "4th Gen", "title": "Carbon buildup on intake valves"}
+      ]
+    },
+    {
+      "name": "Mazda SkyActiv-G 2.5L NA I4",
+      "code": "SkyActiv-G 2.5",
+      "manufacturer": "Mazda",
+      "displacement_l": 2.5,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2017,
+      "production_end_year": 2024,
+      "confidence": "verified",
+      "source_name": "Mazda SkyActiv-G engine family specs; direct-injection carbon buildup on intake valves is a widely documented SkyActiv-G characteristic",
+      "description": "Direct-injection four shared by the 4th-gen Mazda3 (GS) and 2nd-gen CX-5 (GX/GS).",
+      "generation_links": [
+        {"make": "Mazda", "model": "Mazda3", "generation_label": "4th Gen"},
+        {"make": "Mazda", "model": "CX-5", "generation_label": "2nd Gen"}
+      ],
+      "trim_links": [
+        {"make": "Mazda", "model": "Mazda3", "generation_label": "4th Gen", "trim": "GS"},
+        {"make": "Mazda", "model": "CX-5", "generation_label": "2nd Gen", "trim": "GX"},
+        {"make": "Mazda", "model": "CX-5", "generation_label": "2nd Gen", "trim": "GS"}
+      ],
+      "known_issue_links": [
+        {"make": "Mazda", "model": "CX-5", "generation_label": "2nd Gen", "title": "Carbon buildup on intake valves"}
+      ]
+    },
+    {
+      "name": "Mazda SkyActiv-G 2.5L Turbo I4",
+      "code": "SkyActiv-G 2.5T",
+      "manufacturer": "Mazda",
+      "displacement_l": 2.5,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2018,
+      "production_end_year": 2024,
+      "confidence": "verified",
+      "source_name": "Mazda SkyActiv-G Turbo engine family specs; fuel-dilution-in-oil on turbo variants is a widely documented issue",
+      "description": "Turbocharged direct-injection four shared by the 4th-gen Mazda3 (GT Turbo) and 2nd-gen CX-5 (Signature Turbo).",
+      "generation_links": [
+        {"make": "Mazda", "model": "Mazda3", "generation_label": "4th Gen"},
+        {"make": "Mazda", "model": "CX-5", "generation_label": "2nd Gen"}
+      ],
+      "trim_links": [
+        {"make": "Mazda", "model": "Mazda3", "generation_label": "4th Gen", "trim": "GT Turbo"},
+        {"make": "Mazda", "model": "CX-5", "generation_label": "2nd Gen", "trim": "Signature Turbo"}
+      ],
+      "known_issue_links": [
+        {"make": "Mazda", "model": "CX-5", "generation_label": "2nd Gen", "title": "Fuel dilution in oil on turbo models"}
+      ]
+    },
+    {
+      "name": "Hyundai/Kia Theta II 2.4L GDI",
+      "code": "G4KJ",
+      "manufacturer": "Hyundai Motor Group",
+      "displacement_l": 2.4,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2011,
+      "production_end_year": 2020,
+      "confidence": "verified",
+      "source_name": "Hyundai/Kia Theta II engine recall and extended-warranty program for premature connecting-rod bearing wear (NHTSA campaigns); described consistently across the Tucson, Optima and Sportage entries already in this knowledge base",
+      "description": "Theta II 2.4L GDI four shared across Hyundai and Kia products via Hyundai Motor Group's common engine program - the engine explicitly named in the connecting-rod-bearing-wear recall affecting the 3rd-gen Tucson, 4th-gen Optima and 4th-gen Sportage.",
+      "generation_links": [
+        {"make": "Hyundai", "model": "Tucson", "generation_label": "3rd Gen"},
+        {"make": "Kia", "model": "Optima", "generation_label": "4th Gen"},
+        {"make": "Kia", "model": "Sportage", "generation_label": "4th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Hyundai", "model": "Tucson", "generation_label": "3rd Gen", "trim": "Preferred"},
+        {"make": "Kia", "model": "Optima", "generation_label": "4th Gen", "trim": "LX"},
+        {"make": "Kia", "model": "Optima", "generation_label": "4th Gen", "trim": "EX"},
+        {"make": "Kia", "model": "Sportage", "generation_label": "4th Gen", "trim": "LX"},
+        {"make": "Kia", "model": "Sportage", "generation_label": "4th Gen", "trim": "EX"}
+      ],
+      "known_issue_links": [
+        {"make": "Hyundai", "model": "Tucson", "generation_label": "3rd Gen", "title": "Engine failure from connecting rod bearing wear"},
+        {"make": "Kia", "model": "Optima", "generation_label": "4th Gen", "title": "Engine failure from connecting rod bearing wear"},
+        {"make": "Kia", "model": "Sportage", "generation_label": "4th Gen", "title": "Engine stall from connecting rod bearing wear"}
+      ]
+    },
+    {
+      "name": "Hyundai Theta II 2.0L GDI",
+      "code": "G4KD",
+      "manufacturer": "Hyundai Motor Group",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2016,
+      "production_end_year": 2021,
+      "confidence": "verified",
+      "source_name": "Hyundai Theta II engine recall program; the 3rd-gen Tucson entry in this knowledge base explicitly names \"2.0L and 2.4L Theta II GDI\" as the affected engines",
+      "description": "Theta II 2.0L GDI four fitted to the 3rd-gen Tucson Essential trim.",
+      "generation_links": [
+        {"make": "Hyundai", "model": "Tucson", "generation_label": "3rd Gen"}
+      ],
+      "trim_links": [
+        {"make": "Hyundai", "model": "Tucson", "generation_label": "3rd Gen", "trim": "Essential"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Hyundai/Kia Nu 2.0L GDI",
+      "code": "G4NA",
+      "manufacturer": "Hyundai Motor Group",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2014,
+      "production_end_year": 2021,
+      "confidence": "probable",
+      "source_name": "Hyundai Motor Group Nu engine family; the 6th-gen Elantra entry describes \"some GDI engines from this era\" developing rod bearing wear without naming the family explicitly, so the Nu identification here is our own reasonable inference, not independently source-confirmed",
+      "description": "Nu 2.0L GDI four shared by the 6th-gen Elantra (base engine) and 2nd/3rd-gen Kia Forte (EX/LX/EX). Kept separate from the Theta II 2.0L/2.4L family above - these are different Hyundai Motor Group engine lines despite the similar rod-bearing failure pattern.",
+      "generation_links": [
+        {"make": "Hyundai", "model": "Elantra", "generation_label": "6th Gen"},
+        {"make": "Kia", "model": "Forte", "generation_label": "2nd Gen"},
+        {"make": "Kia", "model": "Forte", "generation_label": "3rd Gen"}
+      ],
+      "trim_links": [
+        {"make": "Hyundai", "model": "Elantra", "generation_label": "6th Gen", "trim": "L"},
+        {"make": "Hyundai", "model": "Elantra", "generation_label": "6th Gen", "trim": "SE"},
+        {"make": "Kia", "model": "Forte", "generation_label": "2nd Gen", "trim": "EX"},
+        {"make": "Kia", "model": "Forte", "generation_label": "3rd Gen", "trim": "LX"},
+        {"make": "Kia", "model": "Forte", "generation_label": "3rd Gen", "trim": "EX"}
+      ],
+      "known_issue_links": [
+        {"make": "Hyundai", "model": "Elantra", "generation_label": "6th Gen", "title": "Engine knocking / connecting rod bearing wear"}
+      ]
+    },
+    {
+      "name": "Hyundai/Kia Gamma 1.6L T-GDI",
+      "code": "G4FJ",
+      "manufacturer": "Hyundai Motor Group",
+      "displacement_l": 1.6,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2015,
+      "production_end_year": 2021,
+      "confidence": "probable",
+      "source_name": "Hyundai Motor Group Gamma T-GDI engine family as documented in enthusiast and repair references",
+      "description": "Turbocharged 1.6L four fitted to the sportier trims of Elantra, Tucson and Forte in this era. No engine-specific known issue is recorded for it yet in this knowledge base.",
+      "generation_links": [
+        {"make": "Hyundai", "model": "Elantra", "generation_label": "6th Gen"},
+        {"make": "Hyundai", "model": "Tucson", "generation_label": "3rd Gen"},
+        {"make": "Kia", "model": "Forte", "generation_label": "2nd Gen"},
+        {"make": "Kia", "model": "Forte", "generation_label": "3rd Gen"}
+      ],
+      "trim_links": [
+        {"make": "Hyundai", "model": "Elantra", "generation_label": "6th Gen", "trim": "Sport"},
+        {"make": "Hyundai", "model": "Tucson", "generation_label": "3rd Gen", "trim": "Ultimate"},
+        {"make": "Kia", "model": "Forte", "generation_label": "2nd Gen", "trim": "SX"},
+        {"make": "Kia", "model": "Forte", "generation_label": "3rd Gen", "trim": "GT"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Hyundai/Kia Nu 1.8L MPI",
+      "code": "G4NB",
+      "manufacturer": "Hyundai Motor Group",
+      "displacement_l": 1.8,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2014,
+      "production_end_year": 2018,
+      "confidence": "probable",
+      "source_name": "Hyundai Motor Group Nu engine family as documented in enthusiast and repair references",
+      "description": "Base engine on the 2nd-gen Kia Forte LX.",
+      "generation_links": [
+        {"make": "Kia", "model": "Forte", "generation_label": "2nd Gen"}
+      ],
+      "trim_links": [
+        {"make": "Kia", "model": "Forte", "generation_label": "2nd Gen", "trim": "LX"}
+      ],
+      "known_issue_links": [
+        {"make": "Kia", "model": "Forte", "generation_label": "2nd Gen", "title": "Excessive oil consumption"}
+      ]
+    },
+    {
+      "name": "Volkswagen EA888 Gen 3 2.0T TSI",
+      "code": "EA888",
+      "manufacturer": "Volkswagen Group",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2012,
+      "production_end_year": 2020,
+      "confidence": "verified",
+      "source_name": "EA888 Gen 3 timing chain tensioner wear is one of the most widely documented VW/Audi TSI issues; TSI-specific issue titles already recorded against Jetta and Golf in this knowledge base",
+      "description": "The canonical EA888 example this Engine table was designed around. 2.0T variant fitted to the 7th-gen Golf GTI and 6th-gen Jetta GLI - the only unambiguous 2.0T trims in these two generations.",
+      "generation_links": [
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen"},
+        {"make": "Volkswagen", "model": "Jetta", "generation_label": "6th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen", "trim": "GTI"},
+        {"make": "Volkswagen", "model": "Jetta", "generation_label": "6th Gen", "trim": "GLI"}
+      ],
+      "known_issue_links": [
+        {"make": "Volkswagen", "model": "Jetta", "generation_label": "6th Gen", "title": "Ignition coil pack failure"},
+        {"make": "Volkswagen", "model": "Jetta", "generation_label": "6th Gen", "title": "Water pump failure (TSI engines)"},
+        {"make": "Volkswagen", "model": "Jetta", "generation_label": "6th Gen", "title": "Timing chain tensioner wear on TSI engines"},
+        {"make": "Volkswagen", "model": "Jetta", "generation_label": "6th Gen", "title": "Carbon buildup on intake valves"}
+      ]
+    },
+    {
+      "name": "Volkswagen EA888 Gen 3 1.8T TSI",
+      "code": "EA888",
+      "manufacturer": "Volkswagen Group",
+      "displacement_l": 1.8,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2012,
+      "production_end_year": 2020,
+      "confidence": "verified",
+      "source_name": "EA888 Gen 3 timing chain tensioner wear is one of the most widely documented VW/Audi TSI issues; TSI-specific issue titles already recorded against Golf in this knowledge base",
+      "description": "1.8T variant of the same EA888 Gen 3 family, fitted to the 7th-gen Golf Trendline/Comfortline - the base/volume engine for that generation.",
+      "generation_links": [
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen"},
+        {"make": "Volkswagen", "model": "Jetta", "generation_label": "6th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen", "trim": "Trendline"},
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen", "trim": "Comfortline"}
+      ],
+      "known_issue_links": [
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen", "title": "Ignition coil pack failure"},
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen", "title": "Electronic thermostat / water pump housing failure"},
+        {"make": "Volkswagen", "model": "Golf", "generation_label": "7th Gen", "title": "Carbon buildup on intake valves"}
+      ]
+    },
+    {
+      "name": "BMW N20 2.0L Turbo I4",
+      "code": "N20",
+      "manufacturer": "BMW",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2012,
+      "production_end_year": 2018,
+      "confidence": "verified",
+      "source_name": "N20 timing chain guide/tensioner failure is a widely documented BMW issue, explicitly named in this knowledge base's own F30 known-issue title",
+      "description": "The engine explicitly named in the F30 3-Series' \"Timing chain guide and tensioner failure (N20 engine)\" entry. Fitted to the 320i and 328i, the two majority-volume F30 trims.",
+      "generation_links": [
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30"}
+      ],
+      "trim_links": [
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30", "trim": "320i"},
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30", "trim": "328i"}
+      ],
+      "known_issue_links": [
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30", "title": "Timing chain guide and tensioner failure (N20 engine)"},
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30", "title": "Oil filter housing gasket and valve cover leaks"},
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30", "title": "Electric water pump failure"},
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30", "title": "High-pressure fuel pump failure"}
+      ]
+    },
+    {
+      "name": "BMW 3.0L Turbo I6 (340i)",
+      "code": null,
+      "manufacturer": "BMW",
+      "displacement_l": 3.0,
+      "cylinders": 6,
+      "configuration": "I6",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2016,
+      "production_end_year": 2018,
+      "confidence": "probable",
+      "source_name": "Not independently source-confirmed - this knowledge base's own F30 entry does not name a specific internal engine code for the 340i, only \"3.0L Turbo I6\"",
+      "description": "Turbo inline-six fitted only to the F30 340i. No specific internal code is asserted here since the source data doesn't name one - recorded honestly as unconfirmed rather than guessed.",
+      "generation_links": [
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30"}
+      ],
+      "trim_links": [
+        {"make": "BMW", "model": "3-Series", "generation_label": "F30", "trim": "340i"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Mercedes-Benz M274 2.0L Turbo I4",
+      "code": "M274",
+      "manufacturer": "Mercedes-Benz",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2015,
+      "production_end_year": 2021,
+      "confidence": "verified",
+      "source_name": "M274 balance-shaft gear failure is a widely documented Mercedes-Benz issue, explicitly named in this knowledge base's own known-issue titles",
+      "description": "Fitted unambiguously to the W205 C300 (rear-wheel-drive). The C300 4MATIC and GLC300 trims list \"M274/M264\" as two possible engines and are intentionally left unresolved (see the M264 entry) rather than guessed.",
+      "generation_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205"},
+        {"make": "Mercedes-Benz", "model": "GLC", "generation_label": "X253"}
+      ],
+      "trim_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205", "trim": "C300"}
+      ],
+      "known_issue_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205", "title": "Balance shaft gear failure (M274 engine)"}
+      ]
+    },
+    {
+      "name": "Mercedes-Benz M264 2.0L Turbo I4",
+      "code": "M264",
+      "manufacturer": "Mercedes-Benz",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2017,
+      "production_end_year": 2023,
+      "confidence": "verified",
+      "source_name": "M264/M274 balance-shaft gear failure is a widely documented Mercedes-Benz issue, explicitly named in this knowledge base's own known-issue titles",
+      "description": "Successor to the M274, fitted unambiguously to the W213 E300/E300 4MATIC. Also a possible engine (alongside M274) on the W205 C300 4MATIC and X253 GLC300 trims, which list both codes and are left unresolved at the trim level.",
+      "generation_links": [
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213"},
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205"},
+        {"make": "Mercedes-Benz", "model": "GLC", "generation_label": "X253"}
+      ],
+      "trim_links": [
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213", "trim": "E300"},
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213", "trim": "E300 4MATIC"}
+      ],
+      "known_issue_links": [
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213", "title": "Balance shaft gear failure (M264/M274 engine)"}
+      ]
+    },
+    {
+      "name": "Mercedes-Benz M272 3.0L V6",
+      "code": "M272",
+      "manufacturer": "Mercedes-Benz",
+      "displacement_l": 3.0,
+      "cylinders": 6,
+      "configuration": "V6",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2008,
+      "production_end_year": 2014,
+      "confidence": "verified",
+      "source_name": "M272 balance-shaft timing chain/sprocket wear is a widely documented Mercedes-Benz issue predating the unrelated M274 balance-shaft-gear defect",
+      "description": "Fitted to the W204 C300 and C300 4MATIC. Kept distinct from the M274/M264 family above - despite the similar \"balance shaft\" wording, these are different engines with different failure mechanisms, and conflating them would misattribute a pre-2015 issue to a post-2015 engine or vice versa.",
+      "generation_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204"}
+      ],
+      "trim_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204", "trim": "C300"},
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204", "trim": "C300 4MATIC"}
+      ],
+      "known_issue_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204", "title": "Balance shaft timing chain tensioner wear"}
+      ]
+    },
+    {
+      "name": "Mercedes-Benz M276 3.5L V6",
+      "code": "M276",
+      "manufacturer": "Mercedes-Benz",
+      "displacement_l": 3.5,
+      "cylinders": 6,
+      "configuration": "V6",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2008,
+      "production_end_year": 2014,
+      "confidence": "probable",
+      "source_name": "Mercedes-Benz M276 engine family as documented in enthusiast and repair references",
+      "description": "Fitted only to the W204 C350.",
+      "generation_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204"}
+      ],
+      "trim_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204", "trim": "C350"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Mercedes-Benz M156 6.2L V8 (AMG)",
+      "code": "M156",
+      "manufacturer": "Mercedes-Benz",
+      "displacement_l": 6.2,
+      "cylinders": 8,
+      "configuration": "V8",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2008,
+      "production_end_year": 2014,
+      "confidence": "probable",
+      "source_name": "Mercedes-AMG M156 engine family as widely documented",
+      "description": "Naturally-aspirated AMG V8 fitted only to the W204 AMG C63.",
+      "generation_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204"}
+      ],
+      "trim_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W204", "trim": "AMG C63"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Mercedes-Benz M177/M178 4.0L Biturbo V8 (AMG)",
+      "code": "M177",
+      "manufacturer": "Mercedes-Benz",
+      "displacement_l": 4.0,
+      "cylinders": 8,
+      "configuration": "V8",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2015,
+      "production_end_year": 2023,
+      "confidence": "probable",
+      "source_name": "Mercedes-AMG M177/M178 4.0 biturbo V8 platform-shared across AMG C63/E63/GLC63 of this era; only the W205 entry in this knowledge base names \"M177\" explicitly, so the W213/X253 identification is our own reasonable inference rather than independently confirmed for those two",
+      "description": "Hot-vee biturbo AMG V8 fitted to the W205 AMG C63 (explicitly named M177 in source data), and - by the same well-documented AMG V8 platform sharing - the W213 AMG E63 S and X253 AMG GLC63, whose entries describe an identical \"4.0L Biturbo V8\" without naming a code.",
+      "generation_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205"},
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213"},
+        {"make": "Mercedes-Benz", "model": "GLC", "generation_label": "X253"}
+      ],
+      "trim_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205", "trim": "AMG C63"},
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213", "trim": "AMG E63 S"},
+        {"make": "Mercedes-Benz", "model": "GLC", "generation_label": "X253", "trim": "AMG GLC63"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Mercedes-Benz 3.0L Biturbo V6 (AMG-line)",
+      "code": null,
+      "manufacturer": "Mercedes-Benz",
+      "displacement_l": 3.0,
+      "cylinders": 6,
+      "configuration": "V6",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2015,
+      "production_end_year": 2023,
+      "confidence": "probable",
+      "source_name": "Not independently source-confirmed - this knowledge base's own W205/W213/X253 entries describe this engine only as \"3.0L Biturbo V6\" without a specific internal code",
+      "description": "AMG 43-line / performance six shared by the W205 AMG C43, W213 E450 4MATIC and X253 AMG GLC43. Recorded without a specific engine code since none is confirmed in the source data - honest gap rather than a guess.",
+      "generation_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205"},
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213"},
+        {"make": "Mercedes-Benz", "model": "GLC", "generation_label": "X253"}
+      ],
+      "trim_links": [
+        {"make": "Mercedes-Benz", "model": "C-Class", "generation_label": "W205", "trim": "AMG C43"},
+        {"make": "Mercedes-Benz", "model": "E-Class", "generation_label": "W213", "trim": "E450 4MATIC"},
+        {"make": "Mercedes-Benz", "model": "GLC", "generation_label": "X253", "trim": "AMG GLC43"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "Ford EcoBoost 2.7L V6",
+      "code": "2.7L EcoBoost",
+      "manufacturer": "Ford",
+      "displacement_l": 2.7,
+      "cylinders": 6,
+      "configuration": "V6",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2015,
+      "production_end_year": 2020,
+      "confidence": "verified",
+      "source_name": "First-generation EcoBoost internal water pump (driven off the timing chain) coolant-into-oil failure is a widely documented Ford issue",
+      "description": "One of three possible engines on the F-150 13th-gen XLT trim (listed alongside 5.0L V8); every 13th-gen F-150 trim lists 2+ engine options, so no trim can be resolved to a single engine and Trim.engine_id is left null throughout this generation - see the 3.5L EcoBoost entry for how the generation's EcoBoost water-pump issue is attributed.",
+      "generation_links": [
+        {"make": "Ford", "model": "F-150", "generation_label": "13th Gen"}
+      ],
+      "trim_links": [],
+      "known_issue_links": []
+    },
+    {
+      "name": "Ford EcoBoost 3.5L V6",
+      "code": "3.5L EcoBoost",
+      "manufacturer": "Ford",
+      "displacement_l": 3.5,
+      "cylinders": 6,
+      "configuration": "V6",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2015,
+      "production_end_year": 2020,
+      "confidence": "verified",
+      "source_name": "First-generation EcoBoost internal water pump (driven off the timing chain) coolant-into-oil failure is a widely documented Ford issue, explicitly described in this knowledge base's F-150 entry",
+      "description": "One of two possible engines on the F-150 13th-gen Lariat trim (listed alongside 5.0L V8). Chosen as the representative engine for this generation's EcoBoost water-pump issue since it's the larger/more powerful EcoBoost option; the 2.7L EcoBoost shares the same real-world failure mode but the app's single-engine-per-issue schema requires picking one representative link - flagged for future review rather than silently duplicated.",
+      "generation_links": [
+        {"make": "Ford", "model": "F-150", "generation_label": "13th Gen"}
+      ],
+      "trim_links": [],
+      "known_issue_links": [
+        {"make": "Ford", "model": "F-150", "generation_label": "13th Gen", "title": "EcoBoost intake timing chain / internal water pump failure"}
+      ]
+    },
+    {
+      "name": "Ford EcoBoost 1.5L I3",
+      "code": "1.5L EcoBoost",
+      "manufacturer": "Ford",
+      "displacement_l": 1.5,
+      "cylinders": 3,
+      "configuration": "I3",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2020,
+      "production_end_year": 2022,
+      "confidence": "verified",
+      "source_name": "2020 NHTSA recall for 1.5L EcoBoost engine fire risk, explicitly named in this knowledge base's Escape entry",
+      "description": "Fitted unambiguously to the 4th-gen Escape S trim, subject of the real 2020 engine-fire recall.",
+      "generation_links": [
+        {"make": "Ford", "model": "Escape", "generation_label": "4th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Ford", "model": "Escape", "generation_label": "4th Gen", "trim": "S"}
+      ],
+      "known_issue_links": [
+        {"make": "Ford", "model": "Escape", "generation_label": "4th Gen", "title": "1.5L EcoBoost engine fire recall"}
+      ]
+    },
+    {
+      "name": "Ford EcoBoost 2.0L I4",
+      "code": "2.0L EcoBoost",
+      "manufacturer": "Ford",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2020,
+      "production_end_year": 2024,
+      "confidence": "probable",
+      "source_name": "Ford EcoBoost engine family as documented in enthusiast and repair references",
+      "description": "Fitted unambiguously to the 4th-gen Escape Titanium trim.",
+      "generation_links": [
+        {"make": "Ford", "model": "Escape", "generation_label": "4th Gen"}
+      ],
+      "trim_links": [
+        {"make": "Ford", "model": "Escape", "generation_label": "4th Gen", "trim": "Titanium"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "GM Generation IV 5.3L V8 (AFM)",
+      "code": "LC9",
+      "manufacturer": "General Motors",
+      "displacement_l": 5.3,
+      "cylinders": 8,
+      "configuration": "V8",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2007,
+      "production_end_year": 2013,
+      "confidence": "verified",
+      "source_name": "GM Active Fuel Management (AFM) lifter/valve-train failure is a widely documented issue, subject of real class-action litigation against GM, and explicitly described in this knowledge base's GMT900-era entries",
+      "description": "Generation IV small-block V8 with AFM, one of several possible engines on the GMT900-era Sierra 1500 (every trim on this generation lists 2+ engine options, so no trim is resolved to a single engine). Kept as a distinct engine record from the newer EcoTec3 Gen V 5.3L below - same displacement and same AFM concept, but a different engine generation with a different internal code.",
+      "generation_links": [
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "GMT900"}
+      ],
+      "trim_links": [],
+      "known_issue_links": [
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "GMT900", "title": "AFM lifter failure and valve train tick"}
+      ]
+    },
+    {
+      "name": "GM EcoTec3 5.3L V8 (Gen V, AFM)",
+      "code": "L83",
+      "manufacturer": "General Motors",
+      "displacement_l": 5.3,
+      "cylinders": 8,
+      "configuration": "V8",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2014,
+      "production_end_year": 2019,
+      "confidence": "verified",
+      "source_name": "GM Active Fuel Management (AFM) lifter/valve-train failure is a widely documented issue, subject of real class-action litigation against GM, and explicitly described (with near-identical wording) in this knowledge base's K2XX-era Silverado and Sierra entries",
+      "description": "EcoTec3 Gen V small-block V8 with AFM, shared - identically, per this knowledge base's own duplicated known-issue wording - between the K2XX-era Chevrolet Silverado (LT trim) and GMC Sierra 1500 (SLE trim). This is the clearest real example of the same engine surfacing known-issue guidance across two different makes on the same GM platform.",
+      "generation_links": [
+        {"make": "Chevrolet", "model": "Silverado", "generation_label": "K2XX"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "K2XX"}
+      ],
+      "trim_links": [
+        {"make": "Chevrolet", "model": "Silverado", "generation_label": "K2XX", "trim": "LT"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "K2XX", "trim": "SLE"}
+      ],
+      "known_issue_links": [
+        {"make": "Chevrolet", "model": "Silverado", "generation_label": "K2XX", "title": "AFM lifter failure / valve train tick"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "K2XX", "title": "AFM lifter failure and valve train tick"}
+      ]
+    },
+    {
+      "name": "GM EcoTec3 6.2L V8 (Gen V, AFM)",
+      "code": "L86",
+      "manufacturer": "General Motors",
+      "displacement_l": 6.2,
+      "cylinders": 8,
+      "configuration": "V8",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2014,
+      "production_end_year": 2019,
+      "confidence": "verified",
+      "source_name": "GM Active Fuel Management (AFM) lifter/valve-train failure is a widely documented issue affecting the 6.2L EcoTec3 alongside the 5.3L",
+      "description": "Top-trim EcoTec3 V8 with AFM, fitted unambiguously to the Silverado K2XX High Country, Sierra K2XX Denali and Sierra GMT900 Denali. The generation-level AFM known-issue row for each of these generations is already linked to the 5.3L variant above, since a KnownIssue row can only point to one engine - this 6.2L record still carries full identification and generation/trim links for its own sake.",
+      "generation_links": [
+        {"make": "Chevrolet", "model": "Silverado", "generation_label": "K2XX"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "K2XX"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "GMT900"}
+      ],
+      "trim_links": [
+        {"make": "Chevrolet", "model": "Silverado", "generation_label": "K2XX", "trim": "High Country"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "K2XX", "trim": "Denali"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "GMT900", "trim": "Denali"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "GM 4.3L V6 (EcoTec3)",
+      "code": "LV3",
+      "manufacturer": "General Motors",
+      "displacement_l": 4.3,
+      "cylinders": 6,
+      "configuration": "V6",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2014,
+      "production_end_year": 2019,
+      "confidence": "probable",
+      "source_name": "GM EcoTec3 engine family as documented in enthusiast and repair references",
+      "description": "Base V6 fitted unambiguously to the Silverado K2XX WT and Sierra K2XX SL trims.",
+      "generation_links": [
+        {"make": "Chevrolet", "model": "Silverado", "generation_label": "K2XX"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "K2XX"}
+      ],
+      "trim_links": [
+        {"make": "Chevrolet", "model": "Silverado", "generation_label": "K2XX", "trim": "WT"},
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "K2XX", "trim": "SL"}
+      ],
+      "known_issue_links": []
+    },
+    {
+      "name": "GM DFM 5.3L V8 (T1XX)",
+      "code": "L84",
+      "manufacturer": "General Motors",
+      "displacement_l": 5.3,
+      "cylinders": 8,
+      "configuration": "V8",
+      "aspiration": "naturally_aspirated",
+      "fuel_type": "gasoline",
+      "production_start_year": 2019,
+      "production_end_year": 2023,
+      "confidence": "verified",
+      "source_name": "GM Dynamic Fuel Management (DFM) lifter failure and excessive oil consumption is a widely documented successor issue to AFM, explicitly described in this knowledge base's T1XX Sierra entry",
+      "description": "DFM-equipped small-block V8, the T1XX-generation successor to AFM. Deliberately kept as a separate engine record from the AFM-era 5.3L/6.2L engines above - same displacement family, but a different fuel-management system, a different generation, and a distinct failure signature; the user's instruction was explicit not to merge different-generation engines. Every T1XX Sierra trim lists 2+ engine options, so no trim is resolved to a single engine.",
+      "generation_links": [
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "T1XX"}
+      ],
+      "trim_links": [],
+      "known_issue_links": [
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "T1XX", "title": "DFM lifter failure and excessive oil consumption"}
+      ]
+    },
+    {
+      "name": "GM 2.7L Turbo I4 (T1XX)",
+      "code": "L3B",
+      "manufacturer": "General Motors",
+      "displacement_l": 2.7,
+      "cylinders": 4,
+      "configuration": "I4",
+      "aspiration": "turbocharged",
+      "fuel_type": "gasoline",
+      "production_start_year": 2019,
+      "production_end_year": 2023,
+      "confidence": "probable",
+      "source_name": "GM L3B turbo-four as documented in enthusiast and repair references",
+      "description": "One of two possible engines on the T1XX Sierra SLE trim; not resolvable to a single trim, so Trim.engine_id is left null.",
+      "generation_links": [
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "T1XX"}
+      ],
+      "trim_links": [],
+      "known_issue_links": []
+    },
+    {
+      "name": "GM Duramax 3.0L I6 Diesel (T1XX)",
+      "code": "LM2",
+      "manufacturer": "General Motors",
+      "displacement_l": 3.0,
+      "cylinders": 6,
+      "configuration": "I6",
+      "aspiration": "turbocharged",
+      "fuel_type": "diesel",
+      "production_start_year": 2019,
+      "production_end_year": 2023,
+      "confidence": "probable",
+      "source_name": "GM Duramax 3.0L inline-six diesel as documented in enthusiast and repair references",
+      "description": "One of two possible engines on several T1XX Sierra trims; not resolvable to a single trim, so Trim.engine_id is left null.",
+      "generation_links": [
+        {"make": "GMC", "model": "Sierra 1500", "generation_label": "T1XX"}
+      ],
+      "trim_links": [],
+      "known_issue_links": []
+    }
+  ]
+}

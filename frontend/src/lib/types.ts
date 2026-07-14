@@ -50,6 +50,17 @@ export type MatchTypeTier =
 
 export type MatchType = MatchTypeTier | null;
 
+// Whether this specific listing's engine could be pinned down: "exact" (a
+// specific Engine record was identified), "ambiguous" (the trim itself
+// records more than one possible engine option, so one can't be assumed),
+// or "unidentified" (no engine data at all for this listing).
+export type EngineMatchStatus = "exact" | "ambiguous" | "unidentified";
+
+export interface EngineMatch {
+  status: EngineMatchStatus;
+  label: string;
+}
+
 export interface Confidence {
   score: number;
   level: ConfidenceLevel;
@@ -144,6 +155,7 @@ export interface VehicleSummary {
   drivetrain: string;
   horsepower: number;
   common_competitors: string | null;
+  engine_match: EngineMatch;
 }
 
 export interface Reliability {

@@ -8,10 +8,13 @@ known_issues.py, applied to scheduled service instead of failures.
 Each entry is tagged with a `match_tier` the same way known_issues.py does -
 items authored against the listing's own generation vs. items borrowed from a
 different generation that shares the same engine (see
-app.services.engine_match).
+app.services.engine_match). As in known_issues.py, a borrowed item only
+counts if it's itself tagged with the shared engine (MaintenanceItem.engine_id)
+- otherwise an unrelated maintenance item on the linked generation would
+incorrectly read as engine-specific guidance.
 """
 
-from app.services.engine_match import find_engine_linked_generations
+from app.services.engine_match import engine_for_listing, find_engine_linked_generations
 
 SOON_THRESHOLD_RATIO = 0.85
 IMMEDIATE_THRESHOLD_RATIO = 0.97
@@ -63,8 +66,12 @@ def build_timeline(listing):
     for item in listing.generation.maintenance_items:
         add(item, listing, own_tier)
 
-    for generation in find_engine_linked_generations(listing):
-        for item in generation.maintenance_items:
-            add(item, listing, "engine_component")
+    engine = engine_for_listing(listing)
+    if engine is not None:
+        for generation in find_engine_linked_generations(listing):
+            for item in generation.maintenance_items:
+                if item.engine_id != engine.id:
+                    continue
+                add(item, listing, "engine_component")
 
     return timeline

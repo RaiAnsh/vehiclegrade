@@ -10,6 +10,7 @@ from app.services.ai_explainer import generate_explanation
 from app.services.comparable_vehicles import find_comparable_vehicles
 from app.services.confidence import compute_confidence
 from app.services.deal_engine import classify_deal, score_listing, suggest_offer
+from app.services.engine_match import ENGINE_MATCH_LABELS, compute_engine_match
 from app.services.general_guidance import build_general_guidance
 from app.services.inspection_checklist import build_inspection_checklist
 from app.services.known_issues import evaluate_known_issues
@@ -110,6 +111,7 @@ def listing_detail(listing):
     detail["value_breakdown"] = breakdown
     detail["generated_at"] = datetime.utcnow().isoformat()
 
+    engine_match = compute_engine_match(listing)
     detail["vehicle_summary"] = {
         "engine": listing.trim.engine_options if listing.trim else None,
         "fuel_type": listing.fuel_type,
@@ -117,6 +119,7 @@ def listing_detail(listing):
         "drivetrain": generation.drivetrain,
         "horsepower": generation.base_horsepower,
         "common_competitors": generation.common_competitors,
+        "engine_match": {"status": engine_match, "label": ENGINE_MATCH_LABELS[engine_match]},
     }
 
     detail["reliability"] = {

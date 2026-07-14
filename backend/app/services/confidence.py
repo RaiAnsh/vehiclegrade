@@ -11,6 +11,8 @@ surfaced separately as `missing_data` so the report can ask for it instead
 of silently guessing.
 """
 
+from app.services.engine_match import AMBIGUOUS, compute_engine_match
+
 CONFIDENCE_START = 100
 
 HIGH_THRESHOLD = 80
@@ -23,6 +25,7 @@ NO_TRIM_PENALTY = 12
 NO_KNOWN_ISSUE_DATA_PENALTY = 10
 NO_MILEAGE_PENALTY = 25
 UNBANDED_COMPARABLES_PENALTY = 6
+AMBIGUOUS_ENGINE_PENALTY = 6
 
 
 def compute_confidence(listing, comparables_summary, match_type=None):
@@ -62,6 +65,12 @@ def compute_confidence(listing, comparables_summary, match_type=None):
             "points": -NO_TRIM_PENALTY,
         })
         missing_data.append("trim or engine identification")
+    elif compute_engine_match(listing) == AMBIGUOUS:
+        factors.append({
+            "reason": "This trim lists more than one possible engine - can't confirm which one applies",
+            "points": -AMBIGUOUS_ENGINE_PENALTY,
+        })
+        missing_data.append("specific engine confirmation")
 
     if not listing.generation.known_issues:
         factors.append({

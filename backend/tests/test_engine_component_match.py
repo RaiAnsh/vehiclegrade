@@ -67,6 +67,7 @@ def test_engine_linked_generation_surfaces_issue_and_maintenance(app):
 
         issue = KnownIssue(
             generation_id=source_gen.id,
+            engine_id=engine.id,
             title="Timing chain tensioner failure",
             description="Known engine-family issue.",
             severity="severe",
@@ -77,12 +78,27 @@ def test_engine_linked_generation_surfaces_issue_and_maintenance(app):
         )
         maintenance = MaintenanceItem(
             generation_id=source_gen.id,
+            engine_id=engine.id,
             name="Timing chain inspection",
             interval_km=100000,
             estimated_cost_min=200.0,
             estimated_cost_max=400.0,
         )
-        db.session.add_all([issue, maintenance])
+        # Deliberately NOT tagged with engine_id - an unrelated issue that
+        # happens to live on an engine-linked generation (e.g. an
+        # infotainment complaint) must never leak through as if it were
+        # shared-engine evidence.
+        unrelated_issue = KnownIssue(
+            generation_id=source_gen.id,
+            title="Infotainment screen lag",
+            description="Unrelated to the shared engine.",
+            severity="minor",
+            typical_mileage_km=50000,
+            estimated_repair_cost_min=0.0,
+            estimated_repair_cost_max=200.0,
+            recommendation="Software update usually resolves this.",
+        )
+        db.session.add_all([issue, maintenance, unrelated_issue])
 
         location = Location(city="TestCity", region="TestRegion", rust_belt_risk="low")
         db.session.add(location)
@@ -107,6 +123,7 @@ def test_engine_linked_generation_surfaces_issue_and_maintenance(app):
             assert len(issues) == 1
             assert issues[0]["title"] == "Timing chain tensioner failure"
             assert issues[0]["match_tier"] == "engine_component"
+            assert "Infotainment screen lag" not in [i["title"] for i in issues]
 
             timeline = build_timeline(listing)
             all_items = timeline["immediate"] + timeline["soon"] + timeline["future"]
@@ -120,6 +137,7 @@ def test_engine_linked_generation_surfaces_issue_and_maintenance(app):
             db.session.delete(location)
             db.session.delete(issue)
             db.session.delete(maintenance)
+            db.session.delete(unrelated_issue)
             db.session.query(GenerationEngine).filter_by(engine_id=engine.id).delete()
             db.session.delete(engine)
             db.session.delete(source_gen)

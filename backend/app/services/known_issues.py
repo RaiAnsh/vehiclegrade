@@ -13,9 +13,16 @@ authored against the listing's own generation, or `engine_component` for
 issues borrowed from a different generation that shares the same engine (see
 app.services.engine_match) - i.e. an issue reported against one car surfacing
 as relevant guidance for another car that uses the same engine.
+
+Engine-linked generations are only a source of *candidate* issues - each
+candidate issue must itself be tagged with the shared engine's id
+(KnownIssue.engine_id) to actually surface. Without that per-issue filter, an
+unrelated issue authored against the linked generation (e.g. an infotainment
+complaint) would incorrectly read as "shared engine evidence" just because it
+happens to live on a generation that shares an engine with this listing.
 """
 
-from app.services.engine_match import find_engine_linked_generations
+from app.services.engine_match import engine_for_listing, find_engine_linked_generations
 
 STATUS_COPY = {
     "not_yet_relevant": "Unlikely yet - typically appears around {typical_mileage_km:,} km",
@@ -68,12 +75,14 @@ def evaluate_known_issues(listing):
     own_tier = "exact_vehicle" if listing.trim is not None else "generation"
     results = [_issue_entry(issue, listing, own_tier) for issue in listing.generation.known_issues]
 
-    seen_titles = {issue.title for issue in listing.generation.known_issues}
-    for generation in find_engine_linked_generations(listing):
-        for issue in generation.known_issues:
-            if issue.title in seen_titles:
-                continue
-            seen_titles.add(issue.title)
-            results.append(_issue_entry(issue, listing, "engine_component"))
+    engine = engine_for_listing(listing)
+    if engine is not None:
+        seen_titles = {issue.title for issue in listing.generation.known_issues}
+        for generation in find_engine_linked_generations(listing):
+            for issue in generation.known_issues:
+                if issue.engine_id != engine.id or issue.title in seen_titles:
+                    continue
+                seen_titles.add(issue.title)
+                results.append(_issue_entry(issue, listing, "engine_component"))
 
     return results
