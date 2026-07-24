@@ -8,7 +8,11 @@ from pathlib import Path
 import click
 
 from app.extensions import db
-from app.models import Engine, GenerationEngine, Generation, KnownIssue, MaintenanceItem, Trim, VehicleMake, VehicleModel
+from app.models import (
+    AdminUser, Engine, GenerationEngine, Generation, KnownIssue, MaintenanceItem, Trim, VALID_ROLES,
+    VehicleMake, VehicleModel,
+)
+from app.services.auth import hash_password
 from app.utils.seed_data import seed_database
 
 EXPORTS_DIR = Path(__file__).parent.parent.parent / "data" / "exports"
@@ -64,6 +68,30 @@ def register_cli(app):
                 writer.writerows(rows)
 
             click.echo(f"Exported {len(rows)} {name} records -> {json_path.name}, {csv_path.name}")
+
+    @app.cli.command("create-admin-user")
+    @click.option("--email", prompt=True)
+    @click.option("--password", prompt=True, hide_input=True, confirmation_prompt=True)
+    @click.option("--role", default="admin", type=click.Choice(VALID_ROLES))
+    def create_admin_user(email, password, role):
+        """Bootstrap the first admin account (or add another later). Not an
+        HTTP endpoint on purpose - creating the very first user can't
+        require an existing admin's Bearer token, and doing this over CLI
+        (rather than an unauthenticated HTTP route) keeps that bootstrap
+        step off the public network entirely.
+        """
+        email = email.strip().lower()
+        if AdminUser.query.filter_by(email=email).first() is not None:
+            click.echo(f"A user with email {email} already exists.")
+            return
+        if len(password) < 12:
+            click.echo("Password must be at least 12 characters.")
+            return
+
+        user = AdminUser(email=email, password_hash=hash_password(password), role=role)
+        db.session.add(user)
+        db.session.commit()
+        click.echo(f"Created {role} user {email} (id={user.id}).")
 
     @app.cli.command("import-reference-data")
     @click.argument("path", default=str(EXPORTS_DIR))

@@ -13,7 +13,7 @@ from datetime import date, datetime
 
 from flask import Blueprint, jsonify, request
 
-from app.extensions import db
+from app.extensions import db, limiter
 from app.models import CommunityComparable
 from app.models.listing import VALID_TITLE_STATUSES
 
@@ -26,6 +26,7 @@ REQUIRED_FIELDS = ("year", "make", "model", "price", "mileage_km")
 
 
 @community_bp.route("/community/comparables", methods=["POST"])
+@limiter.limit("20 per minute")
 def submit_community_comparable():
     payload = request.get_json(silent=True) or {}
 

@@ -8,6 +8,9 @@ from app.routes.parse_listing import parse_listing_bp
 from app.routes.stats import stats_bp
 from app.routes.feedback import feedback_bp
 from app.routes.community import community_bp
+from app.routes.auth import auth_bp
+from app.routes.admin_ingestion import admin_ingestion_bp
+from app.routes.admin_review import admin_review_bp
 
 
 def register_routes(app):
@@ -19,3 +22,6 @@ def register_routes(app):
     app.register_blueprint(stats_bp)
     app.register_blueprint(feedback_bp)
     app.register_blueprint(community_bp)
+    app.register_blueprint(auth_bp)
+    app.register_blueprint(admin_ingestion_bp)
+    app.register_blueprint(admin_review_bp)

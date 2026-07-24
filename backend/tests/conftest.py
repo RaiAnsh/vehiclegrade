@@ -12,6 +12,11 @@ import pytest
 
 _DB_FD, _DB_PATH = tempfile.mkstemp(suffix=".db")
 os.environ["DATABASE_URL"] = f"sqlite:///{_DB_PATH}"
+# One app instance (and therefore one in-memory Flask-Limiter counter) is
+# shared for the whole test session - real rate limits would make test
+# order/count affect unrelated tests, so they're disabled here and covered
+# by a dedicated, isolated test instead (see test_auth.py).
+os.environ["RATELIMIT_ENABLED"] = "false"
 
 from app import create_app  # noqa: E402 - must follow the DATABASE_URL override above
 from app.utils.seed_data import seed_database  # noqa: E402
@@ -26,3 +31,8 @@ def app():
 
     os.close(_DB_FD)
     os.remove(_DB_PATH)
+
+
+@pytest.fixture()
+def client(app):
+    return app.test_client()

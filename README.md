@@ -165,6 +165,38 @@ cp .env.local.example .env.local
 npm run dev                     # runs on http://localhost:3000
 ```
 
+### Admin Ingestion & Review System (Bronze / Silver / Gold)
+
+Real market data — pasted listings or a CSV export from another source — never becomes a user-facing `Listing` by itself. It moves through three layers, and only a human admin action ever promotes a row from one layer to the next:
+
+```
+Bronze                Silver                              Gold
+RawListingSubmission  ListingObservation                  Listing
+(immutable, exactly   (parsed/resolved/validated,         (materialized on
+what was submitted)   deduped, quality-scored,            admin approval only;
+                       review_status: pending |            everything else
+                       needs_review | approved | rejected) already queries
+                                                            this table)
+```
+
+- **Ingestion** (`app/services/ingestion_normalizer.py`, `app/routes/admin_ingestion.py`) — an admin creates an `ImportBatch` (`paste_single` / `paste_multi` / `csv_upload`), feeds it raw rows, then processes the batch. Pasted text reuses the exact same regex-then-LLM-gap-fill cascade as `POST /parse-listing`; CSV rows go through an admin-confirmed `column_mapping` (`suggest_column_mapping()` only *suggests*, via exact case-insensitive header matching — a wrong auto-guess is worse than asking). Every row is deduplicated (`source_identifier` → `url_hash` → same-generation/year/price±3%/mileage±1500km similarity) and quality-scored (0–100, additive, every deduction explainable). **Any** unresolved field or validation error routes a row to `needs_review` rather than guessing — this pipeline is deliberately more conservative than `/analyze`, since a human isn't there to sanity-check the result in real time.
+- **Review** (`app/routes/admin_review.py`) — the only place `review_status` can change, and the only place a `Listing` row is ever created from ingested data. `PATCH` lets a reviewer fix a gap, which re-runs the same validation/dedup checks a fresh paste would face. `POST .../approve` is hard-blocked by any remaining `unresolved_fields`/`validation_errors`, and by an unacknowledged duplicate flag (`override_duplicate: true` required to proceed anyway). Rollback never hard-deletes a materialized `Listing` (it may already be part of a historical report) — it archives it via `is_archived`, the same mechanism used for sold/removed listings.
+- **RBAC** — every admin route requires a permission (`ingest`, `review`, `rollback`, `view`) via `AdminUser.ROLE_PERMISSIONS`; `analyst` accounts are read-only.
+- **Audit log** — every mutating action (`import_batch.create/add_rows/process/rollback`, `observation.update/approve/reject`) is recorded via `app/services/audit_log.py`, including the previous values it overwrote.
+
+| Method | Path | Permission | Description |
+|---|---|---|---|
+| `POST` | `/admin/import-batches` | `ingest` | Create a batch (`paste_single`/`paste_multi`/`csv_upload`) |
+| `POST` | `/admin/import-batches/<id>/rows` | `ingest` | Add raw text row(s) or, for `csv_upload`, mapped CSV row(s) |
+| `POST` | `/admin/import-batches/<id>/process` | `ingest` | Normalize every unprocessed row into a `ListingObservation` |
+| `GET` | `/admin/import-batches/<id>` \| `/rows` | `view` | Batch summary / per-row detail (filterable by `review_status`) |
+| `GET` | `/admin/import-batches/csv-template` | `view` | Download a blank CSV with canonical column headers |
+| `POST` | `/admin/import-batches/csv-preview` | `ingest` | Upload a CSV, get back headers + a suggested (unapplied) mapping + sample rows |
+| `GET` | `/admin/import-batches/<id>/rejected/export` | `view` | CSV of every rejected row in a batch, with its rejection reason |
+| `PATCH` | `/admin/observations/<id>` | `review` | Correct a gap; re-validates and re-checks duplicates |
+| `POST` | `/admin/observations/<id>/approve` \| `/reject` | `review` | Materialize as a `Listing`, or reject with a required reason |
+| `POST` | `/admin/import-batches/<id>/rollback` | `rollback` | Archive any approved `Listing`s, reject the rest of the batch |
+
 ## API Reference
 
 | Method | Path | Description |
@@ -174,13 +206,21 @@ npm run dev                     # runs on http://localhost:3000
 | `GET` | `/listing/<id>` | Full vehicle intelligence report for one listing |
 | `POST` | `/search` | Same filters as `/listings`, as a JSON body |
 | `POST` | `/analyze` | Full report for an arbitrary, non-persisted listing built from manual-form fields |
-| `POST` | `/parse-listing` | `{text}` → best-effort `{year, make, model, price, mileage_km, title_status, transmission, location}` for prefilling the form |
+| `POST` | `/parse-listing` | `{text}` → best-effort `{year, make, model, price, mileage_km, title_status, transmission, location}` for prefilling the form, with an optional LLM fallback for fields the regex parser couldn't find |
 | `GET` | `/stats` | Aggregate stats for the analytics dashboard |
+| `POST` | `/feedback` | Free-text user feedback |
+| `POST` | `/community/comparables` | Anonymous, opt-in, rate-limited submission of a comparable a user observed elsewhere; write-only until a human reviews a sufficient sample |
+| `POST` | `/auth/login` \| `/refresh` \| `/logout` | Admin JWT access-token + httpOnly-refresh-cookie auth (see Admin Ingestion & Review System below) |
+| `/admin/*` | See the Admin Ingestion & Review System table below |
 
 ## Future Roadmap
 
 *Not implemented — ideas for a v4:*
 
+- Formalizing `CommunityComparable` into the same Bronze/Silver/Gold review pipeline instead of its current separate, write-only table
+- A precomputed per-generation market-summary aggregate table, if/when live comparable queries (`market_comparables.py`) stop being cheap enough to compute per-request at real data volumes
+- Admin-portal frontend UI for the ingestion/review system above (currently API-only — no `/admin` pages exist yet)
+- PDF report export/generation
 - Real scraper/listing ingestion (Kijiji Autos, AutoTrader, Facebook Marketplace) replacing mock data
 - Price-history tracking per listing over time, once there's a real, repeated data source
 - VIN decoding to auto-resolve generation/trim instead of relying on year + user selection

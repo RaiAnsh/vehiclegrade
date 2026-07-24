@@ -11,7 +11,7 @@ from flask import Flask
 from flask_cors import CORS
 
 from app.config import Config
-from app.extensions import db
+from app.extensions import db, limiter
 from app.services.error_tracking import init_error_tracking
 
 
@@ -22,6 +22,7 @@ def create_app(config_class=Config):
     init_error_tracking(app)
 
     db.init_app(app)
+    limiter.init_app(app)
 
     # Comma-separated list of allowed origins, e.g.
     # "https://vehiclegrade.ca,https://www.vehiclegrade.ca". Defaults to
