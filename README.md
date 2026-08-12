@@ -30,12 +30,14 @@ Keeping these separate is what makes both the Market Value Engine and the Known 
 ```
 ┌─────────────────┐        REST (JSON)        ┌──────────────────┐        ┌──────────────┐
 │   Next.js App    │  ─────────────────────►  │   Flask API       │  ───►  │   SQLite      │
-│  (React + TS)     │  ◄─────────────────────  │ (blueprints +     │  ◄───  │ (8 tables)    │
+│  (React + TS)     │  ◄─────────────────────  │ (blueprints +     │  ◄───  │ (19 tables)   │
 │  localhost:3000   │                           │  service layer)   │        │               │
 └─────────────────┘                           └──────────────────┘        └──────────────┘
 ```
 
 The frontend never computes a score, market value, or known-issue status itself — it only renders what the API returns. All of that logic lives once in `backend/app/services/`, so a Civic's known issues are computed identically whether they're rendered on the dashboard, the listing detail page, or the analyze page's result panel.
+
+The schema itself is organized into four layers — Reference Data (objective vehicle knowledge), Market Data (Listing + the Gold-layer `MarketAggregate` analytics), a Bronze→Silver→Gold ingestion Pipeline, and Admin/Auth. Full ER diagrams (mermaid, one per layer) and a table-by-table data dictionary live in **[docs/DATA_MODEL.md](docs/DATA_MODEL.md)**.
 
 ## Tech Stack
 
@@ -80,6 +82,7 @@ flipIQ/
   frontend/
     src/
       app/                        # landing, dashboard, analytics, analyze, listing/[id] pages
+        admin/                       # login, overview, import, batches/[id], users - see Admin frontend below
       components/
         dashboard/                 # VehicleGlyph, StarRating, ScoreBadge, ListingCard/Grid, FilterPanel
         report/                     # the 10-section vehicle intelligence report, shared by
@@ -87,9 +90,10 @@ flipIQ/
         analytics/                   # ChartCard + 6 chart/list components
         analyze/                      # InputModeToggle, ManualForm, PasteTextForm
         landing/                       # Hero, FeatureHighlights, GradientBackground
-        ui/                             # hand-rolled Card, Button, Input, Select, Skeleton, Badge
-      lib/                          # api.ts (typed fetch wrapper), types.ts (shared response shapes)
-      hooks/                        # useListings, useStats, useCatalog, useDebounce
+        admin/                         # AdminShell, AdminGate, ObservationCard, StatusPill
+        ui/                             # hand-rolled Card, Button, Input, Select, Skeleton, Badge, Table, Tabs, Toast, Modal
+      lib/                          # api.ts + adminApi.ts (typed fetch wrappers), types.ts + adminTypes.ts, csvParse.ts
+      hooks/                        # useListings, useStats, useCatalog, useDebounce, useAdminAuth
   v1-cli/                          # original CLI prototype (see Project History)
   v2-phone/                        # phone-marketplace generation (see Project History)
 ```
@@ -152,9 +156,12 @@ python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 mkdir -p instance
-flask --app run.py seed-db     # seeds 11 makes, 20 models, 22 generations, ~176 mock listings
+flask --app run.py seed-db     # seeds 11 makes, 20 models, 22 generations, ~176 mock listings + Gold-layer market aggregates
+flask --app run.py create-admin-user --email you@example.com --password <12+ chars> --role admin  # for /admin
 python run.py                   # runs on http://localhost:5001
 ```
+
+To use the admin panel locally (`http://localhost:3000/admin`), also uncomment `ALLOWED_ORIGINS=http://localhost:3000` in `.env` — the refresh-token cookie requires a specific CORS origin, not the zero-setup `*` default (see `.env.example`).
 
 **Frontend**
 
@@ -196,6 +203,39 @@ what was submitted)   deduped, quality-scored,            admin approval only;
 | `PATCH` | `/admin/observations/<id>` | `review` | Correct a gap; re-validates and re-checks duplicates |
 | `POST` | `/admin/observations/<id>/approve` \| `/reject` | `review` | Materialize as a `Listing`, or reject with a required reason |
 | `POST` | `/admin/import-batches/<id>/rollback` | `rollback` | Archive any approved `Listing`s, reject the rest of the batch |
+| `GET` | `/admin/import-batches` | `view` | Paginated batch list (`?status=`, `?page=`, `?per_page=`), most recent first |
+
+### Admin frontend (`frontend/src/app/admin/`)
+
+A real UI on top of every route above — not just API access. Session is a Bearer access token held only in React state (`hooks/useAdminAuth.tsx`), deliberately never persisted to `localStorage`/`sessionStorage`: the refresh-token CSRF secret is returned only in the login response body, by backend design, specifically so nothing that survives a reload can be exfiltrated by a stored-XSS. The practical effect is that a hard page reload always requires signing in again — an accepted trade-off for an internal admin tool, not an oversight.
+
+- **`/admin/login`** — email/password, no self-serve signup (`flask create-admin-user` provisions the first account).
+- **`/admin`** — pipeline overview (Bronze/Silver/Gold counts, approval/duplicate rates) plus a manual "recompute market aggregates" trigger.
+- **`/admin/import`** — paste one listing, paste multiple, or upload a CSV. The CSV path previews headers with a suggested (never auto-applied) column mapping, parses the full file client-side (`lib/csvParse.ts` — a small hand-rolled RFC4180 parser, since the backend's preview endpoint only returns a handful of sample rows for mapping purposes), then creates the batch, uploads every row, and processes it.
+- **`/admin/batches`** and **`/admin/batches/<id>`** — the review queue: tabs by `review_status` with live counts, an editable card per observation (including a cascading Make→Model→Generation→Trim picker sourced from the same public `/catalog` the rest of the app uses, for fixing an unresolved vehicle match), approve/reject/rollback, and a rejected-rows CSV export link.
+- **`/admin/users`** — create/deactivate admin accounts, gated on the `manage_users` permission.
+
+RBAC is enforced twice, deliberately: the backend 403s on every route regardless of what the UI shows, and the UI additionally hides actions a role can't perform (`lib/adminTypes.ts`'s `ROLE_PERMISSIONS`, a maintained mirror of the backend's) so a reviewer or analyst never sees a button that would just fail.
+
+### Market Intelligence (Gold layer)
+
+`MarketAggregate` (`app/models/market_aggregate.py`) is a small, explicit data cube built by `app/services/market_aggregation.py`: for every generation, a grand-total rollup plus one slice per distinct value actually present in the data along three dimensions — region, title status, and a fixed mileage band (`0-50k` … `200k+`). Each row carries `sample_size`, `min/max/avg/median_price`, `price_p25`/`price_p75`, `price_stddev`, `avg_mileage_km`, a `market_confidence` tier (`low`/`medium`/`high`, same `<5`/`<10` sample-size thresholds `confidence.py` already uses), and `sample_listing_ids` — the exact `Listing` rows a number was computed from, so every statistic can be explained, not just displayed.
+
+This is deliberately a **third**, independent data source from the two that already existed — it never replaces either:
+
+| Engine | Question it answers | Looks at price? |
+|---|---|---|
+| `market_value.py` | What is this specific vehicle objectively worth? | No — pure reference data (`generation.base_value`) |
+| `market_comparables.py` | What are similar vehicles asking *right now*, live, per request? | Yes — individual listing rows |
+| `market_aggregation.py` (Gold) | What does the real price *distribution* look like for this generation, sliced by region/title/mileage? | Yes — precomputed statistics, not individual rows |
+
+It's a proper (if small) medallion pipeline: SQLite has no `GROUPING SETS`, so instead of one query, `recompute_generation()` does a full delete-then-insert per generation — one `GROUP BY` per dimension, using a sentinel `"ALL"` value (not `NULL`, which SQLite won't reliably enforce uniqueness against) for the rolled-up dimensions. It runs automatically wherever the `Listing` table changes for a generation (an admin approval or a rollback-triggered archive, inside the same transaction — see `app/routes/admin_review.py`) and once over the whole catalog on `flask seed-db`. A full manual refresh is available via `flask recompute-market-aggregates` or `POST /admin/analytics/recompute`.
+
+| Method | Path | Auth | Description |
+|---|---|---|---|
+| `GET` | `/market/aggregates?generation_id=<id>` | none | The full cube for one generation: `overall`, `by_region`, `by_title_status`, `by_mileage_band` |
+| `GET` | `/admin/analytics/overview` | `view` | Bronze/Silver/Gold record counts, approval/duplicate rates, market-aggregate coverage — pipeline health, not vehicle data |
+| `POST` | `/admin/analytics/recompute` | `rollback` | Manual full refresh (`{}`) or one generation (`{"generation_id": <id>}`) |
 
 ## API Reference
 
@@ -211,15 +251,15 @@ what was submitted)   deduped, quality-scored,            admin approval only;
 | `POST` | `/feedback` | Free-text user feedback |
 | `POST` | `/community/comparables` | Anonymous, opt-in, rate-limited submission of a comparable a user observed elsewhere; write-only until a human reviews a sufficient sample |
 | `POST` | `/auth/login` \| `/refresh` \| `/logout` | Admin JWT access-token + httpOnly-refresh-cookie auth (see Admin Ingestion & Review System below) |
-| `/admin/*` | See the Admin Ingestion & Review System table below |
+| `GET` | `/market/aggregates?generation_id=<id>` | Precomputed Gold-layer price distribution for a generation (see Market Intelligence below) |
+| `/admin/*` | See the Admin Ingestion & Review System and Market Intelligence tables below |
 
 ## Future Roadmap
 
 *Not implemented — ideas for a v4:*
 
 - Formalizing `CommunityComparable` into the same Bronze/Silver/Gold review pipeline instead of its current separate, write-only table
-- A precomputed per-generation market-summary aggregate table, if/when live comparable queries (`market_comparables.py`) stop being cheap enough to compute per-request at real data volumes
-- Admin-portal frontend UI for the ingestion/review system above (currently API-only — no `/admin` pages exist yet)
+- Surfacing the Gold-layer `MarketAggregate` cube (percentile pricing by region/title/mileage) inside the vehicle report itself, alongside the existing Market Value Engine and live comparables
 - PDF report export/generation
 - Real scraper/listing ingestion (Kijiji Autos, AutoTrader, Facebook Marketplace) replacing mock data
 - Price-history tracking per listing over time, once there's a real, repeated data source
