@@ -33,7 +33,7 @@ def register_cli(app):
         counts = seed_database()
         click.echo(
             f"Seeded {counts['models']} models, {counts['locations']} locations, "
-            f"{counts['listings']} listings."
+            f"{counts['listings']} listings, {counts['market_aggregates']} market aggregate rows."
         )
 
     @app.cli.command("export-reference-data")
@@ -242,6 +242,20 @@ def register_cli(app):
                 click.echo(f"Skipped {kind} (no match found): {len(missed)}")
                 for item in sorted(missed):
                     click.echo(f"    {item}")
+
+    @app.cli.command("recompute-market-aggregates")
+    def recompute_market_aggregates():
+        """Full delete-then-insert refresh of every Gold-layer MarketAggregate
+        row, across every generation that has (or had) listings. Normal
+        operation never needs this - approving/rejecting/rolling back already
+        recomputes the one generation it touched - this is for a first-time
+        backfill or after an aggregation-rule change.
+        """
+        from app.services.market_aggregation import recompute_all_generations
+
+        results = recompute_all_generations()
+        total_rows = sum(results.values())
+        click.echo(f"Recomputed {len(results)} generation(s), {total_rows} MarketAggregate row(s) written.")
 
 
 def _find_generation(make_name, model_name, generation_label):

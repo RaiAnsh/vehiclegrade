@@ -28,9 +28,17 @@ def create_app(config_class=Config):
     # "https://vehiclegrade.ca,https://www.vehiclegrade.ca". Defaults to
     # "*" for local dev so the Next.js dev server can call this API without
     # any setup; production deployments must set this explicitly.
+    #
+    # supports_credentials=True is required for the admin refresh-token
+    # cookie (httpOnly, set by /auth/login and /auth/refresh) to be sent
+    # and received across origins at all - per browser spec a wildcard "*"
+    # origin cannot be combined with credentialed requests, so a real
+    # ALLOWED_ORIGINS value (not "*") is required for admin login to
+    # survive a token refresh. This is harmless for every other endpoint,
+    # which never sends credentials and doesn't need this.
     allowed_origins = os.environ.get("ALLOWED_ORIGINS", "*")
     origins = "*" if allowed_origins == "*" else [o.strip() for o in allowed_origins.split(",")]
-    CORS(app, origins=origins)
+    CORS(app, origins=origins, supports_credentials=True)
 
     with app.app_context():
         from app import models  # noqa: F401 - ensures models are registered with SQLAlchemy

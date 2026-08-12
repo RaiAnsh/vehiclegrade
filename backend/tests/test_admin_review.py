@@ -239,6 +239,56 @@ def test_rollback_archives_approved_listings_and_rejects_remaining_rows(app, cli
             _cleanup_user(admin)
 
 
+def test_approve_and_rollback_keep_market_aggregates_in_sync(app, client):
+    """The Gold layer (MarketAggregate) must never lag a Listing approval or
+    an archival caused by rollback - see the recompute_generation() calls
+    inside admin_review.py's approve/rollback handlers.
+    """
+    from app.models import Generation, MarketAggregate, VehicleMake, VehicleModel
+
+    with app.app_context():
+        admin = _create_user("admin")
+        batch = None
+        try:
+            headers = _login_headers(client, admin)
+            batch_id = _create_and_process_batch(client, headers, [CLEAN_LISTING_TEXT])
+            batch = ImportBatch.query.get(batch_id)
+            observation = ListingObservation.query.filter_by(import_batch_id=batch_id).first()
+            generation_id = observation.generation_id
+
+            civic_generation = (
+                Generation.query.join(VehicleModel).join(VehicleMake)
+                .filter(VehicleMake.name == "Honda", VehicleModel.name == "Civic").first()
+            )
+            assert generation_id == civic_generation.id
+
+            aggregate_before = MarketAggregate.query.filter_by(
+                generation_id=generation_id, region="ALL", title_status="ALL", mileage_band="ALL",
+            ).first()
+            sample_size_before = aggregate_before.sample_size if aggregate_before else 0
+
+            client.patch(f"/admin/observations/{observation.id}", headers=headers, json={"fuel_type": "Gasoline"})
+            approve_resp = client.post(f"/admin/observations/{observation.id}/approve", headers=headers)
+            listing_id = approve_resp.get_json()["approved_listing_id"]
+
+            aggregate_after_approve = MarketAggregate.query.filter_by(
+                generation_id=generation_id, region="ALL", title_status="ALL", mileage_band="ALL",
+            ).first()
+            assert aggregate_after_approve.sample_size == sample_size_before + 1
+            assert listing_id in aggregate_after_approve.sample_listing_ids
+
+            client.post(f"/admin/import-batches/{batch_id}/rollback", headers=headers)
+
+            aggregate_after_rollback = MarketAggregate.query.filter_by(
+                generation_id=generation_id, region="ALL", title_status="ALL", mileage_band="ALL",
+            ).first()
+            after_rollback_size = aggregate_after_rollback.sample_size if aggregate_after_rollback else 0
+            assert after_rollback_size == sample_size_before
+        finally:
+            _cleanup_batch(batch)
+            _cleanup_user(admin)
+
+
 def test_review_endpoints_require_review_permission(app, client):
     with app.app_context():
         analyst = _create_user("analyst")

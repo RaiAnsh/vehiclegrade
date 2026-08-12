@@ -67,12 +67,21 @@ def seed_database():
     db.session.add_all(listings)
     db.session.commit()
 
+    # Populate the Gold layer (app.models.market_aggregate) from this same
+    # mock dataset, exactly as it would be from real admin-approved
+    # listings - market_comparables.py already treats mock and
+    # admin-ingested Listing rows identically (no `source` filter), so the
+    # aggregation pipeline does too.
+    from app.services.market_aggregation import recompute_all_generations
+    aggregates_written = sum(recompute_all_generations().values())
+
     return {
         "makes": VehicleMake.query.count(),
         "models": VehicleModel.query.count(),
         "generations": len(generations),
         "locations": len(locations),
         "listings": len(listings),
+        "market_aggregates": aggregates_written,
     }
 
 

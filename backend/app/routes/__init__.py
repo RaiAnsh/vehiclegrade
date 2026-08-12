@@ -11,6 +11,8 @@ from app.routes.community import community_bp
 from app.routes.auth import auth_bp
 from app.routes.admin_ingestion import admin_ingestion_bp
 from app.routes.admin_review import admin_review_bp
+from app.routes.admin_analytics import admin_analytics_bp
+from app.routes.market_analytics import market_analytics_bp
 
 
 def register_routes(app):
@@ -25,3 +27,5 @@ def register_routes(app):
     app.register_blueprint(auth_bp)
     app.register_blueprint(admin_ingestion_bp)
     app.register_blueprint(admin_review_bp)
+    app.register_blueprint(admin_analytics_bp)
+    app.register_blueprint(market_analytics_bp)

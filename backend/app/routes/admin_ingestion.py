@@ -38,7 +38,7 @@ from flask import Blueprint, Response, g, jsonify, request
 
 from app.extensions import db
 from app.models import ImportBatch, ListingObservation, RawListingSubmission
-from app.models.import_batch import VALID_SOURCE_TYPES
+from app.models.import_batch import VALID_BATCH_STATUSES, VALID_SOURCE_TYPES
 from app.models.listing_observation import VALID_REVIEW_STATUSES
 from app.services import audit_log
 from app.services.ingestion_normalizer import (
@@ -316,6 +316,36 @@ def process_batch(batch_id):
     db.session.commit()
 
     return jsonify(_batch_summary(batch)), 200
+
+
+@admin_ingestion_bp.route("/import-batches", methods=["GET"])
+@require_permission("view")
+def list_batches():
+    """Paginated, most-recent-first. ?status=<...> filters by ImportBatch.status,
+    ?page=<n>&per_page=<n> (default 1/25, capped at 100) paginate.
+    """
+    status_filter = request.args.get("status")
+    if status_filter is not None and status_filter not in VALID_BATCH_STATUSES:
+        return jsonify({"error": f"status must be one of: {', '.join(VALID_BATCH_STATUSES)}"}), 400
+
+    page = max(1, request.args.get("page", default=1, type=int) or 1)
+    per_page = min(100, max(1, request.args.get("per_page", default=25, type=int) or 25))
+
+    query = ImportBatch.query
+    if status_filter is not None:
+        query = query.filter_by(status=status_filter)
+    query = query.order_by(ImportBatch.created_at.desc())
+
+    total = query.count()
+    batches = query.offset((page - 1) * per_page).limit(per_page).all()
+
+    return jsonify({
+        "batches": [_batch_summary(batch) for batch in batches],
+        "page": page,
+        "per_page": per_page,
+        "total": total,
+        "total_pages": (total + per_page - 1) // per_page if total else 0,
+    }), 200
 
 
 @admin_ingestion_bp.route("/import-batches/<int:batch_id>", methods=["GET"])

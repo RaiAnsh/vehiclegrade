@@ -29,6 +29,7 @@ from app.models.listing import VALID_TITLE_STATUSES
 from app.services import audit_log
 from app.services.duplicate_detection import find_duplicate
 from app.services.ingestion_normalizer import MAX_MILEAGE_KM, MAX_PRICE, MIN_YEAR, VALID_CONDITIONS
+from app.services.market_aggregation import recompute_generation
 from app.services.quality_scoring import score_observation
 from app.utils.auth_decorators import require_permission
 
@@ -215,6 +216,11 @@ def approve_observation(observation_id):
         "observation.approve", actor=g.current_user, target_type="ListingObservation", target_id=observation.id,
         previous_values=previous_values, affected_record_ids=[listing.id], request=request,
     )
+    # Gold-layer market aggregates for this generation are now stale -
+    # refresh them in the same transaction as the approval itself, so a
+    # reader can never observe an approved Listing without its aggregate
+    # reflecting it (or vice versa on rollback).
+    recompute_generation(observation.generation_id, commit=False)
     db.session.commit()
 
     return jsonify(_observation_public(observation)), 200
@@ -261,6 +267,7 @@ def rollback_batch(batch_id):
 
     affected_observation_ids = []
     archived_listing_ids = []
+    affected_generation_ids = set()
 
     for observation in ListingObservation.query.filter_by(import_batch_id=batch.id).all():
         if observation.review_status == "rejected":
@@ -271,6 +278,7 @@ def rollback_batch(batch_id):
             if listing is not None and not listing.is_archived:
                 listing.is_archived = True
                 archived_listing_ids.append(listing.id)
+                affected_generation_ids.add(listing.generation_id)
 
         observation.review_status = "rejected"
         observation.rejection_reason = "Import batch rolled back by admin"
@@ -281,6 +289,12 @@ def rollback_batch(batch_id):
     previous_values = {"status": batch.status}
     batch.status = "rolled_back"
     db.session.flush()
+
+    # Same atomicity guarantee as approval: any generation that lost a
+    # Listing to archival in this rollback gets its Gold aggregates
+    # refreshed in the same transaction.
+    for generation_id in affected_generation_ids:
+        recompute_generation(generation_id, commit=False)
 
     audit_log.record(
         "import_batch.rollback", actor=g.current_user, target_type="ImportBatch", target_id=batch.id,

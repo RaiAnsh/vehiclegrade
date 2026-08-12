@@ -431,3 +431,31 @@ def test_add_rows_rejects_empty_payload_and_closed_batch(app, client):
         finally:
             _cleanup_batch(batch)
             _cleanup_user(admin)
+
+
+def test_list_batches_is_paginated_and_most_recent_first(app, client):
+    with app.app_context():
+        admin = _create_user(role="admin")
+        created_batches = []
+        try:
+            headers = _login_headers(client, admin)
+            for _ in range(3):
+                resp = client.post("/admin/import-batches", headers=headers, json={"source_type": "paste_single"})
+                batch_id = resp.get_json()["id"]
+                created_batches.append(ImportBatch.query.get(batch_id))
+
+            list_resp = client.get("/admin/import-batches?per_page=2&page=1", headers=headers)
+            assert list_resp.status_code == 200
+            body = list_resp.get_json()
+            assert len(body["batches"]) == 2
+            assert body["total"] >= 3
+            assert body["page"] == 1
+            # Most-recent-first: the last batch created should lead.
+            assert body["batches"][0]["id"] == created_batches[-1].id
+
+            bad_status_resp = client.get("/admin/import-batches?status=not_a_real_status", headers=headers)
+            assert bad_status_resp.status_code == 400
+        finally:
+            for batch in created_batches:
+                _cleanup_batch(batch)
+            _cleanup_user(admin)
