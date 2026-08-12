@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const LINKS = [
   { href: "/dashboard", label: "Dashboard" },
@@ -9,6 +12,12 @@ const LINKS = [
 ];
 
 export function Navbar() {
+  // The admin panel (app/admin/**) has its own shell/nav (see
+  // app/admin/layout.tsx) - the public marketing nav would be visual noise
+  // (and a distraction from an already-scoped admin surface) stacked above it.
+  const pathname = usePathname();
+  if (pathname?.startsWith("/admin")) return null;
+
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-[var(--background)]/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

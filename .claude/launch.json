@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--prefix", "frontend"],
       "port": 3000
+    },
+    {
+      "name": "backend",
+      "runtimeExecutable": "/Users/rai/Downloads/PROJECTS/flipIQ/backend/venv/bin/python",
+      "runtimeArgs": ["/Users/rai/Downloads/PROJECTS/flipIQ/backend/run.py"],
+      "port": 5001
     }
   ]
 }

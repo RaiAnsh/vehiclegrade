@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { StandardDisclaimer } from "./StandardDisclaimer";
 
@@ -13,6 +16,9 @@ const TRUST_LINKS = [
 ];
 
 export function Footer() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/admin")) return null;
+
   return (
     <footer className="border-t border-white/5 py-10">
       <div className="mx-auto max-w-6xl px-6">
