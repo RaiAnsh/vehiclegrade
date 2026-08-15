@@ -237,6 +237,12 @@ It's a proper (if small) medallion pipeline: SQLite has no `GROUPING SETS`, so i
 | `GET` | `/admin/analytics/overview` | `view` | Bronze/Silver/Gold record counts, approval/duplicate rates, market-aggregate coverage — pipeline health, not vehicle data |
 | `POST` | `/admin/analytics/recompute` | `rollback` | Manual full refresh (`{}`) or one generation (`{"generation_id": <id>}`) |
 
+The cube isn't admin-only — `components/report/MarketTrendsCard.tsx` calls the same public `/market/aggregates` endpoint and renders it directly in every vehicle report, alongside (not replacing) the Market Value Engine and live comparables above it. It fails quietly (renders nothing) rather than breaking the report if the request errors, since this is a supplementary section, not a load-bearing one. Both the admin market-data viewer and the public report card can export the currently-displayed cube as CSV (`lib/csvExport.ts` — a small client-side Blob-download helper, no server round-trip).
+
+### Analytical SQL
+
+[`backend/sql/`](backend/sql/) has seven hand-written, hand-verified `.sql` queries against the live schema — median price via window functions (SQLite has no `MEDIAN()`), month-over-month price trend via `LAG()`, a Bronze→Silver→Gold ingestion funnel, a depreciation curve, and a data-quality coverage report, among others. Every query was run against the actual seeded dev database before being committed; see [`backend/sql/README.md`](backend/sql/README.md) for the full index and the business question each one answers.
+
 ## API Reference
 
 | Method | Path | Description |
@@ -259,7 +265,6 @@ It's a proper (if small) medallion pipeline: SQLite has no `GROUPING SETS`, so i
 *Not implemented — ideas for a v4:*
 
 - Formalizing `CommunityComparable` into the same Bronze/Silver/Gold review pipeline instead of its current separate, write-only table
-- Surfacing the Gold-layer `MarketAggregate` cube (percentile pricing by region/title/mileage) inside the vehicle report itself, alongside the existing Market Value Engine and live comparables
 - PDF report export/generation
 - Real scraper/listing ingestion (Kijiji Autos, AutoTrader, Facebook Marketplace) replacing mock data
 - Price-history tracking per listing over time, once there's a real, repeated data source

@@ -129,33 +129,10 @@ export interface AnalyticsOverview {
   funnel: { approved: number; rejected: number; approval_rate_pct: number | null };
 }
 
-export interface MarketAggregateSlice {
-  region: string | null;
-  title_status: string | null;
-  mileage_band: string | null;
-  sample_size: number;
-  min_price: number;
-  max_price: number;
-  avg_price: number;
-  median_price: number;
-  price_p25: number;
-  price_p75: number;
-  price_stddev: number | null;
-  avg_mileage_km: number;
-  market_confidence: "low" | "medium" | "high";
-  sample_listing_ids: number[] | null;
-  computed_at: string;
-}
-
-export interface MarketAggregatesResponse {
-  generation_id: number;
-  generation_label: string;
-  overall: MarketAggregateSlice | null;
-  by_region: MarketAggregateSlice[];
-  by_title_status: MarketAggregateSlice[];
-  by_mileage_band: MarketAggregateSlice[];
-  disclosure: string;
-}
+// Defined once, publicly, in lib/types.ts (the same GET /market/aggregates
+// response is used by the public report's MarketTrendsCard) - re-exported
+// here so existing `from "@/lib/adminTypes"` imports keep working.
+export type { MarketAggregateSlice, MarketAggregatesResponse } from "./types";
 
 // Mirrors backend/app/services/ingestion_normalizer.py's CSV_TEMPLATE_COLUMNS -
 // the canonical fields a CSV column can be mapped to. Keep in sync.

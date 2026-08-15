@@ -66,6 +66,7 @@ def _base_fields(listing, score, market_value, offer):
 
     return {
         "id": listing.id,
+        "generation_id": generation.id,
         "year": listing.year,
         "make": make.name,
         "model": model.name,

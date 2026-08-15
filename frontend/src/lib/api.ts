@@ -9,6 +9,7 @@ import {
   ListingDetail,
   ListingFilters,
   ListingsResponse,
+  MarketAggregatesResponse,
   ParsedListing,
   TitleStatus,
 } from "./types";
@@ -54,6 +55,13 @@ export function getListing(id: number): Promise<ListingDetail> {
 
 export function getStats(): Promise<DashboardStats> {
   return apiFetch<DashboardStats>("/stats");
+}
+
+// Gold-layer market aggregates for one generation - public, no auth. Used
+// by MarketTrendsCard on the vehicle report; the exact same endpoint the
+// admin market-data viewer calls (see lib/adminApi.ts).
+export function getMarketAggregates(generationId: number): Promise<MarketAggregatesResponse> {
+  return apiFetch<MarketAggregatesResponse>(`/market/aggregates?generation_id=${generationId}`);
 }
 
 export function searchListings(filters: ListingFilters): Promise<ListingsResponse> {

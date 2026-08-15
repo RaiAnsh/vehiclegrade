@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Select } from "@/components/ui/Select";
 import { Skeleton } from "@/components/ui/Skeleton";
@@ -11,6 +12,7 @@ import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { getMarketAggregates } from "@/lib/adminApi";
 import { MarketAggregateSlice, MarketAggregatesResponse } from "@/lib/adminTypes";
 import { flattenGenerations } from "@/lib/catalogHelpers";
+import { downloadCsv, toCsv } from "@/lib/csvExport";
 import { getCatalog } from "@/lib/api";
 import { Catalog } from "@/lib/types";
 
@@ -87,13 +89,33 @@ export default function MarketDataPage() {
     };
   }, [accessToken, generationId]);
 
+  function handleExport() {
+    if (!data) return;
+    const rows = [
+      ...(data.overall ? [{ segment: "overall", ...data.overall }] : []),
+      ...data.by_region.map((s) => ({ segment: `region:${s.region}`, ...s })),
+      ...data.by_title_status.map((s) => ({ segment: `title_status:${s.title_status}`, ...s })),
+      ...data.by_mileage_band.map((s) => ({ segment: `mileage_band:${s.mileage_band}`, ...s })),
+    ];
+    downloadCsv(`market-data-${data.generation_label.replace(/\s+/g, "-")}.csv`, toCsv(rows));
+  }
+
   return (
     <div>
-      <h1 className="text-2xl font-semibold tracking-tight">Market data</h1>
-      <p className="mt-1 text-sm text-muted">
-        The Gold-layer <code>MarketAggregate</code> cube for one generation — median/percentile pricing, sliced by
-        region, title status, and mileage band. Recomputed automatically on every approval or rollback.
-      </p>
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-semibold tracking-tight">Market data</h1>
+          <p className="mt-1 text-sm text-muted">
+            The Gold-layer <code>MarketAggregate</code> cube for one generation — median/percentile pricing, sliced by
+            region, title status, and mileage band. Recomputed automatically on every approval or rollback.
+          </p>
+        </div>
+        {data?.overall && (
+          <Button variant="secondary" onClick={handleExport}>
+            Export CSV
+          </Button>
+        )}
+      </div>
 
       <Card className="mt-6 p-6">
         <label className="mb-1.5 block text-xs font-medium text-muted">Generation</label>

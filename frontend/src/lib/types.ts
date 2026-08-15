@@ -115,6 +115,7 @@ export interface ComparableVehicle {
 
 export interface ListingSummary {
   id: number | null;
+  generation_id: number;
   year: number;
   make: string;
   model: string;
@@ -348,4 +349,36 @@ export interface ParsedListing {
   // parser couldn't find) - never present if no LLM is configured, or if
   // the rule-based parser found everything on its own.
   _fields_from_ai?: string[];
+}
+
+// Gold-layer market aggregates (GET /market/aggregates) - public,
+// unauthenticated. Shared between the public report (MarketTrendsCard) and
+// the admin market-data viewer (lib/adminTypes.ts re-exports these) since
+// it's the exact same backend response shape either way.
+export interface MarketAggregateSlice {
+  region: string | null;
+  title_status: string | null;
+  mileage_band: string | null;
+  sample_size: number;
+  min_price: number;
+  max_price: number;
+  avg_price: number;
+  median_price: number;
+  price_p25: number;
+  price_p75: number;
+  price_stddev: number | null;
+  avg_mileage_km: number;
+  market_confidence: "low" | "medium" | "high";
+  sample_listing_ids: number[] | null;
+  computed_at: string;
+}
+
+export interface MarketAggregatesResponse {
+  generation_id: number;
+  generation_label: string;
+  overall: MarketAggregateSlice | null;
+  by_region: MarketAggregateSlice[];
+  by_title_status: MarketAggregateSlice[];
+  by_mileage_band: MarketAggregateSlice[];
+  disclosure: string;
 }

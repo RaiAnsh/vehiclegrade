@@ -8,6 +8,7 @@ import { ValueComparison } from "./ValueComparison";
 import { RepairEstimateCard } from "./RepairEstimateCard";
 import { AIExplanationCard } from "./AIExplanationCard";
 import { ComparableListingsCard } from "./ComparableListingsCard";
+import { MarketTrendsCard } from "./MarketTrendsCard";
 import { VehicleSummaryCard } from "./VehicleSummaryCard";
 import { ReliabilityCard } from "./ReliabilityCard";
 import { KnownIssuesList } from "./KnownIssuesList";
@@ -55,6 +56,7 @@ export function VehicleReport({ listing }: VehicleReportProps) {
         <RepairEstimateCard estimate={listing.repair_estimate} source={sources.repair_estimate} />
       )}
       <ComparableListingsCard comparables={listing.comparable_listings} source={sources.comparable_listings} />
+      <MarketTrendsCard generationId={listing.generation_id} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <VehicleSummaryCard listing={listing} />
