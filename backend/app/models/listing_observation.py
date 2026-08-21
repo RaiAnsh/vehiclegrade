@@ -68,6 +68,11 @@ class ListingObservation(db.Model):
     reviewed_by_id = db.Column(db.Integer, db.ForeignKey("admin_users.id"), nullable=True)
     reviewed_at = db.Column(db.DateTime, nullable=True)
     rejection_reason = db.Column(db.Text, nullable=True)
+    # Free-text note a reviewer can attach on either outcome (approve or
+    # reject) - separate from rejection_reason, which stays specific to
+    # "why this was rejected" and is required by app.routes.admin_review's
+    # reject endpoint. reviewer_note is optional context on any decision.
+    reviewer_note = db.Column(db.Text, nullable=True)
 
     # Set on approval; this is the Silver -> Gold link. The materialized
     # Listing row is what market_comparables.py/stats_service.py/confidence.py
