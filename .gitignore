@@ -8,6 +8,11 @@ backend/.venv/
 frontend/node_modules/
 frontend/.next/
 
+# v2-phone (archived reference project, see README Project History -
+# the venv was previously committed by mistake; never again)
+v2-phone/backend/venv/
+v2-phone/backend/.venv/
+
 # Environment
 .env
 .env.local
