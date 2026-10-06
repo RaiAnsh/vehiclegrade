@@ -437,3 +437,94 @@ export interface FlipResult {
   warnings: string[];
   assumptions: string[];
 }
+
+// --- Public flip ledger: flips live in the user's browser (localStorage); the
+// server only does the arithmetic via POST /flip/ledger/summarize. ---
+
+export type ExpenseCategory = "insurance" | "fuel" | "maintenance" | "repair" | "inspection_prep" | "safety" | "other";
+
+export interface LocalFlipExpense {
+  id: string;
+  date: string;
+  category: ExpenseCategory;
+  amount: number;
+  note?: string;
+}
+
+export interface LocalFlip {
+  id: string;
+  make: string;
+  model: string;
+  year: number;
+  trim?: string;
+  status: "holding" | "sold";
+  purchase_date: string;
+  purchase_price: number;
+  purchase_tax: number;
+  purchase_fees: number;
+  mileage_at_purchase: number;
+  planned_months: number;
+  sale_date?: string;
+  sale_price?: number;
+  sale_fees?: number;
+  predicted: FlipResult | null;
+  expenses: LocalFlipExpense[];
+}
+
+export interface FlipComparison {
+  lines: { line: string; predicted: number; actual: number }[];
+  predicted_net: number;
+  predicted_months: number;
+  predicted_sale_price: number;
+  actual_net?: number;
+  net_error?: number;
+  sale_price_error?: number;
+  months_error?: number;
+}
+
+export interface FlipSummary {
+  acquisition_cost: number;
+  expenses_total: number;
+  expenses_by_category: Record<string, number>;
+  total_invested: number;
+  months_held: number;
+  monthly_burn: number | null;
+  net_proceeds?: number;
+  actual_net: number | null;
+  break_even_sale_price?: number;
+  comparison: FlipComparison | null;
+}
+
+export interface FlipPortfolio {
+  flips_total: number;
+  flips_sold: number;
+  flips_holding: number;
+  total_net: number;
+  avg_net: number | null;
+  win_rate_pct: number | null;
+  avg_months_held: number | null;
+  capital_in_holding: number;
+  prediction: { flips_compared: number; avg_net_error: number | null; note: string } | null;
+}
+
+export interface FlipProgress {
+  current_level: number;
+  levels: { level: number; flips_sold: number; avg_net: number | null; unlocked: boolean; graduated: boolean }[];
+  rule: string;
+}
+
+export interface FlipLedgerSummary {
+  flips: Record<string, { level: number | null; summary: FlipSummary }>;
+  portfolio: FlipPortfolio;
+  progress: FlipProgress;
+}
+
+export interface RoadmapLevel {
+  level: number;
+  name: string;
+  tagline: string;
+  why: string;
+  watch_for: string[];
+  buy_rule: string;
+  cars: { make: string; model: string; note?: string }[];
+}

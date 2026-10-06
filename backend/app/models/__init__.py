@@ -16,7 +16,6 @@ from app.models.admin_audit_log import AdminAuditLog
 from app.models.import_batch import ImportBatch, VALID_SOURCE_TYPES, VALID_BATCH_STATUSES
 from app.models.raw_listing_submission import RawListingSubmission
 from app.models.listing_observation import ListingObservation, VALID_REVIEW_STATUSES
-from app.models.flip import Flip, FlipExpense, VALID_EXPENSE_CATEGORIES, VALID_FLIP_STATUSES
 from app.models.market_aggregate import ALL_DIMENSION_VALUE, MarketAggregate, MILEAGE_BANDS
 
 __all__ = [
@@ -44,10 +43,6 @@ __all__ = [
     "RawListingSubmission",
     "ListingObservation",
     "VALID_REVIEW_STATUSES",
-    "Flip",
-    "FlipExpense",
-    "VALID_EXPENSE_CATEGORIES",
-    "VALID_FLIP_STATUSES",
     "MarketAggregate",
     "ALL_DIMENSION_VALUE",
     "MILEAGE_BANDS",

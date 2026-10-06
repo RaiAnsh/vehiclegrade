@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
 import { useCatalog } from "@/hooks/useCatalog";
 import { calculateFlip } from "@/lib/api";
-import { Condition, FlipInput, FlipResult, FlipVerdict, TitleStatus } from "@/lib/types";
+import { Condition, FlipInput, FlipResult, FlipVerdict, LocalFlip, TitleStatus } from "@/lib/types";
 
 const TITLE_STATUSES: TitleStatus[] = ["clean", "unknown", "rebuilt", "salvage"];
 const CONDITIONS: Condition[] = ["excellent", "good", "fair", "poor"];
@@ -70,9 +70,28 @@ function LineItems({ title, items, total }: { title: string; items: Record<strin
   );
 }
 
-export function FlipCalculator() {
+export interface CalculatorPrefill {
+  make?: string;
+  model?: string;
+  year?: number;
+  trim?: string;
+  mileage_km?: number;
+  purchase_price?: number;
+  title_status?: TitleStatus;
+  condition?: Condition;
+}
+
+interface FlipCalculatorProps {
+  prefill?: CalculatorPrefill;
+  // Called when the user says they actually bought it: the hub saves it to
+  // their browser-stored ledger together with this prediction snapshot.
+  onTrack?: (flip: Omit<LocalFlip, "id" | "status" | "expenses" | "purchase_date">) => void;
+}
+
+export function FlipCalculator({ prefill, onTrack }: FlipCalculatorProps) {
   const { catalog } = useCatalog();
-  const [form, setForm] = useState<FormState>({ months_held: 3, title_status: "clean", condition: "good" });
+  const [form, setForm] = useState<FormState>({ months_held: 3, title_status: "clean", condition: "good", ...prefill });
+  const [tracked, setTracked] = useState(false);
   const [result, setResult] = useState<FlipResult | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -100,6 +119,7 @@ export function FlipCalculator() {
         expected_sale_price: form.expected_sale_price,
       };
       setResult(await calculateFlip(input));
+      setTracked(false);
     } catch (e) {
       setResult(null);
       setError(e instanceof Error ? e.message : "Something went wrong.");
@@ -223,6 +243,28 @@ export function FlipCalculator() {
                 </div>
               ))}
             </div>
+
+            {onTrack && (
+              <div className="mt-6">
+                <Button
+                  variant="secondary"
+                  disabled={tracked}
+                  onClick={() => {
+                    const buying = result.costs.buying;
+                    onTrack({
+                      make: result.vehicle.make, model: result.vehicle.model, year: result.vehicle.year,
+                      trim: form.trim, mileage_at_purchase: form.mileage_km!, planned_months: result.months_held,
+                      purchase_price: buying.purchase_price, purchase_tax: buying.ontario_rst,
+                      purchase_fees: buying.uvip_and_transfer + buying.history_report + buying.pre_purchase_inspection,
+                      predicted: result,
+                    });
+                    setTracked(true);
+                  }}
+                >
+                  {tracked ? "Saved to My Flips" : "I bought this - track it in My Flips"}
+                </Button>
+              </div>
+            )}
 
             <div className="mt-6 grid gap-4 text-sm sm:grid-cols-3">
               <div>

@@ -7,7 +7,10 @@ import {
   Condition,
   DashboardStats,
   FlipInput,
+  FlipLedgerSummary,
   FlipResult,
+  LocalFlip,
+  RoadmapLevel,
   ListingDetail,
   ListingFilters,
   ListingsResponse,
@@ -84,6 +87,18 @@ export function calculateFlip(input: FlipInput): Promise<FlipResult> {
   return apiFetch<FlipResult>("/flip-calculator", {
     method: "POST",
     body: JSON.stringify(input),
+  });
+}
+
+export function getFlipRoadmap(): Promise<{ levels: RoadmapLevel[] }> {
+  return apiFetch<{ levels: RoadmapLevel[] }>("/flip/roadmap");
+}
+
+// Stateless: the server never stores flips, it only computes on what's sent.
+export function summarizeFlipLedger(flips: LocalFlip[]): Promise<FlipLedgerSummary> {
+  return apiFetch<FlipLedgerSummary>("/flip/ledger/summarize", {
+    method: "POST",
+    body: JSON.stringify({ flips }),
   });
 }
 

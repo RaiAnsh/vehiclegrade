@@ -7,6 +7,7 @@ from datetime import date
 from app.services.flip_calculator import DETAIL_AND_PREP, LISTING_AND_ADMIN, SAFETY_CERTIFICATE
 
 DAYS_PER_MONTH = 30.44
+VALID_EXPENSE_CATEGORIES = ("insurance", "fuel", "maintenance", "repair", "inspection_prep", "safety", "other")
 
 # Calculator line -> ledger expense category it should be compared with.
 PREDICTED_VS_ACTUAL_CATEGORIES = {
