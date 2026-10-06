@@ -382,3 +382,58 @@ export interface MarketAggregatesResponse {
   by_mileage_band: MarketAggregateSlice[];
   disclosure: string;
 }
+
+// POST /flip-calculator - see backend/app/services/flip_calculator.py
+export interface FlipInput {
+  make: string;
+  model: string;
+  year: number;
+  trim?: string;
+  mileage_km: number;
+  purchase_price: number;
+  months_held: number;
+  title_status?: TitleStatus;
+  condition?: Condition;
+  km_per_month?: number;
+  expected_sale_price?: number;
+  repair_budget?: number;
+  insurance_annual?: number;
+  target_net?: number;
+}
+
+export interface FlipScenario {
+  sale_price: number;
+  net: number;
+}
+
+export type FlipVerdict = "profitable" | "break_even" | "only_works_if_sale_goes_well" | "likely_loss";
+
+export interface FlipResult {
+  vehicle: { make: string; model: string; year: number; generation: string; trim: string | null };
+  market_value_now: number;
+  expected_hold_km: number;
+  months_held: number;
+  costs: {
+    buying: Record<string, number>;
+    holding: Record<string, number>;
+    selling: Record<string, number>;
+    repair_reserve: number;
+    totals: { buying: number; holding: number; selling: number; all_in: number };
+  };
+  repair_reserve_items: {
+    issue: string;
+    severity: string;
+    probability: number;
+    cost_range: [number, number];
+    expected_cost: number;
+  }[];
+  scenarios: { optimistic: FlipScenario; expected: FlipScenario; pessimistic: FlipScenario };
+  expected_net: number;
+  monthly_cost_to_hold: number;
+  break_even_sale_price: number;
+  target_net: number;
+  max_purchase_price: number;
+  verdict: FlipVerdict;
+  warnings: string[];
+  assumptions: string[];
+}

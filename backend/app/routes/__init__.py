@@ -14,6 +14,8 @@ from app.routes.admin_review import admin_review_bp
 from app.routes.admin_analytics import admin_analytics_bp
 from app.routes.market_analytics import market_analytics_bp
 from app.routes.flagged_listings import flagged_listings_bp
+from app.routes.flip_calculator import flip_calculator_bp
+from app.routes.admin_flips import admin_flips_bp
 
 
 def register_routes(app):
@@ -31,3 +33,5 @@ def register_routes(app):
     app.register_blueprint(admin_analytics_bp)
     app.register_blueprint(market_analytics_bp)
     app.register_blueprint(flagged_listings_bp)
+    app.register_blueprint(flip_calculator_bp)
+    app.register_blueprint(admin_flips_bp)

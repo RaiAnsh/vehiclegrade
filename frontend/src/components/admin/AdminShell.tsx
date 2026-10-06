@@ -13,6 +13,7 @@ const NAV_LINKS = [
   { href: "/admin/import", label: "New Import", permission: "ingest" as const },
   { href: "/admin/batches", label: "Batches" },
   { href: "/admin/market", label: "Market Data" },
+  { href: "/admin/flips", label: "Flip Ledger" },
   { href: "/admin/users", label: "Users", permission: "manage_users" as const },
 ];
 

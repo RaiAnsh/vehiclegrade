@@ -9,6 +9,7 @@ const LINKS = [
   { href: "/analytics", label: "Analytics" },
   { href: "/analyze", label: "Analyze" },
   { href: "/compare", label: "Compare" },
+  { href: "/flip", label: "Flip" },
 ];
 
 export function Navbar() {

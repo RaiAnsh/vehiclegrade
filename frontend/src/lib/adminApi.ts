@@ -21,10 +21,14 @@ import {
   BatchSourceType,
   BatchStatus,
   CsvPreviewResponse,
+  ExpenseCategory,
+  Flip,
+  FlipListResponse,
   ImportBatch,
   ListingObservation,
   LoginResponse,
   MarketAggregatesResponse,
+  NewFlipInput,
   ObservationEdit,
   ReviewStatus,
 } from "./adminTypes";
@@ -223,4 +227,42 @@ export function triggerRecompute(token: string, generationId?: number): Promise<
 
 export function getMarketAggregates(token: string, generationId: number): Promise<MarketAggregatesResponse> {
   return adminFetch<MarketAggregatesResponse>(`/market/aggregates?generation_id=${generationId}`, token);
+}
+
+// --- Flip ledger ---
+
+export function listFlips(token: string): Promise<FlipListResponse> {
+  return adminFetch<FlipListResponse>("/admin/flips", token);
+}
+
+export function getFlip(token: string, id: number): Promise<Flip> {
+  return adminFetch<Flip>(`/admin/flips/${id}`, token);
+}
+
+export function createFlip(token: string, input: NewFlipInput): Promise<Flip> {
+  return adminFetch<Flip>("/admin/flips", token, { method: "POST", body: JSON.stringify(input) });
+}
+
+export function addFlipExpense(
+  token: string,
+  id: number,
+  expense: { category: ExpenseCategory; amount: number; date?: string; note?: string }
+): Promise<Flip> {
+  return adminFetch<Flip>(`/admin/flips/${id}/expenses`, token, { method: "POST", body: JSON.stringify(expense) });
+}
+
+export function deleteFlipExpense(token: string, id: number, expenseId: number): Promise<Flip> {
+  return adminFetch<Flip>(`/admin/flips/${id}/expenses/${expenseId}`, token, { method: "DELETE" });
+}
+
+export function sellFlip(
+  token: string,
+  id: number,
+  sale: { sale_price: number; sale_date?: string; sale_fees?: number; mileage_at_sale?: number }
+): Promise<Flip> {
+  return adminFetch<Flip>(`/admin/flips/${id}/sell`, token, { method: "POST", body: JSON.stringify(sale) });
+}
+
+export function deleteFlip(token: string, id: number): Promise<{ deleted: number }> {
+  return adminFetch(`/admin/flips/${id}`, token, { method: "DELETE" });
 }

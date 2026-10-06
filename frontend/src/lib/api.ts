@@ -6,6 +6,8 @@ import {
   Catalog,
   Condition,
   DashboardStats,
+  FlipInput,
+  FlipResult,
   ListingDetail,
   ListingFilters,
   ListingsResponse,
@@ -73,6 +75,13 @@ export function searchListings(filters: ListingFilters): Promise<ListingsRespons
 
 export function analyzeListing(input: AnalyzeInput): Promise<ListingDetail> {
   return apiFetch<ListingDetail>("/analyze", {
+    method: "POST",
+    body: JSON.stringify(input),
+  });
+}
+
+export function calculateFlip(input: FlipInput): Promise<FlipResult> {
+  return apiFetch<FlipResult>("/flip-calculator", {
     method: "POST",
     body: JSON.stringify(input),
   });
