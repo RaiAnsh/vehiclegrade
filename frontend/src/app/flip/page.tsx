@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import { FlipHub } from "@/components/flip/FlipHub";
 
 export const metadata = {
@@ -14,7 +16,9 @@ export default function FlipPage() {
         Buy right, drive it, sell for about what you paid. Ontario private-sale costs &middot; HST &middot; insurance &middot; repairs
       </p>
       <div className="mt-8">
-        <FlipHub />
+        <Suspense>
+          <FlipHub />
+        </Suspense>
       </div>
     </div>
   );

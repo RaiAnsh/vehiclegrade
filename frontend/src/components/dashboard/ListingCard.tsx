@@ -15,6 +15,22 @@ interface ListingCardProps {
   index?: number;
 }
 
+// Hands this listing to the flip calculator at the suggested offer. Built as
+// query params (not state) so it works as a plain link from any page.
+function flipHref(listing: ListingSummary) {
+  const params = new URLSearchParams({
+    make: listing.make,
+    model: listing.model,
+    year: String(listing.year),
+    mileage: String(listing.mileage_km),
+    price: String(Math.round(listing.suggested_offer)),
+    title: listing.title_status,
+    condition: listing.condition,
+  });
+  if (listing.trim) params.set("trim", listing.trim);
+  return `/flip?${params.toString()}`;
+}
+
 export function ListingCard({ listing, index = 0 }: ListingCardProps) {
   if (listing.id === null) return null;
 
@@ -93,6 +109,12 @@ export function ListingCard({ listing, index = 0 }: ListingCardProps) {
             </div>
           </div>
         </Card>
+      </Link>
+      <Link
+        href={flipHref(listing)}
+        className="mt-2 block text-right text-xs text-muted transition-colors hover:text-foreground"
+      >
+        Run flip numbers at the suggested offer &rarr;
       </Link>
     </motion.div>
   );
