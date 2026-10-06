@@ -1,0 +1,652 @@
+{
+  "make": "Acura",
+  "models": [
+    {
+      "name": "TSX",
+      "generations": [
+        {
+          "label": "1st Gen (CL9)",
+          "start_year": 2004,
+          "end_year": 2008,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 205,
+          "fuel_economy_l_per_100km": 9.4,
+          "reliability_stars": 4.4,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "BMW 3 Series, Lexus IS, Honda Accord, Audi A4",
+          "base_value": 7500,
+          "reference_mileage_km": 190000,
+          "trims": [
+            {
+              "name": "TSX (automatic)",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "2.4L I4",
+              "transmission_options": "5-speed Automatic"
+            },
+            {
+              "name": "TSX Navi (automatic)",
+              "msrp_adjustment_pct": 0.05,
+              "engine_options": "2.4L I4",
+              "transmission_options": "5-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Automatic transmission wear and shifts",
+              "description": "Some 5-speed automatics develop slipping or harsh shifts with age.",
+              "symptoms": "Harsh or delayed shifts, RPM flare between gears.",
+              "severity": "moderate",
+              "typical_mileage_km": 180000,
+              "estimated_repair_cost_min": 600,
+              "estimated_repair_cost_max": 3200,
+              "recommendation": "Check fluid condition and drive through every gear."
+            },
+            {
+              "title": "Oil consumption and valve cover leaks",
+              "description": "High-mileage 2.4L engines can seep oil from the valve cover gasket and consume a little between changes.",
+              "symptoms": "Oil on the engine's top, a burning smell, falling oil level.",
+              "severity": "minor",
+              "typical_mileage_km": 170000,
+              "estimated_repair_cost_min": 200,
+              "estimated_repair_cost_max": 700,
+              "recommendation": "Check for oil around the valve cover and ask about oil top-ups."
+            },
+            {
+              "title": "Front suspension bushing and engine mount wear",
+              "description": "Rubber mounts and bushings wear and produce clunks and vibration.",
+              "symptoms": "Clunking over bumps, vibration at idle in gear.",
+              "severity": "minor",
+              "typical_mileage_km": 170000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1200,
+              "recommendation": "Listen for clunks and feel for vibration when the car is stopped in gear."
+            },
+            {
+              "title": "A/C compressor failure",
+              "description": "A/C compressors and condensers fail on older cars.",
+              "symptoms": "Warm air or a compressor clutch that won't engage.",
+              "severity": "minor",
+              "typical_mileage_km": 180000,
+              "estimated_repair_cost_min": 500,
+              "estimated_repair_cost_max": 1400,
+              "recommendation": "Run the A/C at full cold during the test drive."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Valve adjustment",
+              "interval_km": 100000,
+              "estimated_cost_min": 150,
+              "estimated_cost_max": 400
+            }
+          ]
+        },
+        {
+          "label": "2nd Gen (CU2)",
+          "start_year": 2009,
+          "end_year": 2014,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 201,
+          "fuel_economy_l_per_100km": 9.1,
+          "reliability_stars": 4.4,
+          "typical_lifespan_km": 290000,
+          "parts_availability": "excellent",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "BMW 3 Series, Lexus IS, Honda Accord, Audi A4",
+          "base_value": 12000,
+          "reference_mileage_km": 150000,
+          "trims": [
+            {
+              "name": "TSX (automatic)",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "2.4L I4",
+              "transmission_options": "5-speed Automatic"
+            },
+            {
+              "name": "TSX Tech (automatic)",
+              "msrp_adjustment_pct": 0.06,
+              "engine_options": "2.4L I4",
+              "transmission_options": "5-speed Automatic"
+            },
+            {
+              "name": "TSX V6",
+              "msrp_adjustment_pct": 0.15,
+              "engine_options": "3.5L V6",
+              "transmission_options": "5-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Power steering leak and noise",
+              "description": "The power steering system can leak or whine as seals age.",
+              "symptoms": "Whining when turning, fluid spots under the front.",
+              "severity": "minor",
+              "typical_mileage_km": 140000,
+              "estimated_repair_cost_min": 250,
+              "estimated_repair_cost_max": 900,
+              "recommendation": "Check the reservoir and the ground under the car."
+            },
+            {
+              "title": "A/C condenser or compressor failure",
+              "description": "A/C components fail on older cars and leave weak cooling.",
+              "symptoms": "Warm air at idle, a compressor that cycles oddly.",
+              "severity": "minor",
+              "typical_mileage_km": 160000,
+              "estimated_repair_cost_min": 500,
+              "estimated_repair_cost_max": 1400,
+              "recommendation": "Run the A/C on max for several minutes."
+            },
+            {
+              "title": "Front suspension bushing wear",
+              "description": "Control-arm bushings wear and cause clunking and wandering.",
+              "symptoms": "Clunking over bumps, steering wander, uneven tire wear.",
+              "severity": "minor",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1200,
+              "recommendation": "Listen over bumps and check the tires."
+            },
+            {
+              "title": "Oil consumption / valve cover leaks",
+              "description": "The 2.4L engine can seep or burn a little oil as mileage builds.",
+              "symptoms": "Oil spots, burning smell, falling oil level.",
+              "severity": "minor",
+              "typical_mileage_km": 160000,
+              "estimated_repair_cost_min": 200,
+              "estimated_repair_cost_max": 700,
+              "recommendation": "Check the dipstick and look at the valve cover."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Valve adjustment",
+              "interval_km": 100000,
+              "estimated_cost_min": 150,
+              "estimated_cost_max": 400
+            },
+            {
+              "name": "Timing belt, water pump & tensioner (V6)",
+              "interval_km": 160000,
+              "estimated_cost_min": 900,
+              "estimated_cost_max": 1600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TL",
+      "generations": [
+        {
+          "label": "4th Gen (UA8)",
+          "start_year": 2009,
+          "end_year": 2014,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 280,
+          "fuel_economy_l_per_100km": 11.0,
+          "reliability_stars": 4.2,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 950,
+          "common_competitors": "BMW 5 Series, Lexus ES, Infiniti G37, Audi A6",
+          "base_value": 14000,
+          "reference_mileage_km": 150000,
+          "trims": [
+            {
+              "name": "TL Base",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "3.5L V6",
+              "transmission_options": "6-speed Automatic"
+            },
+            {
+              "name": "TL SH-AWD",
+              "msrp_adjustment_pct": 0.1,
+              "engine_options": "3.7L V6",
+              "transmission_options": "6-speed Automatic"
+            },
+            {
+              "name": "TL Tech",
+              "msrp_adjustment_pct": 0.07,
+              "engine_options": "3.5L V6",
+              "transmission_options": "6-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Transmission shift issues",
+              "description": "Some automatics can shift harshly or hesitate, particularly on early production years.",
+              "symptoms": "Harsh shifts, shudder or hesitation at low speed.",
+              "severity": "moderate",
+              "typical_mileage_km": 140000,
+              "estimated_repair_cost_min": 500,
+              "estimated_repair_cost_max": 3500,
+              "recommendation": "Check service history and shift through all gears."
+            },
+            {
+              "title": "Torque converter vibration",
+              "description": "A torque converter shudder is reported on some cars and shows up at steady light throttle.",
+              "symptoms": "Vibration or shudder at 60-80 km/h at light throttle.",
+              "severity": "moderate",
+              "typical_mileage_km": 130000,
+              "estimated_repair_cost_min": 400,
+              "estimated_repair_cost_max": 2200,
+              "recommendation": "Hold a steady 60-80 km/h on the test drive and feel for shudder."
+            },
+            {
+              "title": "SH-AWD rear differential service",
+              "description": "SH-AWD cars require specific fluid services and neglect can damage the rear unit.",
+              "symptoms": "Whining or binding in tight turns, rear-end noise.",
+              "severity": "moderate",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 3000,
+              "recommendation": "Ask for SH-AWD service records."
+            },
+            {
+              "title": "Power steering hose leak",
+              "description": "High-pressure hoses and the pump can leak and whine.",
+              "symptoms": "Whine when turning, fluid drips under the front.",
+              "severity": "minor",
+              "typical_mileage_km": 140000,
+              "estimated_repair_cost_min": 250,
+              "estimated_repair_cost_max": 900,
+              "recommendation": "Check the reservoir and the ground under the car."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Timing belt, water pump & tensioner",
+              "interval_km": 160000,
+              "estimated_cost_min": 900,
+              "estimated_cost_max": 1600
+            },
+            {
+              "name": "Rear differential fluid (SH-AWD)",
+              "interval_km": 48000,
+              "estimated_cost_min": 100,
+              "estimated_cost_max": 240
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TLX",
+      "generations": [
+        {
+          "label": "1st Gen",
+          "start_year": 2015,
+          "end_year": 2020,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 206,
+          "fuel_economy_l_per_100km": 8.6,
+          "reliability_stars": 4.2,
+          "typical_lifespan_km": 270000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 850,
+          "common_competitors": "BMW 3 Series, Audi A4, Lexus IS, Infiniti Q50",
+          "base_value": 22500,
+          "reference_mileage_km": 90000,
+          "trims": [
+            {
+              "name": "TLX 2.4L",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "2.4L I4",
+              "transmission_options": "8-speed Dual-Clutch"
+            },
+            {
+              "name": "TLX V6",
+              "msrp_adjustment_pct": 0.1,
+              "engine_options": "3.5L V6",
+              "transmission_options": "9-speed Automatic"
+            },
+            {
+              "name": "TLX SH-AWD V6",
+              "msrp_adjustment_pct": 0.18,
+              "engine_options": "3.5L V6",
+              "transmission_options": "9-speed Automatic"
+            },
+            {
+              "name": "TLX A-Spec",
+              "msrp_adjustment_pct": 0.15,
+              "engine_options": "3.5L V6",
+              "transmission_options": "9-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "9-speed automatic hesitation (V6)",
+              "description": "The 9-speed can shift hesitantly or abruptly on some cars, particularly in 2015-2016.",
+              "symptoms": "Hesitation or lurching, particularly at low speed.",
+              "severity": "moderate",
+              "typical_mileage_km": 80000,
+              "estimated_repair_cost_min": 500,
+              "estimated_repair_cost_max": 3500,
+              "recommendation": "Test in stop-and-go traffic and check software update history."
+            },
+            {
+              "title": "8-speed dual-clutch low-speed behavior (4-cyl)",
+              "description": "The 2.4L's dual-clutch gearbox can be jerky at low speeds.",
+              "symptoms": "Jerky creep or hesitation moving off from a stop.",
+              "severity": "minor",
+              "typical_mileage_km": 70000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 2800,
+              "recommendation": "Test low-speed driving and parking maneuvers."
+            },
+            {
+              "title": "Infotainment and electronics glitches",
+              "description": "Dual-screen infotainment systems can glitch and need dealer updates.",
+              "symptoms": "Frozen screens, lagging response, spurious warnings.",
+              "severity": "minor",
+              "typical_mileage_km": 60000,
+              "estimated_repair_cost_min": 150,
+              "estimated_repair_cost_max": 1500,
+              "recommendation": "Test every function on both screens."
+            },
+            {
+              "title": "Torque steer / brake wear (V6)",
+              "description": "Strong front-wheel-drive V6 cars can wear front tires and brakes quickly.",
+              "symptoms": "Uneven front tire wear, brake pulsation.",
+              "severity": "minor",
+              "typical_mileage_km": 70000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1200,
+              "recommendation": "Check the front tires and brake condition."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Transmission fluid service",
+              "interval_km": 60000,
+              "estimated_cost_min": 220,
+              "estimated_cost_max": 450
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ILX",
+      "generations": [
+        {
+          "label": "1st Gen",
+          "start_year": 2013,
+          "end_year": 2022,
+          "body_type": "sedan",
+          "drivetrain": "FWD",
+          "base_horsepower": 150,
+          "fuel_economy_l_per_100km": 8.7,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "low",
+          "expected_annual_maintenance_cost": 750,
+          "common_competitors": "Audi A3, BMW 2 Series, Mercedes-Benz CLA, Lexus IS",
+          "base_value": 14500,
+          "reference_mileage_km": 120000,
+          "trims": [
+            {
+              "name": "ILX 2.0L",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "2.0L I4",
+              "transmission_options": "5-speed Automatic"
+            },
+            {
+              "name": "ILX 2.4L",
+              "msrp_adjustment_pct": 0.07,
+              "engine_options": "2.4L I4",
+              "transmission_options": "8-speed Dual-Clutch"
+            },
+            {
+              "name": "ILX Hybrid",
+              "msrp_adjustment_pct": 0.05,
+              "engine_options": "1.5L Hybrid I4",
+              "transmission_options": "CVT"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Basic-trim feel and noise",
+              "description": "The ILX is a dressed-up Civic and is simpler and noisier than other Acura sedans.",
+              "symptoms": "Engine and road noise higher than rivals, a plain cabin.",
+              "severity": "minor",
+              "typical_mileage_km": 60000,
+              "estimated_repair_cost_min": 0,
+              "estimated_repair_cost_max": 0,
+              "recommendation": "Test drive against an Accord or TLX and decide what you value."
+            },
+            {
+              "title": "Dual-clutch low-speed behavior (2.4L)",
+              "description": "The 8-speed dual-clutch can feel hesitant at low speed.",
+              "symptoms": "Jerky creep or hesitation moving off from a stop.",
+              "severity": "minor",
+              "typical_mileage_km": 70000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 2800,
+              "recommendation": "Test low-speed driving and parking maneuvers."
+            },
+            {
+              "title": "A/C condenser and starter wear",
+              "description": "Condensers and starters are known wear items on some compact Honda-based cars.",
+              "symptoms": "Weak cooling, slow cranking.",
+              "severity": "minor",
+              "typical_mileage_km": 130000,
+              "estimated_repair_cost_min": 400,
+              "estimated_repair_cost_max": 1100,
+              "recommendation": "Run the A/C at full cold and listen to start-up."
+            },
+            {
+              "title": "Hybrid battery aging (Hybrid)",
+              "description": "ILX Hybrid batteries lose capacity with age and are expensive to replace.",
+              "symptoms": "Reduced fuel economy, frequent engine running.",
+              "severity": "moderate",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 2500,
+              "estimated_repair_cost_max": 5000,
+              "recommendation": "Avoid the hybrid unless battery health is documented."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "CVT/DCT fluid service",
+              "interval_km": 60000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 360
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

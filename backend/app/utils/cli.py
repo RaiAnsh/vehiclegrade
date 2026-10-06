@@ -13,7 +13,7 @@ from app.models import (
     VehicleMake, VehicleModel,
 )
 from app.services.auth import hash_password
-from app.utils.seed_data import seed_database
+from app.utils.seed_data import add_new_vehicles, seed_database
 
 EXPORTS_DIR = Path(__file__).parent.parent.parent / "data" / "exports"
 ENGINE_DATA_PATH = Path(__file__).parent / "engine_data" / "engines.json"
@@ -35,6 +35,21 @@ def register_cli(app):
             f"Seeded {counts['models']} models, {counts['locations']} locations, "
             f"{counts['listings']} listings, {counts['market_aggregates']} market aggregate rows."
         )
+
+    @app.cli.command("add-new-vehicles")
+    def add_new_vehicles_command():
+        """Add vehicles that are in the knowledge-base JSON but missing from
+        the database, without dropping anything (unlike seed-db)."""
+        result = add_new_vehicles()
+        if not result["generations"]:
+            click.echo("No new vehicles - database already matches the knowledge base.")
+            return
+        click.echo(
+            f"Added {len(result['generations'])} generations, {result['listings']} mock listings, "
+            f"{result['market_aggregates']} market aggregate rows:"
+        )
+        for name in result["generations"]:
+            click.echo(f"  + {name}")
 
     @app.cli.command("export-reference-data")
     def export_reference_data():

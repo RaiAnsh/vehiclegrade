@@ -1,0 +1,402 @@
+{
+  "make": "Infiniti",
+  "models": [
+    {
+      "name": "G37",
+      "generations": [
+        {
+          "label": "G37 Sedan (V36)",
+          "start_year": 2009,
+          "end_year": 2013,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 328,
+          "fuel_economy_l_per_100km": 11.1,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 1000,
+          "common_competitors": "BMW 3 Series, Lexus IS, Acura TL, Cadillac CTS",
+          "base_value": 14500,
+          "reference_mileage_km": 140000,
+          "trims": [
+            {
+              "name": "G37 Journey",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "3.7L V6",
+              "transmission_options": "7-speed Automatic"
+            },
+            {
+              "name": "G37x AWD",
+              "msrp_adjustment_pct": 0.07,
+              "engine_options": "3.7L V6",
+              "transmission_options": "7-speed Automatic"
+            },
+            {
+              "name": "G37 Sport",
+              "msrp_adjustment_pct": 0.1,
+              "engine_options": "3.7L V6",
+              "transmission_options": "7-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Oil consumption / gasket leaks (VQ37VHR)",
+              "description": "Some 3.7L engines burn oil or develop oil-pan and gasket seeps, and early cars can be poor on oil-change habits.",
+              "symptoms": "Dropping oil level, oil spots underneath, burning smell.",
+              "severity": "moderate",
+              "typical_mileage_km": 140000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1800,
+              "recommendation": "Check the dipstick cold and ask for oil-change history."
+            },
+            {
+              "title": "Rear brake wear and noisy rear end",
+              "description": "Performance brakes wear quickly, and the rear differential can whine with age.",
+              "symptoms": "Squealing when braking, a whine from the rear at speed.",
+              "severity": "minor",
+              "typical_mileage_km": 90000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 900,
+              "recommendation": "Check pad and rotor wear and listen for whining on the highway."
+            },
+            {
+              "title": "AWD (G37x) transfer case / front differential service",
+              "description": "AWD cars need fluid services on the transfer case and front diff, and neglected cars can wear the unit.",
+              "symptoms": "Binding or shudder in tight turns, whining on acceleration.",
+              "severity": "moderate",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 2500,
+              "recommendation": "Ask for AWD fluid service records on any G37x."
+            },
+            {
+              "title": "Window regulator and interior trim wear",
+              "description": "Window regulators and soft-touch interior pieces age with heat and use.",
+              "symptoms": "Slow or stuck windows, peeling interior surfaces.",
+              "severity": "minor",
+              "typical_mileage_km": 130000,
+              "estimated_repair_cost_min": 200,
+              "estimated_repair_cost_max": 700,
+              "recommendation": "Cycle every window on the test drive."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Differential / transfer case fluid",
+              "interval_km": 60000,
+              "estimated_cost_min": 160,
+              "estimated_cost_max": 380
+            },
+            {
+              "name": "Serpentine belt",
+              "interval_km": 100000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 250
+            }
+          ]
+        },
+        {
+          "label": "G37 Coupe (CV36)",
+          "start_year": 2008,
+          "end_year": 2013,
+          "body_type": "coupe",
+          "drivetrain": "RWD",
+          "base_horsepower": 330,
+          "fuel_economy_l_per_100km": 11.4,
+          "reliability_stars": 4.0,
+          "typical_lifespan_km": 260000,
+          "parts_availability": "good",
+          "insurance_category": "high",
+          "expected_annual_maintenance_cost": 1100,
+          "common_competitors": "BMW 3 Series Coupe, Lexus IS, Nissan 370Z, Audi A5",
+          "base_value": 14500,
+          "reference_mileage_km": 140000,
+          "trims": [
+            {
+              "name": "G37 Journey Coupe",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "3.7L V6",
+              "transmission_options": "7-speed Automatic"
+            },
+            {
+              "name": "G37x Coupe",
+              "msrp_adjustment_pct": 0.06,
+              "engine_options": "3.7L V6",
+              "transmission_options": "7-speed Automatic"
+            },
+            {
+              "name": "G37S Coupe",
+              "msrp_adjustment_pct": 0.1,
+              "engine_options": "3.7L V6",
+              "transmission_options": "7-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Oil consumption / gasket leaks (VQ37VHR)",
+              "description": "Some 3.7L engines burn oil or develop oil-pan and gasket seeps.",
+              "symptoms": "Dropping oil level, oil spots underneath, burning smell.",
+              "severity": "moderate",
+              "typical_mileage_km": 140000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1800,
+              "recommendation": "Check the dipstick cold and ask for oil-change history."
+            },
+            {
+              "title": "Rear tire and brake wear from heavy driving",
+              "description": "Rear-wheel-drive performance coupes are often driven hard, wearing tires and brakes quickly and sometimes hiding abuse.",
+              "symptoms": "Uneven tire wear, brake pulsation, poorly matched tires.",
+              "severity": "minor",
+              "typical_mileage_km": 80000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1100,
+              "recommendation": "Check all four tires are a matched set and look for signs of hard driving."
+            },
+            {
+              "title": "Differential or transfer case service (G37x)",
+              "description": "AWD coupes need fluid services on the transfer case and front diff.",
+              "symptoms": "Binding in tight turns, whining on acceleration.",
+              "severity": "moderate",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 2500,
+              "recommendation": "Ask for AWD fluid service records on any G37x."
+            },
+            {
+              "title": "Aftermarket modifications",
+              "description": "Coupes are popular tuner cars, so intakes, exhausts, tunes and suspension changes are common and can hurt reliability and value.",
+              "symptoms": "Non-stock parts under the hood or exhaust, modified engine sound.",
+              "severity": "moderate",
+              "typical_mileage_km": 100000,
+              "estimated_repair_cost_min": 0,
+              "estimated_repair_cost_max": 3000,
+              "recommendation": "Look for aftermarket parts and prefer cars with documented stock or well-done modifications."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Differential / transfer case fluid",
+              "interval_km": 60000,
+              "estimated_cost_min": 160,
+              "estimated_cost_max": 380
+            },
+            {
+              "name": "Serpentine belt",
+              "interval_km": 100000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Q50",
+      "generations": [
+        {
+          "label": "1st Gen",
+          "start_year": 2014,
+          "end_year": 2023,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 300,
+          "fuel_economy_l_per_100km": 10.2,
+          "reliability_stars": 3.9,
+          "typical_lifespan_km": 250000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 1000,
+          "common_competitors": "BMW 3 Series, Audi A4, Lexus IS, Acura TLX",
+          "base_value": 20500,
+          "reference_mileage_km": 100000,
+          "trims": [
+            {
+              "name": "Q50 3.7",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "3.7L V6",
+              "transmission_options": "7-speed Automatic"
+            },
+            {
+              "name": "Q50 3.0t",
+              "msrp_adjustment_pct": 0.12,
+              "engine_options": "3.0L Twin-Turbo V6",
+              "transmission_options": "7-speed Automatic"
+            },
+            {
+              "name": "Q50 Red Sport 400",
+              "msrp_adjustment_pct": 0.28,
+              "engine_options": "3.0L Twin-Turbo V6",
+              "transmission_options": "7-speed Automatic"
+            },
+            {
+              "name": "Q50 AWD",
+              "msrp_adjustment_pct": 0.07,
+              "engine_options": "3.0L Twin-Turbo V6",
+              "transmission_options": "7-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Early 3.0t turbo and oil-line leaks",
+              "description": "Early 3.0t twin-turbo engines have turbo and oil-line issues that can need expensive repairs.",
+              "symptoms": "Reduced power, oil smell, smoke at start-up, warning lights.",
+              "severity": "severe",
+              "typical_mileage_km": 120000,
+              "estimated_repair_cost_min": 800,
+              "estimated_repair_cost_max": 4500,
+              "recommendation": "Prefer cars with documented service and check for leaks and codes."
+            },
+            {
+              "title": "Steering feel and infotainment problems",
+              "description": "Steer-by-wire (on equipped cars) and the touchscreen system draw frequent complaints.",
+              "symptoms": "Vague steering feel, sluggish or glitching infotainment.",
+              "severity": "minor",
+              "typical_mileage_km": 80000,
+              "estimated_repair_cost_min": 0,
+              "estimated_repair_cost_max": 1500,
+              "recommendation": "Test the infotainment thoroughly and know which steering system the car has."
+            },
+            {
+              "title": "Cracked or peeling interior trim",
+              "description": "Interior trim pieces and soft-touch surfaces wear on high-mileage cars.",
+              "symptoms": "Peeling or cracked trim, worn seat bolsters.",
+              "severity": "minor",
+              "typical_mileage_km": 100000,
+              "estimated_repair_cost_min": 150,
+              "estimated_repair_cost_max": 800,
+              "recommendation": "Inspect the cabin carefully for wear inconsistent with the mileage."
+            },
+            {
+              "title": "AWD system service",
+              "description": "AWD versions need regular fluid services and can show drivetrain noise if neglected.",
+              "symptoms": "Whining on acceleration, binding on tight turns.",
+              "severity": "moderate",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 2500,
+              "recommendation": "Ask for AWD fluid service history."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Differential / transfer case fluid",
+              "interval_km": 60000,
+              "estimated_cost_min": 160,
+              "estimated_cost_max": 380
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

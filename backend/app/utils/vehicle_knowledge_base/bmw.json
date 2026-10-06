@@ -41,8 +41,163 @@
             {"name": "Coolant flush", "interval_km": 100000, "estimated_cost_min": 160, "estimated_cost_max": 280},
             {"name": "Timing chain inspection", "interval_km": 100000, "estimated_cost_min": 150, "estimated_cost_max": 280}
           ]
-        }
-      ]
+        },
+          {
+            "label": "E90/E92",
+            "start_year": 2007,
+            "end_year": 2013,
+            "body_type": "sedan",
+            "drivetrain": "RWD",
+            "base_horsepower": 230,
+            "fuel_economy_l_per_100km": 10.8,
+            "reliability_stars": 3.4,
+            "typical_lifespan_km": 240000,
+            "parts_availability": "good",
+            "insurance_category": "high",
+            "expected_annual_maintenance_cost": 1700,
+            "common_competitors": "Mercedes-Benz C-Class, Audi A4, Lexus IS, Infiniti G37",
+            "base_value": 8500,
+            "reference_mileage_km": 150000,
+            "trims": [
+              {
+                "name": "328i",
+                "msrp_adjustment_pct": 0.0,
+                "engine_options": "3.0L I6 (N51, N52)",
+                "transmission_options": "6-speed Automatic"
+              },
+              {
+                "name": "328i xDrive",
+                "msrp_adjustment_pct": 0.06,
+                "engine_options": "3.0L I6 (N51, N52)",
+                "transmission_options": "6-speed Automatic"
+              },
+              {
+                "name": "335i",
+                "msrp_adjustment_pct": 0.2,
+                "engine_options": "3.0L Twin-Turbo I6 (N54, N55)",
+                "transmission_options": "6-speed Automatic"
+              },
+              {
+                "name": "335i xDrive",
+                "msrp_adjustment_pct": 0.26,
+                "engine_options": "3.0L Twin-Turbo I6 (N54, N55)",
+                "transmission_options": "6-speed Automatic"
+              }
+            ],
+            "known_issues": [
+              {
+                "title": "High-pressure fuel pump failure (2007-2010 335i)",
+                "description": "The twin-turbo N54 engine's high-pressure fuel pump is a well-known weak point, and several were recalled and extended under warranty.",
+                "symptoms": "Long cranking, rough idle, loss of power, a limp-mode warning.",
+                "severity": "severe",
+                "typical_mileage_km": 100000,
+                "estimated_repair_cost_min": 1000,
+                "estimated_repair_cost_max": 2200,
+                "recommendation": "Ask whether the pump has been replaced and check for warranty/recall records."
+              },
+              {
+                "title": "Injector failure (2007-2010 335i)",
+                "description": "The N54's piezo fuel injectors can fail and cause misfires and rough running.",
+                "symptoms": "Rough idle, misfire codes, check-engine light, poor fuel economy.",
+                "severity": "severe",
+                "typical_mileage_km": 100000,
+                "estimated_repair_cost_min": 400,
+                "estimated_repair_cost_max": 3500,
+                "recommendation": "Scan for stored misfire codes and ask about injector replacement."
+              },
+              {
+                "title": "Valve cover and oil filter housing gasket leaks",
+                "description": "Valve cover and oil filter housing gaskets harden and leak, which also contaminates the belt and nearby parts.",
+                "symptoms": "Burning oil smell, oil on the engine, oil spots underneath, smoke from the exhaust manifold area.",
+                "severity": "moderate",
+                "typical_mileage_km": 110000,
+                "estimated_repair_cost_min": 500,
+                "estimated_repair_cost_max": 1500,
+                "recommendation": "Look for oil residue around the top of the engine and ask for service records."
+              },
+              {
+                "title": "Water pump / electric coolant pump failure",
+                "description": "The electric water pump fails with little warning and can overheat the engine quickly.",
+                "symptoms": "Sudden overheating warning, coolant smell, a low-coolant message.",
+                "severity": "severe",
+                "typical_mileage_km": 100000,
+                "estimated_repair_cost_min": 700,
+                "estimated_repair_cost_max": 1400,
+                "recommendation": "Ask when the water pump and thermostat were last replaced; a recent replacement is a plus."
+              },
+              {
+                "title": "Turbo wastegate rattle (335i)",
+                "description": "Early N54 turbo wastegate actuators can rattle and cause boost control faults.",
+                "symptoms": "A rattling or buzzing sound from the turbos on light throttle, boost codes.",
+                "severity": "moderate",
+                "typical_mileage_km": 110000,
+                "estimated_repair_cost_min": 600,
+                "estimated_repair_cost_max": 2500,
+                "recommendation": "Listen at idle and light throttle for rattling from the turbo area."
+              },
+              {
+                "title": "Rear subframe and control-arm bushing wear",
+                "description": "Rubber bushings in the suspension wear and cause looseness and wandering at speed.",
+                "symptoms": "Clunking over bumps, steering that wanders, uneven tire wear.",
+                "severity": "minor",
+                "typical_mileage_km": 130000,
+                "estimated_repair_cost_min": 500,
+                "estimated_repair_cost_max": 1800,
+                "recommendation": "Listen for clunks over bumps and check the tires for uneven wear."
+              }
+            ],
+            "maintenance_items": [
+              {
+                "name": "Engine oil & filter",
+                "interval_km": 8000,
+                "estimated_cost_min": 85,
+                "estimated_cost_max": 160
+              },
+              {
+                "name": "Cabin & engine air filter",
+                "interval_km": 24000,
+                "estimated_cost_min": 55,
+                "estimated_cost_max": 120
+              },
+              {
+                "name": "Brake fluid flush",
+                "interval_km": 48000,
+                "estimated_cost_min": 95,
+                "estimated_cost_max": 170
+              },
+              {
+                "name": "Transmission fluid",
+                "interval_km": 80000,
+                "estimated_cost_min": 200,
+                "estimated_cost_max": 420
+              },
+              {
+                "name": "Spark plugs",
+                "interval_km": 100000,
+                "estimated_cost_min": 180,
+                "estimated_cost_max": 480
+              },
+              {
+                "name": "Coolant flush",
+                "interval_km": 120000,
+                "estimated_cost_min": 120,
+                "estimated_cost_max": 240
+              },
+              {
+                "name": "Spark plugs (turbo I6)",
+                "interval_km": 60000,
+                "estimated_cost_min": 220,
+                "estimated_cost_max": 450
+              },
+              {
+                "name": "Water pump & thermostat",
+                "interval_km": 100000,
+                "estimated_cost_min": 700,
+                "estimated_cost_max": 1400
+              }
+            ]
+          }
+        ]
     }
   ]
 }

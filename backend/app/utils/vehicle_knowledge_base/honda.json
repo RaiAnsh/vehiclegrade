@@ -114,8 +114,278 @@
             {"name": "Spark plugs", "interval_km": 100000, "estimated_cost_min": 190, "estimated_cost_max": 340},
             {"name": "Coolant flush", "interval_km": 120000, "estimated_cost_min": 120, "estimated_cost_max": 200}
           ]
-        }
-      ]
+        },
+          {
+            "label": "8th Gen",
+            "start_year": 2008,
+            "end_year": 2012,
+            "body_type": "sedan",
+            "drivetrain": "FWD",
+            "base_horsepower": 177,
+            "fuel_economy_l_per_100km": 9.3,
+            "reliability_stars": 4.1,
+            "typical_lifespan_km": 280000,
+            "parts_availability": "excellent",
+            "insurance_category": "low",
+            "expected_annual_maintenance_cost": 800,
+            "common_competitors": "Toyota Camry, Nissan Altima, Acura TSX, Mazda6",
+            "base_value": 9500,
+            "reference_mileage_km": 180000,
+            "trims": [
+              {
+                "name": "LX",
+                "msrp_adjustment_pct": -0.05,
+                "engine_options": "2.4L I4",
+                "transmission_options": "5-speed Automatic"
+              },
+              {
+                "name": "EX",
+                "msrp_adjustment_pct": 0.03,
+                "engine_options": "2.4L I4",
+                "transmission_options": "5-speed Automatic"
+              },
+              {
+                "name": "EX-L V6",
+                "msrp_adjustment_pct": 0.15,
+                "engine_options": "3.5L V6",
+                "transmission_options": "5-speed Automatic"
+              },
+              {
+                "name": "EX-L V6 Coupe",
+                "msrp_adjustment_pct": 0.17,
+                "engine_options": "3.5L V6",
+                "transmission_options": "5-speed Automatic"
+              }
+            ],
+            "known_issues": [
+              {
+                "title": "Excessive oil consumption (2.4L)",
+                "description": "Some 2008-2011 four-cylinder cars burn oil because of piston-ring and cylinder wear, and owners often only find out when the oil is critically low.",
+                "symptoms": "Oil level dropping noticeably between changes, blue smoke on startup, a low-oil warning light.",
+                "severity": "moderate",
+                "typical_mileage_km": 150000,
+                "estimated_repair_cost_min": 500,
+                "estimated_repair_cost_max": 3500,
+                "recommendation": "Ask for oil-change records, check the dipstick cold, and look for exhaust smoke on a cold start."
+              },
+              {
+                "title": "VCM engine mount and vibration (V6)",
+                "description": "The V6 shuts down cylinders to save fuel, and its active engine mounts can fail, causing vibration while cylinders deactivate.",
+                "symptoms": "Vibration or a humming through the floor at 60-90 km/h or at idle in gear.",
+                "severity": "moderate",
+                "typical_mileage_km": 140000,
+                "estimated_repair_cost_min": 300,
+                "estimated_repair_cost_max": 900,
+                "recommendation": "Check for vibration at idle and cruising speed; mounts are a common negotiation point."
+              },
+              {
+                "title": "Power steering pump / hose leak",
+                "description": "Power steering pump seals and high-pressure hoses can leak as they age, leaving a whine and dripping fluid.",
+                "symptoms": "Whining when turning, a reservoir needing top-ups, fluid spots under the front of the car.",
+                "severity": "minor",
+                "typical_mileage_km": 160000,
+                "estimated_repair_cost_min": 250,
+                "estimated_repair_cost_max": 800,
+                "recommendation": "Check the reservoir level and look under the car for oily drips."
+              },
+              {
+                "title": "A/C compressor or condenser failure",
+                "description": "A/C compressors and condensers are a known failure point and weak cooling is common on higher-mileage cars.",
+                "symptoms": "Warm air at idle, a clutch that cycles rapidly or won't engage.",
+                "severity": "minor",
+                "typical_mileage_km": 180000,
+                "estimated_repair_cost_min": 500,
+                "estimated_repair_cost_max": 1400,
+                "recommendation": "Run the A/C at full cold for several minutes during the test drive."
+              }
+            ],
+            "maintenance_items": [
+              {
+                "name": "Engine oil & filter",
+                "interval_km": 8000,
+                "estimated_cost_min": 85,
+                "estimated_cost_max": 160
+              },
+              {
+                "name": "Cabin & engine air filter",
+                "interval_km": 24000,
+                "estimated_cost_min": 55,
+                "estimated_cost_max": 120
+              },
+              {
+                "name": "Brake fluid flush",
+                "interval_km": 48000,
+                "estimated_cost_min": 95,
+                "estimated_cost_max": 170
+              },
+              {
+                "name": "Transmission fluid",
+                "interval_km": 80000,
+                "estimated_cost_min": 200,
+                "estimated_cost_max": 420
+              },
+              {
+                "name": "Spark plugs",
+                "interval_km": 100000,
+                "estimated_cost_min": 180,
+                "estimated_cost_max": 480
+              },
+              {
+                "name": "Coolant flush",
+                "interval_km": 120000,
+                "estimated_cost_min": 120,
+                "estimated_cost_max": 240
+              },
+              {
+                "name": "Timing belt, water pump & tensioner (V6)",
+                "interval_km": 160000,
+                "estimated_cost_min": 900,
+                "estimated_cost_max": 1600
+              },
+              {
+                "name": "Valve adjustment (2.4L)",
+                "interval_km": 100000,
+                "estimated_cost_min": 150,
+                "estimated_cost_max": 400
+              }
+            ]
+          },
+          {
+            "label": "9th Gen",
+            "start_year": 2013,
+            "end_year": 2017,
+            "body_type": "sedan",
+            "drivetrain": "FWD",
+            "base_horsepower": 185,
+            "fuel_economy_l_per_100km": 8.4,
+            "reliability_stars": 4.3,
+            "typical_lifespan_km": 300000,
+            "parts_availability": "excellent",
+            "insurance_category": "low",
+            "expected_annual_maintenance_cost": 750,
+            "common_competitors": "Toyota Camry, Nissan Altima, Acura TLX, Mazda6",
+            "base_value": 15500,
+            "reference_mileage_km": 120000,
+            "trims": [
+              {
+                "name": "LX",
+                "msrp_adjustment_pct": -0.06,
+                "engine_options": "2.4L I4",
+                "transmission_options": "CVT"
+              },
+              {
+                "name": "EX",
+                "msrp_adjustment_pct": 0.03,
+                "engine_options": "2.4L I4",
+                "transmission_options": "CVT"
+              },
+              {
+                "name": "EX-L V6",
+                "msrp_adjustment_pct": 0.18,
+                "engine_options": "3.5L V6",
+                "transmission_options": "6-speed Automatic"
+              },
+              {
+                "name": "EX-L V6 Coupe",
+                "msrp_adjustment_pct": 0.2,
+                "engine_options": "3.5L V6",
+                "transmission_options": "6-speed Automatic"
+              }
+            ],
+            "known_issues": [
+              {
+                "title": "Parasitic battery drain",
+                "description": "Some 2013-2015 cars develop an electrical draw that leaves the battery flat after sitting.",
+                "symptoms": "Slow or no start after a few days parked, repeatedly replacing the battery.",
+                "severity": "minor",
+                "typical_mileage_km": 100000,
+                "estimated_repair_cost_min": 150,
+                "estimated_repair_cost_max": 600,
+                "recommendation": "Ask whether the battery has been replaced recently and why."
+              },
+              {
+                "title": "VCM engine mount vibration (V6)",
+                "description": "The V6's cylinder-deactivation system can cause vibration when the active engine mounts wear.",
+                "symptoms": "Humming or vibration at light throttle cruising speeds.",
+                "severity": "moderate",
+                "typical_mileage_km": 150000,
+                "estimated_repair_cost_min": 300,
+                "estimated_repair_cost_max": 900,
+                "recommendation": "Cruise gently at 70-90 km/h and feel for vibration."
+              },
+              {
+                "title": "CVT judder (4-cylinder)",
+                "description": "Early CVTs in the four-cylinder cars can judder or hesitate at low speed, usually helped by fluid changes or a software update.",
+                "symptoms": "Shudder or surging when pulling away from a stop.",
+                "severity": "moderate",
+                "typical_mileage_km": 120000,
+                "estimated_repair_cost_min": 200,
+                "estimated_repair_cost_max": 3500,
+                "recommendation": "Ask for CVT fluid service records and test from a standstill."
+              },
+              {
+                "title": "Front brake wear and vibration",
+                "description": "Thin rotors on this generation can warp, which shows up as steering wheel pulsation under braking.",
+                "symptoms": "Pulsing through the brake pedal and wheel at highway speeds.",
+                "severity": "minor",
+                "typical_mileage_km": 80000,
+                "estimated_repair_cost_min": 300,
+                "estimated_repair_cost_max": 700,
+                "recommendation": "Brake from highway speed on the test drive and feel for pulsation."
+              }
+            ],
+            "maintenance_items": [
+              {
+                "name": "Engine oil & filter",
+                "interval_km": 8000,
+                "estimated_cost_min": 85,
+                "estimated_cost_max": 160
+              },
+              {
+                "name": "Cabin & engine air filter",
+                "interval_km": 24000,
+                "estimated_cost_min": 55,
+                "estimated_cost_max": 120
+              },
+              {
+                "name": "Brake fluid flush",
+                "interval_km": 48000,
+                "estimated_cost_min": 95,
+                "estimated_cost_max": 170
+              },
+              {
+                "name": "Transmission fluid",
+                "interval_km": 80000,
+                "estimated_cost_min": 200,
+                "estimated_cost_max": 420
+              },
+              {
+                "name": "Spark plugs",
+                "interval_km": 100000,
+                "estimated_cost_min": 180,
+                "estimated_cost_max": 480
+              },
+              {
+                "name": "Coolant flush",
+                "interval_km": 120000,
+                "estimated_cost_min": 120,
+                "estimated_cost_max": 240
+              },
+              {
+                "name": "Timing chain inspection (V6 is chain-driven)",
+                "interval_km": 200000,
+                "estimated_cost_min": 150,
+                "estimated_cost_max": 350
+              },
+              {
+                "name": "CVT fluid (4-cylinder)",
+                "interval_km": 60000,
+                "estimated_cost_min": 150,
+                "estimated_cost_max": 320
+              }
+            ]
+          }
+        ]
     },
     {
       "name": "CR-V",

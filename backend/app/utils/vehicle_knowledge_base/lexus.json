@@ -465,6 +465,263 @@
           ]
         }
       ]
+    },
+    {
+      "name": "GS",
+      "generations": [
+        {
+          "label": "3rd Gen (S190)",
+          "start_year": 2006,
+          "end_year": 2011,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 245,
+          "fuel_economy_l_per_100km": 10.6,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 280000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 850,
+          "common_competitors": "BMW 5 Series, Mercedes-Benz E-Class, Infiniti M, Acura RL",
+          "base_value": 10500,
+          "reference_mileage_km": 170000,
+          "trims": [
+            {
+              "name": "GS 300 AWD",
+              "msrp_adjustment_pct": -0.05,
+              "engine_options": "3.0L V6",
+              "transmission_options": "6-speed Automatic"
+            },
+            {
+              "name": "GS 350",
+              "msrp_adjustment_pct": 0.08,
+              "engine_options": "3.5L V6",
+              "transmission_options": "6-speed Automatic"
+            },
+            {
+              "name": "GS 350 AWD",
+              "msrp_adjustment_pct": 0.14,
+              "engine_options": "3.5L V6",
+              "transmission_options": "6-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Water pump and coolant leaks",
+              "description": "The water pump and hoses can leak as they age, and overheating risk rises if the cooling system isn't maintained.",
+              "symptoms": "Coolant smell or spots, a low-coolant warning, rising temperature in traffic.",
+              "severity": "moderate",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 500,
+              "estimated_repair_cost_max": 1200,
+              "recommendation": "Check the coolant level and look for crusty residue around the front of the engine."
+            },
+            {
+              "title": "Dashboard becoming sticky",
+              "description": "Soft-touch dash materials degrade and turn tacky with heat and sun.",
+              "symptoms": "A gummy or sticky feel on the dash top and door trim.",
+              "severity": "minor",
+              "typical_mileage_km": 140000,
+              "estimated_repair_cost_min": 400,
+              "estimated_repair_cost_max": 1000,
+              "recommendation": "Press on the dash in daylight to check for tackiness."
+            },
+            {
+              "title": "Air-suspension or shock wear (equipped cars)",
+              "description": "Worn shocks and suspension bushings are common on older high-mileage cars.",
+              "symptoms": "A floaty or bouncy ride, clunking over bumps.",
+              "severity": "minor",
+              "typical_mileage_km": 160000,
+              "estimated_repair_cost_min": 600,
+              "estimated_repair_cost_max": 2200,
+              "recommendation": "Push down on each corner and watch for continued bouncing."
+            },
+            {
+              "title": "Oil cooler line and valve cover seep",
+              "description": "Seals on the V6 can seep oil as they age.",
+              "symptoms": "Oil smell, oil residue around the valve covers.",
+              "severity": "minor",
+              "typical_mileage_km": 160000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1000,
+              "recommendation": "Check for oil on the valve covers and the engine's rear."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Timing belt service (3.0L V6)",
+              "interval_km": 150000,
+              "estimated_cost_min": 900,
+              "estimated_cost_max": 1700
+            },
+            {
+              "name": "Water pump inspection",
+              "interval_km": 150000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 500
+            }
+          ]
+        },
+        {
+          "label": "4th Gen (L10)",
+          "start_year": 2013,
+          "end_year": 2020,
+          "body_type": "sedan",
+          "drivetrain": "RWD",
+          "base_horsepower": 306,
+          "fuel_economy_l_per_100km": 10.7,
+          "reliability_stars": 4.5,
+          "typical_lifespan_km": 290000,
+          "parts_availability": "good",
+          "insurance_category": "medium",
+          "expected_annual_maintenance_cost": 900,
+          "common_competitors": "BMW 5 Series, Mercedes-Benz E-Class, Audi A6, Infiniti Q70",
+          "base_value": 24000,
+          "reference_mileage_km": 90000,
+          "trims": [
+            {
+              "name": "GS 350",
+              "msrp_adjustment_pct": 0.0,
+              "engine_options": "3.5L V6",
+              "transmission_options": "8-speed Automatic"
+            },
+            {
+              "name": "GS 350 AWD",
+              "msrp_adjustment_pct": 0.06,
+              "engine_options": "3.5L V6",
+              "transmission_options": "8-speed Automatic"
+            },
+            {
+              "name": "GS 350 F Sport",
+              "msrp_adjustment_pct": 0.12,
+              "engine_options": "3.5L V6",
+              "transmission_options": "8-speed Automatic"
+            }
+          ],
+          "known_issues": [
+            {
+              "title": "Infotainment and remote-touch controller",
+              "description": "The remote-touch infotainment controller can feel awkward and glitch with age.",
+              "symptoms": "Laggy or unresponsive controller, display freezes.",
+              "severity": "minor",
+              "typical_mileage_km": 80000,
+              "estimated_repair_cost_min": 200,
+              "estimated_repair_cost_max": 1200,
+              "recommendation": "Test every function of the infotainment system."
+            },
+            {
+              "title": "Water pump and hose leaks",
+              "description": "Cooling-system components can leak on higher-mileage cars.",
+              "symptoms": "Coolant smell, low coolant warning, spots under the car.",
+              "severity": "moderate",
+              "typical_mileage_km": 150000,
+              "estimated_repair_cost_min": 500,
+              "estimated_repair_cost_max": 1200,
+              "recommendation": "Check the coolant level and look for residue around the front of the engine."
+            },
+            {
+              "title": "F Sport suspension and brake wear",
+              "description": "F Sport cars wear tires and brakes faster than the standard sedan.",
+              "symptoms": "Worn tires, brake pulsation, noisy suspension.",
+              "severity": "minor",
+              "typical_mileage_km": 80000,
+              "estimated_repair_cost_min": 300,
+              "estimated_repair_cost_max": 1300,
+              "recommendation": "Inspect tires and brakes; F Sport parts cost more."
+            },
+            {
+              "title": "Transmission shift hesitation",
+              "description": "The 8-speed can hesitate or shift harshly on some cars until its fluid is serviced.",
+              "symptoms": "Hesitation or a harsh shift when moving off or downshifting.",
+              "severity": "moderate",
+              "typical_mileage_km": 120000,
+              "estimated_repair_cost_min": 200,
+              "estimated_repair_cost_max": 1500,
+              "recommendation": "Check service history and shift through the range on the test drive."
+            }
+          ],
+          "maintenance_items": [
+            {
+              "name": "Engine oil & filter",
+              "interval_km": 8000,
+              "estimated_cost_min": 85,
+              "estimated_cost_max": 160
+            },
+            {
+              "name": "Cabin & engine air filter",
+              "interval_km": 24000,
+              "estimated_cost_min": 55,
+              "estimated_cost_max": 120
+            },
+            {
+              "name": "Brake fluid flush",
+              "interval_km": 48000,
+              "estimated_cost_min": 95,
+              "estimated_cost_max": 170
+            },
+            {
+              "name": "Transmission fluid",
+              "interval_km": 80000,
+              "estimated_cost_min": 200,
+              "estimated_cost_max": 420
+            },
+            {
+              "name": "Spark plugs",
+              "interval_km": 100000,
+              "estimated_cost_min": 180,
+              "estimated_cost_max": 480
+            },
+            {
+              "name": "Coolant flush",
+              "interval_km": 120000,
+              "estimated_cost_min": 120,
+              "estimated_cost_max": 240
+            },
+            {
+              "name": "Transmission fluid service",
+              "interval_km": 80000,
+              "estimated_cost_min": 220,
+              "estimated_cost_max": 450
+            }
+          ]
+        }
+      ]
     }
   ]
 }

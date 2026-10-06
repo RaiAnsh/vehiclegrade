@@ -85,8 +85,42 @@ def seed_database():
     }
 
 
+def add_new_vehicles():
+    """Non-destructive counterpart to seed_database(): adds any vehicles that
+    are in the knowledge-base JSON but not yet in the database, plus mock
+    comparable listings for just those new generations, and recomputes their
+    Gold-layer aggregates. Never drops or modifies existing rows, so admin
+    users, ingested batches and real approved listings are untouched.
+    """
+    rng = random.Random(42)
+    locations = Location.query.all()
+    new_generations = _load_knowledge_base()
+
+    listings = []
+    for generation in new_generations:
+        for _ in range(LISTINGS_PER_MODEL):
+            listings.append(_build_random_listing(rng, generation, locations))
+    db.session.add_all(listings)
+    db.session.commit()
+
+    from app.services.market_aggregation import recompute_generation
+    aggregates_written = sum(recompute_generation(generation.id) for generation in new_generations)
+
+    return {
+        "generations": [f"{g.model.make.name} {g.model.name} {g.label}" for g in new_generations],
+        "listings": len(listings),
+        "market_aggregates": aggregates_written,
+    }
+
+
 def _load_knowledge_base():
-    """Read every make JSON file and build the ORM object graph. Returns a flat list of Generations."""
+    """Read every make JSON file and build the ORM object graph. Returns a flat list of the Generations created.
+
+    Idempotent: makes, models and generations that already exist (matched by
+    make name / model name / generation label) are left untouched, so this is
+    safe to call against a populated database as well as an empty one - see
+    `add_new_vehicles()`.
+    """
     all_generations = []
 
     for json_path in sorted(KNOWLEDGE_BASE_DIR.glob("*.json")):
@@ -96,16 +130,22 @@ def _load_knowledge_base():
         with open(json_path) as f:
             data = json.load(f)
 
-        make = VehicleMake(name=data["make"])
-        db.session.add(make)
-        db.session.flush()
-
-        for model_data in data["models"]:
-            model = VehicleModel(make_id=make.id, name=model_data["name"])
-            db.session.add(model)
+        make = VehicleMake.query.filter_by(name=data["make"]).first()
+        if make is None:
+            make = VehicleMake(name=data["make"])
+            db.session.add(make)
             db.session.flush()
 
+        for model_data in data["models"]:
+            model = VehicleModel.query.filter_by(make_id=make.id, name=model_data["name"]).first()
+            if model is None:
+                model = VehicleModel(make_id=make.id, name=model_data["name"])
+                db.session.add(model)
+                db.session.flush()
+
             for gen_data in model_data["generations"]:
+                if Generation.query.filter_by(model_id=model.id, label=gen_data["label"]).first() is not None:
+                    continue
                 generation = Generation(
                     model_id=model.id,
                     label=gen_data["label"],
