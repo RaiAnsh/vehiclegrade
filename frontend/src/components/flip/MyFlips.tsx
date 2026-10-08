@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/Card";
 import { Input } from "@/components/ui/Input";
 import { Modal } from "@/components/ui/Modal";
 import { Select } from "@/components/ui/Select";
+import { ErrorCard } from "@/components/flip/ErrorCard";
 import { FlipLedger } from "@/hooks/useFlipLedger";
 import { ExpenseCategory, LocalFlip } from "@/lib/types";
 
@@ -202,7 +203,13 @@ export function MyFlips({ ledger, goToCalculator }: { ledger: FlipLedger; goToCa
         {!ledger.storageWorks && <span className="text-amber-300"> Your browser is blocking storage, so flips won&apos;t persist.</span>}
       </Card>
 
-      {ledger.error && <p className="text-sm text-red-400">{ledger.error}</p>}
+      {ledger.error && (
+        <ErrorCard
+          title="Couldn't calculate your results"
+          message={`${ledger.error} Your flips are safe in this browser - only the profit/loss numbers are unavailable until the server responds.`}
+          onRetry={ledger.retry}
+        />
+      )}
 
       {p && ledger.flips.length > 0 && (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

@@ -34,6 +34,7 @@ export function useFlipLedger() {
   const [summary, setSummary] = useState<FlipLedgerSummary | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [storageWorks, setStorageWorks] = useState(true);
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
     setFlips(load());
@@ -65,7 +66,9 @@ export function useFlipLedger() {
     return () => {
       cancelled = true;
     };
-  }, [flips, ready]);
+  }, [flips, ready, retryCount]);
+
+  const retry = useCallback(() => setRetryCount((n) => n + 1), []);
 
   const addFlip = useCallback((flip: Omit<LocalFlip, "id" | "status" | "expenses" | "purchase_date"> & { purchase_date?: string }) => {
     const created: LocalFlip = { ...flip, id: newId(), status: "holding", expenses: [], purchase_date: flip.purchase_date ?? today() };
@@ -92,8 +95,8 @@ export function useFlipLedger() {
   const replaceAll = useCallback((next: LocalFlip[]) => setFlips(next), []);
 
   return useMemo(
-    () => ({ flips, ready, summary, error, storageWorks, addFlip, addExpense, removeExpense, sell, remove, replaceAll }),
-    [flips, ready, summary, error, storageWorks, addFlip, addExpense, removeExpense, sell, remove, replaceAll]
+    () => ({ flips, ready, summary, error, retry, storageWorks, addFlip, addExpense, removeExpense, sell, remove, replaceAll }),
+    [flips, ready, summary, error, retry, storageWorks, addFlip, addExpense, removeExpense, sell, remove, replaceAll]
   );
 }
 

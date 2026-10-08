@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import clsx from "clsx";
 
 import { Button } from "@/components/ui/Button";
@@ -10,6 +10,7 @@ import { FlipLedger } from "@/hooks/useFlipLedger";
 import { getFlipRoadmap } from "@/lib/api";
 import { RoadmapLevel } from "@/lib/types";
 import { CalculatorPrefill } from "@/components/flip/FlipCalculator";
+import { ErrorCard } from "@/components/flip/ErrorCard";
 
 const money = (n: number | null) => (n === null ? "-" : `${n < 0 ? "-" : ""}$${Math.abs(Math.round(n)).toLocaleString()}`);
 
@@ -23,11 +24,16 @@ export function FlipRoadmap({
   const [levels, setLevels] = useState<RoadmapLevel[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    getFlipRoadmap().then((d) => setLevels(d.levels)).catch((e) => setError(e.message));
+  const load = useCallback(() => {
+    setError(null);
+    getFlipRoadmap()
+      .then((d) => setLevels(d.levels))
+      .catch((e) => setError(e instanceof Error ? e.message : "Something went wrong loading the roadmap."));
   }, []);
 
-  if (error) return <p className="text-sm text-red-400">{error}</p>;
+  useEffect(load, [load]);
+
+  if (error) return <ErrorCard title="The roadmap couldn't be loaded" message={error} onRetry={load} />;
   if (!levels) return <Skeleton className="h-64 w-full" />;
 
   const progress = ledger.summary?.progress;

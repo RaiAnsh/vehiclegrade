@@ -19,17 +19,24 @@ import {
   TitleStatus,
 } from "./types";
 
+import { describeHttpError, describeNetworkError } from "./apiErrors";
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5001";
 
 async function apiFetch<T>(path: string, options?: RequestInit): Promise<T> {
-  const response = await fetch(`${API_URL}${path}`, {
-    headers: { "Content-Type": "application/json" },
-    ...options,
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${API_URL}${path}`, {
+      headers: { "Content-Type": "application/json" },
+      ...options,
+    });
+  } catch {
+    throw new Error(describeNetworkError(API_URL));
+  }
 
   if (!response.ok) {
     const body = await response.json().catch(() => ({}));
-    throw new Error(body.error ?? `Request to ${path} failed (${response.status})`);
+    throw new Error(describeHttpError(path, response.status, body.error));
   }
 
   return response.json();
