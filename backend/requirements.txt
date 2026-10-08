@@ -8,6 +8,7 @@ langchain-openai==0.3.35
 langchain-google-genai==2.1.12
 gunicorn==23.0.0
 psycopg2-binary==2.9.10
+psycopg[binary]==3.3.6
 sentry-sdk[flask]==2.19.2
 pytest==8.4.2
 argon2-cffi==23.1.0

@@ -9,11 +9,24 @@ import os
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 
+def _database_uri():
+    """DATABASE_URL, normalized for SQLAlchemy 2.x.
+
+    Hosts hand out URLs in different spellings: the legacy `postgres://`
+    (rejected by SQLAlchemy 2 outright), plain `postgresql://` (uses the
+    psycopg2 driver), or `postgresql+psycopg://` (uses psycopg 3). Both
+    drivers are in requirements.txt so any of these boots; only the legacy
+    scheme needs rewriting.
+    """
+    url = os.environ.get("DATABASE_URL", f"sqlite:///{os.path.join(BASE_DIR, 'instance', 'vehiclegrade.db')}")
+    if url.startswith("postgres://"):
+        url = "postgresql://" + url[len("postgres://"):]
+    return url
+
+
 class Config:
     # Flask-SQLAlchemy looks for the SQLite file relative to the instance folder.
-    SQLALCHEMY_DATABASE_URI = os.environ.get(
-        "DATABASE_URL", f"sqlite:///{os.path.join(BASE_DIR, 'instance', 'vehiclegrade.db')}"
-    )
+    SQLALCHEMY_DATABASE_URI = _database_uri()
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JSON_SORT_KEYS = False
 
